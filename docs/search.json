@@ -9,8 +9,36 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "blenback.github.io",
+    "title": "Benjamin Black",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n1 + 1\n\n[1] 2"
+    "text": "I’m Ben a PhD student currently working within the ValPar.CH project as part of the research group Planning of Landscape Urban Systems (PLUS) at ETH Zürich. I’m a BIG fan of R stats for everything research related particularly for promoting open science and reproducibility. I started this site/blog to share some of my work that doesn’t necessarily make it into publications in the hope that others will find it useful. Thanks for stopping by!"
+  },
+  {
+    "objectID": "index.html#education",
+    "href": "index.html#education",
+    "title": "Benjamin Black",
+    "section": "Education",
+    "text": "Education\n PhD in chair of Planning of Landscape and Urban systems | ETH Zürich | Oct 2020 - Present\n MSc in Environmental Sciences, Policy and Management (MESPOM) | Central European University, University of Manchester, Lund University, University of the Aegean | Sept 2018 - June 2020\n BSc with 1st Class Honours in Biological Sciences | Edinburgh Napier University | Sept 2010 - June 2014"
+  },
+  {
+    "objectID": "index.html#experience",
+    "href": "index.html#experience",
+    "title": "Benjamin Black",
+    "section": "Experience",
+    "text": "Experience\nWengo Analytics | Head Data Scientist | April 2018 - present\nGeoScynce | Chief Analyst | Spet 2012 - April 2018"
+  },
+  {
+    "objectID": "posts.html",
+    "href": "posts.html",
+    "title": "Posts",
+    "section": "",
+    "text": "No matching items"
+  },
+  {
+    "objectID": "presentations.html",
+    "href": "presentations.html",
+    "title": "Presentations",
+    "section": "",
+    "text": "No matching items"
   }
 ]

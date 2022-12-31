@@ -1,11 +1,41 @@
 ---
-title: "blenback.github.io"
+title: "Benjamin Black"
+image: media/landing_portrait.jpg
+html:
+    page-layout: full
+about:
+  template: trestles
+  image-shape: round
+  image-width: 17em
+  links: 
+    - text: "{{< fa brands linkedin >}}  LinkedIn"
+      href: https://www.linkedin.com/in/ben-black-9889a1150/
+    - text: "{{< fa brands github >}}  Github"
+      href: https://github.com/blenback
+    - text: "{{< fa solid envelope >}}  Email"
+      href: mailto:bblack@ethz.ch
+    - text: "{{< fa brands researchgate >}}  Researchgate"
+      href: https://www.researchgate.net/profile/Benjamin-Black-5
+    - text: "{{< fa brands orcid >}}  Orcid"
+      href: https://orcid.org/my-orcid?orcid=0000-0002-8113-2114
+    - text: "{{< fa brands twitter >}}  Twitter"
+      href: https://twitter.com/Blen_Back
 ---
 
-This is a Quarto website.
+## Hi there!
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+I'm Ben a PhD student currently working within the [ValPar.CH](https://valpar.ch/index_de.php) project as part of the research group [Planning of Landscape Urban Systems (PLUS)](https://plus.ethz.ch/) at ETH Zürich. I'm a BIG fan of R stats for everything research related particularly for promoting open science and reproducibility. I started this site/blog to share some of my work that doesn't necessarily make it into publications in the hope that others will find it useful. Thanks for stopping by!
 
-```{r}
-1 + 1
-```
+## Education
+
+{{< fa graduation-cap size=large >}} **PhD in chair of Planning of Landscape and Urban systems** | ETH Zürich | Oct 2020 - Present
+
+{{< fa graduation-cap size=large >}} **MSc in Environmental Sciences, Policy and Management (MESPOM)** \| Central European University, University of Manchester, Lund University, University of the Aegean \| Sept 2018 - June 2020
+
+{{< fa graduation-cap size=large >}} **BSc with 1st Class Honours in Biological Sciences** \| Edinburgh Napier University \| Sept 2010 - June 2014
+
+## Experience
+
+Wengo Analytics \| Head Data Scientist \| April 2018 - present
+
+GeoScynce \| Chief Analyst \| Spet 2012 - April 2018

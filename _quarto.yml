@@ -3,18 +3,46 @@ project:
   output-dir: docs
 
 website:
-  title: "blenback.github.io"
+  title: "Benjamin Black"
+  search: TRUE #add search bar
+  page-footer:
+    left: |
+      {{< fa regular copyright >}} Benjamin Black, 2022<br>
+      All content licensed under {{< fa brands creative-commons >}}
+      {{< fa brands creative-commons-by >}} {{< fa brands creative-commons-sa >}} {{< fa brands creative-commons-nc >}} [(CC BY-NC-SA 4.0)](http://creativecommons.org/licenses/by-nc-sa/4.0/)
+      
+    right: |
+      Made with {{< fa brands r-project >}} and [Quarto](https://quarto.org/)<br>
   navbar:
     left:
       - href: index.qmd
         text: Home
-      - about.qmd
+        aria-label: "Home"
+      - href: about.qmd
+        aria-label: "About"
+      - href: publications.qmd
+        aria-label: "Publications"
+      - href: presentations.qmd
+        aria-label: "Presentations"
+      - href: posts.qmd
+        aria-label: "Posts"
+      - text: CV
+        href: media/Benjamin_black_CV.pdf
+        aria-label: "CV"
+    right: 
+      - text: "{{< fa solid envelope >}}"
+        href: mailto:bblack@ethz.ch
+        aria-label: "Email"
+  
 
 format:
   html:
-    theme: cosmo
+    theme: sandstone
+    mainfont: 'Lato light'
+    margin-left: 0.5em
     css: styles.css
     toc: true
+    max-width: 1800px
 
 editor: visual
 
