@@ -1,8 +1,7 @@
 ---
 title: "Benjamin Black"
 image: media/landing_portrait.jpg
-html:
-    page-layout: full
+page-layout: full
 about:
   template: trestles
   image-shape: round
@@ -20,22 +19,32 @@ about:
       href: https://orcid.org/my-orcid?orcid=0000-0002-8113-2114
     - text: "{{< fa brands twitter >}}  Twitter"
       href: https://twitter.com/Blen_Back
+    - text: "{{< ai google-scholar >}} Google Scholar"
+      href: https://scholar.google.com/citations?hl=en&user=h00y-m4AAAAJ
 ---
+
+<!--# Note: Fontawesome and Schotastics quarto extensions required for icons. -->
 
 ## Hi there!
 
-I'm Ben a PhD student currently working within the [ValPar.CH](https://valpar.ch/index_de.php) project as part of the research group [Planning of Landscape Urban Systems (PLUS)](https://plus.ethz.ch/) at ETH Zürich. I'm a BIG fan of R stats for everything research related particularly for promoting open science and reproducibility. I started this site/blog to share some of my work that doesn't necessarily make it into publications in the hope that others will find it useful. Thanks for stopping by!
+I'm Ben, a PhD student currently working within the [ValPar.CH](https://valpar.ch/index_de.php) project as part of the research group [Planning of Landscape Urban Systems (PLUS)](https://plus.ethz.ch/) at ETH Zürich.
+
+I'm a BIG fan of R stats for everything research related particularly for promoting open science and reproducibility. I started this site/blog to share some of my work that doesn't necessarily make it into publications in the hope that others will find it useful. Thanks for stopping by!
+
+------------------------------------------------------------------------
 
 ## Education
 
-{{< fa graduation-cap size=large >}} **PhD in chair of Planning of Landscape and Urban systems** | ETH Zürich | Oct 2020 - Present
+{{< fa graduation-cap size=large >}} PhD in chair of Planning of Landscape and Urban systems | ETH Zürich | 2020 - Present
 
-{{< fa graduation-cap size=large >}} **MSc in Environmental Sciences, Policy and Management (MESPOM)** \| Central European University, University of Manchester, Lund University, University of the Aegean \| Sept 2018 - June 2020
+{{< fa graduation-cap size=large >}} MSc in Environmental Sciences, Policy and Management (MESPOM) | Central European University, University of Manchester, Lund University, University of the Aegean | 2018 - 2020
 
-{{< fa graduation-cap size=large >}} **BSc with 1st Class Honours in Biological Sciences** \| Edinburgh Napier University \| Sept 2010 - June 2014
+{{< fa graduation-cap size=large >}} BSc with 1st Class Honours in Biological Sciences | Edinburgh Napier University | 2010 - 2014
+
+------------------------------------------------------------------------
 
 ## Experience
 
-Wengo Analytics \| Head Data Scientist \| April 2018 - present
+{{< fa list-check size=large >}} Student Affairs Manager | The School for Field Studies Center for Conservation and Development Studies in the Lower Mekong | 2018
 
-GeoScynce \| Chief Analyst \| Spet 2012 - April 2018
+{{< fa people-roof size=large >}} Project Manager | Elephant Livelihood Initiatives and Environment (E.L.I.E) | 2015 - 2017

@@ -1,4 +1,17 @@
 ---
 title: "Publications"
-author: "Ben Black"
+#page-layout: full
+title-block-banner: false
 ---
+
+**\
+Black, B**., Strien, M.J. van, Adde, A., Grêt-Regamey, A., 2023. Re-considering the status quo: Improving calibration of land use change models through validation of transition potential predictions. *Environmental Modelling & Software* 159, 105574. <https://doi.org/10.1016/j.envsoft.2022.105574>
+
+<a href="https://dx.doi.org/10.2139/ssrn.4219023" class="btn btn-outline-dark btn-sm" aria-pressed="true" role="button"> {{< fa solid fingerprint >}} Preprint </a> <a href="https://zenodo.org/record/6912914#.Y7V4mZDYo2w" class="btn btn-outline-dark btn-sm" aria-pressed="true" role="button"> {{< fa solid code >}} Data/Code </a> <a href=media/ICoLCM.bib class="btn btn-outline-dark btn-sm" aria-pressed="true" role="button" download=ICoLCM.bib> {{< fa solid quotes >}} Cite </a>
+
+------------------------------------------------------------------------
+
+**\
+Black, B**., Anthony, B.P., 2022. Counterfactual assessment of protected area avoided deforestation in Cambodia: Trends in effectiveness, spillover effects and the influence of establishment date. *Global Ecology and Conservation* 38, e02228. <https://doi.org/10.1016/j.gecco.2022.e02228>
+
+<a href="https://zenodo.org/record/6554206#.Y7V79ZDYo2w" class="btn btn-outline-dark btn-sm" aria-pressed="true" role="button"> {{< fa solid code >}} Data/Code </a> <a href=media/Cam_PA_effect.bib class="btn btn-outline-dark btn-sm" aria-pressed="true" role="button" download= Cam_PA_effect.bib> {{< fa solid quotes >}} Cite </a>

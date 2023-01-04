@@ -14,6 +14,8 @@ website:
     right: |
       Made with {{< fa brands r-project >}} and [Quarto](https://quarto.org/)<br>
   navbar:
+    #logo: logo.jpg
+    #title: false
     left:
       - href: index.qmd
         text: Home
@@ -33,6 +35,12 @@ website:
       - text: "{{< fa solid envelope >}}"
         href: mailto:bblack@ethz.ch
         aria-label: "Email"
+      - text: "{{< fa brands github >}}"
+        href: https://github.com/blenback
+        aria-label: "Github"
+      - text: "{{< fa brands twitter >}}"
+        href: https://twitter.com/Blen_Back
+        aria-label: "Twitter"
   
 
 format:

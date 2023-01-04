@@ -72,9 +72,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-categories"],
+      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -143,6 +143,14 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link" href="mailto:bblack@ethz.ch">
  <span class="menu-text"><i class="fa-solid fa-envelope" aria-label="envelope"></i></span></a>
   </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://github.com/blenback">
+ <span class="menu-text"><i class="fa-brands fa-github" aria-label="github"></i></span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://twitter.com/Blen_Back">
+ <span class="menu-text"><i class="fa-brands fa-twitter" aria-label="twitter"></i></span></a>
+  </li>  
 </ul>
               <div id="quarto-search" class="" title="Search"></div>
           </div> <!-- /navcollapse -->
@@ -150,14 +158,14 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(0)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(4)</span></div><div class="category" data-category="Bayesian Networks">Bayesian Networks <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Concept drift">Concept drift <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Ecological Infrastructure">Ecological Infrastructure <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Ecosystem service modelling">Ecosystem service modelling <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Feature selection">Feature selection <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Land use change modelling">Land use change modelling <span class="quarto-category-count">(3)</span></div><div class="category" data-category="Non-stationarity">Non-stationarity <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Random Forests">Random Forests <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Species distribution modelling">Species distribution modelling <span class="quarto-category-count">(1)</span></div><div class="category" data-category="ValPar.CH">ValPar.CH <span class="quarto-category-count">(2)</span></div></div></div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content column-page-left" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -180,9 +188,203 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
-<div class="list grid quarto-listing-cols-3">
+<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
+<div class="listing-actions-group">
+   <div class="input-group input-group-sm quarto-listing-sort">
+     <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
+     <select id="listing-listing-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
+       <option value="" disabled="" selected="" hidden="">Order By</option>
+       <option value="index" data-direction="asc">Default</option>
+         <option value="listing-title" data-direction="asc">
+          Title
+        </option>
+         <option value="listing-date-sort" data-direction="asc">
+          Date - Oldest
+        </option>
+         <option value="listing-date-sort" data-direction="desc">
+          Date - Newest
+        </option>
+         <option value="listing-author" data-direction="asc">
+          Author
+        </option>
+     </select>
+  </div>
+    <div class="input-group input-group-sm quarto-listing-filter">
+      <span class="input-group-text"><i class="bi bi-search"></i></span>
+      <input type="text" class="search form-control" placeholder="Filter">
+    </div>
+</div>
+<div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-categories="Non-stationarity,Concept drift,Random Forests,Land use change modelling" data-listing-date-sort="1663020000000" data-listing-file-modified-sort="1672841698513" data-listing-reading-time-sort="0.165">
+<div class="thumbnail">
+<p><a href="./presentations/2022_09_13_IMC/index.html"> <img src="./presentations/2022_09_13_IMC/concept_drift.jpg" class="thumnail-image" alt="Types of non-stationarity (adapted from Hodler 2022)"> </a></p>
+</div>
+<div class="body">
+<a href="./presentations/2022_09_13_IMC/index.html">
+<h3 class="no-anchor listing-title">
+Characterising non-stationarity in predictive models of land use in Swiss mountain parks to inform scenarios for deliberative transformation.
+</h3>
+<div class="listing-subtitle">
 
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Non-stationarity'); return false;">
+Non-stationarity
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Concept drift'); return false;">
+Concept drift
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Random Forests'); return false;">
+Random Forests
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Land use change modelling'); return false;">
+Land use change modelling
+</div>
+</div>
+<a href="./presentations/2022_09_13_IMC/index.html">
+<div class="listing-description">
+<p>A presentation given at the International Mountain conference 2022.</p>
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="./presentations/2022_09_13_IMC/index.html">
+<div class="listing-date">
+Sep 13, 2022
+</div>
+<div class="listing-author">
+Ben Black, Sergio Wicki, Adrienne Grêt-Regamey
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="1" data-categories="ValPar.CH,Ecosystem service modelling,Land use change modelling,Species distribution modelling" data-listing-date-sort="1656712800000" data-listing-file-modified-sort="1672841718832" data-listing-reading-time-sort="0.185">
+<div class="thumbnail">
+<p><a href="./presentations/2022_07_01_IEMSs_ValParCH_pres/index.html"> <img src="./presentations/2022_07_01_IEMSs_ValParCH_pres/modelling.jpg" class="thumnail-image" alt="Model integration workflow"> </a></p>
+</div>
+<div class="body">
+<a href="./presentations/2022_07_01_IEMSs_ValParCH_pres/index.html">
+<h3 class="no-anchor listing-title">
+ValPar.CH: Integrating land use change, Ecosystem Service and Biodiversity modelling to simulate pathways for a functioning Ecological Infrastructure for Switzerland.
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('ValPar.CH'); return false;">
+ValPar.CH
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Ecosystem service modelling'); return false;">
+Ecosystem service modelling
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Land use change modelling'); return false;">
+Land use change modelling
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Species distribution modelling'); return false;">
+Species distribution modelling
+</div>
+</div>
+<a href="./presentations/2022_07_01_IEMSs_ValParCH_pres/index.html">
+<div class="listing-description">
+<p>A presentation given at the 11th International Environmental Modelling and Software Society conference.</p>
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="./presentations/2022_07_01_IEMSs_ValParCH_pres/index.html">
+<div class="listing-date">
+Jul 2, 2022
+</div>
+<div class="listing-author">
+Ben Black, Antoine Adde, Nathan Külling, Adrienne Grêt-Regamey, Antoine Guisan, Anthony Lehmann
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="2" data-categories="Feature selection,Random Forests,Land use change modelling" data-listing-date-sort="1656626400000" data-listing-file-modified-sort="1672744391461" data-listing-reading-time-sort="0.215">
+<div class="thumbnail">
+<p><a href="./presentations/2022_07_01_IEMSs_model_pres/index.html"> <img src="./presentations/2022_07_01_IEMSs_model_pres/workflow.jpg" class="thumnail-image" alt="Feature selection workflow"> </a></p>
+</div>
+<div class="body">
+<a href="./presentations/2022_07_01_IEMSs_model_pres/index.html">
+<h3 class="no-anchor listing-title">
+Combining filter and embedded approaches to improve variable selection in land use change Cellular Automata models
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Feature selection'); return false;">
+Feature selection
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Random Forests'); return false;">
+Random Forests
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Land use change modelling'); return false;">
+Land use change modelling
+</div>
+</div>
+<a href="./presentations/2022_07_01_IEMSs_model_pres/index.html">
+<div class="listing-description">
+<p>A presentation given at the 11th International Environmental Modelling and Software Society conference.</p>
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="./presentations/2022_07_01_IEMSs_model_pres/index.html">
+<div class="listing-date">
+Jul 1, 2022
+</div>
+<div class="listing-author">
+Ben Black
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="3" data-categories="ValPar.CH,Bayesian Networks,Ecological Infrastructure" data-listing-date-sort="1623189600000" data-listing-file-modified-sort="1672841673745" data-listing-reading-time-sort="0.195">
+<div class="thumbnail">
+<p><a href="./presentations/2021_06_09_ESP/index.html"> <img src="./presentations/2021_06_09_ESP/EI_pathways.png" class="thumnail-image" alt="Pathways for Ecological Infrastructure development"> </a></p>
+</div>
+<div class="body">
+<a href="./presentations/2021_06_09_ESP/index.html">
+<h3 class="no-anchor listing-title">
+Ex-ante identification of policy interventions to secure a functioning ecological infrastructure: A participatory Bayesian Network approach in Switzerland
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('ValPar.CH'); return false;">
+ValPar.CH
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Bayesian Networks'); return false;">
+Bayesian Networks
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Ecological Infrastructure'); return false;">
+Ecological Infrastructure
+</div>
+</div>
+<a href="./presentations/2021_06_09_ESP/index.html">
+<div class="listing-description">
+<p>A presentation given at the 3rd Ecosystem Services Partnership Europe Regional conference in Tartu, Estonia</p>
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="./presentations/2021_06_09_ESP/index.html">
+<div class="listing-date">
+Jun 9, 2021
+</div>
+<div class="listing-author">
+Ben Black, Adrienne Grêt-Regamey
+</div>
+</a>
+</div>
+</div>
 </div>
 <div class="listing-no-matching d-none">
 No matching items

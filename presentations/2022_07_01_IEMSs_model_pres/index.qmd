@@ -1,0 +1,18 @@
+---
+title: Combining filter and embedded approaches to improve variable selection in land use change Cellular Automata models                      
+description: A presentation given at the 11th International Environmental Modelling and Software Society conference.                                         
+event: Presentation
+location: Brussels, Belgium
+date: "2022-07-01"
+image: workflow.jpg
+image-height: 12000px
+image-alt: Feature selection workflow
+citation:
+  url: https://blenback.github.io/presentations/2022_07_01_IEMSs_model_pres
+categories:
+- Feature selection
+- Random Forests
+- Land use change modelling
+---
+
+[These are the slides](modelling_pres.pdf) for a presentation I gave on the application of feature selection as part of calibration of land use change cellular automata at the11th International Environmental Modelling and Software Society (IEMSs) 2022 conference. The presentation abstract is available on [here.](https://www.researchgate.net/publication/361951375_Combining_filter_and_embedded_approaches_to_improve_variable_selection_in_land_use_change_Cellular_Automata_models_using_Random_Forests)
