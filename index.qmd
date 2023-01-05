@@ -25,6 +25,8 @@ about:
 
 <!--# Note: Fontawesome and Schotastics quarto extensions required for icons. -->
 
+<link rel="Ben Black" href="https://plus.google.com/u/0/109859280204979591787/posts"/>
+
 ## Hi there!
 
 I'm Ben, a PhD student currently working within the [ValPar.CH](https://valpar.ch/index_de.php) project as part of the research group [Planning of Landscape Urban Systems (PLUS)](https://plus.ethz.ch/) at ETH Zürich.

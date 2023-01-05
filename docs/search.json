@@ -11,7 +11,7 @@
     "href": "index.html",
     "title": "Benjamin Black",
     "section": "",
-    "text": "I’m Ben, a PhD student currently working within the ValPar.CH project as part of the research group Planning of Landscape Urban Systems (PLUS) at ETH Zürich.\nI’m a BIG fan of R stats for everything research related particularly for promoting open science and reproducibility. I started this site/blog to share some of my work that doesn’t necessarily make it into publications in the hope that others will find it useful. Thanks for stopping by!"
+    "text": "## Hi there!\nI’m Ben, a PhD student currently working within the ValPar.CH project as part of the research group Planning of Landscape Urban Systems (PLUS) at ETH Zürich.\nI’m a BIG fan of R stats for everything research related particularly for promoting open science and reproducibility. I started this site/blog to share some of my work that doesn’t necessarily make it into publications in the hope that others will find it useful. Thanks for stopping by!"
   },
   {
     "objectID": "index.html#education",
@@ -75,5 +75,12 @@
     "title": "Publications",
     "section": "",
     "text": "Black, B., Strien, M.J. van, Adde, A., Grêt-Regamey, A., 2023. Re-considering the status quo: Improving calibration of land use change models through validation of transition potential predictions. Environmental Modelling & Software 159, 105574. https://doi.org/10.1016/j.envsoft.2022.105574\n  Preprint    Data/Code    Cite \n\n\nBlack, B., Anthony, B.P., 2022. Counterfactual assessment of protected area avoided deforestation in Cambodia: Trends in effectiveness, spillover effects and the influence of establishment date. Global Ecology and Conservation 38, e02228. https://doi.org/10.1016/j.gecco.2022.e02228\n  Data/Code    Cite"
+  },
+  {
+    "objectID": "index.html#hi-there",
+    "href": "index.html#hi-there",
+    "title": "Benjamin Black",
+    "section": "Hi there!",
+    "text": "Hi there!\nI’m Ben, a PhD student currently working within the ValPar.CH project as part of the research group Planning of Landscape Urban Systems (PLUS) at ETH Zürich.\nI’m a BIG fan of R stats for everything research related particularly for promoting open science and reproducibility. I started this site/blog to share some of my work that doesn’t necessarily make it into publications in the hope that others will find it useful. Thanks for stopping by!"
   }
 ]
