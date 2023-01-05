@@ -5,6 +5,14 @@ project:
 website:
   title: "Benjamin Black"
   search: TRUE #add search bar
+  twitter-card:
+    card-style: "summary_large_image"
+    creator: "@Blen_Back"
+    site: "@Blen_Back"
+  open-graph: true
+  google-analytics:
+    tracking-id: "G-9CCC34ZV10"
+    anonymize-ip: true
   page-footer:
     left: |
       {{< fa regular copyright >}} Benjamin Black, 2022<br>

@@ -25,7 +25,7 @@ about:
 
 <!--# Note: Fontawesome and Schotastics quarto extensions required for icons. -->
 
-<link rel="Ben Black" href="https://plus.google.com/u/0/109859280204979591787/posts"/>
+
 
 ## Hi there!
 
