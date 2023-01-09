@@ -1,3 +1,5 @@
+/*-- scss:defaults --*/
+
 // Variables
 //
 // Variables should follow the `$component-state-property-size` formula for
@@ -48,6 +50,16 @@ $teal:    #20c997 !default;
 $cyan:    #0dcaf0 !default;
 // scss-docs-end color-variables
 
+// Colors
+$light-sage-green: #D1D9CE;
+$dark-sage-green: #98A08D;
+$cream: #FDFBF7;
+$gray: #64605f;
+$light-gray: #949799;
+$purple: #AE8BD1;
+$beige: #858066; 
+$off-white: #F7F7F7;
+
 // scss-docs-start colors-map
 $colors: (
   "blue":       $blue,
@@ -67,8 +79,19 @@ $colors: (
 ) !default;
 // scss-docs-end colors-map
 
-/*-- scss:defaults --*/
-$primary:  #06436e !default;
-$font-family-base: 'Roboto slab',  'Source Sans Pro',  'Lato', 'Merriweather', 'Roboto Regular', 'Cabin Regular' !default;
-$body-color: $gray-700 !default;
-$headings-font-family:  'Roboto slab','Prata', 'Roboto', 'Playfair Display', 'Montserrat'    !default;
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nixie+One&family=Raleway&display=swap');
+
+// Base document colors
+$body-color: $gray-900 !default;
+$body-bg: #27374F0A; // page background 
+$footer-bg: $light-sage-green; // footer 
+
+// Inline code
+$code-bg: $cream; // inline code background color
+$code-color: $purple; // inline code text color
+
+// Code blocks
+$code-block-bg: $cream; // code block background color
+

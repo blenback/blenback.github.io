@@ -9,23 +9,9 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Benjamin Black",
+    "title": "Ben<br>Black",
     "section": "",
-    "text": "I’m Ben, a PhD student currently working within the ValPar.CH project as part of the research group Planning of Landscape Urban Systems (PLUS) at ETH Zürich.\nI’m a BIG fan of R stats for everything research related particularly for promoting open science and reproducibility. I started this site/blog to share some of my work that doesn’t necessarily make it into publications in the hope that others will find it useful. Thanks for stopping by!"
-  },
-  {
-    "objectID": "index.html#education",
-    "href": "index.html#education",
-    "title": "Benjamin Black",
-    "section": "Education",
-    "text": "Education\n PhD in chair of Planning of Landscape and Urban systems | ETH Zürich | 2020 - Present\n MSc in Environmental Sciences, Policy and Management (MESPOM) | Central European University, University of Manchester, Lund University, University of the Aegean | 2018 - 2020\n BSc with 1st Class Honours in Biological Sciences | Edinburgh Napier University | 2010 - 2014"
-  },
-  {
-    "objectID": "index.html#experience",
-    "href": "index.html#experience",
-    "title": "Benjamin Black",
-    "section": "Experience",
-    "text": "Experience\n Student Affairs Manager | The School for Field Studies Center for Conservation and Development Studies in the Lower Mekong | 2018\n Project Manager | Elephant Livelihood Initiatives and Environment (E.L.I.E) | 2015 - 2017"
+    "text": "Ben Black\n\n\nDoctoral Researcher\n\n\n      \n\n\n\n\nHi there!\n\nI’m Ben, a PhD student currently working within the ValPar.CH project as part of the research group Planning of Landscape Urban Systems (PLUS) at ETH Zürich.\nI’m a BIG fan of R stats for everything research related particularly for promoting open science and reproducibility. I started this site/blog to share some of my work that doesn’t necessarily make it into publications in the hope that others will find it useful. Thanks for stopping by!  \n\n\nExperience\n\n\n\n\n\nStudent Affairs Manager, 2018\n\n\nThe School for Field Studies Center for Conservation and Development Studies in the Lower Mekong\n\n\n\n\n\n\n\n\nProject Manager 2015 - 2017\n\n\nElephant Livelihood Initiatives and Environment (E.L.I.E)\n\n\n\n\nEducation\n\n\n\n\n\nPhD in Planning of Landscape and Urban Systems, 2020-Present\n\n\nETH Zürich\n\n\n\n\n\n\n\n\nMSc in Environmental Sciences, Policy and Management, 2020\n\n\nCentral European University, University of Manchester, Lund University, University of the Aegean\n\n\n\n\n\n\n\n\nBSc with 1st Class Honours in Biological Sciences, 2014\n\n\nEdinburgh Napier University"
   },
   {
     "objectID": "posts.html",
@@ -75,12 +61,5 @@
     "title": "Publications",
     "section": "",
     "text": "Black, B., Strien, M.J. van, Adde, A., Grêt-Regamey, A., 2023. Re-considering the status quo: Improving calibration of land use change models through validation of transition potential predictions. Environmental Modelling & Software 159, 105574. https://doi.org/10.1016/j.envsoft.2022.105574\n  Preprint    Data/Code    Cite \n\n\nBlack, B., Anthony, B.P., 2022. Counterfactual assessment of protected area avoided deforestation in Cambodia: Trends in effectiveness, spillover effects and the influence of establishment date. Global Ecology and Conservation 38, e02228. https://doi.org/10.1016/j.gecco.2022.e02228\n  Data/Code    Cite"
-  },
-  {
-    "objectID": "index.html#hi-there",
-    "href": "index.html#hi-there",
-    "title": "Benjamin Black",
-    "section": "Hi there!",
-    "text": "Hi there!\nI’m Ben, a PhD student currently working within the ValPar.CH project as part of the research group Planning of Landscape Urban Systems (PLUS) at ETH Zürich.\nI’m a BIG fan of R stats for everything research related particularly for promoting open science and reproducibility. I started this site/blog to share some of my work that doesn’t necessarily make it into publications in the hope that others will find it useful. Thanks for stopping by!"
   }
 ]

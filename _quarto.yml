@@ -3,7 +3,7 @@ project:
   output-dir: docs
 
 website:
-  title: "Benjamin Black"
+  title: "Ben<br>Black"
   search: TRUE #add search bar
   twitter-card:
     card-style: "summary_large_image"
@@ -23,10 +23,11 @@ website:
   navbar:
     #logo: logo.jpg
     #title: false
-    left:
-      - href: index.qmd
-        text: Home
-        aria-label: "Home"
+    #left:
+      #- href: index.qmd
+        #text: Home
+        #aria-label: "Home"
+    right:
       - href: about.qmd
         aria-label: "About"
       - href: publications.qmd
@@ -38,7 +39,6 @@ website:
       - text: CV
         href: media/Benjamin_black_CV.pdf
         aria-label: "CV"
-    right: 
       - text: "{{< fa solid envelope >}}"
         href: mailto:bblack@ethz.ch
         aria-label: "Email"
@@ -52,12 +52,16 @@ website:
 
 format:
   html:
-    theme: sandstone
-    mainfont: Lato light
+    theme: 
+    #- sandstone #basic theme
+    - custom_theme.scss #add custom scss inputs
+    mainfont: Raleway
     margin-left: 0.5em
-    css: styles.css
+    css: css/styles.css #use css components from Maya gans
     toc: true
     max-width: 1800px
+    metadata:
+      pagetitle: "Ben Black"
 
 editor: visual
 
