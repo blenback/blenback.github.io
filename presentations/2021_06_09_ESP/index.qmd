@@ -1,6 +1,6 @@
 ---
 title: "Ex-ante identification of policy interventions to secure a functioning ecological infrastructure: A participatory Bayesian Network approach in Switzerland"
-description: A presentation given at the 3rd Ecosystem Services Partnership Europe Regional conference in Tartu, Estonia
+description: 3rd Ecosystem Services Partnership Europe Regional conference in Tartu, Estonia
 author: Ben Black, Adrienne Grêt-Regamey
 event: Presentation
 location: Tartu, Estonia

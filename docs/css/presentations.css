@@ -1,0 +1,21 @@
+p > a:after {
+   content: none!important;
+}
+
+p > a:before {
+   content: none!important;
+}
+
+.listing-description {
+  font-style: italic;
+  padding-top: 10px;
+}
+
+.quarto-post.image-right{
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.listing-title{
+  padding-bottom: 10px;
+}

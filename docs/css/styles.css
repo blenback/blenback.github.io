@@ -1,6 +1,9 @@
 /* css styles */
+
+/*Import main font*/
 @import url('https://fonts.googleapis.com/css2?family=Nixie+One&family=Raleway&display=swap');
 
+/*Set up primary colours as variables*/
 :root {
   --background-pink: #C8D4C3;
   --accent-colour: #3B5C3E;
@@ -10,11 +13,32 @@
   --main-font: 'Raleway';
 }
 
+/*Header styling*/
 #quarto-header nav {
   padding-left: 0em !important;
   padding-right: 0em !important;
 }
 
+/*page title styling*/
+.quarto-title{
+  padding-top: 30px;
+}
+
+/*styling for listing page category objects*/
+.listing-category {
+  background: var(--accent-colour) !important;
+    color: white !important;
+    border-radius: 45px !important;
+    padding: 3px 8px !important;
+    text-align: center !important;
+    width: max-content !important;
+    display: inline !important;
+    margin-right: 8px !important;
+    border: 0px solid white !important;
+    opacity: 0.6;
+}
+
+/*styling for general quarto category objects*/
 .quarto-category {
   background: var(--accent-colour) !important;
     color: white !important;
@@ -49,10 +73,10 @@ header nav {
     height: 120px;
 }
 
+/* Navbar background styling*/
 .navbar {
     background-color: white;
     box-shadow: 0 0 50px rgb(252 252 252 / 76%);
-    background-image: linear-gradient(to bottom,white,white,#fffff7,#fffff7ed,white)!important;
     min-height: 100px!important;
     position: fixed;
     width: 100%;
@@ -79,9 +103,10 @@ header nav {
 
 .navbar #quarto-search.type-overlay .aa-Autocomplete svg.aa-SubmitIcon {
   display: true;
-  color: var(--text-colour) !important;
+  color: var(--accent-colour) !important;
 }
 
+/*navbar background styling*/
 .navbar {
     background-color: white;
     box-shadow: 0 0 50px rgba(252, 252, 252, 0.76);
@@ -108,6 +133,7 @@ a.nav-link {
     color: var(--accent-colour) !important;
 }
 
+/*navbar link positioning*/
 .navbar-brand, .navbar-nav li.nav-item a.nav-link {
     height: inherit;
     line-height: 30px !important;
@@ -115,6 +141,7 @@ a.nav-link {
     padding-bottom: 5px !important;
 }
 
+/*navbar link underling*/
 a.nav-link,
 a.nav-link:after,
 a.nav-link:before {
@@ -125,6 +152,7 @@ a.nav-link {
   position: relative;
 }
 
+/*navbar link underlining*/
 a.nav-link:after {
   position: absolute;
   bottom: 0;
@@ -138,6 +166,7 @@ a.nav-link:after {
   height: 2px;
 }
 
+/*navbar link underlining*/
 a.nav-link:hover:after {
   width: 70%;
 }
@@ -146,6 +175,7 @@ a.nav-link:hover:after {
     color: var(--accent-colour) !important;
 }
 
+/*navbar collapsing with page width functionality*/
 .navbar-dark .navbar-toggler-icon {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='gray' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
     margin-right: 50px;
@@ -167,6 +197,7 @@ ul.share li a {
     background-color: var(--highlight-colour);
 }
 
+/* link hover underlining*/
 p > a::before {
   content: "";
   position: absolute;
@@ -180,14 +211,22 @@ p > a::before {
   transition: all 0.3s ease-in-out 0s;
 }
 
+/* style nav bar icons using the specific i class*/
+li.nav-item i {
+  color: var(--accent-colour)!important;
+}
+
+/* link colour*/
 a {
   color: var(--accent-colour);
 }
 
+/* link hover colour*/
 a:hover {
   color: var(--accent-colour);
 }
 
+/* link hover underlining*/
 p > a:hover::before {
   visibility: visible;
   transform: scaleX(1);

@@ -1,10 +1,10 @@
 ---
 title: Combining filter and embedded approaches to improve variable selection in land use change Cellular Automata models                      
-description: A presentation given at the 11th International Environmental Modelling and Software Society conference.                                         
+description: 11th International Environmental Modelling and Software Society conference.                                         
 event: Presentation
 location: Brussels, Belgium
 date: "2022-07-01"
-image: workflow.jpg
+image: workflow.png
 image-height: 12000px
 image-alt: Feature selection workflow
 citation:

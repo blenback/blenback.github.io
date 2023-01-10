@@ -23,6 +23,7 @@ section {
  padding-left: 15px;
  margin-right: auto;
  margin-left: auto;
+ margin-bottom: auto;
  justify-content: center;
  align-items: center;
 }
@@ -50,8 +51,6 @@ section {
   a {
   color: var(--accent-colour);
   text-decoration:none;
-  padding-top: 20px;
-  padding-left: 10px;
 }
 
 /* Link hover behaviour */
@@ -59,10 +58,16 @@ a:hover {
   fill: var(--highlight-colour);
 }
 
+/*add padding around font awesome icons of class fa-2x as used for my social icons*/
+.fa-2x {
+  padding-top: 30px;
+  padding-left: 7px;
+  padding-right: 7px;
+}
+
 /* icon styling */
  i {
   color: var(--accent-colour);
-  text-decoration:none;
 }
 
 /* icon styling as part of education-element */
@@ -119,7 +124,11 @@ a:hover {
 
 .img-bio h2 {
   font-size: 2.3rem !important;
-  text-decoration:none !importantimportant;
+  text-decoration:none !important;
+}
+
+.img-bio h3 {
+  font-style: italic;
 }
 
 .anchorjs-link {
@@ -165,18 +174,22 @@ body .page-columns {
 a {
   color: var(--accent-colour);
   text-decoration:none;
-  padding-top: 20px;
-  padding-left: 10px;
 }
 
 a:hover {
   fill: var(--highlight-colour);
 }
 
+/*add padding around font awesome icons of class fa-2x as used for my social icons*/
+.fa-2x {
+  padding-top: 30px;
+  padding-left: 7px;
+  padding-right: 7px;
+}
+
 /* static icon styling*/
 i {
-  color: var(--accent-colour);
-  text-decoration:none;
+  color: var(--accent-colour)!important;
 }
 
 .icon {

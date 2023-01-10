@@ -1,11 +1,11 @@
 ---
 title: "ValPar.CH: Integrating land use change, Ecosystem Service and Biodiversity modelling to simulate pathways for a functioning Ecological Infrastructure for Switzerland."
-description: A presentation given at the 11th International Environmental Modelling and Software Society conference.
+description: 11th International Environmental Modelling and Software Society conference.
 author: Ben Black, Antoine Adde, Nathan Külling, Adrienne Grêt-Regamey, Antoine Guisan, Anthony Lehmann
 event: Presentation
 location: Brussels, Belgium
 date: "2022-07-02"
-image: modelling.jpg
+image: modelling.png
 image-alt: Model integration workflow
 citation:
   url: http://dx.doi.org/10.13140/RG.2.2.20111.66720
