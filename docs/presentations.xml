@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>Ben&lt;br&gt;Black</title>
+<link>https://blenback.github.io/presentations.html</link>
+<atom:link href="https://blenback.github.io/presentations.xml" rel="self" type="application/rss+xml"/>
+<description></description>
+<generator>quarto-1.2.269</generator>
+<lastBuildDate>Mon, 12 Sep 2022 22:00:00 GMT</lastBuildDate>
+<item>
+  <title>Characterising non-stationarity in predictive models of land use in Swiss mountain parks to inform scenarios for deliberative transformation.</title>
+  <dc:creator>Ben Black, Sergio Wicki, Adrienne Grêt-Regamey</dc:creator>
+  <link>https://blenback.github.io/presentations/2022_09_13_IMC/index.html</link>
+  <description><![CDATA[ 
+
+
+
+<p><a href="IMC_pres.pdf">These are the slides</a> for a presentation I gave on quantifying non-stationarity in predictive models of land use change at the International Mountain Conference in Innsbruck 2022. The abstract is available <a href="http://dx.doi.org/10.13140/RG.2.2.26822.55367">here.</a></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://blenback.github.io/presentations/2022_09_13_IMC/presenting.jpg" class="img-fluid figure-img" alt="Presentation"></p>
+</figure>
+</div>
+
+
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{black,sergiowicki,adriennegrêt-regamey2022,
+  author = {Ben Black, Sergio Wicki, Adrienne Grêt-Regamey},
+  title = {Characterising Non-Stationarity in Predictive Models of Land
+    Use in {Swiss} Mountain Parks to Inform Scenarios for Deliberative
+    Transformation.},
+  date = {2022-09-13},
+  url = {http://dx.doi.org/10.13140/RG.2.2.26822.55367},
+  langid = {en}
+}
+</code></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-black,sergiowicki,adriennegrêt-regamey2022" class="csl-entry quarto-appendix-citeas">
+Ben Black, Sergio Wicki, Adrienne Grêt-Regamey. 2022.
+<span>“Characterising Non-Stationarity in Predictive Models of Land Use
+in Swiss Mountain Parks to Inform Scenarios for Deliberative
+Transformation.”</span> September 13, 2022. <a href="http://dx.doi.org/10.13140/RG.2.2.26822.55367">http://dx.doi.org/10.13140/RG.2.2.26822.55367</a>.
+</div></div></section></div> ]]></description>
+  <category>Non-stationarity</category>
+  <category>Concept drift</category>
+  <category>Random Forests</category>
+  <category>Land use change modelling</category>
+  <guid>https://blenback.github.io/presentations/2022_09_13_IMC/index.html</guid>
+  <pubDate>Mon, 12 Sep 2022 22:00:00 GMT</pubDate>
+  <media:content url="https://blenback.github.io/presentations/2022_09_13_IMC/concept_drift.png" medium="image" type="image/png" height="66" width="144"/>
+</item>
+<item>
+  <title>ValPar.CH: Integrating land use change, Ecosystem Service and Biodiversity modelling to simulate pathways for a functioning Ecological Infrastructure for Switzerland.</title>
+  <dc:creator>Ben Black, Antoine Adde, Nathan Külling, Adrienne Grêt-Regamey, Antoine Guisan, Anthony Lehmann</dc:creator>
+  <link>https://blenback.github.io/presentations/2022_07_01_IEMSs_ValParCH_pres/index.html</link>
+  <description><![CDATA[ 
+
+
+
+<p><a href="iEMSs_ValPar_pres.pdf">These are the slides</a> for a presentation I gave on the integration of different modelling approaches within the <a href="https://valpar.ch/index_en.php?page=home_en">ValPar.CH</a> project at the 11th International Environmental Modelling and Software Society (IEMSs) 2022 conference. The abstract is available <a href="http://dx.doi.org/10.13140/RG.2.2.20111.66720">here.</a></p>
+
+
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{black,antoineadde,nathankülling,adriennegrêt-regamey,antoineguisan,anthonylehmann2022,
+  author = {Ben Black, Antoine Adde, Nathan Külling, Adrienne
+    Grêt-Regamey, Antoine Guisan, Anthony Lehmann},
+  title = {ValPar.CH: {Integrating} Land Use Change, {Ecosystem}
+    {Service} and {Biodiversity} Modelling to Simulate Pathways for a
+    Functioning {Ecological} {Infrastructure} for {Switzerland.}},
+  date = {2022-07-02},
+  url = {http://dx.doi.org/10.13140/RG.2.2.20111.66720},
+  langid = {en}
+}
+</code></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-black,antoineadde,nathankülling,adriennegrêt-regamey,antoineguisan,anthonylehmann2022" class="csl-entry quarto-appendix-citeas">
+Ben Black, Antoine Adde, Nathan Külling, Adrienne Grêt-Regamey, Antoine
+Guisan, Anthony Lehmann. 2022. <span>“ValPar.CH: Integrating Land Use
+Change, Ecosystem Service and Biodiversity Modelling to Simulate
+Pathways for a Functioning Ecological Infrastructure for
+Switzerland.”</span> July 2, 2022. <a href="http://dx.doi.org/10.13140/RG.2.2.20111.66720">http://dx.doi.org/10.13140/RG.2.2.20111.66720</a>.
+</div></div></section></div> ]]></description>
+  <category>ValPar.CH</category>
+  <category>Ecosystem service modelling</category>
+  <category>Land use change modelling</category>
+  <category>Species distribution modelling</category>
+  <guid>https://blenback.github.io/presentations/2022_07_01_IEMSs_ValParCH_pres/index.html</guid>
+  <pubDate>Fri, 01 Jul 2022 22:00:00 GMT</pubDate>
+  <media:content url="https://blenback.github.io/presentations/2022_07_01_IEMSs_ValParCH_pres/modelling.png" medium="image" type="image/png" height="60" width="144"/>
+</item>
+<item>
+  <title>Combining filter and embedded approaches to improve variable selection in land use change Cellular Automata models</title>
+  <dc:creator>Ben Black</dc:creator>
+  <link>https://blenback.github.io/presentations/2022_07_01_IEMSs_model_pres/index.html</link>
+  <description><![CDATA[ 
+
+
+
+<p><a href="modelling_pres.pdf">These are the slides</a> for a presentation I gave on the application of feature selection as part of calibration of land use change cellular automata at the11th International Environmental Modelling and Software Society (IEMSs) 2022 conference. The presentation abstract is available on <a href="https://www.researchgate.net/publication/361951375_Combining_filter_and_embedded_approaches_to_improve_variable_selection_in_land_use_change_Cellular_Automata_models_using_Random_Forests">here.</a></p>
+
+
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{black2022,
+  author = {Ben Black},
+  title = {Combining Filter and Embedded Approaches to Improve Variable
+    Selection in Land Use Change {Cellular} {Automata} Models},
+  date = {2022-07-01},
+  url = {https://blenback.github.io/presentations/2022_07_01_IEMSs_model_pres},
+  langid = {en}
+}
+</code></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-black2022" class="csl-entry quarto-appendix-citeas">
+Ben Black. 2022. <span>“Combining Filter and Embedded Approaches to
+Improve Variable Selection in Land Use Change Cellular Automata
+Models.”</span> July 1, 2022. <a href="https://blenback.github.io/presentations/2022_07_01_IEMSs_model_pres">https://blenback.github.io/presentations/2022_07_01_IEMSs_model_pres</a>.
+</div></div></section></div> ]]></description>
+  <category>Feature selection</category>
+  <category>Random Forests</category>
+  <category>Land use change modelling</category>
+  <guid>https://blenback.github.io/presentations/2022_07_01_IEMSs_model_pres/index.html</guid>
+  <pubDate>Thu, 30 Jun 2022 22:00:00 GMT</pubDate>
+  <media:content url="https://blenback.github.io/presentations/2022_07_01_IEMSs_model_pres/workflow.png" medium="image" type="image/png" height="44" width="144"/>
+</item>
+<item>
+  <title>Ex-ante identification of policy interventions to secure a functioning ecological infrastructure: A participatory Bayesian Network approach in Switzerland</title>
+  <dc:creator>Ben Black, Adrienne Grêt-Regamey</dc:creator>
+  <link>https://blenback.github.io/presentations/2021_06_09_ESP/index.html</link>
+  <description><![CDATA[ 
+
+
+
+<p><a href="ESP_EU_2021_T5_BBlack.pdf">These are the slides</a> for a presentation I gave on the integration of different modelling approaches within the <a href="https://valpar.ch/index_en.php?page=home_en">ValPar.CH</a> project at the 3rd Ecosystem Services Partnership (ESP) Europe Regional conference in Tartu, Estonia 2021. The abstract is available <a href="http://dx.doi.org/10.13140/RG.2.2.30177.99686">here.</a></p>
+
+
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{black,adriennegrêt-regamey2021,
+  author = {Ben Black, Adrienne Grêt-Regamey},
+  title = {Ex-Ante Identification of Policy Interventions to Secure a
+    Functioning Ecological Infrastructure: {A} Participatory {Bayesian}
+    {Network} Approach in {Switzerland}},
+  date = {2021-06-09},
+  url = {http://dx.doi.org/10.13140/RG.2.2.30177.99686},
+  langid = {en}
+}
+</code></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-black,adriennegrêt-regamey2021" class="csl-entry quarto-appendix-citeas">
+Ben Black, Adrienne Grêt-Regamey. 2021. <span>“Ex-Ante Identification of
+Policy Interventions to Secure a Functioning Ecological Infrastructure:
+A Participatory Bayesian Network Approach in Switzerland.”</span> June
+9, 2021. <a href="http://dx.doi.org/10.13140/RG.2.2.30177.99686">http://dx.doi.org/10.13140/RG.2.2.30177.99686</a>.
+</div></div></section></div> ]]></description>
+  <category>ValPar.CH</category>
+  <category>Bayesian Networks</category>
+  <category>Ecological Infrastructure</category>
+  <guid>https://blenback.github.io/presentations/2021_06_09_ESP/index.html</guid>
+  <pubDate>Tue, 08 Jun 2021 22:00:00 GMT</pubDate>
+  <media:content url="https://blenback.github.io/presentations/2021_06_09_ESP/EI_pathways.png" medium="image" type="image/png" height="108" width="144"/>
+</item>
+</channel>
+</rss>

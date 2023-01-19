@@ -5,7 +5,9 @@ project:
 website:
   title: "Ben<br>Black"
   search: TRUE #add search bar
+  site-url: "https://blenback.github.io/"
   twitter-card:
+    image: "media/preview.png"
     card-style: "summary_large_image"
     creator: "@Blen_Back"
     site: "@Blen_Back"

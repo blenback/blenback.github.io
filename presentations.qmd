@@ -2,7 +2,8 @@
 title: "Presentations"
 #subtitle: "given at academic conferences"
 listing: 
-  contents: presentations # all Quarto docs in the `posts` directory will be included on your listing page
+  contents: presentations # all Quarto docs in the `presentations` directory will be included on your listing page
+  feed: true
   type: default # or `default` or `table`; each type has its own set of yaml options to include
   fields: [date, categories, title, description, image]
   sort: "date desc" # can also sort on more than one field
