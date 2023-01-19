@@ -1,9 +1,27 @@
 ---
-title: "About"
+#title: "About"
+#subtitle: "A little bit more about me outside of work"
+#page-layout: full
+format:
+  html:
+    css: css/about.css
 ---
+<section>
 
-About this site
+<div class="text">
+<h2 style="font-weight:500!important; text-decoration:none;">About</h2>
+</div>
 
-```{r}
-1 + 1
-```
+<div class="picture">
+<div id="cf4a" style="position=sticky;">
+<img src="media/portrait1.jpg"/>
+<img src="media/portrait5.jpg"/>
+<img src="media/portrait3.jpg"/>
+<img src="media/portrait4.jpg"/>
+<img src="media/portrait5.jpg"/>
+</div>
+</div>
+
+</section>
+
+

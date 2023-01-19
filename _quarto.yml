@@ -25,7 +25,8 @@ website:
       - text: Home 
         href: index.qmd
         aria-label: "Home"
-      - href: about.qmd
+      - text: About
+        href: about.qmd
         aria-label: "About"
       - href: publications.qmd
         aria-label: "Publications"

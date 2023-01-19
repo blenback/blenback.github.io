@@ -32,7 +32,7 @@ format:
 <div class="bio">
 <h1>Hi there!</h1>
 
-I'm Ben, a PhD student currently working within the [ValPar.CH](https://valpar.ch/index_de.php) project as part of the research group [Planning of Landscape Urban Systems (PLUS)](https://plus.ethz.ch/) at ETH Zürich.
+I'm Ben, a PhD student currently working within the [ValPar.CH](https://valpar.ch/index_de.php) project as part of the research group Planning of Landscape Urban Systems [(PLUS)](https://plus.ethz.ch/) at ETH Zürich.
 
 I'm a BIG fan of R stats for everything research related particularly for promoting open science and reproducibility. I started this site/blog to share some of my work that doesn't necessarily make it into publications in the hope that others will find it useful. Thanks for stopping by!
 <br>
@@ -41,6 +41,12 @@ I'm a BIG fan of R stats for everything research related particularly for promot
   <div class="interests">
   <span class="activity">Experience</span>
 
+  <div class="education-element">
+  <div class="icon">{{< fa chalkboard-user >}}</div>
+  <div class="degree">Lecturer in Participatory Environmental Modelling, 2021 - Present</div>
+  <div class="school"> ETH Zürich</div>
+  </div>
+  <br>
   <div class="education-element">
   <div class="icon">{{< fa list-check >}}</div>
   <div class="degree">  Student Affairs Manager, 2018 </div>
@@ -60,7 +66,7 @@ I'm a BIG fan of R stats for everything research related particularly for promot
   
 <div class="education-element">
 <div class="icon">{{< fa graduation-cap >}}</div>
-<div class="degree">PhD in Planning of Landscape and Urban Systems, 2020-Present</div>
+<div class="degree">PhD in Planning of Landscape and Urban Systems, 2020 - Present</div>
 <div class="school"> ETH Zürich</div>
 </div>
 <br>

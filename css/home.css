@@ -33,7 +33,7 @@ section {
   margin-right: 30px;
 }
 
-/* Set behaviour for normal screen width viewing */
+/* Set behaviour for phone screen width viewing */
 @media (max-width: 1220px) {
   section {
     margin: 0 auto;
@@ -246,6 +246,6 @@ img {
 
 .img-bio h2 {
   font-size: 2.3rem !important;
-  text-decoration:none !importantimportant;
+  border-bottom: 0px;
 }
-
+}

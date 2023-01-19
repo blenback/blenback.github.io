@@ -110,7 +110,6 @@ header nav {
 .navbar {
     background-color: white;
     box-shadow: 0 0 50px rgba(252, 252, 252, 0.76);
-    background-image: linear-gradient(to bottom,  white,  white,  #fffff7,  #fffff7ed,  white) !important;  
     min-height: 100px !important;
 }
 
@@ -232,14 +231,15 @@ p > a:hover::before {
   transform: scaleX(1);
 }
 
+/*Styling for code blocks*/
 div.sourceCode {
-    background-color: rgba(213, 36, 87,0.2);
-    border: 1px solid rgba(213, 36, 87,0.25);
+    background-color: white;
+    border: 1px solid gray;
     border-radius: 0.25rem;
 }
 
 code span.fu {
-    color: var(--accent-colour);
+    color: var(--text-colour);
 }
 
 code span.st {
@@ -247,9 +247,22 @@ code span.st {
 }
 /*colour for shapes in logo/title*/
 code span.at {
-    color: var(--logo-shape-colour);
+    color: var(--text-colour);
 }
 
 code span.cn {
-    color: var(--background-pink);
+    color: white;
 }
+
+img.rounded { 
+    border-radius: 50px 20px 50px 20px !important;
+}
+
+<style>
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+</style>
