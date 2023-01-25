@@ -1,27 +1,20 @@
 ---
-#title: "About"
+title: "About"
 #subtitle: "A little bit more about me outside of work"
-#page-layout: full
+page-layout: full
+toc: FALSE
 format:
   html:
     css: css/about.css
 ---
-<section>
 
-<div class="text">
-<h2 style="font-weight:500!important; text-decoration:none;">About</h2>
+<h2 style="font-weight:500!important;text-decoration:none;border-bottom:0px!important;">A little bit more about me outside of work</h2>
+
+test test test v v v v test test test test test test test test test
+<div id="fading-image">
+  <img src="media/portrait1.jpg"/>
+  <img src="media/portrait5.jpg"/>
+  <img src="media/portrait3.jpg"/>
+  <img src="media/portrait5.jpg"/>
+  <img src="media/portrait2.jpg"/>
 </div>
-
-<div class="picture">
-<div id="cf4a" style="position=sticky;">
-<img src="media/portrait1.jpg"/>
-<img src="media/portrait5.jpg"/>
-<img src="media/portrait3.jpg"/>
-<img src="media/portrait4.jpg"/>
-<img src="media/portrait5.jpg"/>
-</div>
-</div>
-
-</section>
-
-

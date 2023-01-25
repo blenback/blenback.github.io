@@ -1,7 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://blenback.github.io/about.html</loc>
+    <lastmod>2023-01-25T08:57:38.145Z</lastmod>
+  </url>
+  <url>
+    <loc>https://blenback.github.io/index.html</loc>
+    <lastmod>2023-01-25T08:03:38.317Z</lastmod>
+  </url>
+  <url>
+    <loc>https://blenback.github.io/posts.html</loc>
+    <lastmod>2023-01-25T08:03:38.762Z</lastmod>
+  </url>
+  <url>
+    <loc>https://blenback.github.io/presentations/2021_06_09_ESP/index.html</loc>
+    <lastmod>2023-01-25T08:03:39.351Z</lastmod>
+  </url>
+  <url>
+    <loc>https://blenback.github.io/presentations/2022_07_01_IEMSs_model_pres/index.html</loc>
+    <lastmod>2023-01-25T08:03:39.870Z</lastmod>
+  </url>
+  <url>
+    <loc>https://blenback.github.io/presentations/2022_07_01_IEMSs_ValParCH_pres/index.html</loc>
+    <lastmod>2023-01-25T08:03:40.402Z</lastmod>
+  </url>
+  <url>
+    <loc>https://blenback.github.io/presentations/2022_09_13_IMC/index.html</loc>
+    <lastmod>2023-01-25T08:03:40.944Z</lastmod>
+  </url>
+  <url>
     <loc>https://blenback.github.io/presentations.html</loc>
-    <lastmod>2023-01-19T12:46:44.350Z</lastmod>
+    <lastmod>2023-01-25T08:03:41.462Z</lastmod>
+  </url>
+  <url>
+    <loc>https://blenback.github.io/publications.html</loc>
+    <lastmod>2023-01-25T08:03:41.874Z</lastmod>
+  </url>
+  <url>
+    <loc>https://blenback.github.io/resources.html</loc>
+    <lastmod>2023-01-25T08:03:42.274Z</lastmod>
   </url>
 </urlset>
