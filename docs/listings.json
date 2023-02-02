@@ -1,9 +1,5 @@
 [
   {
-    "listing": "/posts.html",
-    "items": []
-  },
-  {
     "listing": "/presentations.html",
     "items": [
       "/presentations/2022_09_13_IMC/index.html",

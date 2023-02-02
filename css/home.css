@@ -150,7 +150,7 @@ a:hover {
 /* site display at smaller widths i.e. mobile browsing */
 @media (min-width: 992px) {
 body .page-columns {
-  display: block;
+  display: inline;
 }
 
 /* photo styling */

@@ -30,6 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -60,6 +62,35 @@ ul.task-list li input[type="checkbox"] {
     "search-submit-button-title": "Submit"
   }
 }</script>
+<script>
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-categories"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-9CCC34ZV10"></script>
 
 <script type="text/javascript">
@@ -70,14 +101,12 @@ gtag('js', new Date());
 gtag('config', 'G-9CCC34ZV10', { 'anonymize_ip': true});
 </script>
 
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="css/styles.css">
-<link rel="stylesheet" href="css/about.css">
 <meta property="og:title" content="Ben Black">
-<meta property="og:description" content="I thought I would share a little bit more about myself and how I’ve arrived at doing what I do.">
 <meta property="og:site-name" content="Ben<br>Black">
 <meta name="twitter:title" content="Ben Black">
-<meta name="twitter:description" content="I thought I would share a little bit more about myself and how I’ve arrived at doing what I do.">
 <meta name="twitter:image" content="https://blenback.github.io/media\preview.png">
 <meta name="twitter:creator" content="@Blen_Back">
 <meta name="twitter:site" content="@Blen_Back">
@@ -107,7 +136,7 @@ gtag('config', 'G-9CCC34ZV10', { 'anonymize_ip': true});
  <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./about.html" aria-current="page">
+    <a class="nav-link" href="./about.html">
  <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
@@ -119,7 +148,7 @@ gtag('config', 'G-9CCC34ZV10', { 'anonymize_ip': true});
  <span class="menu-text">Presentations</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./posts.html">
+    <a class="nav-link active" href="./posts.html" aria-current="page">
  <span class="menu-text">Posts</span></a>
   </li>  
   <li class="nav-item">
@@ -145,16 +174,18 @@ gtag('config', 'G-9CCC34ZV10', { 'anonymize_ip': true});
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(0)</span></div></div></div>
 <!-- main -->
-<main class="content column-page" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">About</h1>
+<h1 class="title">Posts</h1>
 </div>
 
 
@@ -169,18 +200,18 @@ gtag('config', 'G-9CCC34ZV10', { 'anonymize_ip': true});
 
 </header>
 
-<div id="fading-image">
-<p><img src="media/portrait1.jpg"> <img src="media/portrait5.jpg"> <img src="media/portrait3.jpg"> <img src="media/portrait5.jpg"> <img src="media/portrait2.jpg"></p>
+
+
+
+
+<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
+<div class="list grid quarto-listing-cols-3">
+
 </div>
-<p>I thought I would share a little bit more about myself and how I’ve arrived at doing what I do. I would say that my route towards starting a PhD as a little bit unconventional, in fact I hadn’t seriously considered it as an option until 3 months before I applied when a mentor told me they thought I might suit it.</p>
-<p>Following my Bachelors degree, I spent 5 years working in what I would loosely call ‘practical conservation’. First for a charity called The Conservation Volunteers (TCV) in Scotland, leading groups of volunteers working on a range of projects from Peatland restoration and woodland management to constructing gardens in schools. Then taking a step into the unknown with a job at a small eco-tourism, conservation and community development NGO, Elephant Livelihood Initiative Environment, in rural North-Eastern Cambodia.</p>
-<p>In Cambodia, I saw first hand the reality of implementing environmental conservation programs in Protected areas and was really motivated to move towards a career in conservation practice which led to short periods of work with the World Wide Fund for Nature (WWF) and the Wildlife Conservation Society (WCS). However, I knew that to continue in this field I would need to at least get a Masters degree.</p>
-<p>In 2018, I was lucky enough to be accepted into EU an Erasmus Mundus 2-year Masters program in Environmental Science Policy and Management. This started in Budapest in Hungary for the first 9 months before relocating to the island of Lesvos in Greece and then Manchester in the UK. I chose to write my thesis back in Budapest just in time for the start of the pandemic.</p>
-<p>Entering the job market as a fresh graduate in the summer of 2020 was daunting but myself and my partner were fortunate enough to both find PhD positions in Zürich. What really drew me to my position was that I would be working as part of a research project funded by the Federal Government with applied outcomes for environmental protection in Switzerland. Two years on and I can safely say that it was one of the best decisions I have made, I am part of a supportive research group with an inspiring supervisor and have the opportunity to mentor and pass on knowledge to others.</p>
-
-
-
-</main> <!-- /main -->
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

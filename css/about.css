@@ -8,20 +8,24 @@
   margin: 0 auto;
   width: 100%;
   overflow: hidden;
-  padding-right: 30px;
   position: relative;
   padding-bottom: 30px;
   min-height: 600px;
+  height: auto!important;
+  width: auto!important;
+  text-align: center;
 }
 }
 
 /* site display at smaller widths i.e. mobile browsing */
 @media (min-width: 992px) {
+  
 #fading-image {
   margin: 0 auto;
   width: 50%;
   overflow: hidden;
   padding-right: 30px;
+  padding-left: 30px;
   position: relative;
   min-height: 600px;
   float: right;
