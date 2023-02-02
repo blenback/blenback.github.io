@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://blenback.github.io/about.html</loc>
-    <lastmod>2023-02-02T16:48:48.536Z</lastmod>
+    <lastmod>2023-02-02T17:07:28.900Z</lastmod>
   </url>
   <url>
     <loc>https://blenback.github.io/presentations/2021_06_09_ESP/index.html</loc>
@@ -31,5 +31,9 @@
   <url>
     <loc>https://blenback.github.io/resources.html</loc>
     <lastmod>2023-02-02T16:48:40.605Z</lastmod>
+  </url>
+  <url>
+    <loc>https://blenback.github.io/index.html</loc>
+    <lastmod>2023-02-02T17:05:51.697Z</lastmod>
   </url>
 </urlset>
