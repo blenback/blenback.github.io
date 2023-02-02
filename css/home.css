@@ -115,6 +115,18 @@ a:hover {
   
 }
 
+/* photo styling */
+.author-photo {
+ border-radius: 50% !important;
+ margin-bottom: 0px;
+ margin-top: 50px;
+ max-height: 80%;
+ max-width: 80%;
+ width: auto;
+ height: auto;
+ 
+}
+
 }
 
 .img-bio {
