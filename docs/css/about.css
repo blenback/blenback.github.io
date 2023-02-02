@@ -35,6 +35,8 @@
   border-radius: 30px 30px 30px 30px;
 }
 
+/* refer to https://www.devtwins.com/blog/css-cross-fading-images */
+
 #fading-image img {
   -webkit-animation-name: cf4FadeInOut;
   -webkit-animation-timing-function: ease-in-out;
