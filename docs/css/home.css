@@ -146,6 +146,11 @@ body .page-columns {
  border-radius: 50% !important;
  margin-bottom: 0px;
  margin-top: 50px;
+ max-height: 100%;
+ max-width: 100%;
+ width: auto;
+ height: auto;
+ 
 }
 
 /* activity heading styling*/

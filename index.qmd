@@ -13,7 +13,7 @@ format:
 <section>
 
 <div class="img-bio">
-<img src="media/landing_portrait.jpg" alt="photo of Ben Black" class="author-photo"/>
+<img src="media/landing_portrait_cropped.jpg" alt="photo of Ben Black" class="author-photo"/>
 
 <h2 style="font-weight:500!important;text-align:center!important; text-decoration:none;">Ben Black</h2>
 
