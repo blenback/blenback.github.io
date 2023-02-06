@@ -137,6 +137,7 @@ a:hover {
 .img-bio h2 {
   font-size: 2.3rem !important;
   text-decoration:none !important;
+  border-bottom: 0px;
 }
 
 .img-bio h3 {

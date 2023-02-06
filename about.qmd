@@ -8,9 +8,9 @@ format:
     css: css/about.css
 ---
 
-::: {#fading-image}
-<img src="media/portrait1.jpg"/> <img src="media/portrait5.jpg"/> <img src="media/portrait3.jpg"/> <img src="media/portrait5.jpg"/> <img src="media/portrait2.jpg"/>
-:::
+<div id="fading-image" class="resizable-fading-image">
+<img src="media/portrait1.jpg"/> <img src="media/portrait5.jpg"/> <img src="media/portrait3.jpg"/> <img src="media/portrait4.jpg"/> <img src="media/portrait2.jpg"/>
+</div>
 
 I thought I would share a little bit more about how I've arrived at doing what I do as my route towards starting a PhD was somewhat unconventional.
 

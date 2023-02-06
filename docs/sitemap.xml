@@ -2,38 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://blenback.github.io/about.html</loc>
-    <lastmod>2023-02-02T17:07:28.900Z</lastmod>
-  </url>
-  <url>
-    <loc>https://blenback.github.io/presentations/2021_06_09_ESP/index.html</loc>
-    <lastmod>2023-02-02T16:48:34.750Z</lastmod>
-  </url>
-  <url>
-    <loc>https://blenback.github.io/presentations/2022_07_01_IEMSs_model_pres/index.html</loc>
-    <lastmod>2023-02-02T16:48:35.776Z</lastmod>
-  </url>
-  <url>
-    <loc>https://blenback.github.io/presentations/2022_07_01_IEMSs_ValParCH_pres/index.html</loc>
-    <lastmod>2023-02-02T16:48:36.800Z</lastmod>
-  </url>
-  <url>
-    <loc>https://blenback.github.io/presentations/2022_09_13_IMC/index.html</loc>
-    <lastmod>2023-02-02T16:48:37.803Z</lastmod>
-  </url>
-  <url>
-    <loc>https://blenback.github.io/presentations.html</loc>
-    <lastmod>2023-02-02T16:48:38.792Z</lastmod>
-  </url>
-  <url>
-    <loc>https://blenback.github.io/publications.html</loc>
-    <lastmod>2023-02-02T16:48:39.720Z</lastmod>
-  </url>
-  <url>
-    <loc>https://blenback.github.io/resources.html</loc>
-    <lastmod>2023-02-02T16:48:40.605Z</lastmod>
+    <lastmod>2023-02-06T10:22:22.196Z</lastmod>
   </url>
   <url>
     <loc>https://blenback.github.io/index.html</loc>
-    <lastmod>2023-02-02T17:05:51.697Z</lastmod>
+    <lastmod>2023-02-06T09:43:02.711Z</lastmod>
+  </url>
+  <url>
+    <loc>https://blenback.github.io/posts.html</loc>
+    <lastmod>2023-02-06T09:43:03.644Z</lastmod>
+  </url>
+  <url>
+    <loc>https://blenback.github.io/presentations/2021_06_09_ESP/index.html</loc>
+    <lastmod>2023-02-06T09:43:04.731Z</lastmod>
+  </url>
+  <url>
+    <loc>https://blenback.github.io/presentations/2022_07_01_IEMSs_model_pres/index.html</loc>
+    <lastmod>2023-02-06T09:43:05.725Z</lastmod>
+  </url>
+  <url>
+    <loc>https://blenback.github.io/presentations/2022_07_01_IEMSs_ValParCH_pres/index.html</loc>
+    <lastmod>2023-02-06T09:43:06.706Z</lastmod>
+  </url>
+  <url>
+    <loc>https://blenback.github.io/presentations/2022_09_13_IMC/index.html</loc>
+    <lastmod>2023-02-06T09:43:07.690Z</lastmod>
+  </url>
+  <url>
+    <loc>https://blenback.github.io/presentations.html</loc>
+    <lastmod>2023-02-06T09:43:08.656Z</lastmod>
+  </url>
+  <url>
+    <loc>https://blenback.github.io/publications.html</loc>
+    <lastmod>2023-02-06T09:43:09.526Z</lastmod>
+  </url>
+  <url>
+    <loc>https://blenback.github.io/resources.html</loc>
+    <lastmod>2023-02-06T09:43:10.377Z</lastmod>
   </url>
 </urlset>
