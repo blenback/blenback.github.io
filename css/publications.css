@@ -25,3 +25,10 @@
    content: none;
 }
 
+h2 {
+  font-size: 2.3rem !important;
+  text-decoration:none !important;
+  border-bottom: 0px;
+}
+
+
