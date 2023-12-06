@@ -2,6 +2,7 @@
 title: "Publications"
 page-layout: full
 title-block-banner: false
+feed: true
 format: 
   html: 
     css: css/publications.css

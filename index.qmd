@@ -43,7 +43,7 @@ I'm a BIG fan of R stats for everything research related particularly for promot
 
   <div class="education-element">
   <div class="icon">{{< fa chalkboard-user >}}</div>
-  <div class="degree">Lecturer in Participatory Environmental Modelling, 2021 - Present</div>
+  <div class="degree">Lecturer in [Participatory Environmental Modelling](https://irl.ethz.ch/education/courses/msc/participatory_modelling.html), 2021 - Present</div>
   <div class="school"> ETH Zürich</div>
   </div>
   <br>

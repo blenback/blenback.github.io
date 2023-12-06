@@ -1,0 +1,23 @@
+---
+title: Broadening the scope of future visions for nature positive futures in Peru               
+description: Swiss Re Institute Resilience Summit 2023, Zürich, Switzerland.
+author: Benjamin Black
+event: BES Scenarios kick-off meeting
+location: Zürich, Switzerland
+date: "2023-11-30"
+image: workflow.png
+image-height: 12000px
+image-alt: Workflow for Peru project
+citation:
+  url: http://dx.doi.org/10.13140/RG.2.2.34351.10405
+categories: [Future landscape scenarios, Ecosystem Services, Biodiversity, Peru, SwissRE]
+---
+
+These are the slides for the presentation I gave at the Biodiversity and Ecosystem Services Scenario Modelling challenge kick-off event at the Swiss Re Institute Resilience Summit 2023, Zürich, Switzerland. The abstract is available [here.](http://dx.doi.org/10.13140/RG.2.2.34351.10405)
+
+```{=html}
+<div class="embed-container">
+  <p align="center"><iframe src="SwissRE_pres.pdf" style="border: 0.5px" ></iframe
+  /p>
+</div>
+```
