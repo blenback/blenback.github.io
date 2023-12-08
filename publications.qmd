@@ -10,6 +10,12 @@ format:
 
 <br><h3 style="margin:0!important;padding:0!important;text-decoration:none;">Journal Articles</h3>
 
+\
+Wicki, S., **Black, B**., Kurmann, M., Grêt-Regamey, A., 2023. Archetypes of social-ecological-technological systems for managing ecological infrastructure. *Environ. Res. Lett.* 19, 014038. [doi.org/10.1088/1748-9326/ad1080](https://doi.org/10.1088/1748-9326/ad1080)
+
+<a href=media/Archetypes.bib class="btn btn-outline-dark btn-sm" aria-pressed="true" role="button" download=Archetypes.bib> {{< fa solid quotes >}} Cite </a>
+<br>
+
 **\
 Black, B**., Strien, M.J. van, Adde, A., Grêt-Regamey, A., 2023. Re-considering the status quo: Improving calibration of land use change models through validation of transition potential predictions. *Environmental Modelling & Software* 159, 105574. [doi.org/10.1016/j.envsoft.2022.105574](https://doi.org/10.1016/j.envsoft.2022.105574)
 
