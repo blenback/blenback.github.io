@@ -7,6 +7,7 @@ format:
     css: css/publications.css
 listing: 
   - id: Journal-articles
+    feed: true
     template: publication.ejs
     contents:
     - name: Archetypes
@@ -32,6 +33,7 @@ listing:
       Code: https://zenodo.org/record/6554206#.Y7V79ZDYo2w
   - id: Theses
     template: publication.ejs
+    feed: true
     contents:
     - name: MSc
       Authors: <b>Black, B</b>.
