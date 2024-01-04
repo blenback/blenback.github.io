@@ -1,0 +1,17 @@
+/* RobotoSlab-regular - latin */
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url("fonts/static/RobotoSlab-Regular.ttf") format('ttf'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+}
+
+/* RobotoSlab-light - latin */
+@font-face {
+  font-family: 'Roboto Slab light';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url("fonts/static/RobotoSlab-Light.ttf") format('ttf'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+}

@@ -73,9 +73,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-name','listing-Authors','listing-Title','listing-Journal','listing-href','listing-Bibtex','listing-Preprint','listing-Code',{ data: ['index'] },{ data: ['categories'] }],
+      valueNames: ['listing-name','listing-title','listing-Authors','listing-Title','listing-Journal','listing-href','listing-Bibtex','listing-Preprint','listing-Code',{ data: ['index'] },{ data: ['categories'] }],
       
-      searchColumns: ["listing-name","listing-Authors","listing-Title","listing-Journal","listing-href","listing-Bibtex","listing-Preprint","listing-Code"],
+      searchColumns: ["listing-name","listing-title","listing-Authors","listing-Title","listing-Journal","listing-href","listing-Bibtex","listing-Preprint","listing-Code"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -198,6 +198,11 @@ gtag('config', 'G-9CCC34ZV10', { 'anonymize_ip': true});
   <li class="nav-item">
     <a class="nav-link" href="https://twitter.com/Blen_Back" rel="" target="">
  <span class="menu-text"><i class="fa-brands fa-twitter" aria-label="twitter"></i></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="./posts.xml" rel="" target=""><i class="bi bi-rss" role="img">
+</i> 
+ <span class="menu-text"></span></a>
   </li>  
 </ul>
             <div class="quarto-navbar-tools">

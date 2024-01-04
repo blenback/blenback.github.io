@@ -6,6 +6,7 @@ website:
   title: "Ben<br>Black"
   search: TRUE #add search bar
   site-url: "https://blenback.github.io/"
+  description: "Personal website for Ben Black"
   twitter-card:
     image: "media/preview.png"
     card-style: "summary_large_image"
@@ -48,6 +49,8 @@ website:
       - text: "{{< fa brands twitter >}}"
         href: https://twitter.com/Blen_Back
         aria-label: "Twitter"
+      - icon: rss
+        href: posts.xml
   
 
 format:

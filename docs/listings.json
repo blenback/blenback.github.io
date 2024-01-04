@@ -1,11 +1,14 @@
 [
   {
     "listing": "/posts.html",
-    "items": []
+    "items": [
+      "/posts/Peru_announce/Index.html"
+    ]
   },
   {
     "listing": "/presentations.html",
     "items": [
+      "/presentations/2023_16_12_ValPar.CH_closing/ValPar_closing_pres.html",
       "/presentations/2023_11_30_SwissRE/index.html",
       "/presentations/2022_09_13_IMC/index.html",
       "/presentations/2022_07_01_IEMSs_ValParCH_pres/index.html",

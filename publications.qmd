@@ -5,12 +5,13 @@ title-block-banner: false
 format: 
   html: 
     css: css/publications.css
-listing: 
+feed: true
+listing:
   - id: Journal-articles
-    feed: true
     template: publication.ejs
     contents:
     - name: Archetypes
+      title: test
       Authors: Wicki, S., <b>Black, B</b>., Kurmann, M., Grêt-Regamey, A.
       Title: Archetypes of social-ecological-technological systems for managing ecological infrastructure.
       Journal: Environ. Res. Lett.
@@ -33,7 +34,6 @@ listing:
       Code: https://zenodo.org/record/6554206#.Y7V79ZDYo2w
   - id: Theses
     template: publication.ejs
-    feed: true
     contents:
     - name: MSc
       Authors: <b>Black, B</b>.
@@ -47,7 +47,6 @@ listing:
       Journal: Bachelors thesis. Edinburgh Napier University.
       href: https://doi.org/10.13140/RG.2.2.20232.49923
       Bibtex: media/BSc_thesis.bib
-
 ---
 
 <br><h3 style="margin:0!important;padding:0!important;text-decoration:none;">Journal Articles</h3>

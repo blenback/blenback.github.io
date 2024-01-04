@@ -73,9 +73,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-title','listing-author','listing-date','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-categories"],
+      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description","listing-categories"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -106,7 +106,8 @@ gtag('config', 'G-9CCC34ZV10', { 'anonymize_ip': true});
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="css/styles.css">
-<meta property="og:title" content="Ben Black">
+<link rel="alternate" type="application/rss+xml" title="Ben<br>Black" href="posts.xml"><meta property="og:title" content="Ben Black">
+<meta property="og:image" content="https://blenback.github.io/posts/Peru_announce/workflow.png">
 <meta property="og:site-name" content="Ben<br>Black">
 <meta name="twitter:title" content="Ben Black">
 <meta name="twitter:image" content="https://blenback.github.io/media/preview.png">
@@ -170,6 +171,11 @@ gtag('config', 'G-9CCC34ZV10', { 'anonymize_ip': true});
     <a class="nav-link" href="https://twitter.com/Blen_Back" rel="" target="">
  <span class="menu-text"><i class="fa-brands fa-twitter" aria-label="twitter"></i></span></a>
   </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="./posts.xml" rel="" target=""><i class="bi bi-rss" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
 </ul>
             <div class="quarto-navbar-tools">
 </div>
@@ -183,7 +189,7 @@ gtag('config', 'G-9CCC34ZV10', { 'anonymize_ip': true});
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(0)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Biodiversity">Biodiversity <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Ecosystem Services">Ecosystem Services <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Future landscape scenarios">Future landscape scenarios <span class="quarto-category-count">(1)</span></div><div class="category" data-category="NASCENT-Peru">NASCENT-Peru <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Peru">Peru <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Project">Project <span class="quarto-category-count">(1)</span></div><div class="category" data-category="SwissRE">SwissRE <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
@@ -210,7 +216,54 @@ gtag('config', 'G-9CCC34ZV10', { 'anonymize_ip': true});
 
 <div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
 <div class="list grid quarto-listing-cols-3">
-
+<div class="g-col-1" data-index="0" data-categories="Future landscape scenarios,Ecosystem Services,Biodiversity,Peru,SwissRE,Project,NASCENT-Peru" data-listing-date-sort="1701302400000" data-listing-file-modified-sort="1703840600993" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<a href="./posts/Peru_announce/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="./posts/Peru_announce/workflow.png" class="thumbnail-image card-img" style="height: 150px;" alt="Logo for NASCENT-Peru project">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+New research project: NASCENT-Peru
+</h5>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Future landscape scenarios'); return false;">
+Future landscape scenarios
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Ecosystem Services'); return false;">
+Ecosystem Services
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Biodiversity'); return false;">
+Biodiversity
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Peru'); return false;">
+Peru
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('SwissRE'); return false;">
+SwissRE
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Project'); return false;">
+Project
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('NASCENT-Peru'); return false;">
+NASCENT-Peru
+</div>
+</div>
+<div class="card-text listing-description">
+test
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+Benjamin Black
+</div>
+<div class="listing-date">
+Nov 30, 2023
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
 </div>
 <div class="listing-no-matching d-none">
 No matching items

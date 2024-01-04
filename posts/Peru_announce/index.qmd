@@ -1,0 +1,12 @@
+---
+title: "New research project: NASCENT-Peru"
+author: Benjamin Black
+description: test
+date: "2023-11-30"
+image: workflow.png
+image-height: 12000px
+image-alt: Logo for NASCENT-Peru project
+categories: [Future landscape scenarios, Ecosystem Services, Biodiversity, Peru, SwissRE, Project, NASCENT-Peru]
+---
+
+I am excited to be able to announce a new project that I will be working on for the next two years: 
