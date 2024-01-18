@@ -7,7 +7,6 @@ location: Bern, Switzerland
 date: "2024-01-16"
 image: workflow.png
 image-height: 12000px
-image-alt: Workflow for Peru project
 categories: [ValPar.CH, PhD]
 preload-iframes: true
 ---
