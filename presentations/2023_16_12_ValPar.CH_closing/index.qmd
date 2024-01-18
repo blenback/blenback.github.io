@@ -5,7 +5,7 @@ author: Benjamin Black
 event: ValPar.CH closing event
 location: Bern, Switzerland
 date: "2024-01-16"
-image: workflow.png
+image: Pres_image.png
 image-height: 12000px
 categories: [ValPar.CH, PhD]
 preload-iframes: true
