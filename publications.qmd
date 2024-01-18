@@ -5,48 +5,19 @@ title-block-banner: false
 format: 
   html: 
     css: css/publications.css
-feed: true
 listing:
   - id: Journal-articles
     template: publication.ejs
+    feed: 
+      type: full
+      title: Journal articles
+      description: Journal articles 
     contents:
-    - name: Archetypes
-      title: test
-      Authors: Wicki, S., <b>Black, B</b>., Kurmann, M., Grêt-Regamey, A.
-      Title: Archetypes of social-ecological-technological systems for managing ecological infrastructure.
-      Journal: Environ. Res. Lett.
-      href: https://doi.org/10.1088/1748-9326/ad1080
-      Bibtex: media/Archetypes.bib
-    - name: ICoLCM
-      Authors: <b>Black, B</b>., Strien, M.J. van, Adde, A., Grêt-Regamey, A.
-      Title: "Re-considering the status quo: Improving calibration of land use change models through validation of transition potential predictions."
-      Journal: Environmental Modelling & Software
-      href: https://doi.org/10.1016/j.envsoft.2022.105574
-      Bibtex: media/ICoLCM.bib
-      Preprint: https://dx.doi.org/10.2139/ssrn.4219023
-      Code: https://zenodo.org/record/6912914#.Y7V4mZDYo2w
-    - name: Cam_PA_effect
-      Authors: <b>Black, B</b>., Anthony, B.P.
-      Title: "Counterfactual assessment of protected area avoided deforestation in Cambodia: Trends in effectiveness, spillover effects and the influence of establishment date."
-      Journal: Global Ecology and Conservation
-      href: https://doi.org/10.1016/j.gecco.2022.e02228
-      Bibtex: media/Cam_PA_effect.bib
-      Code: https://zenodo.org/record/6554206#.Y7V79ZDYo2w
+    - publications/Journal_articles.yaml
   - id: Theses
     template: publication.ejs
     contents:
-    - name: MSc
-      Authors: <b>Black, B</b>.
-      Title: "Assessing the ecological effectiveness of protected areas in Cambodia: a quasi-experimental counterfactual estimation of avoided deforestation."
-      Journal: Masters thesis. Central European University.
-      href: https://doi.org/10.13140/RG.2.2.28621.10727
-      Bibtex: media/MSc_thesis.bib
-    - name: BSc
-      Authors: <b>Black, B</b>.
-      Title: "Simulating the future potential of degraded Mangrove plots using field data from Kenya."
-      Journal: Bachelors thesis. Edinburgh Napier University.
-      href: https://doi.org/10.13140/RG.2.2.20232.49923
-      Bibtex: media/BSc_thesis.bib
+    - publications/These.yaml
 ---
 
 <br><h3 style="margin:0!important;padding:0!important;text-decoration:none;">Journal Articles</h3>

@@ -53,7 +53,7 @@
     "href": "presentations.html",
     "title": "Presentations",
     "section": "",
-    "text": "Experiences of a ValPar.CH PhD\n\n\nValPar.CH closing event\n\n\n\n\n\n\n\n \n\n\n\n\n  \n\n\n\n\nBroadening the scope of future visions for nature positive futures in Peru\n\n\n\n\n\n\n\nFuture landscape scenarios\n\n\nEcosystem Services\n\n\nBiodiversity\n\n\nPeru\n\n\nSwissRE\n\n\n\n\nSwiss Re Institute Resilience Summit 2023, Zürich, Switzerland.\n\n\n\n\n\n\nNov 30, 2023\n\n\n\n\n\n\n  \n\n\n\n\nCharacterising non-stationarity in predictive models of land use in Swiss mountain parks to inform scenarios for deliberative transformation.\n\n\n\n\n\n\n\nNon-stationarity\n\n\nConcept drift\n\n\nRandom Forests\n\n\nLand use change modelling\n\n\n\n\nInternational Mountain conference 2022, Innsbruck Austria.\n\n\n\n\n\n\nSep 13, 2022\n\n\n\n\n\n\n  \n\n\n\n\nValPar.CH: Integrating land use change, Ecosystem Service and Biodiversity modelling to simulate pathways for a functioning Ecological Infrastructure for Switzerland.\n\n\n\n\n\n\n\nValPar.CH\n\n\nEcosystem service modelling\n\n\nLand use change modelling\n\n\nSpecies distribution modelling\n\n\n\n\n11th International Environmental Modelling and Software Society conference.\n\n\n\n\n\n\nJul 2, 2022\n\n\n\n\n\n\n  \n\n\n\n\nCombining filter and embedded approaches to improve variable selection in land use change Cellular Automata models\n\n\n\n\n\n\n\nFeature selection\n\n\nRandom Forests\n\n\nLand use change modelling\n\n\n\n\n11th International Environmental Modelling and Software Society conference.\n\n\n\n\n\n\nJul 1, 2022\n\n\n\n\n\n\n  \n\n\n\n\nEx-ante identification of policy interventions to secure a functioning ecological infrastructure: A participatory Bayesian Network approach in Switzerland\n\n\n\n\n\n\n\nValPar.CH\n\n\nBayesian Networks\n\n\nEcological Infrastructure\n\n\n\n\n3rd Ecosystem Services Partnership Europe Regional conference in Tartu, Estonia\n\n\n\n\n\n\nJun 9, 2021\n\n\n\n\n\n\nNo matching items"
+    "text": "Experiences of a ValPar.CH PhD\n\n\n\n\n\n\n\nValPar.CH\n\n\nPhD\n\n\n\n\nValPar.CH closing event, Bern, Switzerland.\n\n\n\n\n\n\nJan 16, 2024\n\n\n\n\n\n\n  \n\n\n\n\nBroadening the scope of future visions for nature positive futures in Peru\n\n\n\n\n\n\n\nFuture landscape scenarios\n\n\nEcosystem Services\n\n\nBiodiversity\n\n\nPeru\n\n\nSwissRE\n\n\n\n\nSwiss Re Institute Resilience Summit 2023, Zürich, Switzerland.\n\n\n\n\n\n\nNov 30, 2023\n\n\n\n\n\n\n  \n\n\n\n\nCharacterising non-stationarity in predictive models of land use in Swiss mountain parks to inform scenarios for deliberative transformation.\n\n\n\n\n\n\n\nNon-stationarity\n\n\nConcept drift\n\n\nRandom Forests\n\n\nLand use change modelling\n\n\n\n\nInternational Mountain conference 2022, Innsbruck Austria.\n\n\n\n\n\n\nSep 13, 2022\n\n\n\n\n\n\n  \n\n\n\n\nValPar.CH: Integrating land use change, Ecosystem Service and Biodiversity modelling to simulate pathways for a functioning Ecological Infrastructure for Switzerland.\n\n\n\n\n\n\n\nValPar.CH\n\n\nEcosystem service modelling\n\n\nLand use change modelling\n\n\nSpecies distribution modelling\n\n\n\n\n11th International Environmental Modelling and Software Society conference.\n\n\n\n\n\n\nJul 2, 2022\n\n\n\n\n\n\n  \n\n\n\n\nCombining filter and embedded approaches to improve variable selection in land use change Cellular Automata models\n\n\n\n\n\n\n\nFeature selection\n\n\nRandom Forests\n\n\nLand use change modelling\n\n\n\n\n11th International Environmental Modelling and Software Society conference.\n\n\n\n\n\n\nJul 1, 2022\n\n\n\n\n\n\n  \n\n\n\n\nEx-ante identification of policy interventions to secure a functioning ecological infrastructure: A participatory Bayesian Network approach in Switzerland\n\n\n\n\n\n\n\nValPar.CH\n\n\nBayesian Networks\n\n\nEcological Infrastructure\n\n\n\n\n3rd Ecosystem Services Partnership Europe Regional conference in Tartu, Estonia\n\n\n\n\n\n\nJun 9, 2021\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "publications.html",
@@ -84,73 +84,24 @@
     "text": "I am excited to be able to announce a new project that I will be working on for the next two years:"
   },
   {
-    "objectID": "presentations/2023_16_12_ValPar.CH_closing/ValPar_closing_pres.html#test",
-    "href": "presentations/2023_16_12_ValPar.CH_closing/ValPar_closing_pres.html#test",
+    "objectID": "presentations/2023_16_12_ValPar.CH_closing/index.html",
+    "href": "presentations/2023_16_12_ValPar.CH_closing/index.html",
     "title": "Experiences of a ValPar.CH PhD",
-    "section": "test",
-    "text": "test"
+    "section": "",
+    "text": "These are the slides for the presentation I gave at the ValPar.CH project closing event in Bern, Switzerland.\n\n  \n\n\n\n\nCitationBibTeX citation:@online{black2024,\n  author = {Black, Benjamin},\n  title = {Experiences of a {ValPar.CH} {PhD}},\n  date = {2024-01-16},\n  url = {https://blenback.github.io//presentations/2023_16_12_ValPar.CH_closing},\n  langid = {en}\n}\nFor attribution, please cite this work as:\nBlack, Benjamin. 2024. “Experiences of a ValPar.CH PhD.”\nJanuary 16, 2024. https://blenback.github.io//presentations/2023_16_12_ValPar.CH_closing."
   },
   {
-    "objectID": "presentations/2023_16_12_ValPar.CH_closing/ValPar_closing_pres.html#heading",
-    "href": "presentations/2023_16_12_ValPar.CH_closing/ValPar_closing_pres.html#heading",
-    "title": "Experiences of a ValPar.CH PhD",
-    "section": "Heading",
-    "text": "Heading\nHeading 3\nHeading 4\nThis is a test\n\n\nValPar.CH closing event"
+    "objectID": "presentations/2023_16_12_ValPar.CH_closing/test_aside.html#uncertainty-in-land-use-change-models",
+    "href": "presentations/2023_16_12_ValPar.CH_closing/test_aside.html#uncertainty-in-land-use-change-models",
+    "title": "Aside_test",
+    "section": "",
+    "text": "Roman et al. 2024. Where will the change come from? Identifying decision-relevant factors in stochastic Land Use Cover Change (LUCC) future scenarios for transport infrastructure planning under uncertainty. submitted to Landscape and Urban Planning"
   },
   {
-    "objectID": "presentations/2023_16_12_ValPar.CH_closing/ValPar_closing_pres.html#heading-2",
-    "href": "presentations/2023_16_12_ValPar.CH_closing/ValPar_closing_pres.html#heading-2",
-    "title": "Experiences of a ValPar.CH PhD",
-    "section": "Heading 2",
-    "text": "Heading 2\nHeading 3\nThis is a test\n\n\nValPar.CH closing event"
-  },
-  {
-    "objectID": "presentations/2023_16_12_ValPar.CH_closing/ValPar_closing_pres.html#about-me",
-    "href": "presentations/2023_16_12_ValPar.CH_closing/ValPar_closing_pres.html#about-me",
-    "title": "Experiences of a ValPar.CH PhD",
-    "section": "About me",
-    "text": "About me\nThis is a test\n\n\nValPar.CH closing event"
-  },
-  {
-    "objectID": "presentations/2023_16_12_ValPar.CH_closing/ValPar_closing_pres.html#life-before-valpar.ch",
-    "href": "presentations/2023_16_12_ValPar.CH_closing/ValPar_closing_pres.html#life-before-valpar.ch",
-    "title": "Experiences of a ValPar.CH PhD",
-    "section": "Life before ValPar.CH",
-    "text": "Life before ValPar.CH\nThis is a test"
-  },
-  {
-    "objectID": "presentations/2023_16_12_ValPar.CH_closing/ValPar_closing_pres.html#where-do-i-fit-in-the-project",
-    "href": "presentations/2023_16_12_ValPar.CH_closing/ValPar_closing_pres.html#where-do-i-fit-in-the-project",
-    "title": "Experiences of a ValPar.CH PhD",
-    "section": "Where do I fit in the project?",
-    "text": "Where do I fit in the project?"
-  },
-  {
-    "objectID": "presentations/2023_16_12_ValPar.CH_closing/ValPar_closing_pres.html#what-have-i-done",
-    "href": "presentations/2023_16_12_ValPar.CH_closing/ValPar_closing_pres.html#what-have-i-done",
-    "title": "Experiences of a ValPar.CH PhD",
-    "section": "What have I done?",
-    "text": "What have I done?"
-  },
-  {
-    "objectID": "presentations/2023_16_12_ValPar.CH_closing/ValPar_closing_pres.html#calibration-of-land-use-change-models",
-    "href": "presentations/2023_16_12_ValPar.CH_closing/ValPar_closing_pres.html#calibration-of-land-use-change-models",
-    "title": "Experiences of a ValPar.CH PhD",
-    "section": "Calibration of Land use change models",
-    "text": "Calibration of Land use change models"
-  },
-  {
-    "objectID": "presentations/2023_16_12_ValPar.CH_closing/ValPar_closing_pres.html#uncertainty-in-land-use-change-models",
-    "href": "presentations/2023_16_12_ValPar.CH_closing/ValPar_closing_pres.html#uncertainty-in-land-use-change-models",
-    "title": "Experiences of a ValPar.CH PhD",
-    "section": "Uncertainty in land use change models",
-    "text": "Uncertainty in land use change models"
-  },
-  {
-    "objectID": "presentations/2023_16_12_ValPar.CH_closing/ValPar_closing_pres.html#pre-valpar.ch",
-    "href": "presentations/2023_16_12_ValPar.CH_closing/ValPar_closing_pres.html#pre-valpar.ch",
-    "title": "Experiences of a ValPar.CH PhD",
-    "section": "Pre-ValPar.CH…",
-    "text": "Pre-ValPar.CH…"
+    "objectID": "presentations/2023_16_12_ValPar.CH_closing/test_aside.html",
+    "href": "presentations/2023_16_12_ValPar.CH_closing/test_aside.html",
+    "title": "Aside_test",
+    "section": "",
+    "text": "Roman et al. 2024. Where will the change come from? Identifying decision-relevant factors in stochastic Land Use Cover Change (LUCC) future scenarios for transport infrastructure planning under uncertainty. submitted to Landscape and Urban Planning"
   }
 ]

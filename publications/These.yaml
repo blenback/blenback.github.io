@@ -1,0 +1,12 @@
+- name: MSc
+  authors: <b>Black, B</b>.
+  title: "Assessing the ecological effectiveness of protected areas in Cambodia: a quasi-experimental counterfactual estimation of avoided deforestation."
+  Journal: Masters thesis. Central European University.
+  href: https://doi.org/10.13140/RG.2.2.28621.10727
+  Bibtex: media/MSc_thesis.bib
+- name: BSc
+  authors: <b>Black, B</b>.
+  title: "Simulating the future potential of degraded Mangrove plots using field data from Kenya."
+  Journal: Bachelors thesis. Edinburgh Napier University.
+  href: https://doi.org/10.13140/RG.2.2.20232.49923
+  Bibtex: media/BSc_thesis.bib
