@@ -1,0 +1,179 @@
+---
+title: "Experiences of a ValPar.CH PhD"
+subtitle: ValPar.CH closing event
+author: Benjamin Black
+institute: "Planning of Landscape and Urban Systems (PLUS), ETH Zurich"
+format:
+  clean-revealjs:
+    self-contained: true
+title-slide-attributes:
+  data-background-image: media/ValParCH_title_banner.png
+  data-background-size: contain
+draft: true
+---
+
+## Pre-ValPar.CH...
+
+![](media/evp3.jpg){fig-align="center"}
+
+::: {.notes}
+I thought I'd start with a little insight into how my days looked before I started a PhD because the difference is quite stark. For several years I managed an Ecotourism in the remote North-East of Cambodia which aimed to try and re-invent what an ethical model of an Elephant sanctuary could be. It existed on 1500 hectares of open forest land and the elephants roamed around so a good part of my day was spent get lost looking for them and occasionally not finding them which, as you can imagine led to some very unhappy visitors. 
+:::
+
+# What have I done in ValPar.CH?
+
+## What have I done in ValPar.CH?
+
+### Module C: Scenarios of a functional ecological infrastructure
+
+![](media/modulec_workflow.png){fig-align="center"}
+
+## What have I done in ValPar.CH?
+
+### Module C: Scenarios of a functional ecological infrastructure
+
+![](media/my_workflow.png){fig-align="center"}
+
+## Scenarios of a functional ecological infrastructure
+### Quantification {.smaller}
+
+![](media/quantification1.png){fig-align="center"}
+
+## Scenarios of a functional ecological infrastructure
+### Quantification {.smaller}
+
+![](media/quantification2.png){fig-align="center"}
+
+## Scenarios of a functional ecological infrastructure
+### Quantification {.smaller}
+
+![](media/quantification3.png){fig-align="center"}
+
+## Scenarios of a functional ecological infrastructure
+### Simulation
+
+![](media/simulation1.png){fig-align="center"}
+
+
+## Scenarios of a functional ecological infrastructure
+### Simulation: LULCC scenarios{.smaller}
+
+:::: {.columns .v-center-container}
+::: {.column width="70%"}
+![](media/sim_res1.png){fig-align="center" height="500"}
+:::
+
+::: {.column width="30%"}
+[Data and results](https://zenodo.org/records/8263509)
+![](media/Zenodo.svg){fig-align="center"}
+
+[Model](https://github.com/blenback/LULCC-CH)
+![](media/github.png){fig-align="center"}
+:::
+::::
+
+## Scenarios of a functional ecological infrastructure
+### Simulation: LULCC scenarios{.smaller}
+
+<video data-autoplay src="media/website_tour.mp4" data-preload></video>
+
+[https://valpar.ch/land-use-change-scenarios/index-en.html](https://valpar.ch/land-use-change-scenarios/index-en.html){style="position:absolute;right:0;left:0;margin:auto;"}
+
+
+## Scenarios of a functional ecological infrastructure
+### Simulation: Future NCP provision and Biodiversity{.smaller}
+
+![](media/NDR_2060_VD_in_IE.png){fig-align="center"}
+
+## Scenarios of a functional ecological infrastructure
+### Simulation: Future NCP provision and Biodiversity{.smaller}
+
+![](media/NDR_2060_VD_more.png){fig-align="center"}
+
+
+# Wider Research contributions
+
+## Calibration of Land use change models
+
+### Re-considering the status quo: Improving calibration of land use change models through validation of transition potential predictions {.smaller}
+
+![](media/stage2_validation_land.png){fig-align="center"}
+
+## Calibration of Land use change models
+
+### Re-considering the status quo: Improving calibration of land use change models through validation of transition potential predictions {.smaller}
+
+![](media/stage1_validation_land.png){fig-align="center"}
+
+## Calibration of Land use change models
+
+### Re-considering the status quo: Improving calibration of land use change models through validation of transition potential predictions {.smaller}
+
+:::: {.columns .v-center-container}
+::: {.column width="50%"}
+![](media/Pred_uncertainty.png){fig-align="center" height="500"}
+:::
+
+::: {.column width="50%"}
+![](media/model_performance.png){fig-align="center" height="500"}
+:::
+::::
+
+::: footer
+[Black, Benjamin, Maarten J. van Strien, Antoine Adde, and Adrienne Grêt-Regamey. Re-Considering the Status Quo: Improving Calibration of Land Use Change Models through Validation of Transition Potential Predictions. *Environmental Modelling & Software* 159: 105574.](https://doi.org/10.1016/j.envsoft.2022.105574)
+:::
+
+
+## Uncertainty in land use change models
+
+### Identifying decision-relevant factors in stochastic Land Use Cover Change (LUCC) future scenarios for transport infrastructure planning under uncertainty {.smaller}
+
+:::: {.columns .v-center-container}
+::: {.column width="60%"}
+![](media/uncertainty1.jpg){fig-align="center"}
+:::
+
+::: {.column width="40%"}
+![](media/uncertainy2.jpg)
+:::
+::::
+
+::: footer
+Roman et al. 2024. Where will the change come from? Identifying decision-relevant factors in stochastic Land Use Cover Change (LUCC) future scenarios for transport infrastructure planning under uncertainty. *submitted to Landscape and Urban Planning*
+:::
+
+## Further application of LULCC model
+
+### NCCS-Impacts project: Socioeconomic Scenarios for Switzerland {.smaller}
+
+<BR />
+
+:::: {.columns .v-center-container}
+::: {.column width="50%"}
+![](media/wsl_logo.png){fig-align="center" height="200"}
+
+![**National Center for Climate Services (NCCS)**](media/NCSS_logo.png){fig-align="center" height="200"}
+:::
+
+::: {.column width="50%"}
+![](media/wsl_workflow.webp)
+:::
+::::
+
+# What's next?
+
+## NASCENT-PERU
+
+### NAture-positive SCenarios for ENvironmental Transitions: Peru
+
+![](media/Peru_workflow.png){fig-align="center" height="400"}
+
+![](media/funders.png){fig-align="center" height="100" width="300"}
+
+# New interests
+
+## Open science and reproducibility
+
+### Masterclass on Reproducible Research with R and Quarto at Landscape conference 2024, Berlin {.smaller}
+
+![](media/masterclass.jpg){fig-align="center"}
