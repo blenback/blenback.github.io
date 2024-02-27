@@ -25,7 +25,7 @@ website:
       Made with {{< fa brands r-project >}} and [Quarto](https://quarto.org/)<br>
   navbar:
     right:
-      - text: Home 
+      - text: "Home" 
         href: index.qmd
         aria-label: "Home"
       - text: About
