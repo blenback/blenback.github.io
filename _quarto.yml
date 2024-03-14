@@ -24,8 +24,9 @@ website:
     right: |
       Made with {{< fa brands r-project >}} and [Quarto](https://quarto.org/)<br>
   navbar:
+    #foreground: "#212529"  #This fixes the text colour of the navbar links but doesn't give the correct hover behaviour
     right:
-      - text: Home 
+      - text: "Home" 
         href: index.qmd
         aria-label: "Home"
       - text: About
@@ -38,7 +39,7 @@ website:
       - href: posts.qmd
         aria-label: "Posts"
       - text: CV
-        href: media/Benjamin_black_CV.pdf
+        href: https://blenback.github.io/curriculum-vitae/
         aria-label: "CV"
       - text: "{{< fa solid envelope >}}"
         href: mailto:bblack@ethz.ch
