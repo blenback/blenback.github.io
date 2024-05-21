@@ -16,9 +16,9 @@
   {
     "objectID": "posts.html",
     "href": "posts.html",
-    "title": "Posts",
+    "title": "",
     "section": "",
-    "text": "New research project: NASCENT-Peru\n\n\n\nFuture landscape scenarios\n\n\nEcosystem Services\n\n\nBiodiversity\n\n\nPeru\n\n\nSwissRE\n\n\nProject\n\n\nNASCENT-Peru\n\n\n\ntest\n\n\n\nBenjamin Black\n\n\nNov 30, 2023\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Upcoming workshop: Reproducible research with R and Quarto\n\n\n\nR\n\n\nQuarto\n\n\nReproducible research\n\n\nFAIR\n\n\nLandscape conference\n\n\nworkshop\n\n\n\n\n\n\n\nBenjamin Black\n\n\nMay 1, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAtuomating boring tasks pt. 1: Updating my CV\n\n\n\nR\n\n\nMarkdown\n\n\nAutomation\n\n\nCV\n\n\nResume\n\n\n\n\n\n\n\nBenjamin Black\n\n\nFeb 1, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNew research project: NASCENT-Peru\n\n\n\nFuture landscape scenarios\n\n\nEcosystem Services\n\n\nBiodiversity\n\n\nPeru\n\n\nSwissRE\n\n\nProject\n\n\nNASCENT-Peru\n\n\n\n\n\n\n\nBenjamin Black\n\n\nNov 30, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNew research project: NASCENT-Peru\n\n\n\nFuture landscape scenarios\n\n\nEcosystem Services\n\n\nBiodiversity\n\n\nPeru\n\n\nSwissRE\n\n\nProject\n\n\nNASCENT-Peru\n\n\n\ntest\n\n\n\nBenjamin Black\n\n\nNov 30, 2023\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "presentations/2021_06_09_ESP/index.html",
@@ -103,5 +103,26 @@
     "title": "Aside_test",
     "section": "",
     "text": "Roman et al. 2024. Where will the change come from? Identifying decision-relevant factors in stochastic Land Use Cover Change (LUCC) future scenarios for transport infrastructure planning under uncertainty. submitted to Landscape and Urban Planning"
+  },
+  {
+    "objectID": "posts/nascent_announcement.html",
+    "href": "posts/nascent_announcement.html",
+    "title": "New research project: NASCENT-Peru",
+    "section": "",
+    "text": "I am excited to be able to introduce a new research project that I will be working on for the next two years: NASCENT-Peru.\nThe name of the project took some consideration and comes from the acronym: NAture-positive SCenarios for ENvironmental Transitions in Peru. Of course, also drawing upon the definition of nascent in terms of something begin to grow or change.\nThis is the first project for which I wrote the proposal and it was funded through the Biodiversity and Ecosystem services scenario modelling challenge put together by SwissRE. I will work on this project until 2025, continuing in the chair of Planning of Landscape and Urban Systems under Prof. Dr. Adrienne Gret-Regamy at ETH Zurich.\nWe have already put together a multi-lingual website for the project where we hope to communicate the process and results of the research to a more diverse audience than just through journal articles. To this end we have also created LinkedIn and Facebook pages to help spread the word so please follow them if you use these platforms!"
+  },
+  {
+    "objectID": "posts/R_workshop.html",
+    "href": "posts/R_workshop.html",
+    "title": "Upcoming workshop: Reproducible research with R and Quarto",
+    "section": "",
+    "text": "I have been a big fan of R for everything research related for several years and Rstudio has been my go-to IDE all the way from being a complete beginner to my current level which I would still only describe as ‘somewhat proficient’. So you can imagine that when Posit, the company behind Rstudio released their open-source technical publishing software, Quarto, I was naturally intrigued. Over the last year I’ve gotten really into Quarto and used it for all sorts of purposes: I made this website for myself along with several others, I’ve written a whole academic paper with it, produced proposal and even used it to automate the mass-sending of invitation letters.\nThis experience prompted me to put together a workshop, that would try to combine all of the bits and pieces of useful knowledge I have acquired in using both R and Quarto for engaging in reproducible scientific research into a semi-coherent package.\nI submitted a proposal for the workshop to be delivered at the Landscape conference in Berlin in September 2024 and it was accepted. If you happen to be attending this conference you can sign up to attend the workshop in person but it wouldn’t be very FAIR (get it…) of me if I didn’t make the content freely available. So I created a dedicated website for it that also displays the content as a presentation at the same time (one of the other neat features of Quarto): https://blenback.github.io/R-for-Reproducible-Research/"
+  },
+  {
+    "objectID": "posts/CV_update.html",
+    "href": "posts/CV_update.html",
+    "title": "Atuomating boring tasks pt. 1: Updating my CV",
+    "section": "",
+    "text": "Mickaël Canouil\nI added some additional, academia relevant, social links to the side bar such as ResearchGate and ORCID, as well as a languages section. I also wrote some code to utilise custom entries within my bibtex file to add different links to entries. For example,links to the slides for my presentations (hosted here on my website), the papers and code for my publications and project-specific websites I have created.\nSome nerdy features that I like:\n\nIt is rebuilt automatically everytime it is committed to the remote git repo using a github action\nIt renders as both HTML and PDF simultaneously\nI can apply other templates and easily control which sections are included when applications require different types of CVs\n\nHere is the final result:\n\n  \n\nand if you want to do do something similar here is the github repo"
   }
 ]

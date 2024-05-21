@@ -1,0 +1,8 @@
+---
+title: "Leafleting: Time slider map of land use change scenarios"
+author: Benjamin Black
+date: "2024-2-1"
+image: assets/workshop_abstract.png
+image-alt: Placeholder of time-slider map
+categories: [R, Leaflet, Maps, Land use, research results]
+---

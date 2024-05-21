@@ -1,0 +1,18 @@
+---
+title: "Upcoming workshop: Reproducible research with R and Quarto"
+author: Benjamin Black
+date: "2024-5-1"
+image: assets/workshop_abstract.png
+image-alt: Graphical abstract for reproducible research workshop
+categories: [R, Quarto, Reproducible research, FAIR, Landscape conference, workshop]
+---
+
+I have been a big fan of R for everything research related for several years and Rstudio has been my go-to IDE all the way from being a complete beginner to my current level which I would still only describe as 'somewhat proficient'. So you can imagine that when [Posit](), the company behind Rstudio released their open-source technical publishing software, [Quarto](), I was naturally intrigued. Over the last year I've gotten really into Quarto and used it for all sorts of purposes: I made this website for myself along with several others, I've written a  whole academic paper with it, produced a proposal and even used it to automate the mass-sending of invitation letters.
+
+This experience prompted me to put together a workshop, that would try to combine all of the bits and pieces of useful knowledge I have acquired in using both R and Quarto for engaging in reproducible scientific research into a semi-coherent package. 
+
+I submitted a proposal for the workshop to be delivered at the [Landscape conference](https://landscape2024.org/frontend/index.php?folder_id=7393&page_id=) in Berlin in September 2024 and it was accepted. If you happen to be attending this conference you can sign up to attend the workshop in person but it wouldn't be very FAIR (get it...) of me if I didn't make the content freely available. So I created a dedicated website for it that also displays the content as a presentation at the same time (one of the other neat features of Quarto): [https://blenback.github.io/R-for-Reproducible-Research/](https://blenback.github.io/R-for-Reproducible-Research)  
+
+![](assets/workshop_abstract.png){fig-alt="graphical_abstract" fig-align="center"}
+
+

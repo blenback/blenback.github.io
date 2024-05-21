@@ -17,7 +17,12 @@ listing:
   - id: Theses
     template: publication.ejs
     contents:
-    - publications/These.yaml
+    - publications/Theses.yaml
+  - id: Student-theses 
+    title: Studenttheses supervised
+    template: publication.ejs
+    contents:
+    - publications/Student_Theses.yaml
 ---
 
 <br><h3 style="margin:0!important;padding:0!important;text-decoration:none;">Journal Articles</h3>
@@ -26,9 +31,15 @@ listing:
 :::
 
 ------------------------------------------------------------------------
-<br><h3 style="margin:0!important;padding:0!important;text-decoration:none;">Theses</h3>
+<br><h3 style="margin:0!important;padding:0!important;text-decoration:none;">My Theses</h3>
 
-:::{#Theses}
+:::{#My Theses}
+:::
+
+------------------------------------------------------------------------
+<br><h3 style="margin:0!important;padding:0!important;text-decoration:none;">Student Theses supervised </h3>
+
+:::{Student-theses}
 :::
 
 
