@@ -9,7 +9,7 @@
 <link>https://blenback.github.io/posts.html</link>
 <atom:link href="https://blenback.github.io/posts.xml" rel="self" type="application/rss+xml"/>
 <description>Personal website for Ben Black</description>
-<generator>quarto-1.3.450</generator>
+<generator>quarto-1.4.550</generator>
 <lastBuildDate>Tue, 30 Apr 2024 22:00:00 GMT</lastBuildDate>
 <item>
   <title>Upcoming workshop: Reproducible research with R and Quarto</title>
@@ -19,9 +19,15 @@
 
 
 
-<p>I have been a big fan of R for everything research related for several years and Rstudio has been my go-to IDE all the way from being a complete beginner to my current level which I would still only describe as ‘somewhat proficient’. So you can imagine that when Posit, the company behind Rstudio released their open-source technical publishing software, Quarto, I was naturally intrigued. Over the last year I’ve gotten really into Quarto and used it for all sorts of purposes: I made this website for myself along with several others, I’ve written a whole academic paper with it, produced proposal and even used it to automate the mass-sending of invitation letters.</p>
+
+<p>I have been a big fan of R for everything research related for several years and Rstudio has been my go-to IDE all the way from being a complete beginner to my current level which I would still only describe as ‘somewhat proficient’. So you can imagine that when <a href="">Posit</a>, the company behind Rstudio released their open-source technical publishing software, <a href="">Quarto</a>, I was naturally intrigued. Over the last year I’ve gotten really into Quarto and used it for all sorts of purposes: I made this website for myself along with several others, I’ve written a whole academic paper with it, produced a proposal and even used it to automate the mass-sending of invitation letters.</p>
 <p>This experience prompted me to put together a workshop, that would try to combine all of the bits and pieces of useful knowledge I have acquired in using both R and Quarto for engaging in reproducible scientific research into a semi-coherent package.</p>
-<p>I submitted a proposal for the workshop to be delivered at the Landscape conference in Berlin in September 2024 and it was accepted. If you happen to be attending this conference you can sign up to attend the workshop in person but it wouldn’t be very FAIR (get it…) of me if I didn’t make the content freely available. So I created a dedicated website for it that also displays the content as a presentation at the same time (one of the other neat features of Quarto): <a href="https://blenback.github.io/R-for-Reproducible-Research">https://blenback.github.io/R-for-Reproducible-Research/</a></p>
+<p>I submitted a proposal for the workshop to be delivered at the <a href="https://landscape2024.org/frontend/index.php?folder_id=7393&amp;page_id=">Landscape conference</a> in Berlin in September 2024 and it was accepted. If you happen to be attending this conference you can sign up to attend the workshop in person but it wouldn’t be very FAIR (get it…) of me if I didn’t make the content freely available. So I created a dedicated website for it that also displays the content as a presentation at the same time (one of the other neat features of Quarto): <a href="https://blenback.github.io/R-for-Reproducible-Research">https://blenback.github.io/R-for-Reproducible-Research/</a></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://blenback.github.io/posts/assets/workshop_abstract.png" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="graphical_abstract"></p>
+</figure>
+</div>
 
 
 
@@ -37,22 +43,26 @@
   <media:content url="https://blenback.github.io/posts/assets/workshop_abstract.png" medium="image" type="image/png" height="104" width="144"/>
 </item>
 <item>
-  <title>Atuomating boring tasks pt. 1: Updating my CV</title>
+  <title>Automating boring tasks pt. 1: Updating my CV</title>
   <dc:creator>Benjamin Black</dc:creator>
   <link>https://blenback.github.io/posts/CV_update.html</link>
   <description><![CDATA[ 
 
 
 
-<p><a href="https://github.com/mcanouil">Mickaël Canouil</a></p>
-<p>I added some additional, academia relevant, social links to the side bar such as ResearchGate and ORCID, as well as a languages section. I also wrote some code to utilise custom entries within my bibtex file to add different links to entries. For example,links to the slides for my presentations (hosted here on my website), the papers and code for my publications and project-specific websites I have created.</p>
-<p>Some nerdy features that I like:</p>
+
+<p>If you are like me, you only ever find yourself updating your CV when you are actually unemployed and looking for a new job. This is also a task I find especially time-consuming given that you end up chopping and changing what is included based upon different applications which inevitably leads to endlessly messing around with the formatting to keep things neat. I also don’t have much sense for design, and in fact the format of my previous CV was very kindly made for me by my partner.</p>
+<p>However, recently I found myself needing an up to date CV to share with project funders and so I thought it was time to invest in a new format and try to mitigate some of the headaches of updating the content in the future.</p>
+<p>I knew I wanted a more modern format, complete with social links, a picture and a more bold design so I opted for the pagedown::html_resume format which I adapted from the updates made by <a href="https://github.com/mcanouil">Mickaël Canouil</a> (who is always doing cool Quarto projects).</p>
+<p>Some nerdy features about this format/approach that I like:</p>
 <ul>
-<li><p>It is rebuilt automatically everytime it is committed to the remote git repo using a github action</p></li>
+<li><p>Although it is rendered with Rmarkdown, the raw inputs for most of the sections are entered directly in a simple Excel file.</p></li>
+<li><p>The publications are read from a Bibtex. file which I can keep updated using Zotero (my academic library software of choice).</p></li>
+<li><p>The document is rebuilt automatically every time it is committed to the remote git repo using a github action</p></li>
 <li><p>It renders as both HTML and PDF simultaneously</p></li>
 <li><p>I can apply other templates and easily control which sections are included when applications require different types of CVs</p></li>
 </ul>
-<p>Here is the final result:</p>
+<p>I added some personal touches to make it my own, including additional, academia relevant, social links to the side bar such as ResearchGate and ORCID, as well as a languages section. I also wrote some code to utilise custom entries within my bibtex file to add different links to entries. For example, links to the slides for my presentations (hosted here on my website), the papers and code for my publications and project-specific websites I have created. Here is the final result:</p>
 <div class="embed-container">
   <p align="center"><iframe src="https://blenback.github.io/curriculum-vitae/" style="border: 0.5px"></iframe>
 </p></div>
@@ -71,10 +81,33 @@
   <media:content url="https://blenback.github.io/posts/assets/workshop_abstract.png" medium="image" type="image/png" height="104" width="144"/>
 </item>
 <item>
+  <title>Leafleting: Time slider map of land use change scenarios</title>
+  <dc:creator>Benjamin Black</dc:creator>
+  <link>https://blenback.github.io/posts/leaflet_time_slider.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+
+
+ ]]></description>
+  <category>R</category>
+  <category>Leaflet</category>
+  <category>Maps</category>
+  <category>Land use</category>
+  <category>research results</category>
+  <guid>https://blenback.github.io/posts/leaflet_time_slider.html</guid>
+  <pubDate>Wed, 31 Jan 2024 23:00:00 GMT</pubDate>
+  <media:content url="https://blenback.github.io/posts/assets/workshop_abstract.png" medium="image" type="image/png" height="104" width="144"/>
+</item>
+<item>
   <title>New research project: NASCENT-Peru</title>
   <dc:creator>Benjamin Black</dc:creator>
   <link>https://blenback.github.io/posts/nascent_announcement.html</link>
   <description><![CDATA[ 
+
 
 
 
@@ -96,30 +129,6 @@
   <guid>https://blenback.github.io/posts/nascent_announcement.html</guid>
   <pubDate>Wed, 29 Nov 2023 23:00:00 GMT</pubDate>
   <media:content url="https://blenback.github.io/posts/assets/NASCENT_logo_vertical.jpg" medium="image" type="image/jpeg"/>
-</item>
-<item>
-  <title>New research project: NASCENT-Peru</title>
-  <dc:creator>Benjamin Black</dc:creator>
-  <link>https://blenback.github.io/posts/Peru_announce/index.html</link>
-  <description><![CDATA[ 
-
-
-
-<p>I am excited to be able to announce a new project that I will be working on for the next two years:</p>
-
-
-
- ]]></description>
-  <category>Future landscape scenarios</category>
-  <category>Ecosystem Services</category>
-  <category>Biodiversity</category>
-  <category>Peru</category>
-  <category>SwissRE</category>
-  <category>Project</category>
-  <category>NASCENT-Peru</category>
-  <guid>https://blenback.github.io/posts/Peru_announce/index.html</guid>
-  <pubDate>Wed, 29 Nov 2023 23:00:00 GMT</pubDate>
-  <media:content url="https://blenback.github.io/posts/Peru_announce/workflow.png" medium="image" type="image/png"/>
 </item>
 </channel>
 </rss>

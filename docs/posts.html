@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.450">
+<meta name="generator" content="quarto-1.4.550">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -49,7 +49,13 @@ ul.task-list li input[type="checkbox"] {
   "collapse-after": 3,
   "panel-placement": "end",
   "type": "overlay",
-  "limit": 20,
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -58,6 +64,7 @@ ul.task-list li input[type="checkbox"] {
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
     "search-submit-button-title": "Submit",
     "search-label": "Search"
@@ -105,13 +112,37 @@ gtag('config', 'G-9CCC34ZV10', { 'anonymize_ip': true});
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
 <link rel="stylesheet" href="css/styles.css">
-<link rel="alternate" type="application/rss+xml" title="Ben<br>Black" href="posts.xml"><meta property="og:title" content="Ben Black">
+<link rel="alternate" type="application/rss+xml" title="Ben<br>Black" href="posts.xml" data-external="1"><meta property="og:title" content="Ben Black">
 <meta property="og:description" content="A place for me to share insights into my research but also little tips and tricks I find interesting in using R for scientific research">
-<meta property="og:image" content="https://blenback.github.io/posts/assets/workshop_abstract.png">
-<meta property="og:site-name" content="Ben<br>Black">
-<meta property="og:image:height" content="2369">
-<meta property="og:image:width" content="3289">
+<meta property="og:site_name" content="Ben<br>Black">
 <meta name="twitter:title" content="Ben Black">
 <meta name="twitter:description" content="A place for me to share insights into my research but also little tips and tricks I find interesting in using R for scientific research">
 <meta name="twitter:image" content="https://blenback.github.io/media/preview.png">
@@ -126,9 +157,9 @@ gtag('config', 'G-9CCC34ZV10', { 'anonymize_ip': true});
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg navbar-dark ">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container">
+      <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">Ben<br>Black</span>
     </a>
@@ -140,50 +171,50 @@ gtag('config', 'G-9CCC34ZV10', { 'anonymize_ip': true});
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html" rel="" target="">
- <span class="menu-text">Home</span></a>
+    <a class="nav-link" href="./index.html"> 
+<span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./about.html" rel="" target="">
- <span class="menu-text">About</span></a>
+    <a class="nav-link" href="./about.html"> 
+<span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./publications.html" rel="" target="">
- <span class="menu-text">Publications</span></a>
+    <a class="nav-link" href="./publications.html"> 
+<span class="menu-text">Publications</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./presentations.html" rel="" target="">
- <span class="menu-text">Presentations</span></a>
+    <a class="nav-link" href="./presentations.html"> 
+<span class="menu-text">Presentations</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./posts.html" rel="" target="" aria-current="page">
- <span class="menu-text">Posts</span></a>
+    <a class="nav-link active" href="./posts.html" aria-current="page"> 
+<span class="menu-text">Posts</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="https://blenback.github.io/curriculum-vitae/" rel="" target="">
- <span class="menu-text">CV</span></a>
+    <a class="nav-link" href="https://blenback.github.io/curriculum-vitae/"> 
+<span class="menu-text">CV</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="mailto:bblack@ethz.ch" rel="" target="">
- <span class="menu-text"><i class="fa-solid fa-envelope" aria-label="envelope"></i></span></a>
+    <a class="nav-link" href="mailto:bblack@ethz.ch"> 
+<span class="menu-text"><i class="fa-solid fa-envelope" aria-label="envelope"></i></span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="https://github.com/blenback" rel="" target="">
- <span class="menu-text"><i class="fa-brands fa-github" aria-label="github"></i></span></a>
+    <a class="nav-link" href="https://github.com/blenback"> 
+<span class="menu-text"><i class="fa-brands fa-github" aria-label="github"></i></span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="https://twitter.com/Blen_Back" rel="" target="">
- <span class="menu-text"><i class="fa-brands fa-twitter" aria-label="twitter"></i></span></a>
+    <a class="nav-link" href="https://twitter.com/Blen_Back"> 
+<span class="menu-text"><i class="fa-brands fa-twitter" aria-label="twitter"></i></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="./posts.xml" rel="" target=""><i class="bi bi-rss" role="img">
+    <a class="nav-link" href="./posts.xml"> <i class="bi bi-rss" role="img">
 </i> 
- <span class="menu-text"></span></a>
+<span class="menu-text"></span></a>
   </li>  
 </ul>
-            <div class="quarto-navbar-tools">
-</div>
           </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
+</div>
       </div> <!-- /container-fluid -->
     </nav>
 </header>
@@ -193,13 +224,12 @@ gtag('config', 'G-9CCC34ZV10', { 'anonymize_ip': true});
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(4)</span></div><div class="category" data-category="Automation">Automation <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Biodiversity">Biodiversity <span class="quarto-category-count">(2)</span></div><div class="category" data-category="CV">CV <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Ecosystem Services">Ecosystem Services <span class="quarto-category-count">(2)</span></div><div class="category" data-category="FAIR">FAIR <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Future landscape scenarios">Future landscape scenarios <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Landscape conference">Landscape conference <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Markdown">Markdown <span class="quarto-category-count">(1)</span></div><div class="category" data-category="NASCENT-Peru">NASCENT-Peru <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Peru">Peru <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Project">Project <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Quarto">Quarto <span class="quarto-category-count">(1)</span></div><div class="category" data-category="R">R <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Reproducible research">Reproducible research <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Resume">Resume <span class="quarto-category-count">(1)</span></div><div class="category" data-category="SwissRE">SwissRE <span class="quarto-category-count">(2)</span></div><div class="category" data-category="workshop">workshop <span class="quarto-category-count">(1)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(4)</span></div><div class="category" data-category="Automation">Automation <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Biodiversity">Biodiversity <span class="quarto-category-count">(1)</span></div><div class="category" data-category="CV">CV <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Ecosystem Services">Ecosystem Services <span class="quarto-category-count">(1)</span></div><div class="category" data-category="FAIR">FAIR <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Future landscape scenarios">Future landscape scenarios <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Land use">Land use <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Landscape conference">Landscape conference <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Leaflet">Leaflet <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Maps">Maps <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Markdown">Markdown <span class="quarto-category-count">(1)</span></div><div class="category" data-category="NASCENT-Peru">NASCENT-Peru <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Peru">Peru <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Project">Project <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Quarto">Quarto <span class="quarto-category-count">(1)</span></div><div class="category" data-category="R">R <span class="quarto-category-count">(3)</span></div><div class="category" data-category="Reproducible research">Reproducible research <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Resume">Resume <span class="quarto-category-count">(1)</span></div><div class="category" data-category="SwissRE">SwissRE <span class="quarto-category-count">(1)</span></div><div class="category" data-category="research results">research results <span class="quarto-category-count">(1)</span></div><div class="category" data-category="workshop">workshop <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"></h1>
 <p class="subtitle lead">A place for me to share insights into my research but also little tips and tricks I find interesting in using R for scientific research</p>
 </div>
 
@@ -213,7 +243,9 @@ gtag('config', 'G-9CCC34ZV10', { 'anonymize_ip': true});
   </div>
   
 
+
 </header>
+
 
 
 
@@ -221,7 +253,7 @@ gtag('config', 'G-9CCC34ZV10', { 'anonymize_ip': true});
 
 <div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="R,Quarto,Reproducible research,FAIR,Landscape conference,workshop" data-listing-date-sort="1714514400000" data-listing-file-modified-sort="1714584826644" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
+<div class="g-col-1" data-index="0" data-categories="R,Quarto,Reproducible research,FAIR,Landscape conference,workshop" data-listing-date-sort="1714514400000" data-listing-file-modified-sort="1714590205000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="247">
 <a href="./posts/R_workshop.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -266,7 +298,7 @@ May 1, 2024
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="R,Markdown,Automation,CV,Resume" data-listing-date-sort="1706742000000" data-listing-file-modified-sort="1714587043152" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="g-col-1" data-index="1" data-categories="R,Markdown,Automation,CV,Resume" data-listing-date-sort="1706742000000" data-listing-file-modified-sort="1716322491902" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="385">
 <a href="./posts/CV_update.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -274,7 +306,7 @@ May 1, 2024
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
-Atuomating boring tasks pt.&nbsp;1: Updating my CV
+Automating boring tasks pt.&nbsp;1: Updating my CV
 </h5>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('R'); return false;">
@@ -294,7 +326,7 @@ Resume
 </div>
 </div>
 <div class="card-text listing-description">
-Mickaël Canouil
+If you are like me, you only ever find yourself updating your CV when you are actually unemployed and looking for a new job. This is also a task I find especially…
 </div>
 <div class="card-attribution card-text-small justify">
 <div class="listing-author">
@@ -308,7 +340,49 @@ Feb 1, 2024
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="2" data-categories="Future landscape scenarios,Ecosystem Services,Biodiversity,Peru,SwissRE,Project,NASCENT-Peru" data-listing-date-sort="1701298800000" data-listing-file-modified-sort="1714583275841" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="g-col-1" data-index="2" data-categories="R,Leaflet,Maps,Land use,research results" data-listing-date-sort="1706742000000" data-listing-file-modified-sort="1714590361000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+<a href="./posts/leaflet_time_slider.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="./posts/assets/workshop_abstract.png" class="thumbnail-image card-img" style="height: 150px;" alt="Placeholder of time-slider map">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Leafleting: Time slider map of land use change scenarios
+</h5>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('R'); return false;">
+R
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Leaflet'); return false;">
+Leaflet
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Maps'); return false;">
+Maps
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Land use'); return false;">
+Land use
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('research results'); return false;">
+research results
+</div>
+</div>
+<div class="card-text listing-description">
+
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+Benjamin Black
+</div>
+<div class="listing-date">
+Feb 1, 2024
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="3" data-categories="Future landscape scenarios,Ecosystem Services,Biodiversity,Peru,SwissRE,Project,NASCENT-Peru" data-listing-date-sort="1701298800000" data-listing-file-modified-sort="1714590186000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="172">
 <a href="./posts/nascent_announcement.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -343,54 +417,6 @@ NASCENT-Peru
 </div>
 <div class="card-text listing-description">
 I am excited to be able to introduce a new research project that I will be working on for the next two years: NASCENT-Peru.
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Benjamin Black
-</div>
-<div class="listing-date">
-Nov 30, 2023
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="3" data-categories="Future landscape scenarios,Ecosystem Services,Biodiversity,Peru,SwissRE,Project,NASCENT-Peru" data-listing-date-sort="1701298800000" data-listing-file-modified-sort="1714582192678" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
-<a href="./posts/Peru_announce/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img src="./posts/Peru_announce/workflow.png" class="thumbnail-image card-img" style="height: 150px;" alt="Logo for NASCENT-Peru project">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-New research project: NASCENT-Peru
-</h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Future landscape scenarios'); return false;">
-Future landscape scenarios
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Ecosystem Services'); return false;">
-Ecosystem Services
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Biodiversity'); return false;">
-Biodiversity
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Peru'); return false;">
-Peru
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('SwissRE'); return false;">
-SwissRE
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Project'); return false;">
-Project
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('NASCENT-Peru'); return false;">
-NASCENT-Peru
-</div>
-</div>
-<div class="card-text listing-description">
-test
 </div>
 <div class="card-attribution card-text-small justify">
 <div class="listing-author">
@@ -488,10 +514,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-  function tippyHover(el, contentFn) {
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -501,8 +526,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -515,6 +549,125 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
       return note.innerHTML;
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -558,6 +711,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
+            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -583,6 +737,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -645,13 +825,18 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
-    <div class="nav-footer-left"><i class="fa-regular fa-copyright" aria-label="copyright"></i> Benjamin Black, 2022<br> All content licensed under <i class="fa-brands fa-creative-commons" aria-label="creative-commons"></i> <i class="fa-brands fa-creative-commons-by" aria-label="creative-commons-by"></i> <i class="fa-brands fa-creative-commons-sa" aria-label="creative-commons-sa"></i> <i class="fa-brands fa-creative-commons-nc" aria-label="creative-commons-nc"></i> <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">(CC BY-NC-SA 4.0)</a></div>   
+    <div class="nav-footer-left">
+<p><i class="fa-regular fa-copyright" aria-label="copyright"></i> Benjamin Black, 2022<br> All content licensed under <i class="fa-brands fa-creative-commons" aria-label="creative-commons"></i> <i class="fa-brands fa-creative-commons-by" aria-label="creative-commons-by"></i> <i class="fa-brands fa-creative-commons-sa" aria-label="creative-commons-sa"></i> <i class="fa-brands fa-creative-commons-nc" aria-label="creative-commons-nc"></i> <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">(CC BY-NC-SA 4.0)</a></p>
+</div>   
     <div class="nav-footer-center">
       &nbsp;
     </div>
-    <div class="nav-footer-right">Made with <i class="fa-brands fa-r-project" aria-label="r-project"></i> and <a href="https://quarto.org/">Quarto</a><br></div>
+    <div class="nav-footer-right">
+<p>Made with <i class="fa-brands fa-r-project" aria-label="r-project"></i> and <a href="https://quarto.org/">Quarto</a><br></p>
+</div>
   </div>
 </footer>
+
 
 
 
