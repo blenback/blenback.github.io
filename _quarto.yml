@@ -32,13 +32,15 @@ website:
       - text: About
         href: about.qmd
         aria-label: "About"
-      - href: publications.qmd
+      - text: "Publications"
+        href: publications.qmd
         aria-label: "Publications"
       - href: presentations.qmd
         aria-label: "Presentations"
-      - href: posts.qmd
+      - text: "Posts"
+        href: posts.qmd
         aria-label: "Posts"
-      - text: CV
+      - text: "CV"
         href: https://blenback.github.io/curriculum-vitae/
         aria-label: "CV"
       - text: "{{< fa solid envelope >}}"

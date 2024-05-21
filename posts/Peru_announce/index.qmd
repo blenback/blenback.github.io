@@ -9,4 +9,9 @@ image-alt: Logo for NASCENT-Peru project
 categories: [Future landscape scenarios, Ecosystem Services, Biodiversity, Peru, SwissRE, Project, NASCENT-Peru]
 ---
 
-I am excited to be able to announce a new project that I will be working on for the next two years: 
+I am excited to be able to introduce a new research project that I will be working on for the next two years: NASCENT-Peru. 
+
+The name of the project took some consideration and comes from the acronym: Nature-positive Scenarios for ENvironmental Transitions in Peru. 
+
+This is the first project for which I wrote the proposal and it was funded through the Biodiversity and Ecosystem services scenario modelling challenge put together by [SwissRE](SwissRE.com). I will work on this project until 2025, continuing in the chair of Planning of Landscape and Urban Systems under Prof. Dr. Adrienne Gret-Regamy at ETH Zurich. 
+

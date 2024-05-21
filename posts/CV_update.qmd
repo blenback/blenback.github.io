@@ -1,0 +1,36 @@
+---
+title: "Automating boring tasks pt. 1: Updating my CV"
+author: Benjamin Black
+date: "2024-2-1"
+image: assets/workshop_abstract.png
+image-alt: Graphical abstract for reproducible research workshop
+categories: [R, Markdown, Automation, CV, Resume]
+---
+
+If you are like me, you only ever find yourself updating your CV when you are actually unemployed and looking for a new job. This is also a task I find especially time-consuming given that you end up chopping and changing what is included based upon different applications which inevitably leads to endlessly messing around with the formatting to keep things neat. I also don't have much sense for design, and in fact the format of my previous CV was very kindly made for me by my partner.
+
+However, recently I found myself needing an up to date CV to share with project funders and so I thought it was time to invest in a new format and try to mitigate some of the headaches of updating the content in the future.
+
+I knew I wanted a more modern format, complete with social links, a picture and a more bold design so I opted for the pagedown::html_resume format which I adapted from the updates made by [Mickaël Canouil](https://github.com/mcanouil) (who is always doing cool Quarto projects).
+
+Some nerdy features about this format/approach that I like:
+
+-   Although it is rendered with Rmarkdown, the raw inputs for most of the sections are entered directly in a simple Excel file.
+
+-   The publications are read from a Bibtex. file which I can keep updated using Zotero (my academic library software of choice).
+
+-   The document is rebuilt automatically every time it is committed to the remote git repo using a github action
+
+-   It renders as both HTML and PDF simultaneously
+
+-   I can apply other templates and easily control which sections are included when applications require different types of CVs
+
+I added some personal touches to make it my own, including additional, academia relevant, social links to the side bar such as ResearchGate and ORCID, as well as a languages section. I also wrote some code to utilise custom entries within my bibtex file to add different links to entries. For example,links to the slides for my presentations (hosted here on my website), the papers and code for my publications and project-specific websites I have created. Here is the final result:
+
+```{=html}
+<div class="embed-container">
+  <p align="center"><iframe src= "https://blenback.github.io/curriculum-vitae/" style="border: 0.5px" ></iframe
+  /p>
+</div>
+```
+and if you want to do do something similar here is the [github repo]()
