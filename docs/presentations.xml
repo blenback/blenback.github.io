@@ -52,6 +52,7 @@ January 16, 2024. <a href="https://blenback.github.io//presentations/2023_16_12_
 
 
 
+
 <p>These are the slides for the presentation I gave at the Biodiversity and Ecosystem Services Scenario Modelling challenge kick-off event at the Swiss Re Institute Resilience Summit in Zürich, Switzerland. More details are available <a href="http://dx.doi.org/10.13140/RG.2.2.34351.10405">here</a></p>
 <div class="embed-container">
   <p align="center"><iframe src="SwissRE_pres.pdf" style="border: 0.5px"></iframe>
@@ -59,7 +60,7 @@ January 16, 2024. <a href="https://blenback.github.io//presentations/2023_16_12_
 
 
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{black2023,
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{black2023,
   author = {Black, Benjamin},
   title = {Broadening the Scope of Future Visions for Nature Positive
     Futures in {Peru}},
@@ -91,19 +92,20 @@ Nature Positive Futures in Peru.”</span> November 30, 2023. <a href="http://dx
 
 
 
+
 <p>These are the slides for a presentation I gave on quantifying non-stationarity in predictive models of land use change at the International Mountain Conference in Innsbruck 2022. The abstract is available <a href="http://dx.doi.org/10.13140/RG.2.2.26822.55367">here.</a></p>
 <div class="embed-container">
   <p align="center"><iframe src="IMC_pres.pdf" style="border: 0.5px"></iframe>
 </p></div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://blenback.github.io/presentations/2022_09_13_IMC/presenting.jpg" class="img-fluid figure-img" alt="Presentation"></p>
+<p><img src="https://blenback.github.io/presentations/2022_09_13_IMC/presenting.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="Presentation"></p>
 </figure>
 </div>
 
 
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{black2022,
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{black2022,
   author = {Black, Ben and Black, Ben and Wicki, Sergio and
     Grêt-Regamey, Adrienne},
   title = {Characterising Non-Stationarity in Predictive Models of Land
@@ -141,6 +143,7 @@ Transformation.”</span> September 13, 2022. <a href="http://dx.doi.org/10.1314
 
 
 
+
 <p>These are the slides iEMSs_ValPar_pres.pdf for a presentation I gave on the integration of different modelling approaches within the <a href="https://valpar.ch/index_en.php?page=home_en">ValPar.CH</a> project at the 11th International Environmental Modelling and Software Society (IEMSs) 2022 conference. The abstract is available <a href="http://dx.doi.org/10.13140/RG.2.2.20111.66720">here.</a></p>
 <div class="embed-container">
   <p align="center"><iframe src="iEMSs_ValPar_pres.pdf" style="border: 0.5px"></iframe>
@@ -148,7 +151,7 @@ Transformation.”</span> September 13, 2022. <a href="http://dx.doi.org/10.1314
 
 
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{black2022,
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{black2022,
   author = {Black, Ben and Black, Ben and Adde, Antoine and Külling,
     Nathan and Grêt-Regamey, Adrienne and Guisan, Antoine and Lehmann,
     Anthony},
@@ -182,6 +185,7 @@ Infrastructure for Switzerland.”</span> July 2, 2022. <a href="http://dx.doi.o
 
 
 
+
 <p>These are the slides for a presentation I gave on the application of feature selection as part of calibration of land use change cellular automata at the11th International Environmental Modelling and Software Society (IEMSs) 2022 conference. The presentation abstract is available on <a href="https://www.researchgate.net/publication/361951375_Combining_filter_and_embedded_approaches_to_improve_variable_selection_in_land_use_change_Cellular_Automata_models_using_Random_Forests">here.</a></p>
 <div class="embed-container">
   <p align="center"><iframe src="modelling_pres.pdf" style="border: 0.5px"></iframe>
@@ -189,7 +193,7 @@ Infrastructure for Switzerland.”</span> July 2, 2022. <a href="http://dx.doi.o
 
 
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{black2022,
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{black2022,
   author = {Black, Ben},
   title = {Combining Filter and Embedded Approaches to Improve Variable
     Selection in Land Use Change {Cellular} {Automata} Models},
@@ -217,6 +221,7 @@ Models.”</span> July 1, 2022. <a href="https://blenback.github.io/presentation
 
 
 
+
 <p>These are the slides for a presentation I gave on the integration of different modelling approaches within the <a href="https://valpar.ch/index_en.php?page=home_en">ValPar.CH</a> project at the 3rd Ecosystem Services Partnership (ESP) Europe Regional conference in Tartu, Estonia 2021. The abstract is available <a href="http://dx.doi.org/10.13140/RG.2.2.30177.99686">here.</a></p>
 <div class="embed-container">
   <p align="center"><iframe src="ESP_EU_2021_T5_BBlack.pdf" style="border: 0.5px"></iframe>
@@ -224,7 +229,7 @@ Models.”</span> July 1, 2022. <a href="https://blenback.github.io/presentation
 
 
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{black, adrienne grêt-regamey2021,
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{black, adrienne grêt-regamey2021,
   author = {Black, Adrienne Grêt-Regamey, Ben},
   title = {Ex-Ante Identification of Policy Interventions to Secure a
     Functioning Ecological Infrastructure: {A} Participatory {Bayesian}
