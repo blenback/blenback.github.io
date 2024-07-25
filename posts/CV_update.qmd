@@ -1,6 +1,5 @@
 ---
 title: "Automating boring tasks pt. 1: Updating my CV"
-author: Benjamin Black
 date: "2024-2-1"
 image: assets/cv_update.jpg
 image-alt: Graphical abstract for reproducible research workshop

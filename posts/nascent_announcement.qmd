@@ -1,6 +1,5 @@
 ---
 title: "New research project: NASCENT-Peru"
-author: Benjamin Black
 date: "2023-11-30"
 image: assets/NASCENT_logo_vertical.jpg
 image-alt: Logo for NASCENT-Peru project

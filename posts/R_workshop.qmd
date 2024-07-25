@@ -1,6 +1,5 @@
 ---
 title: "Upcoming workshop: Reproducible research with R and Quarto"
-author: Benjamin Black
 date: "2024-5-1"
 image: assets/workshop_abstract.png
 image-alt: Graphical abstract for reproducible research workshop
