@@ -1,12 +1,24 @@
+- name: LULCC_CH
+  authors: <b>Black, B</b>., Adde, A., Farinotti, D., Guisan, A., Külling, N,, Kurmann, M., Martin, C., Mayer, P., Rabe, SE., Streit, J., Zekollari, H., Grêt-Regamey, A.
+  year: 2024
+  title: "Broadening the horizon in land use change modelling: Normative scenarios for nature positive futures in Switzerland"
+  Journal: Regional Environmental Change
+  href: https://doi.org/10.1007/s10113-024-02261-0
+  Bibtex: media/lulcc_ch.bib
+  Code: https://zenodo.org/doi/10.5281/zenodo.12698470
+  Data: https://doi.org/10.5281/zenodo.8263509
+  citation: true
 - name: Archetypes
   authors: Wicki, S., <b>Black, B</b>., Kurmann, M., Grêt-Regamey, A.
   title: Archetypes of social-ecological-technological systems for managing ecological infrastructure.
+  year: 2023
   Journal: Environ. Res. Lett.
   href: https://doi.org/10.1088/1748-9326/ad1080
   Bibtex: media/Archetypes.bib
 - name: ICoLCM
   authors: <b>Black, B</b>., Strien, M.J. van, Adde, A., Grêt-Regamey, A.
   title: "Re-considering the status quo: Improving calibration of land use change models through validation of transition potential predictions."
+  year: 2022
   Journal: Environmental Modelling & Software
   href: https://doi.org/10.1016/j.envsoft.2022.105574
   Bibtex: media/ICoLCM.bib
@@ -15,7 +27,9 @@
 - name: Cam_PA_effect
   authors: <b>Black, B</b>., Anthony, B.P.
   title: "Counterfactual assessment of protected area avoided deforestation in Cambodia: Trends in effectiveness, spillover effects and the influence of establishment date."
+  year: 2022
   Journal: Global Ecology and Conservation
   href: https://doi.org/10.1016/j.gecco.2022.e02228
   Bibtex: media/Cam_PA_effect.bib
   Code: https://zenodo.org/record/6554206#.Y7V79ZDYo2w
+  Summary: "test"

@@ -12,20 +12,35 @@ ul.no-bullets {
 <ul class= "no-bullets">
 <% for (const item of items) { %>
   <li>
-    <br><%= item['authors'] %>
+    <br><%= item['authors'] %> 
+    <%= item['year'] %>
     <%= item['title'] %> 
     <i><%= item['Journal'] %></i>
     <a href="<%- item.href %>"><%= item.href %></a>
     <br/>
+    <% if(item['Summary']){ %>
+    <p class="d-inline-flex gap-1">
+    <a class="btn btn-outline-dark btn-sm" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample"> Summary </a>
+    </p>
+    <div class="collapse" id="collapseExample">
+    <div class="card card-body">
+    <%- item['Summary']%>
+    </div>
+    </div>
+    <% } %>
     <% if(item['Bibtex']){ %>
     <a href= "<%- item['Bibtex']%>" class="btn btn-outline-dark btn-sm" aria-pressed="true" role="button" download="<%- item['Bibtex']%>"><i class="fa-solid fa-quote-left"></i> Cite </a>
     <% } %> 
     <% if(item['Preprint']){ %>
     <a href= "<%- item['Preprint']%>" class="btn btn-outline-dark btn-sm" aria-pressed="true" role="button"> <i class="fa-solid fa-fingerprint"></i> Preprint </a>
     <% } %>
-    <% if(item['Code']){ %>
-    <a href= "<%- item['Code']%>" class="btn btn-outline-dark btn-sm" aria-pressed="true" role="button"> <i class="fa-solid fa-code"></i> Data/Code </a>
+    <% if(item['Data']){ %>
+    <a href= "<%- item['Data']%>" class="btn btn-outline-dark btn-sm" aria-pressed="true" role="button"> <i class="fa-solid fa-database"></i> Data </a>
     <% } %>
+    <% if(item['Code']){ %>
+    <a href= "<%- item['Code']%>" class="btn btn-outline-dark btn-sm" aria-pressed="true" role="button"> <i class="fa-solid fa-code"></i> Code </a>
+    <% } %>
+    
   <li>
 <% } %>
 </ul>

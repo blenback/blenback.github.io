@@ -1,0 +1,35 @@
+---
+title: Normative scenarios of landscape change for Nature-Positive futures in Peru               
+description: World Biodiversity Forum, Davos, Switzerland.
+author: Benjamin Black
+event: 3rd World Biodiversity Forum
+location: Davos, Switzerland
+date: "2024-06-20"
+image: Pres_image.png
+image-height: 12000px
+categories: [NASCENT-Peru, Biodiversity, Normative scenarios, Participatory]
+preload-iframes: true
+---
+
+At the [World Biodiversity Forum](https://www.worldbiodiversityforum.org/en/wbf-2024) in Davos, Switzerland, I had the pleasure of presenting early results of the [NASCENT-Peru](https://nascent-peru.github.io/) scenario creation workshops that took place in May and June 2024. 
+
+This was a great opportunity to showcase the project to researchers from around the world and highlight the importance of scenarios depicting positive futures for landscape development from the perspective of local stakeholders.
+
+We also had the opportunity to meet with the teams of the other projects funded by SwissRE who are doing similar work in different regions of the world. It was inspiring to see the diversity of approaches and goals that each project hopes to achieve.
+
+Here are some photos from the event and below you can access the presentation.
+
+::: {layout-nrow=2}
+![](WBF_present.jpg){group="my-gallery"}
+
+![](WBF_group.jpg){group="my-gallery"}
+
+![](WBF_meeting.jpg){group="my-gallery"}
+:::
+
+```{=html}
+<div class="embed-container">
+  <p align="center"><iframe src="WBF_pres_1962024.pdf" style="border: 0.5px" ></iframe
+  /p>
+</div>
+```

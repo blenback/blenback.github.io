@@ -9,8 +9,65 @@
 <link>https://blenback.github.io/presentations.html</link>
 <atom:link href="https://blenback.github.io/presentations.xml" rel="self" type="application/rss+xml"/>
 <description>Personal website for Ben Black</description>
-<generator>quarto-1.4.550</generator>
-<lastBuildDate>Mon, 15 Jan 2024 23:00:00 GMT</lastBuildDate>
+<generator>quarto-1.4.554</generator>
+<lastBuildDate>Wed, 19 Jun 2024 22:00:00 GMT</lastBuildDate>
+<item>
+  <title>Normative scenarios of landscape change for Nature-Positive futures in Peru</title>
+  <dc:creator>Benjamin Black</dc:creator>
+  <link>https://blenback.github.io/presentations/2024_20_6_WBF/</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>At the <a href="https://www.worldbiodiversityforum.org/en/wbf-2024">World Biodiversity Forum</a> in Davos, Switzerland, I had the pleasure of presenting early results of the <a href="https://nascent-peru.github.io/">NASCENT-Peru</a> scenario creation workshops that took place in May and June 2024.</p>
+<p>This was a great opportunity to showcase the project to researchers from around the world and highlight the importance of scenarios depicting positive futures for landscape development from the perspective of local stakeholders.</p>
+<p>We also had the opportunity to meet with the teams of the other projects funded by SwissRE who are doing similar work in different regions of the world. It was inspiring to see the diversity of approaches and goals that each project hopes to achieve.</p>
+<p>Here are some photos from the event and below you can access the presentation.</p>
+<div>
+
+</div>
+<div class="quarto-layout-panel" data-layout-nrow="2">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="https://blenback.github.io/presentations/2024_20_6_WBF/WBF_present.jpg" class="img-fluid" data-group="my-gallery"></p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="https://blenback.github.io/presentations/2024_20_6_WBF/WBF_group.jpg" class="img-fluid" data-group="my-gallery"></p>
+</div>
+</div>
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="https://blenback.github.io/presentations/2024_20_6_WBF/WBF_meeting.jpg" class="img-fluid" data-group="my-gallery"></p>
+</div>
+</div>
+</div>
+<div class="embed-container">
+  <p align="center"><iframe src="WBF_pres_1962024.pdf" style="border: 0.5px"></iframe>
+</p></div>
+
+
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{black2024,
+  author = {Black, Benjamin},
+  title = {Normative Scenarios of Landscape Change for {Nature-Positive}
+    Futures in {Peru}},
+  date = {2024-06-20},
+  url = {https://blenback.github.io//presentations/2024_20_6_WBF},
+  langid = {en}
+}
+</code></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-black2024" class="csl-entry quarto-appendix-citeas">
+Black, Benjamin. 2024. <span>“Normative Scenarios of Landscape Change
+for Nature-Positive Futures in Peru.”</span> June 20, 2024. <a href="https://blenback.github.io//presentations/2024_20_6_WBF">https://blenback.github.io//presentations/2024_20_6_WBF</a>.
+</div></div></section></div> ]]></description>
+  <category>NASCENT-Peru</category>
+  <category>Biodiversity</category>
+  <category>Normative scenarios</category>
+  <category>Participatory</category>
+  <guid>https://blenback.github.io/presentations/2024_20_6_WBF/</guid>
+  <pubDate>Wed, 19 Jun 2024 22:00:00 GMT</pubDate>
+  <media:content url="https://blenback.github.io/presentations/2024_20_6_WBF/Pres_image.png" medium="image" type="image/png" height="62" width="144"/>
+</item>
 <item>
   <title>Experiences of a ValPar.CH PhD</title>
   <dc:creator>Benjamin Black</dc:creator>

@@ -18,13 +18,13 @@ listing:
     template: publication.ejs
     contents:
     - publications/Theses.yaml
-  # - id: Student-theses
-  #   template: publication.ejs
-  #   feed: 
-  #     type: full 
-  #     title: Student theses supervised
-  #   contents:
-  #   - publications/Student_Theses.yaml
+  - id: Student-theses
+    template: publication.ejs
+    feed:
+      type: full
+      title: Student theses supervised
+    contents:
+    - publications/Student_theses.yaml
 ---
 
 ### Journal Articles
@@ -41,10 +41,10 @@ listing:
 
 ------------------------------------------------------------------------
 
-### Student Theses supervised
+### Student theses supervised
 
-<!-- :::{Student-theses} -->
-<!-- ::: -->
+:::{Student-theses}
+:::
 
 
 

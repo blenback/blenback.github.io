@@ -95,3 +95,30 @@ $code-color: $gray-800; // inline code text color
 // Code blocks
 $code-block-bg: $cream; // code block background color
 
+// $transition-collapse
+$transition-collapse:         height .35s ease;
+$transition-collapse-width:   width .35s ease;
+
+
+
+/*-- scss:rules --*/
+
+// collapse
+.collapse {
+  &:not(.show) {
+    display: none;
+  }
+}
+
+.collapsing {
+  height: 0;
+  overflow: hidden;
+  @include transition($transition-collapse);
+
+  &.collapse-horizontal {
+    width: 0;
+    height: auto;
+    @include transition($transition-collapse-width);
+  }
+}
+

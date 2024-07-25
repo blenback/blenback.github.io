@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.550">
+<meta name="generator" content="quarto-1.4.554">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -80,9 +80,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-name','listing-authors','listing-title','listing-Journal','listing-href','listing-Bibtex','listing-Preprint','listing-Code',{ data: ['index'] },{ data: ['categories'] }],
+      valueNames: ['listing-name','listing-authors','listing-year','listing-title','listing-Journal','listing-href','listing-Bibtex','listing-Code','listing-Data','listing-citation','listing-Preprint','listing-Summary',{ data: ['index'] },{ data: ['categories'] }],
       
-      searchColumns: ["listing-name","listing-authors","listing-title","listing-Journal","listing-href","listing-Bibtex","listing-Preprint","listing-Code"],
+      searchColumns: ["listing-name","listing-authors","listing-year","listing-title","listing-Journal","listing-href","listing-Bibtex","listing-Code","listing-Data","listing-citation","listing-Preprint","listing-Summary"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -115,6 +115,34 @@ ul.task-list li input[type="checkbox"] {
 
     window['quarto-listings'] = window['quarto-listings'] || {};
     window['quarto-listings']['listing-Theses'] = new List('listing-Theses', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-Student-theses .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-name','listing-authors','listing-title','listing-year','listing-Journal',{ data: ['index'] },{ data: ['categories'] }],
+      
+      searchColumns: ["listing-name","listing-authors","listing-title","listing-year","listing-Journal"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-Student-theses'] = new List('listing-Student-theses', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -288,24 +316,51 @@ ul.no-bullets {
 <ul class="no-bullets">
 
   <li>
-    <br>Wicki, S., <b>Black, B</b>., Kurmann, M., Grêt-Regamey, A.
-    Archetypes of social-ecological-technological systems for managing ecological infrastructure. 
-    <i>Environ. Res. Lett.</i>
-    <a href="https://doi.org/10.1088/1748-9326/ad1080">https://doi.org/10.1088/1748-9326/ad1080</a>
+    <br><b>Black, B</b>., Adde, A., Farinotti, D., Guisan, A., Külling, N,, Kurmann, M., Martin, C., Mayer, P., Rabe, SE., Streit, J., Zekollari, H., Grêt-Regamey, A. 
+    2024
+    Broadening the horizon in land use change modelling: Normative scenarios for nature positive futures in Switzerland 
+    <i>Regional Environmental Change</i>
+    <a href="https://doi.org/10.1007/s10113-024-02261-0">https://doi.org/10.1007/s10113-024-02261-0</a>
     <br>
     
-    <a href="media/Archetypes.bib" class="btn btn-outline-dark btn-sm" aria-pressed="true" role="button" download="media/Archetypes.bib"><i class="fa-solid fa-quote-left"></i> Cite </a>
+    
+    <a href="media/lulcc_ch.bib" class="btn btn-outline-dark btn-sm" aria-pressed="true" role="button" download="media/lulcc_ch.bib"><i class="fa-solid fa-quote-left"></i> Cite </a>
      
+    
+    
+    <a href="https://doi.org/10.5281/zenodo.8263509" class="btn btn-outline-dark btn-sm" aria-pressed="true" role="button"> <i class="fa-solid fa-database"></i> Data </a>
+    
+    
+    <a href="https://zenodo.org/doi/10.5281/zenodo.12698470" class="btn btn-outline-dark btn-sm" aria-pressed="true" role="button"> <i class="fa-solid fa-code"></i> Code </a>
     
     
   </li><li>
 
   </li><li>
-    <br><b>Black, B</b>., Strien, M.J. van, Adde, A., Grêt-Regamey, A.
+    <br>Wicki, S., <b>Black, B</b>., Kurmann, M., Grêt-Regamey, A. 
+    2023
+    Archetypes of social-ecological-technological systems for managing ecological infrastructure. 
+    <i>Environ. Res. Lett.</i>
+    <a href="https://doi.org/10.1088/1748-9326/ad1080">https://doi.org/10.1088/1748-9326/ad1080</a>
+    <br>
+    
+    
+    <a href="media/Archetypes.bib" class="btn btn-outline-dark btn-sm" aria-pressed="true" role="button" download="media/Archetypes.bib"><i class="fa-solid fa-quote-left"></i> Cite </a>
+     
+    
+    
+    
+    
+  </li><li>
+
+  </li><li>
+    <br><b>Black, B</b>., Strien, M.J. van, Adde, A., Grêt-Regamey, A. 
+    2022
     Re-considering the status quo: Improving calibration of land use change models through validation of transition potential predictions. 
     <i>Environmental Modelling &amp; Software</i>
     <a href="https://doi.org/10.1016/j.envsoft.2022.105574">https://doi.org/10.1016/j.envsoft.2022.105574</a>
     <br>
+    
     
     <a href="media/ICoLCM.bib" class="btn btn-outline-dark btn-sm" aria-pressed="true" role="button" download="media/ICoLCM.bib"><i class="fa-solid fa-quote-left"></i> Cite </a>
      
@@ -313,22 +368,37 @@ ul.no-bullets {
     <a href="https://dx.doi.org/10.2139/ssrn.4219023" class="btn btn-outline-dark btn-sm" aria-pressed="true" role="button"> <i class="fa-solid fa-fingerprint"></i> Preprint </a>
     
     
-    <a href="https://zenodo.org/record/6912914#.Y7V4mZDYo2w" class="btn btn-outline-dark btn-sm" aria-pressed="true" role="button"> <i class="fa-solid fa-code"></i> Data/Code </a>
+    
+    <a href="https://zenodo.org/record/6912914#.Y7V4mZDYo2w" class="btn btn-outline-dark btn-sm" aria-pressed="true" role="button"> <i class="fa-solid fa-code"></i> Code </a>
+    
     
   </li><li>
 
   </li><li>
-    <br><b>Black, B</b>., Anthony, B.P.
+    <br><b>Black, B</b>., Anthony, B.P. 
+    2022
     Counterfactual assessment of protected area avoided deforestation in Cambodia: Trends in effectiveness, spillover effects and the influence of establishment date. 
     <i>Global Ecology and Conservation</i>
     <a href="https://doi.org/10.1016/j.gecco.2022.e02228">https://doi.org/10.1016/j.gecco.2022.e02228</a>
     <br>
     
+    <p class="d-inline-flex gap-1">
+    <a class="btn btn-outline-dark btn-sm" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample"> Summary </a>
+    </p>
+    <div class="collapse" id="collapseExample">
+    <div class="card card-body">
+    test
+    </div>
+    </div>
+    
+    
     <a href="media/Cam_PA_effect.bib" class="btn btn-outline-dark btn-sm" aria-pressed="true" role="button" download="media/Cam_PA_effect.bib"><i class="fa-solid fa-quote-left"></i> Cite </a>
      
     
     
-    <a href="https://zenodo.org/record/6554206#.Y7V79ZDYo2w" class="btn btn-outline-dark btn-sm" aria-pressed="true" role="button"> <i class="fa-solid fa-code"></i> Data/Code </a>
+    
+    <a href="https://zenodo.org/record/6554206#.Y7V79ZDYo2w" class="btn btn-outline-dark btn-sm" aria-pressed="true" role="button"> <i class="fa-solid fa-code"></i> Code </a>
+    
     
   </li><li>
 
@@ -355,27 +425,35 @@ ul.no-bullets {
 <ul class="no-bullets">
 
   <li>
-    <br><b>Black, B</b>.
+    <br><b>Black, B</b>. 
+    
     Assessing the ecological effectiveness of protected areas in Cambodia: a quasi-experimental counterfactual estimation of avoided deforestation. 
     <i>Masters thesis. Central European University.</i>
     <a href="https://doi.org/10.13140/RG.2.2.28621.10727">https://doi.org/10.13140/RG.2.2.28621.10727</a>
     <br>
     
+    
     <a href="media/MSc_thesis.bib" class="btn btn-outline-dark btn-sm" aria-pressed="true" role="button" download="media/MSc_thesis.bib"><i class="fa-solid fa-quote-left"></i> Cite </a>
      
+    
+    
     
     
   </li><li>
 
   </li><li>
-    <br><b>Black, B</b>.
+    <br><b>Black, B</b>. 
+    
     Simulating the future potential of degraded Mangrove plots using field data from Kenya. 
     <i>Bachelors thesis. Edinburgh Napier University.</i>
     <a href="https://doi.org/10.13140/RG.2.2.20232.49923">https://doi.org/10.13140/RG.2.2.20232.49923</a>
     <br>
     
+    
     <a href="media/BSc_thesis.bib" class="btn btn-outline-dark btn-sm" aria-pressed="true" role="button" download="media/BSc_thesis.bib"><i class="fa-solid fa-quote-left"></i> Cite </a>
      
+    
+    
     
     
   </li><li>
@@ -388,15 +466,108 @@ No matching items
 <hr>
 </section>
 <section id="student-theses-supervised" class="level3">
-<h3 class="anchored" data-anchor-id="student-theses-supervised">Student Theses supervised</h3>
-<!-- :::{Student-theses} -->
-<!-- ::: -->
+<h3 class="anchored" data-anchor-id="student-theses-supervised">Student theses supervised</h3>
+<div class="{Student-theses}">
+
+</div>
 
 
 
 </section>
 
-</main> <!-- /main -->
+<div class="quarto-listing quarto-listing-container-custom" id="listing-Student-theses">
+
+<style>
+ul.no-bullets {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+</style>
+
+
+<ul class="no-bullets">
+
+  <li>
+    <br>Wang, J. 
+    2024
+    Mapping spatial pattern of changes in Nature’s Contributions to People under multiple scenarios in Switzerland, 2020-2060. 
+    <i>Masters thesis. ETH Zürich.</i>
+    <a href=""></a>
+    <br>
+    
+     
+    
+    
+    
+    
+  </li><li>
+
+  </li><li>
+    <br>Streit, J. 
+    2023
+    The development of a functioning Ecological Infrastructure in agricultural landscapes in Switzerland: A social-ecological systems perspective. 
+    <i>Masters thesis. ETH Zürich.</i>
+    <a href=""></a>
+    <br>
+    
+     
+    
+    
+    
+    
+  </li><li>
+
+  </li><li>
+    <br>Gao, T. 
+    2022
+    Characterizing concept drift in predictive models of land use transitions in Switzerland 
+    <i>Masters thesis. ETH Zürich.</i>
+    <a href=""></a>
+    <br>
+    
+     
+    
+    
+    
+    
+  </li><li>
+
+  </li><li>
+    <br>Wild, J. 
+    2022
+    Examining temporal instability in historic land use change in Swiss cantons to inform modelling 
+    <i>Bachelors thesis. ETH Zürich.</i>
+    <a href=""></a>
+    <br>
+    
+     
+    
+    
+    
+    
+  </li><li>
+
+  </li><li>
+    <br>Wang, J. 
+    2021
+    Bayesian Networks to map Nature’s Contribution to People (NCP) and driving factors analysis 
+    <i>Masters thesis. ETH Zürich.</i>
+    <a href=""></a>
+    <br>
+    
+     
+    
+    
+    
+    
+  </li><li>
+
+</li></ul>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -476,6 +647,24 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https:\/\/blenback\.github\.io\/");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
   function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
@@ -510,7 +699,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
     });
   }
   const xrefs = window.document.querySelectorAll('a.quarto-xref');
