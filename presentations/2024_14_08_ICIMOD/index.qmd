@@ -1,0 +1,24 @@
+---
+title: Normative scenarios for effectively mitigating biodiversity loss
+description: Foresight Training for Anticipatory Adaptation in the Hindu Kush Himalaya, Dhulikhel, Nepal.
+author: Benjamin Black
+event: Foresight Training for Anticipatory Adaptation in the Hindu Kush Himalaya
+location: Dhulikhel, Nepal
+date: "2024-08-14"
+image: Pres_image.png
+image-height: 12000px
+categories: [Biodiversity, Normative scenarios, Visions, Simulation modelling]
+preload-iframes: true
+---
+
+In August, I was invited to contribute a virtual presentation to the [Foresight Training for Anticipatory Adaptation in the Hindu Kush Himalaya](https://www.icimod.org/event/livelihoods-economies/foresight-training-for-anticipatory-adaptation-in-the-hindu-kush-himalaya/) event, organised by the
+[International Centre for Integrated Mountain Development (ICIMOD)](https://www.icimod.org/) in Dhulikhel, Nepal. 
+
+In my presentation I shared some of our practical experiences from developing normative scenarios for landscape change in Switzerland and Peru and how such scenarios can be operationalized in simulation models to identify locations for conservation areas to effectively mitigate biodiversity loss but also the trade-offs that certain strategies may incur.
+
+```{=html}
+<div class="embed-container">
+  <p align="center"><iframe src="ICIMOD_Foresight_traing_14082024.pdf" style="border: 0.5px" ></iframe
+  /p>
+</div>
+```

@@ -1,0 +1,27 @@
+---
+title: "Reproducible Research with R and Quarto: Workflows for data, projects and publications"
+description: Masterclass given at the Landscape 2024 conference, Berlin, Germany.
+author: Benjamin Black
+event: Landscape 2024 conference, Berlin, Germany.
+location: Berlin, Germany
+date: "2024-09-16"
+image: Pres_image.png
+image-height: 12000px
+categories: [R, Quarto, Workshop, Reproducible research, FAIR]
+preload-iframes: true
+---
+
+At the [Landscape 2024 conference](https://landscape2024.org/frontend/index.php?folder_id=7393&page_id=) organised by the [Leibniz-Centre for Agricultural Landscape Research (ZALF)](https://www.zalf.de/en/Pages/ZALF.aspx) in Berlin, Germany, I gave a masterclass on Reproducible Research with R and Quarto.
+
+This is a topic I am very passionate about and was a great opportunity to bring together a lot of  practical knowledge that I have developed over the last few years. 
+
+In line with it's theme, I wanted to make the content of the masterclass as open and accessible as possible, so I created a dedicated website for it using Quarto: [https://blenback.github.io/R-for-Reproducible-Research](https://blenback.github.io/R-for-Reproducible-Research)
+
+The website contains all the materials for the masterclass, including the slides and practical exercises. Also because the Github repository for it is public you can also see the source code that underlies it. It was a lot of work but I learned a lot along the way and overall I am really happy with the result. 
+
+```{=html}
+<div class="embed-container">
+  <p align="center"><iframe src="https://blenback.github.io/R-for-Reproducible-Research/presentation.html" style="border: 0.5px" ></iframe
+  /p>
+</div>
+```
