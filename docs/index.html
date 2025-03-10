@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.56">
+<meta name="generator" content="quarto-1.6.40">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -35,10 +35,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-8ea72dc5fed832574809a9c94082fbbb.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-d63bb5fc020a1ba434491ca89a66a02c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
 <link href="site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
 <link href="site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
@@ -82,7 +82,9 @@ gtag('config', 'G-9CCC34ZV10', { 'anonymize_ip': true});
 <link rel="stylesheet" href="css/styles.css">
 <link rel="stylesheet" href="css/home.css">
 <meta property="og:title" content="Ben Black">
+<meta property="og:image" content="https://blenback.github.io/media/landing_portrait_cropped.jpg">
 <meta property="og:site_name" content="Ben<br>Black">
+<meta property="og:image:alt" content="photo of Ben Black">
 <meta name="twitter:title" content="Ben Black">
 <meta name="twitter:image" content="https://blenback.github.io/media/preview.png">
 <meta name="twitter:creator" content="@Blen_Back">
@@ -163,7 +165,9 @@ gtag('config', 'G-9CCC34ZV10', { 'anonymize_ip': true});
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"><h1 class="title display-7">
+Hi there!
+</h1></header>
 
 
 
@@ -184,9 +188,7 @@ Doctoral Researcher
 </div>
 </div>
 <div class="bio">
-<h1>
-Hi there!
-</h1>
+
 <p>I’m Ben, a PhD student currently working within the <a href="https://valpar.ch/index_de.php">ValPar.CH</a> project as part of the research group Planning of Landscape Urban Systems <a href="https://plus.ethz.ch/">(PLUS)</a> at ETH Zürich.</p>
 I’m a BIG fan of R stats for everything research related particularly for promoting open science and reproducibility. I started this site/blog to share some of my work that doesn’t necessarily make it into publications in the hope that others will find it useful. Thanks for stopping by! <br> <br>
 <div class="activities">
@@ -355,8 +357,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
   clipboard.on('success', onCopySuccess);
   if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-    // For code content inside modals, clipBoardJS needs to be initialized with a container option
-    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
     const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
       text: getTextToCopy,
       container: window.document.getElementById('quarto-embedded-source-code-modal')
@@ -467,7 +467,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
-      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {
