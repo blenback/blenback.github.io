@@ -1,3 +1,9 @@
+- name: PhD
+  authors: <b>Black, B</b>.
+  title: "Identifying effective area-based conservation strategies under uncertainty"
+  Journal: Doctoral thesis. ETH Zürich.
+  href: Not presently available
+  Bibtex: media/MSc_thesis.bib
 - name: MSc
   authors: <b>Black, B</b>.
   title: "Assessing the ecological effectiveness of protected areas in Cambodia: a quasi-experimental counterfactual estimation of avoided deforestation."

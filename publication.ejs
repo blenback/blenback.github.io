@@ -20,11 +20,11 @@ ul.no-bullets {
     <br/>
     <% if(item['Summary']){ %>
     <p class="d-inline-flex gap-1">
-    <a class="btn btn-outline-dark btn-sm" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample"> Summary </a>
+    <a class="btn btn-outline-dark btn-sm" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample"> Plain Langauge Summary </a>
     </p>
     <div class="collapse" id="collapseExample">
     <div class="card card-body">
-    <%- item['Summary']%>
+    <%= item['Summary']%>
     </div>
     </div>
     <% } %>
@@ -45,3 +45,6 @@ ul.no-bullets {
 <% } %>
 </ul>
 ```
+
+
+    

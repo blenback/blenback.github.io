@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.6.42">
+<meta name="generator" content="quarto-1.6.40">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -20,6 +20,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -35,7 +69,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-b53751a350365c71b6c909e95f209ed1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-8ea72dc5fed832574809a9c94082fbbb.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap-d63bb5fc020a1ba434491ca89a66a02c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
@@ -77,15 +111,17 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', 'G-9CCC34ZV10', { 'anonymize_ip': true});
 </script>
+<script type="module" src="site_libs/quarto-ojs/quarto-ojs-runtime.js"></script>
+<link href="site_libs/quarto-ojs/quarto-ojs.css" rel="stylesheet">
 
 
 <link rel="stylesheet" href="css/styles.css">
-<link rel="stylesheet" href="css/home.css">
+<link rel="stylesheet" href="modal.css">
 <meta property="og:title" content="Ben Black">
-<meta property="og:image" content="https://blenback.github.io/media/landing_portrait_cropped.jpg">
+<meta property="og:description" content="Personal website for Ben Black">
 <meta property="og:site_name" content="Ben<br>Black">
-<meta property="og:image:alt" content="photo of Ben Black">
 <meta name="twitter:title" content="Ben Black">
+<meta name="twitter:description" content="Personal website for Ben Black">
 <meta name="twitter:image" content="https://blenback.github.io/media/preview.png">
 <meta name="twitter:creator" content="@Blen_Back">
 <meta name="twitter:site" content="@Blen_Back">
@@ -112,7 +148,7 @@ gtag('config', 'G-9CCC34ZV10', { 'anonymize_ip': true});
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="./index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
@@ -165,116 +201,69 @@ gtag('config', 'G-9CCC34ZV10', { 'anonymize_ip': true});
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"><h1 class="title display-7">
-Hi there!
-</h1></header>
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"><h1 class="title display-7"></h1></header><div class="quarto-title-block"><div class="quarto-title-tools-only"><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
 
 
 
 
-<!--# Note: Fontawesome and Schotastics quarto extensions required for icons. -->
-<p><link rel="stylesheet" href="css/academicons.min.css"></p>
-<section>
-<div class="img-bio">
-<p><img src="media/landing_portrait_cropped.jpg" alt="photo of Ben Black" class="author-photo"></p>
-<h2 style="font-weight:500!important;text-align:center!important; text-decoration:none;" class="anchored">
-Ben Black
-</h2>
-<h3 style="margin:0!important;padding:0!important;text-decoration:none;" class="anchored">
-Doctoral Researcher
-</h3>
-<div class="social">
-<a href="https://www.linkedin.com/in/ben-black-9889a1150/" class="fa fa-brands fa-linkedin fa-2x"></a> <a href="https://github.com/blenback" class="fa fa-brands fa-github fa-2x"></a> <a href="mailto:bblack@ethz.ch" class="fa fa-solid fa-envelope fa-2x"></a> <a href="https://www.researchgate.net/profile/Benjamin-Black-5" class="fa fa-brands fa-researchgate fa-2x"></a> <a href="https://orcid.org/my-orcid?orcid=0000-0002-8113-2114" class="fa fa-brands fa-orcid fa-2x"></a> <a href="https://twitter.com/Blen_Back" class="fa fa-brands fa-twitter fa-2x"></a> <a href="https://scholar.google.com/citations?hl=en&amp;user=h00y-m4AAAAJ" class="ai ai-google-scholar ai-2x"></a>
-</div>
-</div>
-<div class="bio">
+<p><a href="#" data-micromodal-trigger="mymodal" tabindex="0"> <i class="bi bi-clipboard-data"></i> Click to see a popup! </a></p>
+<!-- the rest of this stuff is for the popup! -->
+<div class="cell" data-include="false">
+<div class="sourceCode cell-code hidden" id="cb1" data-startfrom="21" data-source-offset="-2"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 20;"><span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>micro <span class="op">=</span> <span class="pp">require</span>(<span class="st">"micromodal@0.4.10"</span>)<span class="op">;</span></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>micro<span class="op">.</span><span class="fu">init</span>({</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>  <span class="dt">awaitOpenAnimation</span><span class="op">:</span> <span class="kw">true</span><span class="op">,</span></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>  <span class="dt">awaitCloseAnimation</span><span class="op">:</span> <span class="kw">true</span></span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>})<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display hidden">
+<div>
+<div id="ojs-cell-1-1" data-nodetype="declaration">
 
-<p>I’m Ben, a PhD student currently working within the <a href="https://valpar.ch/index_de.php">ValPar.CH</a> project as part of the research group Planning of Landscape Urban Systems <a href="https://plus.ethz.ch/">(PLUS)</a> at ETH Zürich.</p>
-I’m a BIG fan of R stats for everything research related particularly for promoting open science and reproducibility. I started this site/blog to share some of my work that doesn’t necessarily make it into publications in the hope that others will find it useful. Thanks for stopping by! <br> <br>
-<div class="activities">
-<div class="interests">
-<p><span class="activity">Experience</span></p>
-<div class="education-element">
-<div class="icon">
-<p><i class="fa-solid fa-chalkboard-user" aria-label="chalkboard-user"></i></p>
-</div>
-<div class="degree">
-Lecturer in <a href="https://irl.ethz.ch/education/courses/msc/participatory_modelling.html">Participatory Environmental Modelling</a>, 2021 - Present
-</div>
-<div class="school">
-ETH Zürich
-</div>
-</div>
-<br>
-<div class="education-element">
-<div class="icon">
-<p><i class="fa-solid fa-list-check" aria-label="list-check"></i></p>
-</div>
-<div class="degree">
-Student Affairs Manager, 2018
-</div>
-<div class="school">
-The School for Field Studies Center for Conservation and Development Studies in the Lower Mekong
-</div>
-</div>
-<br>
-<div class="education-element">
-<div class="icon">
-<p><i class="fa-solid fa-people-roof" aria-label="people-roof"></i></p>
-</div>
-<div class="degree">
-Project Manager 2015 - 2017
-</div>
-<div class="school">
-Elephant Livelihood Initiatives and Environment (E.L.I.E)
 </div>
 </div>
 </div>
-<div class="education">
-<p><span class="activity">Education</span></p>
-<div class="education-element">
-<div class="icon">
-<p><i class="fa-solid fa-graduation-cap" aria-label="graduation-cap"></i></p>
-</div>
-<div class="degree">
-PhD in Planning of Landscape and Urban Systems, 2020 - Present
-</div>
-<div class="school">
-ETH Zürich
-</div>
-</div>
-<br>
-<div class="education-element">
-<div class="icon">
-<p><i class="fa-solid fa-graduation-cap" aria-label="graduation-cap"></i></p>
-</div>
-<div class="degree">
-MSc in Environmental Sciences, Policy and Management, 2020
-</div>
-<div class="school">
-Central European University, University of Manchester, Lund University, University of the Aegean
-</div>
-</div>
-<br>
-<div class="education-element">
-<div class="icon">
-<p><i class="fa-solid fa-graduation-cap" aria-label="graduation-cap"></i></p>
-</div>
-<div class="degree">
-BSc with 1st Class Honours in Biological Sciences, 2014
-</div>
-<div class="school">
-Edinburgh Napier University
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
+<div class="cell-output cell-output-display hidden">
+<div>
+<div id="ojs-cell-1-2" data-nodetype="expression">
 
+</div>
+</div>
+</div>
+</div>
+<!-- and here's the popup itself! -->
+<div id="mymodal" class="modal micromodal-slide" aria-hidden="true">
+<div class="modal__overlay" tabindex="-1" data-micromodal-close="true">
+<div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="mymodal-title">
+<button class="modal__close" aria-label="Close modal" data-micromodal-close="">
+</button>
+<header>
+<section id="mymodal-title" class="level2">
+<h2 class="anchored" data-anchor-id="mymodal-title">Look at this cool chart!</h2>
+</section></header>
+<div id="modal-1-content">
+<p>I should probably tell you all about it, but 🤷🏻‍♂️</p>
+</div>
+
+</div>
+</div>
+</div>
+
+
+<!-- -->
 
 
 </main> <!-- /main -->
+<script type="ojs-module-contents">
+eyJjb250ZW50cyI6W3sibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMSIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6IlxyXG5taWNybyA9IHJlcXVpcmUoXCJtaWNyb21vZGFsQDAuNC4xMFwiKTtcclxuXHJcbm1pY3JvLmluaXQoe1xyXG4gIGF3YWl0T3BlbkFuaW1hdGlvbjogdHJ1ZSxcclxuICBhd2FpdENsb3NlQW5pbWF0aW9uOiB0cnVlXHJcbn0pO1xyXG4ifV19
+</script>
+<script type="module">
+if (window.location.protocol === "file:") { alert("The OJS runtime does not work with file:// URLs. Please use a web server to view this document."); }
+window._ojs.paths.runtimeToDoc = "../..";
+window._ojs.paths.runtimeToRoot = "../..";
+window._ojs.paths.docToRoot = "";
+window._ojs.selfContained = false;
+window._ojs.runtime.interpretFromScriptTags();
+</script>
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -362,6 +351,57 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       container: window.document.getElementById('quarto-embedded-source-code-modal')
     });
     clipboardModal.on('success', onCopySuccess);
+  }
+  const viewSource = window.document.getElementById('quarto-view-source') ||
+                     window.document.getElementById('quarto-code-tools-source');
+  if (viewSource) {
+    const sourceUrl = viewSource.getAttribute("data-quarto-source-url");
+    viewSource.addEventListener("click", function(e) {
+      if (sourceUrl) {
+        // rstudio viewer pane
+        if (/\bcapabilities=\b/.test(window.location)) {
+          window.open(sourceUrl);
+        } else {
+          window.location.href = sourceUrl;
+        }
+      } else {
+        const modal = new bootstrap.Modal(document.getElementById('quarto-embedded-source-code-modal'));
+        modal.show();
+      }
+      return false;
+    });
+  }
+  function toggleCodeHandler(show) {
+    return function(e) {
+      const detailsSrc = window.document.querySelectorAll(".cell > details > .sourceCode");
+      for (let i=0; i<detailsSrc.length; i++) {
+        const details = detailsSrc[i].parentElement;
+        if (show) {
+          details.open = true;
+        } else {
+          details.removeAttribute("open");
+        }
+      }
+      const cellCodeDivs = window.document.querySelectorAll(".cell > .sourceCode");
+      const fromCls = show ? "hidden" : "unhidden";
+      const toCls = show ? "unhidden" : "hidden";
+      for (let i=0; i<cellCodeDivs.length; i++) {
+        const codeDiv = cellCodeDivs[i];
+        if (codeDiv.classList.contains(fromCls)) {
+          codeDiv.classList.remove(fromCls);
+          codeDiv.classList.add(toCls);
+        } 
+      }
+      return false;
+    }
+  }
+  const hideAllCode = window.document.getElementById("quarto-hide-all-code");
+  if (hideAllCode) {
+    hideAllCode.addEventListener("click", toggleCodeHandler(false));
+  }
+  const showAllCode = window.document.getElementById("quarto-show-all-code");
+  if (showAllCode) {
+    showAllCode.addEventListener("click", toggleCodeHandler(true));
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
@@ -691,7 +731,56 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
 });
-</script>
+</script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
+<div class="sourceCode" id="cb2" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="an">execute:</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="co">  echo: false</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="an">format:</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="co">  html:</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="co">    resources: "*.csv"</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="co">    css: modal.css</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="co">    code-tools: true</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>&lt;a href="#" data-micromodal-trigger="mymodal" tabindex="0"&gt;</span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>    &lt;i class="bi bi-clipboard-data"&gt;&lt;/i&gt;</span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>    Click to see a popup!</span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>&lt;/a&gt;</span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a><span class="co">&lt;!-- the rest of this stuff is for the popup! --&gt;</span></span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a><span class="in">```{ojs}</span></span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a><span class="in">//| include: false</span></span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a><span class="in">micro = require("micromodal@0.4.10");</span></span>
+<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a><span class="in">micro.init({</span></span>
+<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a><span class="in">  awaitOpenAnimation: true,</span></span>
+<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a><span class="in">  awaitCloseAnimation: true</span></span>
+<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a><span class="in">});</span></span>
+<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-31"><a href="#cb2-31" aria-hidden="true" tabindex="-1"></a><span class="co">&lt;!-- and here's the popup itself! --&gt;</span></span>
+<span id="cb2-32"><a href="#cb2-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-33"><a href="#cb2-33" aria-hidden="true" tabindex="-1"></a>:::::: {#mymodal .modal .micromodal-slide aria-hidden="true"}</span>
+<span id="cb2-34"><a href="#cb2-34" aria-hidden="true" tabindex="-1"></a>::::: {.modal__overlay tabindex="-1" data-micromodal-close="true"}</span>
+<span id="cb2-35"><a href="#cb2-35" aria-hidden="true" tabindex="-1"></a>:::: {.modal__container role="dialog" aria-modal="true" aria-labelledby="mymodal-title"}</span>
+<span id="cb2-36"><a href="#cb2-36" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-37"><a href="#cb2-37" aria-hidden="true" tabindex="-1"></a>&lt;button class="modal__close" aria-label="Close modal" data-micromodal-close&gt;&lt;/button&gt;</span>
+<span id="cb2-38"><a href="#cb2-38" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-39"><a href="#cb2-39" aria-hidden="true" tabindex="-1"></a>&lt;header&gt;</span>
+<span id="cb2-40"><a href="#cb2-40" aria-hidden="true" tabindex="-1"></a><span class="fu">## Look at this cool chart! {#mymodal-title}</span></span>
+<span id="cb2-41"><a href="#cb2-41" aria-hidden="true" tabindex="-1"></a>&lt;/header&gt;</span>
+<span id="cb2-42"><a href="#cb2-42" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-43"><a href="#cb2-43" aria-hidden="true" tabindex="-1"></a>::: {#modal-1-content}</span>
+<span id="cb2-44"><a href="#cb2-44" aria-hidden="true" tabindex="-1"></a>I should probably tell you all about it, but 🤷🏻‍♂️</span>
+<span id="cb2-45"><a href="#cb2-45" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb2-46"><a href="#cb2-46" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-47"><a href="#cb2-47" aria-hidden="true" tabindex="-1"></a>::::</span>
+<span id="cb2-48"><a href="#cb2-48" aria-hidden="true" tabindex="-1"></a>:::::</span>
+<span id="cb2-49"><a href="#cb2-49" aria-hidden="true" tabindex="-1"></a>::::::</span>
+</code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
+</div></div></div></div></div>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
