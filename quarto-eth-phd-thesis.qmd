@@ -5,7 +5,9 @@ execute:
 toc: true
 ---
 
-This is a template that is intended to meet the [requirements](https://ethz.ch/students/en/doctorate/doctoral-thesis-examination.html) for cumulative paper PhD thesis at ETH Zurich. However, it is worth noting that there may be discrepancies between departments and as such you should check the requirements for your department (My thesis was under D-BAUG).
+This is an webpage version of the README for my Quarto ETH PhD thesis template, available on Github here: <https://github.com/blenback/quarto-eth-phd-thesis>.\
+\
+The template is intended to meet the [requirements](https://ethz.ch/students/en/doctorate/doctoral-thesis-examination.html) for cumulative paper PhD thesis at ETH Zurich. However, it is worth noting that there may be discrepancies between departments and as such you should check the requirements for your department (My thesis was under D-BAUG).
 
 I built this template based upon the `quarto-phd-thesis` template from `james-d-h`: <https://github.com/james-d-h/quarto-phd-thesis>, adding some notable features.
 

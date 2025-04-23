@@ -10,7 +10,21 @@
 <atom:link href="https://blenback.github.io/publications.xml" rel="self" type="application/rss+xml"/>
 <description>Personal website for Ben Black</description>
 <generator>quarto-1.6.42</generator>
-<lastBuildDate>Sun, 15 Sep 2024 22:00:00 GMT</lastBuildDate>
+<lastBuildDate>Tue, 22 Apr 2025 22:00:00 GMT</lastBuildDate>
+<item>
+  <title>Writing my PhD thesis with Quarto</title>
+  <link>https://blenback.github.io/posts/PhD_template.html</link>
+  <description><![CDATA[ I have been a big fan of R for everything research related for several years and Rstudio has been my go-to IDE all the way from being a complete beginner to my current level which I would still only describe as ‘somewhat proficient’. So you can imagine that when <a href="">Posit</a>, the company behind Rstudio released their open-source technical publishing software, <a href="">Quarto</a>, I was naturally intrigued. Over the last year I’ve gotten really into Quarto and used it for all sorts of purposes: I made this website for myself along with several others, I’ve written a whole academic paper with it, produced a proposal and even used it to automate the mass-sending of invitation letters. ]]></description>
+  <category>R</category>
+  <category>Quarto</category>
+  <category>Reproducible research</category>
+  <category>thesis</category>
+  <category>template</category>
+  <category>LaTeX</category>
+  <guid>https://blenback.github.io/posts/PhD_template.html</guid>
+  <pubDate>Tue, 22 Apr 2025 22:00:00 GMT</pubDate>
+  <media:content url="https://blenback.github.io/posts/assets/workshop_abstract.png" medium="image" type="image/png" height="104" width="144"/>
+</item>
 <item>
   <title>Reproducible Research with R and Quarto: Workflows for data, projects and publications</title>
   <dc:creator>Benjamin Black</dc:creator>
@@ -207,14 +221,23 @@
   <link>https://blenback.github.io/about.html</link>
   <description><![CDATA[ <img src="https://blenback.github.io/media/portrait1.jpg"> <img src="https://blenback.github.io/media/portrait5.jpg"> <img src="https://blenback.github.io/media/portrait3.jpg"> <img src="https://blenback.github.io/media/portrait4.jpg"> <img src="https://blenback.github.io/media/portrait2.jpg"> ]]></description>
   <guid>https://blenback.github.io/about.html</guid>
-  <pubDate>Wed, 23 Apr 2025 07:42:07 GMT</pubDate>
+  <pubDate>Wed, 23 Apr 2025 17:50:13 GMT</pubDate>
 </item>
 <item>
   <title>Presentations</title>
   <link>https://blenback.github.io/presentations.html</link>
   <description><![CDATA[ <a href="./presentations/2024_17_09_Landscape/index.html" class="no-external"></a> ]]></description>
   <guid>https://blenback.github.io/presentations.html</guid>
-  <pubDate>Wed, 23 Apr 2025 07:42:07 GMT</pubDate>
+  <pubDate>Wed, 23 Apr 2025 17:50:13 GMT</pubDate>
+</item>
+<item>
+  <title>Quarto PhD thesis template for ETH Zurich</title>
+  <link>https://blenback.github.io/quarto-eth-phd-thesis.html</link>
+  <description><![CDATA[ This is an webpage version of the README for my Quarto ETH PhD thesis template, available on Github here: <a href="https://github.com/blenback/quarto-eth-phd-thesis" class="uri">https://github.com/blenback/quarto-eth-phd-thesis</a>.<br>
+<br>
+The template is intended to meet the <a href="https://ethz.ch/students/en/doctorate/doctoral-thesis-examination.html">requirements</a> for cumulative paper PhD thesis at ETH Zurich. However, it is worth noting that there may be discrepancies between departments and as such you should check the requirements for your department (My thesis was under D-BAUG). ]]></description>
+  <guid>https://blenback.github.io/quarto-eth-phd-thesis.html</guid>
+  <pubDate>Wed, 23 Apr 2025 17:50:13 GMT</pubDate>
 </item>
 </channel>
 </rss>
