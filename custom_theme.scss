@@ -89,11 +89,12 @@ $body-bg: #27374F0A; // page background
 $footer-bg: $light-sage-green; // footer 
 
 // Inline code
-$code-bg: $off-white; // inline code background color
+//$code-bg: #27374F0A; // inline code background color
 $code-color: $gray-800; // inline code text color
 
 // Code blocks
-$code-block-bg: $cream; // code block background color
+//$code-block-bg: #27374F0A; // code block background color
+$code-block-color: $gray-800; // code block text color
 
 // $transition-collapse
 $transition-collapse:         height .35s ease;

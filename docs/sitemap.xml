@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://blenback.github.io/publications.html</loc>
-    <lastmod>2025-04-23T06:14:40.735Z</lastmod>
+    <lastmod>2025-04-23T07:41:57.042Z</lastmod>
   </url>
   <url>
     <loc>https://blenback.github.io/presentations/2024_5_9_Landschaft/index.html</loc>
@@ -75,5 +75,13 @@
   <url>
     <loc>https://blenback.github.io/presentations.html</loc>
     <lastmod>2024-11-25T17:30:07.002Z</lastmod>
+  </url>
+  <url>
+    <loc>https://blenback.github.io/quarto-eth-phd-thesis.html</loc>
+    <lastmod>2025-04-23T17:45:03.730Z</lastmod>
+  </url>
+  <url>
+    <loc>https://blenback.github.io/posts/PhD_template.html</loc>
+    <lastmod>2025-04-23T15:51:11.828Z</lastmod>
   </url>
 </urlset>

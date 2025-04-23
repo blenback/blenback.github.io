@@ -6,6 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="dcterms.date" content="2025-04-23">
 
 <title>Ben Black – Ben&lt;br&gt;Black</title>
 <style>
@@ -23,26 +24,24 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-b53751a350365c71b6c909e95f209ed1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-d63bb5fc020a1ba434491ca89a66a02c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
-<link href="site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-b53751a350365c71b6c909e95f209ed1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-d63bb5fc020a1ba434491ca89a66a02c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -70,35 +69,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-image','listing-title','listing-categories','listing-date',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-9CCC34ZV10"></script>
 
 <script type="text/javascript">
@@ -109,62 +79,34 @@ gtag('js', new Date());
 gtag('config', 'G-9CCC34ZV10', { 'anonymize_ip': true});
 </script>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="stylesheet" href="css/styles.css">
-<link rel="alternate" type="application/rss+xml" title="Ben<br>Black" href="posts.xml" data-external="1"><meta property="og:title" content="Ben Black">
-<meta property="og:description" content="A place for me to share insights into my research but also little tips and tricks I find interesting in using R for scientific research">
+<link rel="stylesheet" href="../css/styles.css">
+<meta property="og:title" content="Ben Black">
+<meta property="og:description" content="Personal website for Ben Black">
 <meta property="og:image" content="https://blenback.github.io/posts/assets/workshop_abstract.png">
 <meta property="og:site_name" content="Ben<br>Black">
-<meta property="og:image:alt" content="Graphical abstract for reproducible research workshop">
 <meta property="og:image:height" content="2369">
 <meta property="og:image:width" content="3289">
+<meta property="og:image:alt" content="Graphical abstract for reproducible research workshop">
 <meta name="twitter:title" content="Ben Black">
-<meta name="twitter:description" content="A place for me to share insights into my research but also little tips and tricks I find interesting in using R for scientific research">
-<meta name="twitter:image" content="https://blenback.github.io/media/preview.png">
+<meta name="twitter:description" content="Personal website for Ben Black">
+<meta name="twitter:image" content="https://blenback.github.io/posts/assets/workshop_abstract.png">
 <meta name="twitter:creator" content="@Blen_Back">
 <meta name="twitter:site" content="@Blen_Back">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image-height" content="912">
-<meta name="twitter:image-width" content="1896">
+<meta name="twitter:image-height" content="2369">
+<meta name="twitter:image-width" content="3289">
+<meta name="twitter:image:alt" content="Graphical abstract for reproducible research workshop">
 </head>
 
-<body class="nav-fixed">
+<body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Ben<br>Black</span>
     </a>
   </div>
@@ -175,23 +117,23 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link" href="../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./publications.html"> 
+    <a class="nav-link" href="../publications.html"> 
 <span class="menu-text">Publications</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./presentations.html"> 
+    <a class="nav-link" href="../presentations.html"> 
 <span class="menu-text">Presentations</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./posts.html" aria-current="page"> 
+    <a class="nav-link" href="../posts.html"> 
 <span class="menu-text">Posts</span></a>
   </li>  
   <li class="nav-item">
@@ -211,7 +153,7 @@ window.Quarto = {
 <span class="menu-text"><i class="fa-brands fa-twitter" aria-label="twitter"></i></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="./posts.xml"> <i class="bi bi-rss" role="img">
+    <a class="nav-link" href="../posts.xml"> <i class="bi bi-rss" role="img">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
@@ -226,22 +168,34 @@ window.Quarto = {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(5)</span></div><div class="category" data-category="QXV0b21hdGlvbg==">Automation <span class="quarto-category-count">(1)</span></div><div class="category" data-category="QmlvZGl2ZXJzaXR5">Biodiversity <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Q1Y=">CV <span class="quarto-category-count">(1)</span></div><div class="category" data-category="RWNvc3lzdGVtJTIwU2VydmljZXM=">Ecosystem Services <span class="quarto-category-count">(1)</span></div><div class="category" data-category="RkFJUg==">FAIR <span class="quarto-category-count">(1)</span></div><div class="category" data-category="RnV0dXJlJTIwbGFuZHNjYXBlJTIwc2NlbmFyaW9z">Future landscape scenarios <span class="quarto-category-count">(1)</span></div><div class="category" data-category="TGFUZVg=">LaTeX <span class="quarto-category-count">(1)</span></div><div class="category" data-category="TGFuZCUyMHVzZQ==">Land use <span class="quarto-category-count">(1)</span></div><div class="category" data-category="TGFuZHNjYXBlJTIwY29uZmVyZW5jZQ==">Landscape conference <span class="quarto-category-count">(1)</span></div><div class="category" data-category="TGVhZmxldA==">Leaflet <span class="quarto-category-count">(1)</span></div><div class="category" data-category="TWFwcw==">Maps <span class="quarto-category-count">(1)</span></div><div class="category" data-category="TWFya2Rvd24=">Markdown <span class="quarto-category-count">(1)</span></div><div class="category" data-category="TkFTQ0VOVC1QZXJ1">NASCENT-Peru <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UGVydQ==">Peru <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UHJvamVjdA==">Project <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UXVhcnRv">Quarto <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Ug==">R <span class="quarto-category-count">(4)</span></div><div class="category" data-category="UmVwcm9kdWNpYmxlJTIwcmVzZWFyY2g=">Reproducible research <span class="quarto-category-count">(2)</span></div><div class="category" data-category="UmVzdW1l">Resume <span class="quarto-category-count">(1)</span></div><div class="category" data-category="U3dpc3NSRQ==">SwissRE <span class="quarto-category-count">(1)</span></div><div class="category" data-category="cmVzZWFyY2glMjByZXN1bHRz">research results <span class="quarto-category-count">(1)</span></div><div class="category" data-category="dGVtcGxhdGU=">template <span class="quarto-category-count">(1)</span></div><div class="category" data-category="dGhlc2lz">thesis <span class="quarto-category-count">(1)</span></div><div class="category" data-category="d29ya3Nob3A=">workshop <span class="quarto-category-count">(1)</span></div></div></div>
+    
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<p class="subtitle lead">A place for me to share insights into my research but also little tips and tricks I find interesting in using R for scientific research</p>
-</div>
+<h1 class="title">Writing my PhD thesis with Quarto</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">R</div>
+    <div class="quarto-category">Quarto</div>
+    <div class="quarto-category">Reproducible research</div>
+    <div class="quarto-category">thesis</div>
+    <div class="quarto-category">template</div>
+    <div class="quarto-category">LaTeX</div>
+  </div>
+  </div>
 
 
 
 <div class="quarto-title-meta">
 
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">April 23, 2025</p>
+    </div>
+  </div>
   
     
   </div>
@@ -251,209 +205,18 @@ window.Quarto = {
 </header>
 
 
+<p>I have been a big fan of R for everything research related for several years and Rstudio has been my go-to IDE all the way from being a complete beginner to my current level which I would still only describe as ‘somewhat proficient’. So you can imagine that when <a href="">Posit</a>, the company behind Rstudio released their open-source technical publishing software, <a href="">Quarto</a>, I was naturally intrigued. Over the last year I’ve gotten really into Quarto and used it for all sorts of purposes: I made this website for myself along with several others, I’ve written a whole academic paper with it, produced a proposal and even used it to automate the mass-sending of invitation letters.</p>
+<p>This experience prompted me to put together a workshop, that would try to combine all of the bits and pieces of useful knowledge I have acquired in using both R and Quarto for engaging in reproducible scientific research into a semi-coherent package.</p>
+<p>I submitted a proposal for the workshop to be delivered at the <a href="https://landscape2024.org/frontend/index.php?folder_id=7393&amp;page_id=">Landscape conference</a> in Berlin in September 2024 and it was accepted. If you happen to be attending this conference you can sign up to attend the workshop in person but it wouldn’t be very FAIR (get it…) of me if I didn’t make the content freely available. So I created a dedicated website for it that also displays the content as a presentation at the same time (one of the other neat features of Quarto): <a href="https://blenback.github.io/R-for-Reproducible-Research">https://blenback.github.io/R-for-Reproducible-Research/</a></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="assets/workshop_abstract.png" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="graphical_abstract"></p>
+</figure>
+</div>
 
 
 
-
-<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="UiUyQ1F1YXJ0byUyQ1JlcHJvZHVjaWJsZSUyMHJlc2VhcmNoJTJDdGhlc2lzJTJDdGVtcGxhdGUlMkNMYVRlWA==" data-listing-date-sort="1745359200000" data-listing-file-modified-sort="1745423471828" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="243">
-<a href="./posts/PhD_template.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./posts/assets/workshop_abstract.png" class="thumbnail-image card-img" style="height: 200px;" alt="Graphical abstract for reproducible research workshop">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Writing my PhD thesis with Quarto
-</h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Ug=='); return false;">
-R
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('UXVhcnRv'); return false;">
-Quarto
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('UmVwcm9kdWNpYmxlJTIwcmVzZWFyY2g='); return false;">
-Reproducible research
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('dGhlc2lz'); return false;">
-thesis
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('dGVtcGxhdGU='); return false;">
-template
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('TGFUZVg='); return false;">
-LaTeX
-</div>
-</div>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-Apr 23, 2025
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="1" data-categories="UiUyQ1F1YXJ0byUyQ1JlcHJvZHVjaWJsZSUyMHJlc2VhcmNoJTJDRkFJUiUyQ0xhbmRzY2FwZSUyMGNvbmZlcmVuY2UlMkN3b3Jrc2hvcA==" data-listing-date-sort="1714514400000" data-listing-file-modified-sort="1732555806994" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="247">
-<a href="./posts/R_workshop.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./posts/assets/workshop_abstract.png" class="thumbnail-image card-img" style="height: 200px;" alt="Graphical abstract for reproducible research workshop">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Upcoming workshop: Reproducible research with R and Quarto
-</h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Ug=='); return false;">
-R
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('UXVhcnRv'); return false;">
-Quarto
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('UmVwcm9kdWNpYmxlJTIwcmVzZWFyY2g='); return false;">
-Reproducible research
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('RkFJUg=='); return false;">
-FAIR
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('TGFuZHNjYXBlJTIwY29uZmVyZW5jZQ=='); return false;">
-Landscape conference
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('d29ya3Nob3A='); return false;">
-workshop
-</div>
-</div>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-May 1, 2024
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="2" data-categories="UiUyQ01hcmtkb3duJTJDQXV0b21hdGlvbiUyQ0NWJTJDUmVzdW1l" data-listing-date-sort="1706742000000" data-listing-file-modified-sort="1732555806994" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="385">
-<a href="./posts/CV_update.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./posts/assets/cv_update.jpg" class="thumbnail-image card-img" style="height: 200px;" alt="Graphical abstract for reproducible research workshop">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Automating boring tasks pt.&nbsp;1: Updating my CV
-</h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Ug=='); return false;">
-R
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('TWFya2Rvd24='); return false;">
-Markdown
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('QXV0b21hdGlvbg=='); return false;">
-Automation
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Q1Y='); return false;">
-CV
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('UmVzdW1l'); return false;">
-Resume
-</div>
-</div>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-Feb 1, 2024
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="3" data-categories="UiUyQ0xlYWZsZXQlMkNNYXBzJTJDTGFuZCUyMHVzZSUyQ3Jlc2VhcmNoJTIwcmVzdWx0cw==" data-listing-date-sort="1706742000000" data-listing-file-modified-sort="1732555807001" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
-<a href="./posts/leaflet_time_slider.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./posts/assets/workshop_abstract.png" class="thumbnail-image card-img" style="height: 200px;" alt="Placeholder of time-slider map">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Leafleting: Time slider map of land use change scenarios
-</h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Ug=='); return false;">
-R
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('TGVhZmxldA=='); return false;">
-Leaflet
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('TWFwcw=='); return false;">
-Maps
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('TGFuZCUyMHVzZQ=='); return false;">
-Land use
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('cmVzZWFyY2glMjByZXN1bHRz'); return false;">
-research results
-</div>
-</div>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-Feb 1, 2024
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="4" data-categories="RnV0dXJlJTIwbGFuZHNjYXBlJTIwc2NlbmFyaW9zJTJDRWNvc3lzdGVtJTIwU2VydmljZXMlMkNCaW9kaXZlcnNpdHklMkNQZXJ1JTJDU3dpc3NSRSUyQ1Byb2plY3QlMkNOQVNDRU5ULVBlcnU=" data-listing-date-sort="1701298800000" data-listing-file-modified-sort="1732555807002" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="172">
-<a href="./posts/nascent_announcement.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./posts/assets/NASCENT_logo_vertical.jpg" class="thumbnail-image card-img" style="height: 200px;" alt="Logo for NASCENT-Peru project">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-New research project: NASCENT-Peru
-</h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('RnV0dXJlJTIwbGFuZHNjYXBlJTIwc2NlbmFyaW9z'); return false;">
-Future landscape scenarios
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('RWNvc3lzdGVtJTIwU2VydmljZXM='); return false;">
-Ecosystem Services
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('QmlvZGl2ZXJzaXR5'); return false;">
-Biodiversity
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('UGVydQ=='); return false;">
-Peru
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('U3dpc3NSRQ=='); return false;">
-SwissRE
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('UHJvamVjdA=='); return false;">
-Project
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('TkFTQ0VOVC1QZXJ1'); return false;">
-NASCENT-Peru
-</div>
-</div>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-Nov 30, 2023
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

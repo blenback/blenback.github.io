@@ -10,7 +10,37 @@
 <atom:link href="https://blenback.github.io/posts.xml" rel="self" type="application/rss+xml"/>
 <description>Personal website for Ben Black</description>
 <generator>quarto-1.6.42</generator>
-<lastBuildDate>Tue, 30 Apr 2024 22:00:00 GMT</lastBuildDate>
+<lastBuildDate>Tue, 22 Apr 2025 22:00:00 GMT</lastBuildDate>
+<item>
+  <title>Writing my PhD thesis with Quarto</title>
+  <link>https://blenback.github.io/posts/PhD_template.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>I have been a big fan of R for everything research related for several years and Rstudio has been my go-to IDE all the way from being a complete beginner to my current level which I would still only describe as ‘somewhat proficient’. So you can imagine that when <a href="">Posit</a>, the company behind Rstudio released their open-source technical publishing software, <a href="">Quarto</a>, I was naturally intrigued. Over the last year I’ve gotten really into Quarto and used it for all sorts of purposes: I made this website for myself along with several others, I’ve written a whole academic paper with it, produced a proposal and even used it to automate the mass-sending of invitation letters.</p>
+<p>This experience prompted me to put together a workshop, that would try to combine all of the bits and pieces of useful knowledge I have acquired in using both R and Quarto for engaging in reproducible scientific research into a semi-coherent package.</p>
+<p>I submitted a proposal for the workshop to be delivered at the <a href="https://landscape2024.org/frontend/index.php?folder_id=7393&amp;page_id=">Landscape conference</a> in Berlin in September 2024 and it was accepted. If you happen to be attending this conference you can sign up to attend the workshop in person but it wouldn’t be very FAIR (get it…) of me if I didn’t make the content freely available. So I created a dedicated website for it that also displays the content as a presentation at the same time (one of the other neat features of Quarto): <a href="https://blenback.github.io/R-for-Reproducible-Research">https://blenback.github.io/R-for-Reproducible-Research/</a></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://blenback.github.io/posts/assets/workshop_abstract.png" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="graphical_abstract"></p>
+</figure>
+</div>
+
+
+
+ ]]></description>
+  <category>R</category>
+  <category>Quarto</category>
+  <category>Reproducible research</category>
+  <category>thesis</category>
+  <category>template</category>
+  <category>LaTeX</category>
+  <guid>https://blenback.github.io/posts/PhD_template.html</guid>
+  <pubDate>Tue, 22 Apr 2025 22:00:00 GMT</pubDate>
+  <media:content url="https://blenback.github.io/posts/assets/workshop_abstract.png" medium="image" type="image/png" height="104" width="144"/>
+</item>
 <item>
   <title>Upcoming workshop: Reproducible research with R and Quarto</title>
   <link>https://blenback.github.io/posts/R_workshop.html</link>

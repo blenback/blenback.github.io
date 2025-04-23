@@ -234,11 +234,11 @@ p > a:hover::before {
 }
 
 /*Styling for code blocks*/
-div.sourceCode {
+/*div.sourceCode {
     background-color: white;
     border: 1px solid gray;
     border-radius: 0.25rem;
-}
+}*/
 
 code span.fu {
     color: var(--text-colour);

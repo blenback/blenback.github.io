@@ -6,12 +6,11 @@ format:
   html: 
     css: css/publications.css
 listing:
+  - feed: 
+      type: partial
+      title: Publications
   - id: Journal-articles
     template: publication.ejs
-    feed: 
-      type: full
-      title: Journal articles
-      description: Journal articles 
     contents:
     - publications/Journal_articles.yaml
   - id: Theses
