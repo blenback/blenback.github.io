@@ -1,6 +1,8 @@
 project:
   type: website
   output-dir: docs
+  resources:
+  - media/quarto-eth-phd-thesis.pdf
 
 website:
   title: "Ben<br>Black"
