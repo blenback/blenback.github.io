@@ -1,5 +1,18 @@
 [
   {
+    "listing": "/publications.html",
+    "items": []
+  },
+  {
+    "listing": "/posts.html",
+    "items": [
+      "/posts/R_workshop.html",
+      "/posts/CV_update.html",
+      "/posts/leaflet_time_slider.html",
+      "/posts/nascent_announcement.html"
+    ]
+  },
+  {
     "listing": "/presentations.html",
     "items": [
       "/presentations/2024_17_09_Landscape/index.html",
@@ -13,18 +26,5 @@
       "/presentations/2022_07_01_IEMSs_model_pres/index.html",
       "/presentations/2021_06_09_ESP/index.html"
     ]
-  },
-  {
-    "listing": "/posts.html",
-    "items": [
-      "/posts/R_workshop.html",
-      "/posts/CV_update.html",
-      "/posts/leaflet_time_slider.html",
-      "/posts/nascent_announcement.html"
-    ]
-  },
-  {
-    "listing": "/publications.html",
-    "items": []
   }
 ]
