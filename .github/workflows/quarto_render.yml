@@ -1,40 +1,66 @@
+# on:
+#   push:
+#     branches:
+#       - main
+# 
+# name: Render quarto project
+# 
+# permissions:
+#   contents: write
+#   pages: write
+# 
+# jobs:
+#   build-deploy:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: Check out repository
+#         uses: actions/checkout@v4
+#         
+#       - name: Set up Quarto
+#         uses: quarto-dev/quarto-actions/setup@v2
+#         env:
+#           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+#         with:
+#           tinytex: true 
+#           
+#       - name: Setup R
+#         uses: r-lib/actions/setup-r@v2
+# 
+#       - name: Render Quarto Project
+#         uses: quarto-dev/quarto-actions/render@v2
+#         with:
+#           to: html # If set, it will be equivalent to `quarto render --to html`
+#       - name: Publish
+#         uses: quarto-dev/quarto-actions/publish@v2
+#         with:
+#           target: gh-pages
+#           render: false
+#         env:
+#           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
 on:
+  workflow_dispatch:
   push:
-    branches:
-      - main
+    branches: main
 
-name: Render quarto project
-
-permissions:
-  contents: write
-  pages: write
+name: Quarto Publish
 
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
-        
+
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          tinytex: true 
-          
-      - name: Setup R
-        uses: r-lib/actions/setup-r@v2
 
-      - name: Render Quarto Project
-        uses: quarto-dev/quarto-actions/render@v2
-        with:
-          to: html # If set, it will be equivalent to `quarto render --to html`
-      - name: Publish
+      - name: Render and Publish
         uses: quarto-dev/quarto-actions/publish@v2
         with:
           target: gh-pages
-          render: false
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
