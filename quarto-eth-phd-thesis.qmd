@@ -135,7 +135,7 @@ quarto-eth-phd-thesis/
 
 I use the `.Rprofile` to load R packages rather than specifying packages within individual `.qmd` files or `.R` scripts as the .Rprofile is called prior to rendering each file. Add any additional packages you require here.
 
-```{r}
+```{r, eval=FALSE}
 #load packages
 packs<-c("ggplot2", "knitr", "kableExtra", "ggthemes", "stringr")
 
