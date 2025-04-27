@@ -393,7 +393,7 @@ The code for this is included in `chapters/paper-01/paper-01.qmd` and it uses th
 
 My preferred method of preparing figures for Quarto documents is to produce and save them via dedicated R scripts rather than directly within the `.qmd` files themselves. This R script is then sourced directly at the head of the respective `.qmd` file to ensure the most up to date figures are used and the images are then included for each figure as in `paper-01.qmd`:
 
-```{r, eval=FALSE}
+```{bash}
 #source the script that prepares all the figures
 source("chapters/paper-01/paper-01-figs.R")
 
