@@ -135,7 +135,7 @@ quarto-eth-phd-thesis/
 
 I use the `.Rprofile` to load R packages rather than specifying packages within individual `.qmd` files or `.R` scripts as the .Rprofile is called prior to rendering each file. Add any additional packages you require here.
 
-```{r, eval=FALSE}
+```
 #load packages
 packs<-c("ggplot2", "knitr", "kableExtra", "ggthemes", "stringr")
 
@@ -149,7 +149,7 @@ Also in the `.Rprofile` are some functions to streamline uniform styling of figu
 
 For tables the `thesis_tbl()` function sets options for `knitr::kbl()` and `kableExtra::kable_styling()` to produce booktabs style tables, with center aligned content and bold column titles:
 
-```{r, eval=FALSE}
+```
 thesis_tbl <- function(x, escape, ltable = FALSE) {
   x %>%
     kbl(digits = 3,
@@ -171,7 +171,7 @@ thesis_tbl <- function(x, escape, ltable = FALSE) {
 
 An example of applying this function is included in `chapters/paper-01-qmd`:
 
-```{r, eval=FALSE}
+```
 #| tbl-pos: H
 
 #load csv of allocation parameter summary statistics
@@ -188,7 +188,7 @@ Calibration_summary %>%
 
 For figures the function `theme_publication()` sets a custom `ggplot2` theme:
 
-```{r, eval=FALSE}
+```
 #' theme_publication
 #' 
 #' custom ggplot2 theme to apply to all plots
@@ -235,7 +235,7 @@ theme_thesis <- function(
 
 In addition the `.Rprofile` contains a series of functions for producing custom continuous and discrete color palettes with the base set of colors specified within the function `thesis_color()`:
 
-```{r, eval=FALSE}
+```
 thesis_color <- function(...) {
   
   thesis_colors <- c(
@@ -270,7 +270,7 @@ thesis_color <- function(...) {
 
 These color palettes can be applied using defined `ggplot2::scale_color_*` and `ggplot2::scale_fill_*` methods. An example of applying the `theme_thesis()` and `scale_color_thesis()` functions is provided in `chapters/paper-01/paper-01-figs.R:`
 
-```{r, eval=FALSE}
+```
 p <- ggplot(mtcars, aes(x = wt, y = mpg, color = factor(cyl))) +
   geom_point(size = 3) +
   labs(
@@ -393,7 +393,7 @@ The code for this is included in `chapters/paper-01/paper-01.qmd` and it uses th
 
 My preferred method of preparing figures for Quarto documents is to produce and save them via dedicated R scripts rather than directly within the `.qmd` files themselves. This R script is then sourced directly at the head of the respective `.qmd` file to ensure the most up to date figures are used and the images are then included for each figure as in `paper-01.qmd`:
 
-```{bash}
+```         
 #source the script that prepares all the figures
 source("chapters/paper-01/paper-01-figs.R")
 
