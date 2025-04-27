@@ -5,8 +5,8 @@ execute:
 toc: true
 ---
 
-This is an webpage version of the README for my Quarto ETH PhD thesis template, available on Github here: <https://github.com/blenback/quarto-eth-phd-thesis>.\
-\
+This is an webpage version of the README for my Quarto ETH PhD thesis template, available on Github here: <https://github.com/blenback/quarto-eth-phd-thesis>.
+
 The template is intended to meet the [requirements](https://ethz.ch/students/en/doctorate/doctoral-thesis-examination.html) for cumulative paper PhD thesis at ETH Zurich. However, it is worth noting that there may be discrepancies between departments and as such you should check the requirements for your department (My thesis was under D-BAUG).
 
 I built this template based upon the `quarto-phd-thesis` template from `james-d-h`: <https://github.com/james-d-h/quarto-phd-thesis>, adding some notable features.
@@ -43,7 +43,7 @@ Ensure the following are installed:
 
 Directly using Quarto from the the terminal:
 
-```{bash}
+```{r}
 #| eval: false
 quarto use template blenback/quarto-eth-phd-thesis
 ```
@@ -54,7 +54,7 @@ Once you do that you can render from within the directory.
 
 Or by cloning the repository
 
-```{bash}
+```{r}
 #| eval: false
 git clone https://github.com/YOUR_USERNAME/quarto-eth-phd-thesis.git
 cd quarto-eth-phd-thesis
@@ -68,14 +68,14 @@ Open the `quarto-eth-phd-thesis.Rproj` file in RStudio to access the full projec
 
 From the RStudio console or terminal:
 
-```{bash}
+```{r}
 #| eval: false
 quarto render
 ```
 
 ## 🗂️ Project Structure
 
-```{bash}
+```{r}
 #| eval: false
 quarto-eth-phd-thesis/
   ├── bibliography.bib # BibTeX file for references
@@ -139,7 +139,7 @@ quarto-eth-phd-thesis/
 
 I use the `.Rprofile` to load R packages rather than specifying packages within individual `.qmd` files or `.R` scripts as the .Rprofile is called prior to rendering each file. Add any additional packages you require here.
 
-```{bash}
+```{r}
 #| eval: false
 #load packages
 packs<-c("ggplot2", "knitr", "kableExtra", "ggthemes", "stringr")
@@ -154,7 +154,7 @@ Also in the `.Rprofile` are some functions to streamline uniform styling of figu
 
 For tables the `thesis_tbl()` function sets options for `knitr::kbl()` and `kableExtra::kable_styling()` to produce booktabs style tables, with center aligned content and bold column titles:
 
-```{bash}
+```{r}
 #| eval: false
 thesis_tbl <- function(x, escape, ltable = FALSE) {
   x %>%
@@ -177,7 +177,7 @@ thesis_tbl <- function(x, escape, ltable = FALSE) {
 
 An example of applying this function is included in `chapters/paper-01-qmd`:
 
-```{bash}
+```{r}
 #| eval: false
 
 #load csv of allocation parameter summary statistics
@@ -194,7 +194,7 @@ Calibration_summary %>%
 
 For figures the function `theme_publication()` sets a custom `ggplot2` theme:
 
-```{bash}
+```{r}
 #| eval: false
 #' theme_publication
 #' 
@@ -242,7 +242,7 @@ theme_thesis <- function(
 
 In addition the `.Rprofile` contains a series of functions for producing custom continuous and discrete color palettes with the base set of colors specified within the function `thesis_color()`:
 
-```{bash}
+```{r}
 #| eval: false
 thesis_color <- function(...) {
   
@@ -278,7 +278,7 @@ thesis_color <- function(...) {
 
 These color palettes can be applied using defined `ggplot2::scale_color_*` and `ggplot2::scale_fill_*` methods. An example of applying the `theme_thesis()` and `scale_color_thesis()` functions is provided in `chapters/paper-01/paper-01-figs.R:`
 
-```{bash}
+```{r}
 #| eval: false
 p <- ggplot(mtcars, aes(x = wt, y = mpg, color = factor(cyl))) +
   geom_point(size = 3) +
@@ -296,7 +296,8 @@ p <- ggplot(mtcars, aes(x = wt, y = mpg, color = factor(cyl))) +
 
 The template allows you to add a coverpage using the [`quarto_titlepages`](https://nmfs-opensci.github.io/quarto_titlepages/) extension. The cover page YAML options are set in in `index.qmd`:
 
-```{yaml}
+```{r}
+#| eval: false
 ---
 format: 
   pdf:
@@ -335,7 +336,8 @@ Here I have set the title and subtitle using the extension options but you could
 
 The ETH doctoral regulations stipulate that the thesis must include a translation of the summary or abstract into one of the Swiss national languages (following the English version). I have added a seperate `.qmd` file to include this and YAML key for specifying the translation of summary in `_quarto.yml`:
 
-```{yaml}
+```{r}
+#| eval: false
 ---
 summarytitle: Zusammenfassung
 ---
@@ -345,7 +347,8 @@ summarytitle: Zusammenfassung
 
 To create the standard ETH title page for thesis I have adapted an [existing LaTeX template](https://github.com/tuxu/ethz-thesis/blob/master/frontbackmatter/titlepage.tex) with the relevant lines included in `ETH-thesis-template.cls`. Rather than directly editing the LaTeX I have defined YAML keys in `partials/title.tex` so that the fields can be filled directly in `_quarto.yml`:
 
-```{yaml}
+```{r}
+#| eval: false
 ---
 titlepage-title: "Your thesis title"
 titlepage-author: "Jane Doe"
@@ -371,7 +374,8 @@ Which results in the title page being rendered as:
 
 In the template I have included typical chapters such as the Introduction, State of the Art, Structure, Synthesis and an example of chapter based on a published paper (`chapters/paper-01-qmd`). Each chapter is a separate `.qmd` file and you can include/exclude them, or add additional chapters, using the `chapters` YAML key in `_quarto.yml`:
 
-```{yaml}
+```{r}
+#| eval: false
 book: 
   date: last-modified
   chapters:
@@ -402,7 +406,7 @@ The code for this is included in `chapters/paper-01/paper-01.qmd` and it uses th
 
 My preferred method of preparing figures for Quarto documents is to produce and save them via dedicated R scripts rather than directly within the `.qmd` files themselves. This R script is then sourced directly at the head of the respective `.qmd` file to ensure the most up to date figures are used and the images are then included for each figure as in `paper-01.qmd`:
 
-```{bash}         
+```{r}         
 #| eval: false
 #source the script that prepares all the figures
 source("chapters/paper-01/paper-01-figs.R")
