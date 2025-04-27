@@ -1,15 +1,48 @@
 ---
-title: "Writing my PhD thesis with Quarto"
+title: "Creating my own PhD thesis template with Quarto"
 date: "2025-4-23"
-image: assets/workshop_abstract.png
+image: assets/thesis_design.svg
 image-alt: Graphical abstract for reproducible research workshop
 categories: [R, Quarto, Reproducible research, thesis, template, LaTeX]
 ---
 
-I have been a big fan of R for everything research related for several years and Rstudio has been my go-to IDE all the way from being a complete beginner to my current level which I would still only describe as 'somewhat proficient'. So you can imagine that when [Posit](), the company behind Rstudio released their open-source technical publishing software, [Quarto](), I was naturally intrigued. Over the last year I've gotten really into Quarto and used it for all sorts of purposes: I made this website for myself along with several others, I've written a whole academic paper with it, produced a proposal and even used it to automate the mass-sending of invitation letters.
+Over the last two years I have really started to use Quarto for everything in my academic work from writing manuscripts, websites for research projects, data dashboards for workshops, chain letter writing, and presentations. So when it came to writing my PhD thesis I already knew I wanted to use Quarto. \
+\
+For those not familiar with Quarto, some of the big advantages it offers for a project like this is the ability to include Python and R code chunks that are computed when the document is rendered. It also connects directly with my scientific literature tool of choice, Zotero, for easy compilation of the bibliography. Finally in terms of formatting it allows you to mix in Markdown, LaTeX and HTML.
 
-This experience prompted me to put together a workshop, that would try to combine all of the bits and pieces of useful knowledge I have acquired in using both R and Quarto for engaging in reproducible scientific research into a semi-coherent package.
+My thesis is a cumulative paper thesis and I had already written two of my academic papers using Quarto so integrating these was as simple as copying over the relevant files. As for the other papers that had been written in Word these were very simple to convert to Markdown format, especially with the help of ChatGPT which I find to be very accurate for tasks.
 
-I submitted a proposal for the workshop to be delivered at the [Landscape conference](https://landscape2024.org/frontend/index.php?folder_id=7393&page_id=) in Berlin in September 2024 and it was accepted. If you happen to be attending this conference you can sign up to attend the workshop in person but it wouldn't be very FAIR (get it...) of me if I didn't make the content freely available. So I created a dedicated website for it that also displays the content as a presentation at the same time (one of the other neat features of Quarto): [https://blenback.github.io/R-for-Reproducible-Research/](https://blenback.github.io/R-for-Reproducible-Research)
+In terms of an appropriate Quarto template, I found several existing examples:
 
-![](assets/workshop_abstract.png){fig-alt="graphical_abstract" fig-align="center"}
+-   <https://github.com/james-d-h/quarto-phd-thesis>
+
+-   <https://github.com/quarto-monash/thesis>
+
+-   <https://gongcastro.github.io/blog/upfthesis/upfthesis.html>
+
+-   <https://cameronpatrick.com/post/2023/07/quarto-thesis-formatting/#html-output>
+
+However, none quite fit the specifications of my university (ETH Zurich) and my personal formatting preferences. So I decided to take the [`quarto-phd-thesis`](https://github.com/james-d-h/quarto-phd-thesis) template from `james-d-h` and build upon it to make it my own. The main features I added were:
+
+-   The ability to add a cover page using the [`quarto_titlepages`](https://nmfs-opensci.github.io/quarto_titlepages/) extension
+
+-   Custom R functions to ensure consistent formatting of all figures and tables according to user specified color palettes.
+
+-   Use of `.Rprofile` to manage package loading across chapters
+
+-   The ETH Zurich title page and a translated version of the summary into one of the Swiss national languages.
+
+-   Custom Quarto call-out boxes to display the details of published articles at the start of chapters including a visualization of author [CRediT](https://www.elsevier.com/researcher/author/policies-and-guidelines/credit-author-statement) contributions.
+
+-   Additional LaTeX formatting
+
+I have called the resulting template `quarto-eth-phd-thesis` and it is available via Github here: <https://github.com/blenback/quarto-eth-phd-thesis>. There is a detailed README in the repo but I have also written the instructions in page on my website: <https://blenback.github.io/quarto-eth-phd-thesis.html>
+    
+Here is an example PDF showing some of the features: 
+
+```{=html}
+<div class="embed-container">
+  <p align="center"><iframe src="../media/quarto-eth-phd-thesis.pdf" style="border: 0.5px" ></iframe
+  /p>
+</div>
+```

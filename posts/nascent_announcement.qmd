@@ -1,7 +1,7 @@
 ---
 title: "New research project: NASCENT-Peru"
 date: "2023-11-30"
-image: assets/NASCENT_logo_vertical.jpg
+image: assets/announcement.svg
 image-alt: Logo for NASCENT-Peru project
 categories: [Future landscape scenarios, Ecosystem Services, Biodiversity, Peru, SwissRE, Project, NASCENT-Peru]
 ---

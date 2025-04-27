@@ -1,17 +1,15 @@
 ---
 title: |
-
-
-
-
 subtitle: "A place for me to share insights into my research but also little tips and tricks I find interesting in using R for scientific research"   
 
 listing: 
   contents: posts # all Quarto docs in the `posts` directory will be included on your listing page
-  type: grid # or `default` or `table`; each type has its own set of yaml options to include
+  type: default # or `default` or `table`; each type has its own set of yaml options to include
   sort: "date desc" # can also sort on more than one field
-  categories: true # allows you to sort posts by assigned categories
+  categories: false # allows you to sort posts by assigned categories
   feed: true
-  fields: [image, title, categories, date]
-  image-height: 200px
+  fields: [image, title, description, categories, date]
+# page-layout: full
 ---
+
+<!-- https://undraw.co/search/ -->

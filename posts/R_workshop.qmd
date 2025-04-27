@@ -1,7 +1,7 @@
 ---
 title: "Upcoming workshop: Reproducible research with R and Quarto"
 date: "2024-5-1"
-image: assets/workshop_abstract.png
+image: assets/open-source.svg
 image-alt: Graphical abstract for reproducible research workshop
 categories: [R, Quarto, Reproducible research, FAIR, Landscape conference, workshop]
 ---
