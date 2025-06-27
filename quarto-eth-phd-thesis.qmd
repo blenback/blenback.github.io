@@ -422,7 +422,8 @@ I do this because I find that when I have multiple figures with quite lengthy co
 
 `endmatter/references.qmd` places a div to ensure that all references for all chapters are placed in this section:
 
-``` {bash}    
+``` {bash}
+#| eval: false
 ::: {#refs}
 :::
 ```
