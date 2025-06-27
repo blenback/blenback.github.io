@@ -75,7 +75,7 @@ quarto render
 
 ## 🗂️ Project Structure
 
-```{r}
+```{bash}
 #| eval: false
 quarto-eth-phd-thesis/
   ├── bibliography.bib # BibTeX file for references

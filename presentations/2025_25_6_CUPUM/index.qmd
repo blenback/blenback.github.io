@@ -1,0 +1,33 @@
+---
+title: A “Scope, Simulation and Story” approach to identify future spatial development scenarios              
+description: Computational Urban Planning and Urban Management, London, United Kingdom.
+author: 
+- Orlando Roman
+- Jan Kwakkel
+- Bryan Adey
+- Ben Black
+event: Computational Urban Planning and Urban Management Conference
+location: London, United Kingdom
+date: "2025-06-25"
+image: fig1.png
+image-height: 12000px
+categories: [Scenario planning, Spatial planning, Land use change, Simulation modelling, Cellular automata]
+preload-iframes: true
+---
+
+Scenario planning often qualitatively develops storylines. These scenarios are usually depicted in a 2 × 2 scenario matrix, where it is challenging to define, for example, the drivers of change to consider in the axes and the boundaries between scenarios. In this qualitative approach, simulation models are typically used as evaluation tools only after the scenarios are generated. This approach is commonly known in the literature as “Story and Simulation”. 
+
+ This study introduces a “Scope, Simulation, and Story” approach, which has the potential to enhance scenario planning by informing the development of scenarios through computational modelling. Thus, we can integrate participatory processes, spatial development simulation models, and spatial analysis to define scenario boundaries that reflect spatial patterns. We applied this method to simulate spatial development in the Canton of Zurich for 2050 using a cellular automata Land Use Cover Change (LUCC) model.
+
+::: {layout-nrow=1}
+![](fig1.png){group="my-gallery"}
+
+![](fig2.png){group="my-gallery"}
+:::
+
+```{=html}
+<div class="embed-container">
+  <p align="center"><iframe src="WBF_pres_1962024.pdf" style="border: 0.5px" ></iframe
+  /p>
+</div>
+```

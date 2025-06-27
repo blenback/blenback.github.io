@@ -304,60 +304,60 @@ gtag('config', 'G-9CCC34ZV10', { 'anonymize_ip': true});
 <section id="project-structure" class="level2">
 <h2 class="anchored" data-anchor-id="project-structure">🗂️ Project Structure</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>quarto<span class="sc">-</span>eth<span class="sc">-</span>phd<span class="sc">-</span>thesis<span class="sc">/</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  ├── bibliography.bib <span class="co"># BibTeX file for references</span></span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>  ├── _book<span class="sc">/</span> <span class="co"># Output directory for rendered book</span></span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>  ├── chapters<span class="sc">/</span> <span class="co"># Main content chapters^</span></span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>  <span class="er">|</span>    ├── introduction</span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>  <span class="sc">|</span>    <span class="er">|</span>   ├── introduction.qmd <span class="co"># Introduction chapter</span></span>
-<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>  <span class="sc">|</span>    ├── paper<span class="dv">-01</span></span>
-<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>  <span class="sc">|</span>    <span class="er">|</span>   ├── paper<span class="fl">-01.</span>qmd <span class="co"># First paper chapter</span></span>
-<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>  <span class="sc">|</span>    <span class="er">|</span>   ├── paper<span class="dv">-01</span><span class="sc">-</span>appendix.qmd <span class="co"># Appendix for the first paper</span></span>
-<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>  <span class="sc">|</span>    <span class="er">|</span>   ├── paper<span class="dv">-01</span><span class="sc">-</span>figs.R <span class="co"># Script to prepare figures</span></span>
-<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>  <span class="sc">|</span>    <span class="er">|</span>   ├── figures<span class="sc">/</span> <span class="co"># Figures for the first paper</span></span>
-<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>  <span class="er">|</span>    <span class="er">|</span>   ├── data<span class="sc">/</span> <span class="co"># Data for the first paper</span></span>
-<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>  <span class="er">|</span>    ├── sota</span>
-<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>  <span class="sc">|</span>    <span class="er">|</span>   ├── sota.qmd <span class="co"># State of the art chapter</span></span>
-<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a>  <span class="sc">|</span>    ├── structure</span>
-<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a>  <span class="sc">|</span>    <span class="er">|</span>   ├── structure.qmd <span class="co"># Structure chapter</span></span>
-<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a>  <span class="sc">|</span>    ├── synthesis </span>
-<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a>  <span class="sc">|</span>    <span class="er">|</span>   ├── synthesis.qmd <span class="co"># Synthesis chapter</span></span>
-<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a>  ├── endmatter<span class="sc">/</span> <span class="co"># Appendices, references, curriculum Vitae</span></span>
-<span id="cb4-20"><a href="#cb4-20" aria-hidden="true" tabindex="-1"></a>  <span class="er">|</span>    ├── appendices.qmd <span class="co"># Appendices</span></span>
-<span id="cb4-21"><a href="#cb4-21" aria-hidden="true" tabindex="-1"></a>  <span class="sc">|</span>    ├── references.qmd <span class="co"># References</span></span>
-<span id="cb4-22"><a href="#cb4-22" aria-hidden="true" tabindex="-1"></a>  <span class="sc">|</span>    ├── CV.qmd <span class="co"># Curriculum vitae</span></span>
-<span id="cb4-23"><a href="#cb4-23" aria-hidden="true" tabindex="-1"></a>  <span class="sc">|</span>    ├── CV.pdf <span class="co"># Curriculum vitae file</span></span>
-<span id="cb4-24"><a href="#cb4-24" aria-hidden="true" tabindex="-1"></a>  ├── _extensions<span class="sc">/</span> <span class="co"># Custom Quarto extensions</span></span>
-<span id="cb4-25"><a href="#cb4-25" aria-hidden="true" tabindex="-1"></a>  ├── fonts<span class="sc">/</span> <span class="co"># Custom fonts (e.g., FiraSans-Light.ttf)</span></span>
-<span id="cb4-26"><a href="#cb4-26" aria-hidden="true" tabindex="-1"></a>  ├── frontmatter<span class="sc">/</span> <span class="co"># Cover page, , , template-partials</span></span>
-<span id="cb4-27"><a href="#cb4-27" aria-hidden="true" tabindex="-1"></a>  <span class="er">|</span>    ├── acknowledgements.qmd <span class="co"># Acknowledgments</span></span>
-<span id="cb4-28"><a href="#cb4-28" aria-hidden="true" tabindex="-1"></a>  <span class="sc">|</span>    ├── images<span class="sc">/</span></span>
-<span id="cb4-29"><a href="#cb4-29" aria-hidden="true" tabindex="-1"></a>  <span class="er">|</span>    <span class="er">|</span>   ├── cover_background.png <span class="co"># Background image for cover page</span></span>
-<span id="cb4-30"><a href="#cb4-30" aria-hidden="true" tabindex="-1"></a>  <span class="sc">|</span>    ├── summary_translation.qmd <span class="co"># summary</span></span>
-<span id="cb4-31"><a href="#cb4-31" aria-hidden="true" tabindex="-1"></a>  <span class="sc">|</span>    ├── summary_translation.qmd <span class="co"># Translation of summary</span></span>
-<span id="cb4-32"><a href="#cb4-32" aria-hidden="true" tabindex="-1"></a>  ├── index.qmd <span class="co"># Main Quarto document</span></span>
-<span id="cb4-33"><a href="#cb4-33" aria-hidden="true" tabindex="-1"></a>  ├── LaTeX_pkgs<span class="sc">/</span> <span class="co"># Additional LaTeX packages not available through Tinytex</span></span>
-<span id="cb4-34"><a href="#cb4-34" aria-hidden="true" tabindex="-1"></a>  ├── LICENSE <span class="co"># License file</span></span>
-<span id="cb4-35"><a href="#cb4-35" aria-hidden="true" tabindex="-1"></a>  ├── ETH<span class="sc">-</span>thesis<span class="sc">-</span>template.cls <span class="co"># ETH Zurich thesis LaTeX class</span></span>
-<span id="cb4-36"><a href="#cb4-36" aria-hidden="true" tabindex="-1"></a>  ├── partials<span class="sc">/</span></span>
-<span id="cb4-37"><a href="#cb4-37" aria-hidden="true" tabindex="-1"></a>  <span class="er">|</span>    ├── title.tex</span>
-<span id="cb4-38"><a href="#cb4-38" aria-hidden="true" tabindex="-1"></a>  <span class="sc">|</span>    ├── before<span class="sc">-</span>body.tex</span>
-<span id="cb4-39"><a href="#cb4-39" aria-hidden="true" tabindex="-1"></a>  <span class="sc">|</span>    ├── toc.tex</span>
-<span id="cb4-40"><a href="#cb4-40" aria-hidden="true" tabindex="-1"></a>  <span class="sc">|</span>    ├── _coverpage.tex</span>
-<span id="cb4-41"><a href="#cb4-41" aria-hidden="true" tabindex="-1"></a>  <span class="sc">|</span>    ├── _author<span class="sc">-</span>affiliation<span class="sc">-</span>themes.tex</span>
-<span id="cb4-42"><a href="#cb4-42" aria-hidden="true" tabindex="-1"></a>  <span class="sc">|</span>    ├── titlepage<span class="sc">-</span>theme.lua</span>
-<span id="cb4-43"><a href="#cb4-43" aria-hidden="true" tabindex="-1"></a>  <span class="sc">|</span>    ├── coverpage<span class="sc">-</span>theme.lua</span>
-<span id="cb4-44"><a href="#cb4-44" aria-hidden="true" tabindex="-1"></a>  <span class="sc">|</span>    ├── _header<span class="sc">-</span>footer<span class="sc">-</span>date<span class="sc">-</span>themes.tex</span>
-<span id="cb4-45"><a href="#cb4-45" aria-hidden="true" tabindex="-1"></a>  <span class="sc">|</span>    ├── _title<span class="sc">-</span>themes.tex</span>
-<span id="cb4-46"><a href="#cb4-46" aria-hidden="true" tabindex="-1"></a>  <span class="sc">|</span>    ├── _titlepage.tex</span>
-<span id="cb4-47"><a href="#cb4-47" aria-hidden="true" tabindex="-1"></a>  <span class="sc">|</span>    ├── pandoc.tex</span>
-<span id="cb4-48"><a href="#cb4-48" aria-hidden="true" tabindex="-1"></a>  <span class="sc">|</span>    ├── header.tex</span>
-<span id="cb4-49"><a href="#cb4-49" aria-hidden="true" tabindex="-1"></a>  ├── quarto<span class="sc">-</span>eth<span class="sc">-</span>phd<span class="sc">-</span>thesis.Rproj <span class="co"># RStudio project file</span></span>
-<span id="cb4-50"><a href="#cb4-50" aria-hidden="true" tabindex="-1"></a>  ├── quarto<span class="sc">-</span>eth<span class="sc">-</span>phd<span class="sc">-</span>thesis.tex <span class="co"># Compiled LaTeX version (optional)</span></span>
-<span id="cb4-51"><a href="#cb4-51" aria-hidden="true" tabindex="-1"></a>  ├── _quarto.yml <span class="co"># Main Quarto project config</span></span>
-<span id="cb4-52"><a href="#cb4-52" aria-hidden="true" tabindex="-1"></a>  ├── README.md <span class="co"># This file</span></span>
-<span id="cb4-53"><a href="#cb4-53" aria-hidden="true" tabindex="-1"></a>  ├── .gitignore <span class="co"># Git ignore file</span></span>
-<span id="cb4-54"><a href="#cb4-54" aria-hidden="true" tabindex="-1"></a>  ├── .Rprofile <span class="co"># R profile for package loading</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto-eth-phd-thesis/</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  <span class="ex">├──</span> bibliography.bib <span class="co"># BibTeX file for references</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>  <span class="ex">├──</span> _book/ <span class="co"># Output directory for rendered book</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>  <span class="ex">├──</span> chapters/ <span class="co"># Main content chapters^</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>  <span class="kw">|</span>    <span class="ex">├──</span> introduction</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>  <span class="kw">|</span>    <span class="kw">|</span>   <span class="ex">├──</span> introduction.qmd <span class="co"># Introduction chapter</span></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>  <span class="kw">|</span>    <span class="ex">├──</span> paper-01</span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>  <span class="kw">|</span>    <span class="kw">|</span>   <span class="ex">├──</span> paper-01.qmd <span class="co"># First paper chapter</span></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>  <span class="kw">|</span>    <span class="kw">|</span>   <span class="ex">├──</span> paper-01-appendix.qmd <span class="co"># Appendix for the first paper</span></span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>  <span class="kw">|</span>    <span class="kw">|</span>   <span class="ex">├──</span> paper-01-figs.R <span class="co"># Script to prepare figures</span></span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>  <span class="kw">|</span>    <span class="kw">|</span>   <span class="ex">├──</span> figures/ <span class="co"># Figures for the first paper</span></span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>  <span class="kw">|</span>    <span class="kw">|</span>   <span class="ex">├──</span> data/ <span class="co"># Data for the first paper</span></span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>  <span class="kw">|</span>    <span class="ex">├──</span> sota</span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>  <span class="kw">|</span>    <span class="kw">|</span>   <span class="ex">├──</span> sota.qmd <span class="co"># State of the art chapter</span></span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a>  <span class="kw">|</span>    <span class="ex">├──</span> structure</span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a>  <span class="kw">|</span>    <span class="kw">|</span>   <span class="ex">├──</span> structure.qmd <span class="co"># Structure chapter</span></span>
+<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a>  <span class="kw">|</span>    <span class="ex">├──</span> synthesis </span>
+<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a>  <span class="kw">|</span>    <span class="kw">|</span>   <span class="ex">├──</span> synthesis.qmd <span class="co"># Synthesis chapter</span></span>
+<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a>  <span class="ex">├──</span> endmatter/ <span class="co"># Appendices, references, curriculum Vitae</span></span>
+<span id="cb4-20"><a href="#cb4-20" aria-hidden="true" tabindex="-1"></a>  <span class="kw">|</span>    <span class="ex">├──</span> appendices.qmd <span class="co"># Appendices</span></span>
+<span id="cb4-21"><a href="#cb4-21" aria-hidden="true" tabindex="-1"></a>  <span class="kw">|</span>    <span class="ex">├──</span> references.qmd <span class="co"># References</span></span>
+<span id="cb4-22"><a href="#cb4-22" aria-hidden="true" tabindex="-1"></a>  <span class="kw">|</span>    <span class="ex">├──</span> CV.qmd <span class="co"># Curriculum vitae</span></span>
+<span id="cb4-23"><a href="#cb4-23" aria-hidden="true" tabindex="-1"></a>  <span class="kw">|</span>    <span class="ex">├──</span> CV.pdf <span class="co"># Curriculum vitae file</span></span>
+<span id="cb4-24"><a href="#cb4-24" aria-hidden="true" tabindex="-1"></a>  <span class="ex">├──</span> _extensions/ <span class="co"># Custom Quarto extensions</span></span>
+<span id="cb4-25"><a href="#cb4-25" aria-hidden="true" tabindex="-1"></a>  <span class="ex">├──</span> fonts/ <span class="co"># Custom fonts (e.g., FiraSans-Light.ttf)</span></span>
+<span id="cb4-26"><a href="#cb4-26" aria-hidden="true" tabindex="-1"></a>  <span class="ex">├──</span> frontmatter/ <span class="co"># Cover page, , , template-partials</span></span>
+<span id="cb4-27"><a href="#cb4-27" aria-hidden="true" tabindex="-1"></a>  <span class="kw">|</span>    <span class="ex">├──</span> acknowledgements.qmd <span class="co"># Acknowledgments</span></span>
+<span id="cb4-28"><a href="#cb4-28" aria-hidden="true" tabindex="-1"></a>  <span class="kw">|</span>    <span class="ex">├──</span> images/</span>
+<span id="cb4-29"><a href="#cb4-29" aria-hidden="true" tabindex="-1"></a>  <span class="kw">|</span>    <span class="kw">|</span>   <span class="ex">├──</span> cover_background.png <span class="co"># Background image for cover page</span></span>
+<span id="cb4-30"><a href="#cb4-30" aria-hidden="true" tabindex="-1"></a>  <span class="kw">|</span>    <span class="ex">├──</span> summary_translation.qmd <span class="co"># summary</span></span>
+<span id="cb4-31"><a href="#cb4-31" aria-hidden="true" tabindex="-1"></a>  <span class="kw">|</span>    <span class="ex">├──</span> summary_translation.qmd <span class="co"># Translation of summary</span></span>
+<span id="cb4-32"><a href="#cb4-32" aria-hidden="true" tabindex="-1"></a>  <span class="ex">├──</span> index.qmd <span class="co"># Main Quarto document</span></span>
+<span id="cb4-33"><a href="#cb4-33" aria-hidden="true" tabindex="-1"></a>  <span class="ex">├──</span> LaTeX_pkgs/ <span class="co"># Additional LaTeX packages not available through Tinytex</span></span>
+<span id="cb4-34"><a href="#cb4-34" aria-hidden="true" tabindex="-1"></a>  <span class="ex">├──</span> LICENSE <span class="co"># License file</span></span>
+<span id="cb4-35"><a href="#cb4-35" aria-hidden="true" tabindex="-1"></a>  <span class="ex">├──</span> ETH-thesis-template.cls <span class="co"># ETH Zurich thesis LaTeX class</span></span>
+<span id="cb4-36"><a href="#cb4-36" aria-hidden="true" tabindex="-1"></a>  <span class="ex">├──</span> partials/</span>
+<span id="cb4-37"><a href="#cb4-37" aria-hidden="true" tabindex="-1"></a>  <span class="kw">|</span>    <span class="ex">├──</span> title.tex</span>
+<span id="cb4-38"><a href="#cb4-38" aria-hidden="true" tabindex="-1"></a>  <span class="kw">|</span>    <span class="ex">├──</span> before-body.tex</span>
+<span id="cb4-39"><a href="#cb4-39" aria-hidden="true" tabindex="-1"></a>  <span class="kw">|</span>    <span class="ex">├──</span> toc.tex</span>
+<span id="cb4-40"><a href="#cb4-40" aria-hidden="true" tabindex="-1"></a>  <span class="kw">|</span>    <span class="ex">├──</span> _coverpage.tex</span>
+<span id="cb4-41"><a href="#cb4-41" aria-hidden="true" tabindex="-1"></a>  <span class="kw">|</span>    <span class="ex">├──</span> _author-affiliation-themes.tex</span>
+<span id="cb4-42"><a href="#cb4-42" aria-hidden="true" tabindex="-1"></a>  <span class="kw">|</span>    <span class="ex">├──</span> titlepage-theme.lua</span>
+<span id="cb4-43"><a href="#cb4-43" aria-hidden="true" tabindex="-1"></a>  <span class="kw">|</span>    <span class="ex">├──</span> coverpage-theme.lua</span>
+<span id="cb4-44"><a href="#cb4-44" aria-hidden="true" tabindex="-1"></a>  <span class="kw">|</span>    <span class="ex">├──</span> _header-footer-date-themes.tex</span>
+<span id="cb4-45"><a href="#cb4-45" aria-hidden="true" tabindex="-1"></a>  <span class="kw">|</span>    <span class="ex">├──</span> _title-themes.tex</span>
+<span id="cb4-46"><a href="#cb4-46" aria-hidden="true" tabindex="-1"></a>  <span class="kw">|</span>    <span class="ex">├──</span> _titlepage.tex</span>
+<span id="cb4-47"><a href="#cb4-47" aria-hidden="true" tabindex="-1"></a>  <span class="kw">|</span>    <span class="ex">├──</span> pandoc.tex</span>
+<span id="cb4-48"><a href="#cb4-48" aria-hidden="true" tabindex="-1"></a>  <span class="kw">|</span>    <span class="ex">├──</span> header.tex</span>
+<span id="cb4-49"><a href="#cb4-49" aria-hidden="true" tabindex="-1"></a>  <span class="ex">├──</span> quarto-eth-phd-thesis.Rproj <span class="co"># RStudio project file</span></span>
+<span id="cb4-50"><a href="#cb4-50" aria-hidden="true" tabindex="-1"></a>  <span class="ex">├──</span> quarto-eth-phd-thesis.tex <span class="co"># Compiled LaTeX version (optional)</span></span>
+<span id="cb4-51"><a href="#cb4-51" aria-hidden="true" tabindex="-1"></a>  <span class="ex">├──</span> _quarto.yml <span class="co"># Main Quarto project config</span></span>
+<span id="cb4-52"><a href="#cb4-52" aria-hidden="true" tabindex="-1"></a>  <span class="ex">├──</span> README.md <span class="co"># This file</span></span>
+<span id="cb4-53"><a href="#cb4-53" aria-hidden="true" tabindex="-1"></a>  <span class="ex">├──</span> .gitignore <span class="co"># Git ignore file</span></span>
+<span id="cb4-54"><a href="#cb4-54" aria-hidden="true" tabindex="-1"></a>  <span class="ex">├──</span> .Rprofile <span class="co"># R profile for package loading</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="customization" class="level2">

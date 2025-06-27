@@ -1,0 +1,22 @@
+---
+title: Identifying effective area-based conservation strategies under uncertainty              
+description: Doctoral Examination presentation
+author: 
+- Ben Black
+event: Doctoral Examination presentation
+location: Zurich, Switzerland
+date: "2025-06-05"
+image: overview.png
+image-height: 12000px
+categories: [Conservation planning, Area-based conservation, Spatial planning, Land use change, Simulation modelling, PhD]
+preload-iframes: true
+---
+
+In June 2025, I defended my PhD thesis, titled identifying effective area-based conservation strategies under uncertainty, which represents the culmination of my last five years of research. Once the thesis is approved by the department committee and the final copy submitted I look forward to sharing the full document but for now here are the slides I presented on the day.
+
+```{=html}
+<div class="embed-container">
+  <p align="center"><iframe src="https://1drv.ms/p/s!Au5Pw8FMUKhdhb1nAHUvqmWUfTMZuA?embed=1&amp;em=2&amp;wdAr=1.7777777777777777" width="476px" height="288px" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
+  </p>
+</div>
+```

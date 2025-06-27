@@ -4,4 +4,5 @@ date: "2024-2-1"
 image: assets/map.svg
 image-alt: Placeholder of time-slider map
 categories: [R, Leaflet, Maps, Land use, research results]
+draft: true
 ---

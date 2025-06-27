@@ -86,7 +86,8 @@ $colors: (
 // Base document colors
 $body-color: $gray-900 !default;
 $body-bg: #27374F0A; // page background 
-$footer-bg: $light-sage-green; // footer 
+$footer-bg: $light-sage-green; // footer
+$sidebar-bg: $body-bg;
 
 // Inline code
 //$code-bg: #27374F0A; // inline code background color
@@ -99,8 +100,6 @@ $code-block-color: $gray-800; // code block text color
 // $transition-collapse
 $transition-collapse:         height .35s ease;
 $transition-collapse-width:   width .35s ease;
-
-
 
 /*-- scss:rules --*/
 

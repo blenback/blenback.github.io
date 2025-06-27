@@ -6,10 +6,8 @@ format:
   html: 
     css: css/publications.css
 listing:
-  - feed: 
-      type: partial
-      title: Publications
   - id: Journal-articles
+    #template: publication_gallery.ejs
     template: publication.ejs
     contents:
     - publications/Journal_articles.yaml
@@ -19,31 +17,45 @@ listing:
     - publications/Theses.yaml
   - id: Student-theses
     template: publication.ejs
-    feed:
-      type: full
-      title: Student theses supervised
     contents:
     - publications/Student_theses.yaml
+  - id: Other-content
+    template: gallery.ejs
+    contents: 
+    - publications/Other_content.yaml
 ---
 
 ### Journal Articles
 
+------------------------------------------------------------------------
+
 :::{#Journal-articles}
 :::
 
-------------------------------------------------------------------------
+
 
 ### Theses
+
+------------------------------------------------------------------------
 
 :::{#Theses}
 :::
 
-------------------------------------------------------------------------
-
 ### Student theses supervised
+
+------------------------------------------------------------------------
 
 :::{#Student-theses}
 :::
+
+### Other content
+
+------------------------------------------------------------------------
+
+:::{#Other-content}
+:::
+
+
 
 
 

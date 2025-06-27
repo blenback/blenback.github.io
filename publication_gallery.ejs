@@ -1,0 +1,68 @@
+```{=html}
+<div class="list grid" style="column-gap: 10px;">
+
+<% for (const paper of items) { %>
+  <div class="card border-2 rounded-3 g-col-12 g-col-sm-6 g-col-md-4 mb-3 p-2">
+    <div class="card-body">
+    
+    <% if (paper.image) { %>
+      <img src="<%= paper.image %>" alt="Image for <%= paper.title %>" class="card-img-top mb-2 rounded" style="max-height: 250px; object-fit: cover; width: 100%;" />
+    <% } %>
+
+    <h5 class="card-title"><%= paper.title %></h5>
+    <div class="card-subtitle mb-1 text-muted">
+      <%= paper.authors %>, <%= paper.year %>
+    </div>
+
+      <div class="mb-2"><i><%= paper.Journal %></i></div>
+
+      <% if (paper.href) { %>
+        <a href="<%- paper.href %>" target="_blank"><%= paper.href %></a><br/>
+      <% } %>
+
+      <% if (paper.Summary) { 
+          const summaryId = "summary-" + paper.name.replace(/\s+/g, '-');
+      %>
+        <p class="d-inline-flex gap-1 mt-2">
+          <a class="btn btn-outline-dark btn-sm" data-bs-toggle="collapse" href="#<%= summaryId %>" role="button" aria-expanded="false" aria-controls="<%= summaryId %>">
+            Plain Language Summary
+          </a>
+        </p>
+        <div class="collapse" id="<%= summaryId %>">
+          <div class="card card-body">
+            <%= paper.Summary %>
+          </div>
+        </div>
+      <% } %>
+
+      <div class="btn-group mt-3" role="group">
+        <% if (paper.Bibtex) { %>
+          <a href="<%- paper.Bibtex %>" class="btn btn-outline-dark btn-sm" download>
+            <i class="fa-solid fa-quote-left"></i> Cite
+          </a>
+        <% } %>
+        <% if (paper.Preprint) { %>
+          <a href="<%- paper.Preprint %>" class="btn btn-outline-dark btn-sm">
+            <i class="fa-solid fa-fingerprint"></i> Preprint
+          </a>
+        <% } %>
+        <% if (paper.Data) { %>
+          <a href="<%- paper.Data %>" class="btn btn-outline-dark btn-sm">
+            <i class="fa-solid fa-database"></i> Data
+          </a>
+        <% } %>
+        <% if (paper.Code) { %>
+          <a href="<%- paper.Code %>" class="btn btn-outline-dark btn-sm">
+            <i class="fa-solid fa-code"></i> Code
+          </a>
+        <% } %>
+      </div>
+
+    </div>
+  </div>
+<% } %>
+
+</div>
+```
+
+

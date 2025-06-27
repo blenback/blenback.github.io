@@ -1,0 +1,21 @@
+---
+title: I successfully defended my PhD thesis!
+date: "2025-6-06"
+image: assets/celebration.svg
+image-alt: Graphical abstract for reproducible research workshop
+categories: [thesis, PhD, research]
+---
+
+On the 5th of June 2025, I successfully defended my PhD thesis titled "Identifying effective area-based conservation strategies under uncertainty". The defence was well received by the examination committee, I passed with no corrections and my thesis will be nominated for the ETH medal for outstanding Doctoral theses. This marks the end of a long and rewarding journey, and I am eternally grateful for the support of my committee members, colleagues, friends, and family throughout this process. Once the thesis is approved by the department committee and the final copy submitted, I look forward to sharing the full document. For now, here are the slides I presented on the day: <https://github.com/blenback/presentations/2025_05_6_PhD_defence>
+
+As is customary in the PLUS research group I received a doctoral hat handmade by my colleagues. As you can see it is covered with lots of small 'easter eggs' representing my time in the group including an expertly crafted paper mache Alpaca and a felt Deutsche Bahn train!
+
+::: {layout-nrow="2"}
+![](assets/defence5.jpg){group="my-gallery"}
+
+![](assets/defence1.jpg){group="my-gallery"}
+
+![](assets/defence2.jpg){group="my-gallery"}
+
+![](assets/defence3.jpg){group="my-gallery"}
+:::

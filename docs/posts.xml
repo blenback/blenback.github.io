@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>Ben&lt;br&gt;Black</title>
+<link>https://blenback.github.io/posts.html</link>
+<atom:link href="https://blenback.github.io/posts.xml" rel="self" type="application/rss+xml"/>
+<description>Personal website for Ben Black</description>
+<generator>quarto-1.6.42</generator>
+<lastBuildDate>Thu, 05 Jun 2025 22:00:00 GMT</lastBuildDate>
+<item>
+  <title>I successfully defended my PhD thesis!</title>
+  <link>https://blenback.github.io/posts/thesis_defence.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>On the 5th of June 2025, I successfully defended my PhD thesis titled “Identifying effective area-based conservation strategies under uncertainty”. The defence was well received by the examination committee, I passed with no corrections and my thesis will be nominated for the ETH medal for outstanding Doctoral theses. This marks the end of a long and rewarding journey, and I am eternally grateful for the support of my committee members, colleagues, friends, and family throughout this process. Once the thesis is approved by the department committee and the final copy submitted, I look forward to sharing the full document. For now, here are the slides I presented on the day: <a href="https://github.com/blenback/presentations/2025_05_6_PhD_defence" class="uri">https://github.com/blenback/presentations/2025_05_6_PhD_defence</a></p>
+<p>As is customary in the PLUS research group I received a doctoral hat handmade by my colleagues. As you can see it is covered with lots of small ‘easter eggs’ representing my time in the group including an expertly crafted paper mache Alpaca and a felt Deutsche Bahn train!</p>
+<div>
+
+</div>
+<div class="quarto-layout-panel" data-layout-nrow="2">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="https://blenback.github.io/posts/assets/defence5.jpg" class="img-fluid" data-group="my-gallery"></p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="https://blenback.github.io/posts/assets/defence1.jpg" class="img-fluid" data-group="my-gallery"></p>
+</div>
+</div>
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="https://blenback.github.io/posts/assets/defence2.jpg" class="img-fluid" data-group="my-gallery"></p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="https://blenback.github.io/posts/assets/defence3.jpg" class="img-fluid" data-group="my-gallery"></p>
+</div>
+</div>
+</div>
+
+
+
+ ]]></description>
+  <category>thesis</category>
+  <category>PhD</category>
+  <category>research</category>
+  <guid>https://blenback.github.io/posts/thesis_defence.html</guid>
+  <pubDate>Thu, 05 Jun 2025 22:00:00 GMT</pubDate>
+  <media:content url="https://blenback.github.io/posts/assets/celebration.svg" medium="image" type="image/svg+xml"/>
+</item>
+<item>
+  <title>Creating my own PhD thesis template with Quarto</title>
+  <link>https://blenback.github.io/posts/PhD_template.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>Over the last two years I have really started to use Quarto for everything in my academic work from writing manuscripts, websites for research projects, data dashboards for workshops, chain letter writing, and presentations. So when it came to writing my PhD thesis I already knew I wanted to use Quarto.</p>
+<p>For those not familiar with Quarto, some of the big advantages it offers for a project like this is the ability to include Python and R code chunks that are computed when the document is rendered. It also connects directly with my scientific literature tool of choice, Zotero, for easy compilation of the bibliography. Finally in terms of formatting it allows you to mix in Markdown, LaTeX and HTML.</p>
+<p>My thesis is a cumulative paper thesis and I had already written two of my academic papers using Quarto so integrating these was as simple as copying over the relevant files. As for the other papers that had been written in Word these were very simple to convert to Markdown format, especially with the help of ChatGPT which I find to be very accurate for tasks.</p>
+<p>In terms of an appropriate Quarto template, I found several existing examples:</p>
+<ul>
+<li><p><a href="https://github.com/james-d-h/quarto-phd-thesis" class="uri">https://github.com/james-d-h/quarto-phd-thesis</a></p></li>
+<li><p><a href="https://github.com/quarto-monash/thesis" class="uri">https://github.com/quarto-monash/thesis</a></p></li>
+<li><p><a href="https://gongcastro.github.io/blog/upfthesis/upfthesis.html" class="uri">https://gongcastro.github.io/blog/upfthesis/upfthesis.html</a></p></li>
+<li><p><a href="https://cameronpatrick.com/post/2023/07/quarto-thesis-formatting/#html-output" class="uri">https://cameronpatrick.com/post/2023/07/quarto-thesis-formatting/#html-output</a></p></li>
+</ul>
+<p>However, none quite fit the specifications of my university (ETH Zurich) and my personal formatting preferences. So I decided to take the <a href="https://github.com/james-d-h/quarto-phd-thesis"><code>quarto-phd-thesis</code></a> template from <code>james-d-h</code> and build upon it to make it my own. The main features I added were:</p>
+<ul>
+<li><p>The ability to add a cover page using the <a href="https://nmfs-opensci.github.io/quarto_titlepages/"><code>quarto_titlepages</code></a> extension</p></li>
+<li><p>Custom R functions to ensure consistent formatting of all figures and tables according to user specified color palettes.</p></li>
+<li><p>Use of <code>.Rprofile</code> to manage package loading across chapters</p></li>
+<li><p>The ETH Zurich title page and a translated version of the summary into one of the Swiss national languages.</p></li>
+<li><p>Custom Quarto call-out boxes to display the details of published articles at the start of chapters including a visualization of author <a href="https://www.elsevier.com/researcher/author/policies-and-guidelines/credit-author-statement">CRediT</a> contributions.</p></li>
+<li><p>Additional LaTeX formatting</p></li>
+</ul>
+<p>I have called the resulting template <code>quarto-eth-phd-thesis</code> and it is available via Github here: <a href="https://github.com/blenback/quarto-eth-phd-thesis" class="uri">https://github.com/blenback/quarto-eth-phd-thesis</a>. There is a detailed README in the repo but I have also written the instructions in page on my website: <a href="https://blenback.github.io/quarto-eth-phd-thesis.html" class="uri">https://blenback.github.io/quarto-eth-phd-thesis.html</a></p>
+<p>Here is an example PDF showing some of the features:</p>
+<div class="embed-container">
+  <p align="center"><iframe src="../media/quarto-eth-phd-thesis.pdf" style="border: 0.5px"></iframe>
+</p></div>
+
+
+
+ ]]></description>
+  <category>R</category>
+  <category>Quarto</category>
+  <category>Reproducible research</category>
+  <category>thesis</category>
+  <category>template</category>
+  <category>LaTeX</category>
+  <guid>https://blenback.github.io/posts/PhD_template.html</guid>
+  <pubDate>Tue, 22 Apr 2025 22:00:00 GMT</pubDate>
+  <media:content url="https://blenback.github.io/posts/assets/thesis_design.svg" medium="image" type="image/svg+xml"/>
+</item>
+<item>
+  <title>Starting an awesome list for scientific resources</title>
+  <link>https://blenback.github.io/posts/awesome-list.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>In October 2024 I attended a workshop on speeding up the development of useful agent-based land use models. This was a great opportunity for me to engage in a research field that overlaps my own but is still very different. One of the outcomes of the workshop was that we decided to try and compile a collection of useful educational resources for researchers and students working on the topic.</p>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<p><img src="https://blenback.github.io/posts/assets/abm-workshop2.jpg" class="img-fluid"></p>
+</div></div><p>I proposed that we do this in the form of an <a href="https://github.com/topics/awesome">Awesome List</a>, which in case you are not familiar is a curated list of resources on a specific topic, typically hosted on GitHub. The nice thing about this format is that it is easy to contribute to, and anyone can add resources they find useful. But at the same time the drawback is that the list is presented as the <code>README</code> section of the Github repository which is not so accessible for those not familiar with the service.</p>
+<p>To get around this and display the list in a nicer format, I made an accompanying Quarto webpage for it, hosted through Github pages. But I didn’t want it to be a chore to maintain so I wrote an <a href="https://github.com/awesome-ABM-LU/awesome-ABM-LU/blob/main/split_markdown.R">R script</a> that splits the repo’s <code>README.md</code> file into sections and writes the contents to individual Quarto <code>.qmd</code> files for different types of content that are then brought together as a single page. This script is run automatically as a <a href="https://github.com/features/actions">Github action</a> every time there is a push to main branch of the repo so the webpage is kept up to date.</p>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<p><img src="https://blenback.github.io/posts/assets/awesome-list.svg" class="img-fluid"></p>
+</div></div><p>The list itself is still a work in progress but the repo can be viewed here: <a href="https://github.com/awesome-ABM-LU/awesome-ABM-LU" class="uri">https://github.com/awesome-ABM-LU/awesome-ABM-LU</a> and the webpage here: <a href="https://awesome-abm-lu.github.io/awesome-ABM-LU/" class="uri">https://awesome-abm-lu.github.io/awesome-ABM-LU/</a></p>
+
+
+
+ ]]></description>
+  <category>R</category>
+  <category>Github</category>
+  <category>Awesome List</category>
+  <category>Resources</category>
+  <category>Continuous Integration</category>
+  <guid>https://blenback.github.io/posts/awesome-list.html</guid>
+  <pubDate>Wed, 13 Nov 2024 23:00:00 GMT</pubDate>
+  <media:content url="https://blenback.github.io/posts/assets/awesome-list.svg" medium="image" type="image/svg+xml"/>
+</item>
+<item>
+  <title>Upcoming workshop: Reproducible research with R and Quarto</title>
+  <link>https://blenback.github.io/posts/R_workshop.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>I have been a big fan of R for everything research related for several years and Rstudio has been my go-to IDE all the way from being a complete beginner to my current level which I would still only describe as ‘somewhat proficient’. So you can imagine that when <a href="">Posit</a>, the company behind Rstudio released their open-source technical publishing software, <a href="">Quarto</a>, I was naturally intrigued. Over the last year I’ve gotten really into Quarto and used it for all sorts of purposes: I made this website for myself along with several others, I’ve written a whole academic paper with it, produced a proposal and even used it to automate the mass-sending of invitation letters.</p>
+<p>This experience prompted me to put together a workshop, that would try to combine all of the bits and pieces of useful knowledge I have acquired in using both R and Quarto for engaging in reproducible scientific research into a semi-coherent package.</p>
+<p>I submitted a proposal for the workshop to be delivered at the <a href="https://landscape2024.org/frontend/index.php?folder_id=7393&amp;page_id=">Landscape conference</a> in Berlin in September 2024 and it was accepted. If you happen to be attending this conference you can sign up to attend the workshop in person but it wouldn’t be very FAIR (get it…) of me if I didn’t make the content freely available. So I created a dedicated website for it that also displays the content as a presentation at the same time (one of the other neat features of Quarto): <a href="https://blenback.github.io/R-for-Reproducible-Research">https://blenback.github.io/R-for-Reproducible-Research/</a></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://blenback.github.io/posts/assets/workshop_abstract.png" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="graphical_abstract"></p>
+</figure>
+</div>
+
+
+
+ ]]></description>
+  <category>R</category>
+  <category>Quarto</category>
+  <category>Reproducible research</category>
+  <category>FAIR</category>
+  <category>Landscape conference</category>
+  <category>workshop</category>
+  <guid>https://blenback.github.io/posts/R_workshop.html</guid>
+  <pubDate>Tue, 30 Apr 2024 22:00:00 GMT</pubDate>
+  <media:content url="https://blenback.github.io/posts/assets/open-source.svg" medium="image" type="image/svg+xml"/>
+</item>
+<item>
+  <title>Automating boring tasks pt. 1: Updating my CV</title>
+  <link>https://blenback.github.io/posts/CV_update.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>If you are like me, you only ever find yourself updating your CV when you are actually unemployed and looking for a new job. This is also a task I find especially time-consuming given that you end up chopping and changing what is included based upon different applications which inevitably leads to endlessly messing around with the formatting to keep things neat. I also don’t have much sense for design, and in fact the format of my previous CV was very kindly made for me by my partner.</p>
+<p>However, recently I found myself needing an up to date CV to share with project funders and so I thought it was time to invest in a new format and try to mitigate some of the headaches of updating the content in the future.</p>
+<p>I knew I wanted a more modern format, complete with social links, a picture and a more bold design so I opted for the pagedown::html_resume format which I adapted from the updates made by <a href="https://github.com/mcanouil">Mickaël Canouil</a> (who is always doing cool Quarto projects).</p>
+<p>Some nerdy features about this format/approach that I like:</p>
+<ul>
+<li><p>Although it is rendered with Rmarkdown, the raw inputs for most of the sections are entered directly in a simple Excel file.</p></li>
+<li><p>The publications are read from a Bibtex. file which I can keep updated using Zotero (my academic library software of choice).</p></li>
+<li><p>The document is rebuilt automatically every time it is committed to the remote git repo using a github action</p></li>
+<li><p>It renders as both HTML and PDF simultaneously</p></li>
+<li><p>I can apply other templates and easily control which sections are included when applications require different types of CVs</p></li>
+</ul>
+<p>I added some personal touches to make it my own, including additional, academia relevant, social links to the side bar such as ResearchGate and ORCID, as well as a languages section. I also wrote some code to utilise custom entries within my bibtex file to add different links to entries. For example, links to the slides for my presentations (hosted here on my website), the papers and code for my publications and project-specific websites I have created. Here is the final result:</p>
+<div class="embed-container">
+  <p align="center"><iframe src="https://blenback.github.io/curriculum-vitae/" style="border: 0.5px"></iframe>
+</p></div>
+<p>and if you want to do do something similar here is the <a href="">github repo</a></p>
+
+
+
+ ]]></description>
+  <category>R</category>
+  <category>Markdown</category>
+  <category>Automation</category>
+  <category>CV</category>
+  <category>Resume</category>
+  <guid>https://blenback.github.io/posts/CV_update.html</guid>
+  <pubDate>Wed, 31 Jan 2024 23:00:00 GMT</pubDate>
+  <media:content url="https://blenback.github.io/posts/assets/cv.svg" medium="image" type="image/svg+xml"/>
+</item>
+<item>
+  <title>New research project: NASCENT-Peru</title>
+  <link>https://blenback.github.io/posts/nascent_announcement.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>I am excited to be able to introduce a new research project that I will be working on for the next two years: NASCENT-Peru.</p>
+<p>The name of the project took some consideration and comes from the acronym: <strong>NA</strong>ture-positive <strong>SC</strong>enarios for <strong>EN</strong>vironmental <strong>T</strong>ransitions in Peru. Of course, also drawing upon the definition of nascent in terms of something begin to grow or change.</p>
+<p>This is the first project for which I wrote the proposal and it was funded through the Biodiversity and Ecosystem services scenario modelling challenge put together by <a href="SwissRE.com">SwissRE</a>. I will work on this project until 2025, continuing in the chair of Planning of Landscape and Urban Systems under Prof.&nbsp;Dr.&nbsp;Adrienne Gret-Regamy at ETH Zurich.</p>
+<p>We have already put together a multi-lingual <a href="https://nascent-peru.github.io/">website</a> for the project where we hope to communicate the process and results of the research to a more diverse audience than just through journal articles. To this end we have also created <a href="https://www.linkedin.com/company/nascent-peru">LinkedIn</a> and <a href="https://www.facebook.com/profile.php?id=61557948733975">Facebook</a> pages to help spread the word so please follow them if you use these platforms!</p>
+
+
+
+ ]]></description>
+  <category>Future landscape scenarios</category>
+  <category>Ecosystem Services</category>
+  <category>Biodiversity</category>
+  <category>Peru</category>
+  <category>SwissRE</category>
+  <category>Project</category>
+  <category>NASCENT-Peru</category>
+  <guid>https://blenback.github.io/posts/nascent_announcement.html</guid>
+  <pubDate>Wed, 29 Nov 2023 23:00:00 GMT</pubDate>
+  <media:content url="https://blenback.github.io/posts/assets/announcement.svg" medium="image" type="image/svg+xml"/>
+</item>
+</channel>
+</rss>

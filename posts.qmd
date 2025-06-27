@@ -1,6 +1,6 @@
 ---
 title: |
-subtitle: "A place for me to share insights into my research but also little tips and tricks I find interesting in using R for scientific research"   
+subtitle: "A place for me to share updates and insights into my research but also little tips and tricks I find interesting in using R for scientific research"   
 
 listing: 
   contents: posts # all Quarto docs in the `posts` directory will be included on your listing page
