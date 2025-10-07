@@ -6,6 +6,8 @@ project:
 
 website:
   title: "Ben<br>Black"
+  drafts:
+    - presentations/2025_14_9_IMC/IMC-2025-FW.qmd
   search: TRUE #add search bar
   site-url: "https://blenback.github.io/"
   description: "Personal website for Ben Black"
