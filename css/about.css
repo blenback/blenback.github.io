@@ -1,0 +1,172 @@
+
+/* site display at smaller widths i.e. mobile browsing */
+@media (min-width: 992px) {
+.resizable-fading-image {
+  margin: 0 auto;
+  width: 50%;
+  overflow: hidden;
+  padding-right: 30px;
+  padding-left: 30px;
+  position: relative;
+  min-height: 600px;
+  float: right;
+}
+}
+
+/* Set behaviour for phone screen width viewing */
+@media (max-width: 1220px) {
+
+.resizable-fading-image {
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 30px;
+  min-height: 600px;
+}
+}
+
+#fading-image img {
+  position:absolute;
+  max-height:542px;
+  max-width:412px;
+  width:100%;
+  border-radius: 30px 30px 30px 30px;
+}
+
+/* refer to https://www.devtwins.com/blog/css-cross-fading-images */
+
+#fading-image img {
+  -webkit-animation-name: cf4FadeInOut;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-duration: 30s;
+
+  -moz-animation-name: cf4FadeInOut;
+  -moz-animation-timing-function: ease-in-out;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-duration: 30s;
+
+  -o-animation-name: cf4FadeInOut;
+  -o-animation-timing-function: ease-in-out;
+  -o-animation-iteration-count: infinite;
+  -o-animation-duration: 30s;
+
+  animation-name: cf4FadeInOut;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 30s;
+}
+#fading-image img:nth-of-type(1) {
+  -webkit-animation-delay: 22s;
+  -moz-animation-delay: 22s;
+  -o-animation-delay: 22s;
+  animation-delay: 22s;
+}
+#fading-image img:nth-of-type(2) {
+  -webkit-animation-delay: 16s;
+  -moz-animation-delay: 16s;
+  -o-animation-delay: 16s;
+  animation-delay: 16s;
+}
+#fading-image img:nth-of-type(3) {
+  -webkit-animation-delay: 12s;
+  -moz-animation-delay: 12s;
+  -o-animation-delay: 12s;
+  animation-delay: 12s;
+}
+#fading-image img:nth-of-type(4) {
+  -webkit-animation-delay: 6s;
+  -moz-animation-delay: 6s;
+  -o-animation-delay: 6s;
+  animation-delay: 6s;
+}
+#fading-image img:nth-of-type(5) {
+  -webkit-animation-delay: 0s;
+  -moz-animation-delay: 0s;
+  -o-animation-delay: 0s;
+  animation-delay: 0s;
+}
+
+@-webkit-keyframes cf4FadeInOut {
+0% {
+opacity:1;
+}
+13% {
+opacity:1;
+}
+20% {
+opacity:0;
+}
+93% {
+opacity:0;
+}
+100% {
+opacity:1;
+}
+}
+
+@-moz-keyframes cf4FadeInOut {
+0% {
+opacity:1;
+}
+13% {
+opacity:1;
+}
+20% {
+opacity:0;
+}
+93% {
+opacity:0;
+}
+100% {
+opacity:1;
+}
+}
+
+@-o-keyframes cf4FadeInOut {
+  0% {
+opacity:1;
+}
+13% {
+opacity:1;
+}
+20% {
+opacity:0;
+}
+93% {
+opacity:0;
+}
+100% {
+opacity:1;
+}
+}
+
+@keyframes cf4FadeInOut {
+0% {
+opacity:1;
+}
+13% {
+opacity:1;
+}
+20% {
+opacity:0;
+}
+93% {
+opacity:0;
+}
+100% {
+opacity:1;
+}
+}
+
+.h2 {
+  font-size: 2.3rem !important;
+  text-decoration:none !important;
+  border-bottom: 0px!important;
+}
+
+
+.anchorjs-link {
+  display: none;
+}
+
+

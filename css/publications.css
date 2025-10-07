@@ -1,0 +1,40 @@
+.btn-sm {
+  padding-left: 7px;
+  padding-right: 7px;
+  background: var(--accent-colour) !important;
+  color: white !important;
+  border-radius: 45px !important;
+  padding: 3px 8px !important;
+  text-align: center !important;
+  width: max-content !important;
+  display: inline !important;
+  margin-right: 8px !important;
+  border: 0px solid white !important;
+  opacity: 0.6;
+}
+
+.btn-sm:hover {
+  fill: var(--highlight-colour);
+}
+
+.btn-sm:after {
+   content: none;
+}
+
+.btn-sm:before {
+   content: none;
+}
+
+h2 {
+  font-size: 2.3rem !important;
+  text-decoration:none !important;
+  border-bottom: 0px;
+}
+
+h3 {
+  font-weight: bold;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.5px solid #3B5C3E;
+}
+
+
