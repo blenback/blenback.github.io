@@ -2,14 +2,12 @@
 title: "Presentations"
 #subtitle: "given at academic conferences"
 listing: 
-  contents: presentations # all Quarto docs in the `presentations` directory will be included on your listing page
+  contents: presentations
   feed: true
-  type: default # or `default` or `table`; each type has its own set of yaml options to include
+  type: default 
   fields: [date, categories, title, description, image]
-  sort: "date desc" # can also sort on more than one field
+  sort: "date desc" 
   #categories: true # allows you to sort posts by assigned categories
-  #sort-ui: true
-  #filter-ui: true
 page-layout: full
 format: 
   html: 

@@ -1,7 +1,10 @@
 ---
 title: Normative scenarios for effectively mitigating biodiversity loss
 description: Foresight Training for Anticipatory Adaptation in the Hindu Kush Himalaya, Dhulikhel, Nepal.
-author: Benjamin Black
+author: 
+- Benjamin Black
+- Adrienne Grêt-Regamey
+- Paula Mayer
 event: Foresight Training for Anticipatory Adaptation in the Hindu Kush Himalaya
 location: Dhulikhel, Nepal
 date: "2024-08-14"

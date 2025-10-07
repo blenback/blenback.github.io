@@ -1,14 +1,14 @@
 ---
-title: "Publications"
 page-layout: full
 title-block-banner: false
 format: 
   html: 
+    anchor-sections: true
     css: css/publications.css
 listing:
   - id: Journal-articles
     #template: publication_gallery.ejs
-    template: publication.ejs
+    template: publication_yearly.ejs
     contents:
     - publications/Journal_articles.yaml
   - id: Theses
@@ -25,38 +25,20 @@ listing:
     - publications/Other_content.yaml
 ---
 
-### Journal Articles
-
-------------------------------------------------------------------------
-
-:::{#Journal-articles}
+### Journal Articles 
+::: {#Journal-articles}
 :::
 
-
-
 ### Theses
-
-------------------------------------------------------------------------
-
-:::{#Theses}
+::: {#Theses}
 :::
 
 ### Student theses supervised
-
-------------------------------------------------------------------------
-
-:::{#Student-theses}
+::: {#Student-theses}
 :::
 
 ### Other content
-
-------------------------------------------------------------------------
-
-:::{#Other-content}
+::: {#Other-content}
 :::
-
-
-
-
 
 

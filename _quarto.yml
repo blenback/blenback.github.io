@@ -63,7 +63,8 @@ format:
     highlight-style: github
     code-copy: true
     theme: 
-    - custom_theme.scss #add custom scss inputs
+      - custom_theme.scss #add custom scss inputs
+    # dark: custom_theme_dark.scss #add custom scss inputs
     mainfont: Raleway
     margin-left: 0.5em
     css: css/styles.css #use css components from Maya gans

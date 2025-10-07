@@ -2,11 +2,47 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://blenback.github.io/quarto-eth-phd-thesis.html</loc>
-    <lastmod>2025-04-27T18:04:17.735Z</lastmod>
+    <lastmod>2025-06-27T15:44:26.829Z</lastmod>
   </url>
   <url>
-    <loc>https://blenback.github.io/posts.html</loc>
-    <lastmod>2025-06-27T15:08:47.174Z</lastmod>
+    <loc>https://blenback.github.io/presentations.html</loc>
+    <lastmod>2025-10-07T07:31:35.734Z</lastmod>
+  </url>
+  <url>
+    <loc>https://blenback.github.io/presentations/2025_05_6_PhD_defence/index.html</loc>
+    <lastmod>2025-06-27T14:38:00.375Z</lastmod>
+  </url>
+  <url>
+    <loc>https://blenback.github.io/presentations/2024_20_6_WBF/index.html</loc>
+    <lastmod>2025-04-27T10:18:50.046Z</lastmod>
+  </url>
+  <url>
+    <loc>https://blenback.github.io/presentations/2024_14_08_ICIMOD/index.html</loc>
+    <lastmod>2025-04-27T10:18:50.023Z</lastmod>
+  </url>
+  <url>
+    <loc>https://blenback.github.io/presentations/2023_11_30_SwissRE/index.html</loc>
+    <lastmod>2025-04-27T10:18:49.860Z</lastmod>
+  </url>
+  <url>
+    <loc>https://blenback.github.io/presentations/2022_07_01_IEMSs_ValParCH_pres/index.html</loc>
+    <lastmod>2025-04-27T10:18:49.734Z</lastmod>
+  </url>
+  <url>
+    <loc>https://blenback.github.io/presentations/2021_06_09_ESP/index.html</loc>
+    <lastmod>2025-04-27T10:18:49.704Z</lastmod>
+  </url>
+  <url>
+    <loc>https://blenback.github.io/posts/thesis_defence.html</loc>
+    <lastmod>2025-06-27T15:07:51.024Z</lastmod>
+  </url>
+  <url>
+    <loc>https://blenback.github.io/posts/PhD_template.html</loc>
+    <lastmod>2025-04-29T12:51:47.762Z</lastmod>
+  </url>
+  <url>
+    <loc>https://blenback.github.io/about.html</loc>
+    <lastmod>2025-04-27T10:18:48.263Z</lastmod>
   </url>
   <url>
     <loc>https://blenback.github.io/index.html</loc>
@@ -17,31 +53,59 @@
     <lastmod>2025-06-25T16:17:54.509Z</lastmod>
   </url>
   <url>
-    <loc>https://blenback.github.io/posts/PhD_template.html</loc>
-    <lastmod>2025-04-29T12:51:47.762Z</lastmod>
+    <loc>https://blenback.github.io/posts/CV_update.html</loc>
+    <lastmod>2025-04-27T10:18:49.661Z</lastmod>
   </url>
   <url>
-    <loc>https://blenback.github.io/publications.html</loc>
-    <lastmod>2025-06-27T15:34:11.739Z</lastmod>
+    <loc>https://blenback.github.io/posts/nascent_announcement.html</loc>
+    <lastmod>2025-04-27T10:18:49.680Z</lastmod>
   </url>
   <url>
-    <loc>https://blenback.github.io/presentations.html</loc>
-    <lastmod>2025-06-27T14:23:24.222Z</lastmod>
+    <loc>https://blenback.github.io/posts/R_workshop.html</loc>
+    <lastmod>2025-04-27T10:18:49.662Z</lastmod>
+  </url>
+  <url>
+    <loc>https://blenback.github.io/posts.html</loc>
+    <lastmod>2025-06-27T15:08:47.174Z</lastmod>
+  </url>
+  <url>
+    <loc>https://blenback.github.io/presentations/2022_07_01_IEMSs_model_pres/index.html</loc>
+    <lastmod>2025-04-27T10:18:49.734Z</lastmod>
+  </url>
+  <url>
+    <loc>https://blenback.github.io/presentations/2022_09_13_IMC/index.html</loc>
+    <lastmod>2025-04-27T10:18:49.815Z</lastmod>
+  </url>
+  <url>
+    <loc>https://blenback.github.io/presentations/2023_16_12_ValPar.CH_closing/index.html</loc>
+    <lastmod>2025-04-27T10:18:49.906Z</lastmod>
+  </url>
+  <url>
+    <loc>https://blenback.github.io/presentations/2024_17_09_Landscape/index.html</loc>
+    <lastmod>2025-10-07T07:31:27.941Z</lastmod>
+  </url>
+  <url>
+    <loc>https://blenback.github.io/presentations/2024_5_9_Landschaft/index.html</loc>
+    <lastmod>2025-10-07T07:31:02.271Z</lastmod>
   </url>
   <url>
     <loc>https://blenback.github.io/presentations/2025_25_6_CUPUM/index.html</loc>
-    <lastmod>2025-06-27T14:22:47.423Z</lastmod>
+    <lastmod>2025-10-07T07:31:17.898Z</lastmod>
   </url>
   <url>
-    <loc>https://blenback.github.io/presentations/2024_20_6_WBF/index.html</loc>
-    <lastmod>2025-04-27T10:18:50.046Z</lastmod>
+    <loc>https://blenback.github.io/publications.html</loc>
+    <lastmod>2025-09-29T15:21:34.811Z</lastmod>
   </url>
   <url>
-    <loc>https://blenback.github.io/presentations/2025_05_6_PhD_defence/index.html</loc>
-    <lastmod>2025-06-27T14:38:00.375Z</lastmod>
+    <loc>https://blenback.github.io/presentations/2025_14_9_IMC/IMC-2025-JH.html</loc>
+    <lastmod>2025-09-29T13:42:02.989Z</lastmod>
   </url>
   <url>
-    <loc>https://blenback.github.io/posts/thesis_defence.html</loc>
-    <lastmod>2025-06-27T15:07:51.024Z</lastmod>
+    <loc>https://blenback.github.io/presentations/2025_14_9_IMC/IMC-2025-AGR.html</loc>
+    <lastmod>2025-09-29T15:28:21.586Z</lastmod>
+  </url>
+  <url>
+    <loc>https://blenback.github.io/presentations/2025_14_9_IMC/IMC-2025-FW.html</loc>
+    <lastmod>2025-10-07T07:31:25.138Z</lastmod>
   </url>
 </urlset>

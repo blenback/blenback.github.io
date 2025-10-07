@@ -1,7 +1,9 @@
 ---
 title: Normative scenarios of landscape change for Nature-Positive futures in Peru               
 description: World Biodiversity Forum, Davos, Switzerland.
-author: Benjamin Black
+author: 
+- Benjamin Black
+- Adrienne Grêt-Regamey
 event: 3rd World Biodiversity Forum
 location: Davos, Switzerland
 date: "2024-06-20"

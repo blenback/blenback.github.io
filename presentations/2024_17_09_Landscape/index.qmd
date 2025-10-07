@@ -1,7 +1,11 @@
 ---
 title: "Reproducible Research with R and Quarto: Workflows for data, projects and publications"
 description: Masterclass given at the Landscape 2024 conference, Berlin, Germany.
-author: Benjamin Black
+author: 
+- Benjamin Black
+- Manuel Kurmann
+- Nivedita Harisena
+- Maarten Van Strien
 event: Landscape 2024 conference, Berlin, Germany.
 location: Berlin, Germany
 date: "2024-09-16"

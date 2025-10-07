@@ -1,7 +1,10 @@
 ---
 title: Negotiating scenarios of a desirable ecological infrastructure for Switzerland               
 description: 4th Swiss Landscape Congress, Tramelan, Switzerland.
-author: Benjamin Black
+author: 
+- Sergio Wicki
+- Benjamin Black
+- Nathan Külling
 event: 4th Swiss Landscape Congress
 location: Tramelan, Switzerland
 date: "2024-09-05"
@@ -9,6 +12,7 @@ image: Pres_image.png
 image-height: 12000px
 categories: [Switzerland, Ecological Infrastructure, Normative scenarios, Archetypes, Prioritization]
 preload-iframes: true
+citation: false
 ---
 
 In September, I had the pleasure of contributing a joint presentation, with colleagues from the [ValPar.CH](https://valpar.ch/index_en.php?page=home_en) project, for the [4th Swiss Landscape Congress](https://landschaftskongress.ch/) in Tramelan, Switzerland. This conference was fairly unique as it strived to bring together not just academics but also practice-oriented professionals and stakeholders from various fields related to the landscape in Switzerland. Our contribution,demonstrated how the different methods that we have employed in our research can offer insights into decision-making regarding the implementation of an ecological infrastructure in Switzerland that achieves it's intended purpose of safeguarding biodiversity and ecosystem services whilst also being socially acceptable. 

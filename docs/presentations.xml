@@ -9,8 +9,89 @@
 <link>https://blenback.github.io/presentations.html</link>
 <atom:link href="https://blenback.github.io/presentations.xml" rel="self" type="application/rss+xml"/>
 <description>Personal website for Ben Black</description>
-<generator>quarto-1.6.42</generator>
-<lastBuildDate>Tue, 24 Jun 2025 22:00:00 GMT</lastBuildDate>
+<generator>quarto-1.7.32</generator>
+<lastBuildDate>Mon, 15 Sep 2025 22:00:00 GMT</lastBuildDate>
+<item>
+  <title>Addressing uncertainties in ecosystem services impacts of solar energy systems under future changes.</title>
+  <dc:creator>Ben Black</dc:creator>
+  <dc:creator>Franziska Walther</dc:creator>
+  <dc:creator>Jonas Schwaab</dc:creator>
+  <dc:creator>Adrienne Grêt-Regamey</dc:creator>
+  <link>https://blenback.github.io/presentations/2025_14_9_IMC/IMC-2025-FW.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>These are the slides presenting research that I am collaborating in on the topic of assessing uncertainties in ecosystem service impacts of solar energy systems in Switzerland, presented by my colleague Fransizka Walther, at the International Mountain Conference in Innsbruck 2025. The abstract is available <a href="https://imc2025.info/imc25/abstract/addressing-uncertainties-in-ecosystem-services-impacts-of-solar-energy-systems-under-future-changes/">here</a>.</p>
+<div class="embed-container">
+  <p align="center"><iframe src="IMC-2025-FW.pdf" style="border: 0.5px"></iframe>
+</p></div>
+
+
+
+ ]]></description>
+  <category>Ecosystem Services</category>
+  <category>Solar Energy</category>
+  <category>Bayesian networks</category>
+  <category>Uncertainty</category>
+  <guid>https://blenback.github.io/presentations/2025_14_9_IMC/IMC-2025-FW.html</guid>
+  <pubDate>Mon, 15 Sep 2025 22:00:00 GMT</pubDate>
+  <media:content url="https://blenback.github.io/presentations/2025_14_9_IMC/FW-cover.svg" medium="image" type="image/svg+xml"/>
+</item>
+<item>
+  <title>Climate Change Impacts On Swiss Mountain Ecosystem Services: A Land Use Change Perspective.</title>
+  <dc:creator>Ben Black</dc:creator>
+  <dc:creator>Jan Hartman</dc:creator>
+  <dc:creator>Adrienne Grêt-Regamey</dc:creator>
+  <link>https://blenback.github.io/presentations/2025_14_9_IMC/IMC-2025-JH.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>These are the slides presenting research I am collaborating in, presented by my colleague, Jan Hartman at the International Mountain Conference in Innsbruck 2025. The abstract is available <a href="https://imc2025.info/imc25/abstract/climate-change-impacts-on-swiss-mountain-ecosystem-services-a-land-use-change-perspective/">here</a>.</p>
+<div class="embed-container">
+  <p align="center"><iframe src="IMC-2025-JH.pdf" style="border: 0.5px"></iframe>
+</p></div>
+
+
+
+ ]]></description>
+  <category>Climate Change</category>
+  <category>Model integration</category>
+  <category>Land use change modelling</category>
+  <guid>https://blenback.github.io/presentations/2025_14_9_IMC/IMC-2025-JH.html</guid>
+  <pubDate>Mon, 15 Sep 2025 22:00:00 GMT</pubDate>
+  <media:content url="https://blenback.github.io/presentations/2025_14_9_IMC/JH-cover.svg" medium="image" type="image/svg+xml"/>
+</item>
+<item>
+  <title>Combining normative scenarios and exploratory conservation policies for delineating robust Alpine protected areas</title>
+  <dc:creator>Ben Black</dc:creator>
+  <dc:creator>Adrienne Grêt-Regamey</dc:creator>
+  <link>https://blenback.github.io/presentations/2025_14_9_IMC/IMC-2025-AGR.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>These are the slides presenting the research of my lastest <a href="https://dx.doi.org/10.2139/ssrn.5447007">paper</a> from the International Mountain Conference in Innsbruck 2025. The abstract is available <a href="https://imc2025.info/imc25/abstract/combing-normative-scenarios-and-exploratory-conservation-policies-for-delineating-robust-alpine-protected-areas/">here</a>.</p>
+<div class="embed-container">
+  <p align="center"><iframe src="IMC_pres.pdf" style="border: 0.5px"></iframe>
+</p></div>
+
+
+
+ ]]></description>
+  <category>Conservation</category>
+  <category>Ecosystem Services</category>
+  <category>Robustness</category>
+  <category>Protected Areas</category>
+  <category>Normative Scenarios</category>
+  <guid>https://blenback.github.io/presentations/2025_14_9_IMC/IMC-2025-AGR.html</guid>
+  <pubDate>Sun, 14 Sep 2025 22:00:00 GMT</pubDate>
+  <media:content url="https://blenback.github.io/presentations/2025_14_9_IMC/AGR-cover.svg" medium="image" type="image/svg+xml"/>
+</item>
 <item>
   <title>A “Scope, Simulation and Story” approach to identify future spatial development scenarios</title>
   <dc:creator>Ben Black</dc:creator>
@@ -25,9 +106,6 @@
 
 <p>Scenario planning often qualitatively develops storylines. These scenarios are usually depicted in a 2 × 2 scenario matrix, where it is challenging to define, for example, the drivers of change to consider in the axes and the boundaries between scenarios. In this qualitative approach, simulation models are typically used as evaluation tools only after the scenarios are generated. This approach is commonly known in the literature as “Story and Simulation”.</p>
 <p>This study introduces a “Scope, Simulation, and Story” approach, which has the potential to enhance scenario planning by informing the development of scenarios through computational modelling. Thus, we can integrate participatory processes, spatial development simulation models, and spatial analysis to define scenario boundaries that reflect spatial patterns. We applied this method to simulate spatial development in the Canton of Zurich for 2050 using a cellular automata Land Use Cover Change (LUCC) model.</p>
-<div>
-
-</div>
 <div class="quarto-layout-panel" data-layout-nrow="1">
 <div class="quarto-layout-row">
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
@@ -39,7 +117,7 @@
 </div>
 </div>
 <div class="embed-container">
-  <p align="center"><iframe src="WBF_pres_1962024.pdf" style="border: 0.5px"></iframe>
+  <p align="center"><iframe src="CUPUM_2025_ORG.pdf" style="border: 0.5px"></iframe>
 </p></div>
 
 
@@ -76,6 +154,7 @@ Future Spatial Development Scenarios.”</span> June 25, 2025. <a href="https://
 
 
 
+
 <p>In June 2025, I defended my PhD thesis, titled identifying effective area-based conservation strategies under uncertainty, which represents the culmination of my last five years of research. Once the thesis is approved by the department committee and the final copy submitted I look forward to sharing the full document but for now here are the slides I presented on the day.</p>
 <div class="embed-container">
   <p align="center"><iframe src="https://1drv.ms/p/s!Au5Pw8FMUKhdhb1nAHUvqmWUfTMZuA?embed=1&amp;em=2&amp;wdAr=1.7777777777777777" width="476px" height="288px" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
@@ -108,7 +187,11 @@ Conservation Strategies Under Uncertainty.”</span> June 5, 2025. <a href="http
 </item>
 <item>
   <title>Reproducible Research with R and Quarto: Workflows for data, projects and publications</title>
+  <dc:creator>Ben Black</dc:creator>
   <dc:creator>Benjamin Black</dc:creator>
+  <dc:creator>Manuel Kurmann</dc:creator>
+  <dc:creator>Nivedita Harisena</dc:creator>
+  <dc:creator>Maarten Van Strien</dc:creator>
   <link>https://blenback.github.io/presentations/2024_17_09_Landscape/</link>
   <description><![CDATA[ 
 
@@ -126,7 +209,8 @@ Conservation Strategies Under Uncertainty.”</span> June 5, 2025. <a href="http
 
 
 <div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{black2024,
-  author = {Black, Benjamin},
+  author = {Black, Ben and Black, Benjamin and Kurmann, Manuel and
+    Harisena, Nivedita and Van Strien, Maarten},
   title = {Reproducible {Research} with {R} and {Quarto:} {Workflows}
     for Data, Projects and Publications},
   date = {2024-09-16},
@@ -134,9 +218,10 @@ Conservation Strategies Under Uncertainty.”</span> June 5, 2025. <a href="http
   langid = {en}
 }
 </code></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-black2024" class="csl-entry quarto-appendix-citeas">
-Black, Benjamin. 2024. <span>“Reproducible Research with R and Quarto:
-Workflows for Data, Projects and Publications.”</span> September 16,
-2024. <a href="https://blenback.github.io/presentations/2024_17_09_Landscape/">https://blenback.github.io/presentations/2024_17_09_Landscape/</a>.
+Black, Ben, Benjamin Black, Manuel Kurmann, Nivedita Harisena, and
+Maarten Van Strien. 2024. <span>“Reproducible Research with R and
+Quarto: Workflows for Data, Projects and Publications.”</span> September
+16, 2024. <a href="https://blenback.github.io/presentations/2024_17_09_Landscape/">https://blenback.github.io/presentations/2024_17_09_Landscape/</a>.
 </div></div></section></div> ]]></description>
   <category>R</category>
   <category>Quarto</category>
@@ -149,7 +234,10 @@ Workflows for Data, Projects and Publications.”</span> September 16,
 </item>
 <item>
   <title>Negotiating scenarios of a desirable ecological infrastructure for Switzerland</title>
+  <dc:creator>Ben Black</dc:creator>
+  <dc:creator>Sergio Wicki</dc:creator>
   <dc:creator>Benjamin Black</dc:creator>
+  <dc:creator>Nathan Külling</dc:creator>
   <link>https://blenback.github.io/presentations/2024_5_9_Landschaft/</link>
   <description><![CDATA[ 
 
@@ -164,18 +252,7 @@ Workflows for Data, Projects and Publications.”</span> September 16,
 
 
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{black2024,
-  author = {Black, Benjamin},
-  title = {Negotiating Scenarios of a Desirable Ecological
-    Infrastructure for {Switzerland}},
-  date = {2024-09-05},
-  url = {https://blenback.github.io/presentations/2024_5_9_Landschaft/},
-  langid = {en}
-}
-</code></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-black2024" class="csl-entry quarto-appendix-citeas">
-Black, Benjamin. 2024. <span>“Negotiating Scenarios of a Desirable
-Ecological Infrastructure for Switzerland.”</span> September 5, 2024. <a href="https://blenback.github.io/presentations/2024_5_9_Landschaft/">https://blenback.github.io/presentations/2024_5_9_Landschaft/</a>.
-</div></div></section></div> ]]></description>
+ ]]></description>
   <category>Switzerland</category>
   <category>Ecological Infrastructure</category>
   <category>Normative scenarios</category>
@@ -187,9 +264,13 @@ Ecological Infrastructure for Switzerland.”</span> September 5, 2024. <a href=
 </item>
 <item>
   <title>Normative scenarios for effectively mitigating biodiversity loss</title>
+  <dc:creator>Ben Black</dc:creator>
   <dc:creator>Benjamin Black</dc:creator>
+  <dc:creator>Adrienne Grêt-Regamey</dc:creator>
+  <dc:creator>Paula Mayer</dc:creator>
   <link>https://blenback.github.io/presentations/2024_14_08_ICIMOD/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -224,9 +305,12 @@ Mitigating Biodiversity Loss.”</span> August 14, 2024. <a href="https://blenba
 </item>
 <item>
   <title>Normative scenarios of landscape change for Nature-Positive futures in Peru</title>
+  <dc:creator>Ben Black</dc:creator>
   <dc:creator>Benjamin Black</dc:creator>
+  <dc:creator>Adrienne Grêt-Regamey</dc:creator>
   <link>https://blenback.github.io/presentations/2024_20_6_WBF/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -235,9 +319,6 @@ Mitigating Biodiversity Loss.”</span> August 14, 2024. <a href="https://blenba
 <p>This was a great opportunity to showcase the project to researchers from around the world and highlight the importance of scenarios depicting positive futures for landscape development from the perspective of local stakeholders.</p>
 <p>We also had the opportunity to meet with the teams of the other projects funded by SwissRE who are doing similar work in different regions of the world. It was inspiring to see the diversity of approaches and goals that each project hopes to achieve.</p>
 <p>Here are some photos from the event and below you can access the presentation.</p>
-<div>
-
-</div>
 <div class="quarto-layout-panel" data-layout-nrow="2">
 <div class="quarto-layout-row">
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
@@ -288,6 +369,7 @@ for Nature-Positive Futures in Peru.”</span> June 20, 2024. <a href="https://b
 
 
 
+
 <p>These are the slides for the presentation I gave at the ValPar.CH project closing event in Bern, Switzerland.</p>
 <div class="embed-container">
   <p align="center"><iframe src="ValParCH_closing_pres_BB.pdf" style="border: 0.5px"></iframe>
@@ -317,6 +399,7 @@ January 16, 2024. <a href="https://blenback.github.io/presentations/2023_16_12_V
   <dc:creator>Benjamin Black</dc:creator>
   <link>https://blenback.github.io/presentations/2023_11_30_SwissRE/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -356,6 +439,7 @@ Nature Positive Futures in Peru.”</span> November 30, 2023. <a href="http://dx
   <dc:creator>Adrienne Grêt-Regamey</dc:creator>
   <link>https://blenback.github.io/presentations/2022_09_13_IMC/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -410,6 +494,7 @@ Transformation.”</span> September 13, 2022. <a href="http://dx.doi.org/10.1314
 
 
 
+
 <p>These are the slides iEMSs_ValPar_pres.pdf for a presentation I gave on the integration of different modelling approaches within the <a href="https://valpar.ch/index_en.php?page=home_en">ValPar.CH</a> project at the 11th International Environmental Modelling and Software Society (IEMSs) 2022 conference. The abstract is available <a href="http://dx.doi.org/10.13140/RG.2.2.20111.66720">here.</a></p>
 <div class="embed-container">
   <p align="center"><iframe src="iEMSs_ValPar_pres.pdf" style="border: 0.5px"></iframe>
@@ -452,6 +537,7 @@ Infrastructure for Switzerland.”</span> July 2, 2022. <a href="http://dx.doi.o
 
 
 
+
 <p>These are the slides for a presentation I gave on the application of feature selection as part of calibration of land use change cellular automata at the11th International Environmental Modelling and Software Society (IEMSs) 2022 conference. The presentation abstract is available on <a href="https://www.researchgate.net/publication/361951375_Combining_filter_and_embedded_approaches_to_improve_variable_selection_in_land_use_change_Cellular_Automata_models_using_Random_Forests">here.</a></p>
 <div class="embed-container">
   <p align="center"><iframe src="modelling_pres.pdf" style="border: 0.5px"></iframe>
@@ -484,6 +570,7 @@ Models.”</span> July 1, 2022. <a href="https://blenback.github.io/presentation
   <dc:creator>Ben Black, Adrienne Grêt-Regamey</dc:creator>
   <link>https://blenback.github.io/presentations/2021_06_09_ESP/</link>
   <description><![CDATA[ 
+
 
 
 

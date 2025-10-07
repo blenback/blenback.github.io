@@ -1,0 +1,84 @@
+```{=html}
+<head>
+<style>
+ul.no-bullets {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.year-heading {
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding-bottom: 0rem;
+}
+</style>
+</head>
+
+<% 
+let currentYear = null;
+let sortedItems = items.slice().sort((a, b) => {
+  let yearA = a.year || 'Unknown';
+  let yearB = b.year || 'Unknown';
+  if (yearA === 'In review') return -1;
+  if (yearB === 'In review') return 1;
+  let numA = parseInt(yearA);
+  let numB = parseInt(yearB);
+  if (isNaN(numA)) return 1;
+  if (isNaN(numB)) return -1;
+  return numB - numA;
+});
+%>
+
+<% for (let i = 0; i < sortedItems.length; i++) { 
+  let item = sortedItems[i];
+  let itemYear = item.year || 'Unknown';
+  
+  if (currentYear !== itemYear) {
+    if (currentYear !== null) { %>
+</ul>
+    <% } %>
+<h4 class="year-heading"><%= itemYear %></h4>
+<ul class="no-bullets">
+    <% currentYear = itemYear;
+  }
+%>
+<li>
+  <br><%= item.authors %>. 
+  <%= item.title %>. 
+  <i><%= item.Journal %></i>.
+  <% if(item.href) { %>
+  <a href="<%- item.href %>"><%= item.href %></a>.
+  <% } %>
+  <br/>
+    <% if(item['Summary']){ %>
+    <p class="d-inline-flex gap-1">
+    <a class="btn btn-outline-dark btn-sm" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample"> Plain Langauge Summary </a>
+    </p>
+    <div class="collapse" id="collapseExample">
+    <div class="card card-body">
+    <%= item['Summary']%>
+    </div>
+    </div>
+    <% } %>
+    <% if(item.Bibtex){ %>
+    <a href="<%- item.Bibtex %>" class="btn btn-outline-dark btn-sm" aria-pressed="true" role="button" download="<%- item.Bibtex %>"><i class="fa-solid fa-quote-left"></i> Cite </a>
+    <% } %> 
+    <% if(item.Preprint){ %>
+    <a href="<%- item.Preprint %>" class="btn btn-outline-dark btn-sm" aria-pressed="true" role="button"> <i class="fa-solid fa-fingerprint"></i> Preprint </a>
+    <% } %>
+    <% if(item.Data){ %>
+    <a href="<%- item.Data %>" class="btn btn-outline-dark btn-sm" aria-pressed="true" role="button"> <i class="fa-solid fa-database"></i> Data </a>
+    <% } %>
+    <% if(item.Code){ %>
+    <a href="<%- item.Code %>" class="btn btn-outline-dark btn-sm" aria-pressed="true" role="button"> <i class="fa-solid fa-code"></i> Code </a>
+    <% } %>
+  </li>
+<% } %>
+</ul>
+```
+
+
+
+    

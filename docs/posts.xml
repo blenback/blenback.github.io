@@ -9,7 +9,7 @@
 <link>https://blenback.github.io/posts.html</link>
 <atom:link href="https://blenback.github.io/posts.xml" rel="self" type="application/rss+xml"/>
 <description>Personal website for Ben Black</description>
-<generator>quarto-1.6.42</generator>
+<generator>quarto-1.7.32</generator>
 <lastBuildDate>Thu, 05 Jun 2025 22:00:00 GMT</lastBuildDate>
 <item>
   <title>I successfully defended my PhD thesis!</title>
@@ -19,11 +19,9 @@
 
 
 
+
 <p>On the 5th of June 2025, I successfully defended my PhD thesis titled “Identifying effective area-based conservation strategies under uncertainty”. The defence was well received by the examination committee, I passed with no corrections and my thesis will be nominated for the ETH medal for outstanding Doctoral theses. This marks the end of a long and rewarding journey, and I am eternally grateful for the support of my committee members, colleagues, friends, and family throughout this process. Once the thesis is approved by the department committee and the final copy submitted, I look forward to sharing the full document. For now, here are the slides I presented on the day: <a href="https://github.com/blenback/presentations/2025_05_6_PhD_defence" class="uri">https://github.com/blenback/presentations/2025_05_6_PhD_defence</a></p>
 <p>As is customary in the PLUS research group I received a doctoral hat handmade by my colleagues. As you can see it is covered with lots of small ‘easter eggs’ representing my time in the group including an expertly crafted paper mache Alpaca and a felt Deutsche Bahn train!</p>
-<div>
-
-</div>
 <div class="quarto-layout-panel" data-layout-nrow="2">
 <div class="quarto-layout-row">
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
@@ -57,6 +55,7 @@
   <title>Creating my own PhD thesis template with Quarto</title>
   <link>https://blenback.github.io/posts/PhD_template.html</link>
   <description><![CDATA[ 
+
 
 
 
@@ -107,6 +106,7 @@
 
 
 
+
 <p>In October 2024 I attended a workshop on speeding up the development of useful agent-based land use models. This was a great opportunity for me to engage in a research field that overlaps my own but is still very different. One of the outcomes of the workshop was that we decided to try and compile a collection of useful educational resources for researchers and students working on the topic.</p>
 
 <div class="no-row-height column-margin column-container"><div class="">
@@ -138,6 +138,7 @@
 
 
 
+
 <p>I have been a big fan of R for everything research related for several years and Rstudio has been my go-to IDE all the way from being a complete beginner to my current level which I would still only describe as ‘somewhat proficient’. So you can imagine that when <a href="">Posit</a>, the company behind Rstudio released their open-source technical publishing software, <a href="">Quarto</a>, I was naturally intrigued. Over the last year I’ve gotten really into Quarto and used it for all sorts of purposes: I made this website for myself along with several others, I’ve written a whole academic paper with it, produced a proposal and even used it to automate the mass-sending of invitation letters.</p>
 <p>This experience prompted me to put together a workshop, that would try to combine all of the bits and pieces of useful knowledge I have acquired in using both R and Quarto for engaging in reproducible scientific research into a semi-coherent package.</p>
 <p>I submitted a proposal for the workshop to be delivered at the <a href="https://landscape2024.org/frontend/index.php?folder_id=7393&amp;page_id=">Landscape conference</a> in Berlin in September 2024 and it was accepted. If you happen to be attending this conference you can sign up to attend the workshop in person but it wouldn’t be very FAIR (get it…) of me if I didn’t make the content freely available. So I created a dedicated website for it that also displays the content as a presentation at the same time (one of the other neat features of Quarto): <a href="https://blenback.github.io/R-for-Reproducible-Research">https://blenback.github.io/R-for-Reproducible-Research/</a></p>
@@ -164,6 +165,7 @@
   <title>Automating boring tasks pt. 1: Updating my CV</title>
   <link>https://blenback.github.io/posts/CV_update.html</link>
   <description><![CDATA[ 
+
 
 
 
@@ -201,6 +203,7 @@
   <title>New research project: NASCENT-Peru</title>
   <link>https://blenback.github.io/posts/nascent_announcement.html</link>
   <description><![CDATA[ 
+
 
 
 

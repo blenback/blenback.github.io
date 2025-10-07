@@ -13,6 +13,7 @@ image: fig1.png
 image-height: 12000px
 categories: [Scenario planning, Spatial planning, Land use change, Simulation modelling, Cellular automata]
 preload-iframes: true
+citation: false
 ---
 
 Scenario planning often qualitatively develops storylines. These scenarios are usually depicted in a 2 × 2 scenario matrix, where it is challenging to define, for example, the drivers of change to consider in the axes and the boundaries between scenarios. In this qualitative approach, simulation models are typically used as evaluation tools only after the scenarios are generated. This approach is commonly known in the literature as “Story and Simulation”. 
@@ -27,7 +28,7 @@ Scenario planning often qualitatively develops storylines. These scenarios are u
 
 ```{=html}
 <div class="embed-container">
-  <p align="center"><iframe src="WBF_pres_1962024.pdf" style="border: 0.5px" ></iframe
+  <p align="center"><iframe src="CUPUM_2025_ORG.pdf" style="border: 0.5px" ></iframe
   /p>
 </div>
 ```

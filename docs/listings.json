@@ -1,22 +1,10 @@
 [
   {
-    "listing": "/posts.html",
-    "items": [
-      "/posts/thesis_defence.html",
-      "/posts/PhD_template.html",
-      "/posts/awesome-list.html",
-      "/posts/R_workshop.html",
-      "/posts/CV_update.html",
-      "/posts/nascent_announcement.html"
-    ]
-  },
-  {
-    "listing": "/publications.html",
-    "items": []
-  },
-  {
     "listing": "/presentations.html",
     "items": [
+      "/presentations/2025_14_9_IMC/IMC-2025-FW.html",
+      "/presentations/2025_14_9_IMC/IMC-2025-JH.html",
+      "/presentations/2025_14_9_IMC/IMC-2025-AGR.html",
       "/presentations/2025_25_6_CUPUM/index.html",
       "/presentations/2025_05_6_PhD_defence/index.html",
       "/presentations/2024_17_09_Landscape/index.html",
@@ -30,5 +18,20 @@
       "/presentations/2022_07_01_IEMSs_model_pres/index.html",
       "/presentations/2021_06_09_ESP/index.html"
     ]
+  },
+  {
+    "listing": "/posts.html",
+    "items": [
+      "/posts/thesis_defence.html",
+      "/posts/PhD_template.html",
+      "/posts/awesome-list.html",
+      "/posts/R_workshop.html",
+      "/posts/CV_update.html",
+      "/posts/nascent_announcement.html"
+    ]
+  },
+  {
+    "listing": "/publications.html",
+    "items": []
   }
 ]

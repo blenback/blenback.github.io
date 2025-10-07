@@ -1,15 +1,27 @@
+- name: Robust-conservation-strategies
+  authors: <b>Black, B</b>., Adde, A., Külling, N., Büth, C., Kurmann, M., Lehmann, A., Altermatt, F., Guisan, A., Gret-Regamey, A
+  year: In review
+  title: "Identifying robust conservation stragies to secure ecosystem service provision under uncertainties"
+  Journal: "Journal of Environmental Management"
+  Preprint: https://dx.doi.org/10.2139/ssrn.5447007
+  Code: https://github.com/ethzplus/evoland-plus-HPC
+- name: PAVE
+  authors: Bell, A., Troost, C., Filatova, T., Vincenot, C., Qin, C., Fiedler, S., Lemmen, C., Lynch, I., Pierce, M., Edmonds ,B., McIntire, E., Wang, H., Koralewski, T., Grant, W., Wang, M., <b>Black, B</b>., Grimm, V
+  year: In review
+  title: "The PAVE pathway: how to talk about models with people who did(n’t) build them"
+  Journal: Bioscience
 - name: Temporal_archetypes
-  authors: Wicki, S., <b>Black, B</b>., Külling, N,, Kurmann, M., Wang, J., Lehmann, A., Grêt-Regamey, A.
+  authors: Wicki, S., <b>Black, B</b>., Külling, N,, Kurmann, M., Wang, J., Lehmann, A., Grêt-Regamey, A
   year: In review
   title: "Temporal Archetypes of Nature’s Contributions to People for Sustainable Landscape Development"
   Journal: Regional Environmental Change
 - name: WWTCCF
-  authors: Roman, O., Adey, B. T., <b>Black, B</b>., Zeindl, E. 
+  authors: Roman, O., Adey, B. T., <b>Black, B</b>., Zeindl, E
   year: In review
   title: "Where will the change come from? Identifying decision-relevant factors in future Land Use and Cover Change (LUCC) scenarios to support planning under uncertainty"
   Journal: Futures
 - name: LULCC_CH
-  authors: <b>Black, B</b>., Adde, A., Farinotti, D., Guisan, A., Külling, N,, Kurmann, M., Martin, C., Mayer, P., Rabe, SE., Streit, J., Zekollari, H., Grêt-Regamey, A.
+  authors: <b>Black, B</b>., Adde, A., Farinotti, D., Guisan, A., Külling, N,, Kurmann, M., Martin, C., Mayer, P., Rabe, SE., Streit, J., Zekollari, H., Grêt-Regamey, A
   year: 2024
   title: "Broadening the horizon in land use change modelling: Normative scenarios for nature positive futures in Switzerland"
   Journal: Regional Environmental Change
@@ -20,7 +32,7 @@
   citation: true
   Summary: |
     <div class="section">
-    <h3>📝 Overview</h3>
+    <h4>📝 Overview</h4>
     <p>
       This research explores how to model future land use in Switzerland using scenarios that focus on positive outcomes for nature and society. 
       Instead of simply predicting what might happen, we created five future scenarios—three "normative" (based on goals) and two "exploratory" 
@@ -29,7 +41,7 @@
     </div>
 
     <div class="section">
-      <h3>🔍 Key Findings</h3>
+      <h4>🔍 Key Findings</h4>
       <ul>
         <li><strong>Normative scenarios led to more sustainable landscapes</strong> compared to business-as-usual or worst-case scenarios.</li>
         <li><strong>Urban expansion and landscape fragmentation</strong> were much higher in exploratory scenarios.</li>
@@ -40,7 +52,7 @@
     </div>
 
     <div class="section">
-      <h3>🧪 Methods</h3>
+      <h4>🧪 Methods</h4>
       <ul>
         <li>Five future scenarios were simulated using a <strong>Land Use and Land Cover Change - Constrained Cellular Automata (LULCC-CCA)</strong> model.</li>
         <li>Inputs were derived from <strong>expert workshops, demographic projections, climate models, and economic data</strong>.</li>
@@ -57,7 +69,7 @@
     </div>
 
     <div class="section">
-      <h3>🌱 Implications</h3>
+      <h4>🌱 Implications</h4>
       <ul>
         <li><strong>Normative scenarios support sustainability:</strong> This approach can help plan land use that protects biodiversity and ecosystem services.</li>
         <li><strong>Participatory modelling is essential:</strong> Combining expert and stakeholder input ensures models reflect diverse values.</li>
@@ -66,7 +78,7 @@
       </ul>
     </div>
 - name: Archetypes
-  authors: Wicki, S., <b>Black, B</b>., Kurmann, M., Grêt-Regamey, A.
+  authors: Wicki, S., <b>Black, B</b>., Kurmann, M., Grêt-Regamey, A
   title: Archetypes of social-ecological-technological systems for managing ecological infrastructure.
   year: 2023
   Journal: Environ. Res. Lett.
@@ -77,7 +89,7 @@
     <p class='card-text'>
     
     <div class="section">
-    <h3>📝 Overview</h3>
+    <h4>📝 Overview</h4>
     <p>
       This study explores how ecological infrastructure (EI)—like wetlands, forests, and green spaces—can be better planned 
       and managed in urban areas. Using Geneva, Switzerland as a case study, we applied a systems-based approach 
@@ -87,7 +99,7 @@
     </div>
 
     <div class="section">
-    <h3>🔍 Key Findings</h3>
+    <h4>🔍 Key Findings</h4>
     <ul>
       <li>Seven distinct landscape archetypes were identified across Geneva, such as “Concrete Jungle” and “Green Frontier.”</li>
       <li>There is a strong disconnect between ecological conditions and social/technological systems in dense urban areas.</li>
@@ -98,7 +110,7 @@
     </div>
 
     <div class="section">
-    <h3>🧪 Methods</h3>
+    <h4>🧪 Methods</h4>
     <ul>
       <li>Used a <strong>Social-Ecological-Technological Systems (SETS)</strong> framework with high-resolution spatial data (25m grid).</li>
       <li>Gathered data on biodiversity, infrastructure, demographics, and ecosystem services (Nature’s Contributions to People).</li>
@@ -109,7 +121,7 @@
     </div>
 
     <div class="section">
-    <h3>🌱 Implications</h3>
+    <h4>🌱 Implications</h4>
     <ul>
       <li><strong>Local strategies for diverse areas:</strong> Each archetype needs context-specific management approaches.</li>
       <li><strong>Integrated planning is key:</strong> Social and ecological systems must be aligned through smart design and regulation.</li>
@@ -119,7 +131,7 @@
     </ul>
     </div>
 - name: ICoLCM
-  authors: <b>Black, B</b>., Strien, M.J. van, Adde, A., Grêt-Regamey, A.
+  authors: <b>Black, B</b>., Strien, M.J. van, Adde, A., Grêt-Regamey, A
   title: "Re-considering the status quo: Improving calibration of land use change models through validation of transition potential predictions."
   year: 2022
   Journal: Environmental Modelling & Software
@@ -131,7 +143,7 @@
     <p class='card-text'>
 
     <div class="section">
-      <h3>📝 Overview</h3>
+      <h4>📝 Overview</h4>
       <p>
       This study explores how land use and land cover change (LULCC) is predicted using models called cellular automata. 
       Typically, models are only evaluated after they simulate changes, but this paper shows that checking the predictions 
@@ -140,7 +152,7 @@
     </div>
     
     <div class="section">
-      <h3>🔍 Key Findings</h3>
+      <h4>🔍 Key Findings</h4>
       <ul>
         <li><strong>Stage 1 validation improves transparency:</strong> Early checks reveal problems hidden in final map-only evaluations.</li>
         <li><strong>Not all transition models perform equally:</strong> Some predictions were unreliable despite using advanced methods.</li>
@@ -151,7 +163,7 @@
     </div>
     
     <div class="section">
-    <h3>🧪 Methods</h3>
+    <h4>🧪 Methods</h4>
     <ul>
       <li><strong>Study Area:</strong> Land cover transitions across Switzerland from 2009 to 2018 were analyzed.</li>
       <li><strong>Data:</strong> Swiss national land use datasets were combined with environmental and spatial predictors (e.g., elevation, soil, roads).</li>
@@ -168,7 +180,7 @@
     </div>
 
     <div class="section">
-      <h3>🌱 Implications</h3>
+      <h4>🌱 Implications</h4>
       <ul>
         <li><strong>More efficient calibration:</strong> Stage 1 saves time by avoiding full simulations for every tweak.</li>
         <li><strong>Improved interpretability:</strong> Helps users understand and trust predictions, important for policy-making.</li>
@@ -179,7 +191,7 @@
 
   
 - name: Cam_PA_effect
-  authors: <b>Black, B</b>., Anthony, B.P.
+  authors: <b>Black, B</b>., Anthony, B.P
   title: "Counterfactual assessment of protected area avoided deforestation in Cambodia: Trends in effectiveness, spillover effects and the influence of establishment date."
   year: 2022
   Journal: Global Ecology and Conservation
@@ -190,7 +202,7 @@
     <p class='card-text'>
     
       <div class="section">
-      <h3>📝 Overview</h3>
+      <h4>📝 Overview</h4>
       <p>Forests play a vital role in maintaining ecological balance by storing 
       carbon, supporting biodiversity, and regulating climate patterns. However,
       rapid deforestation—caused by agriculture, infrastructure development, 
@@ -206,7 +218,7 @@
       </div>
       
       <div class="section">
-      <h3>🔍 Key Findings</h3>
+      <h4>🔍 Key Findings</h4>
       <ul>
           <li>Protected areas have had a measurable impact on reducing deforestation, but their success varies widely based on location, enforcement, and external pressures.</li>
           <li>Some PAs significantly reduced deforestation, particularly those with strong legal enforcement and active management strategies.</li>
@@ -217,7 +229,7 @@
       </div>
       
       <div class="section">
-      <h3>🧪 Methods</h3>
+      <h4>🧪 Methods</h4>
         <p>Rather than simply comparing protected forests to unprotected ones, 
         this research employed a method known as <strong>counterfactual analysis</strong>.
         This technique helps estimate what would have happened if no protections had been put in place. 
@@ -234,7 +246,7 @@
         </div>
       
     <div class="section">
-      <h3>🌱 Implications</h3>
+      <h4>🌱 Implications</h4>
           <ul>
         <p>
         <li> Understanding how well protected areas function is critical for improving
