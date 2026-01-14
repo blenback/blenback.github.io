@@ -5,12 +5,16 @@ format:
   html: 
     anchor-sections: true
     css: css/publications.css
+pre-render:
+  - pwsh -Command "Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/blenback/profi/main/publications.yaml' -OutFile 'publications/publications.yaml'"
+  - pwsh -Command "Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/blenback/profi/main/theses.yaml' -OutFile 'publications/Theses.yaml'"
+  - pwsh -Command "Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/blenback/profi/main/student_theses.yaml' -OutFile 'publications/Student_theses.yaml'"
+  - pwsh -Command "Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/blenback/profi/main/other_content.yaml' -OutFile 'publications/Other_content.yaml'"
 listing:
   - id: Journal-articles
-    #template: publication_gallery.ejs
     template: publication_yearly.ejs
     contents:
-    - publications/Journal_articles.yaml
+    - publications/publications.yaml
   - id: Theses
     template: publication.ejs
     contents:

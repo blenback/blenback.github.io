@@ -1,15 +1,10 @@
 ---
 title: "Presentations"
-#subtitle: "given at academic conferences"
-listing: 
-  contents: presentations
-  feed: true
-  type: default 
-  fields: [date, categories, title, description, image]
-  sort: "date desc" 
-  #categories: true # allows you to sort posts by assigned categories
-page-layout: full
-format: 
-  html: 
-    css: css/presentations.css 
+listing:
+  - id: Presentations
+    contents:
+      - presentations
+format:
+  html:
+    css: css/presentations.css
 ---

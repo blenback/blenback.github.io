@@ -1,0 +1,5 @@
+# Positron formatting configuration
+
+# Exclude EJS files from auto-formatting
+[formatters]
+exclude = ["*.ejs"]

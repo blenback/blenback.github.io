@@ -1,0 +1,276 @@
+<ul class="no-bullets presentations-list">
+    <% for (var i=0; i < items.length; i++) { var item=items[i]; %>
+        <li class="presentation-item">
+            <div class="row g-2 align-items-start">
+                <% if (item.image) { %>
+                    <div class="col-auto">
+                        <a href="<%- item.href %>"><img src="<%- item.image %>" alt="<%- item.title %>"
+                                class="presentation-thumb" /></a>
+                    </div>
+                    <% } %>
+                        <div class="col">
+                            <h4 class="mb-1"><a href="<%- item.href %>">
+                                    <%= item.title %>
+                                </a></h4>
+                            <p class="meta">
+                                <% if(item.author){ %>
+                                    <%= item.author %>
+                                        <% } %>
+                                            <% if(item.date){ %> — <%= item.date %>
+                                                    <% } %>
+                                                        <% if(item.event){ %> — <%= item.event %>
+                                                                <% } %>
+                                                                    <% if(item.location){ %> (<%= item.location %>)<% }
+                                                                                %>
+                            </p>
+
+                            <% if (item.description) { %>
+                                <p class="mb-1">
+                                    <a class="btn btn-outline-secondary btn-sm" data-bs-toggle="collapse"
+                                        href="#collapseDesc<%= i %>" role="button" aria-expanded="false"
+                                        aria-controls="collapseDesc<%= i %>">Details</a>
+                                </p>
+                                <div class="collapse" id="collapseDesc<%= i %>">
+                                    <div class="card card-body">
+                                        <%= item.description %>
+                                    </div>
+                                </div>
+                                <% } %>
+
+                                    <p class="mt-2">
+                                        <% if(item['Presentation']){ %>
+                                            <a href="<%- item['Presentation'] %>"
+                                                class="btn btn-outline-dark btn-sm">Presentation</a>
+                                            <% } %>
+                                                <% if(item['Slides']){ %>
+                                                    <a href="<%- item['Slides'] %>"
+                                                        class="btn btn-outline-dark btn-sm">Slides</a>
+                                                    <% } %>
+                                                        <% if(item['Video']){ %>
+                                                            <a href="<%- item['Video'] %>"
+                                                                class="btn btn-outline-dark btn-sm">Video</a>
+                                                            <% } %>
+                                    </p>
+                        </div>
+            </div>
+        </li>
+        <% } %>
+</ul>
+```{=html}
+
+<head>
+    <style>
+        ul.no-bullets {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .presentation-thumb {
+            max-width: 150px;
+            height: auto;
+            display: block;
+        }
+
+        .presentation-item {
+            margin-bottom: 1.5rem;
+        }
+
+        .presentation-item h4 {
+            margin-bottom: .25rem;
+        }
+
+        .presentation-item .meta {
+            color: #6c757d;
+            margin-bottom: .5rem;
+
+            ``` {
+                =html
+            }
+
+            <head><style>ul.no-bullets {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+            }
+
+            .presentation-thumb {
+                max-width: 150px;
+                height: auto;
+                display: block;
+            }
+
+            .presentation-item {
+                margin-bottom: 1.5rem;
+            }
+
+            .presentation-item h4 {
+                margin-bottom: .25rem;
+            }
+
+            .presentation-item .meta {
+                color: #6c757d;
+                margin-bottom: .5rem;
+            }
+    </style>
+</head>
+<ul class="no-bullets presentations-list">
+    <% for (var i=0; i < items.length; i++) { var item=items[i]; %>
+        <li class="presentation-item">
+            <div class="row g-2 align-items-start">
+                <% if (item.image) { %>
+                    <div class="col-auto">
+                        <a href="<%- item.href %>"><img src="<%- item.image %>" alt="<%- item.title %>"
+                                class="presentation-thumb" /></a>
+                    </div>
+                    <% } %>
+                        <div class="col">
+                            <h4 class="mb-1"><a href="<%- item.href %>">
+                                    <%= item.title %>
+                                </a></h4>
+                            <p class="meta">
+                                <% if(item.author){ %>
+                                    <%= item.author %>
+                                        <% } %>
+                                            <% if(item.date){ %> — <%= item.date %>
+                                                    <% } %>
+                                                        <% if(item.event){ %> — <%= item.event %>
+                                                                <% } %>
+                                                                    <% if(item.location){ %> (<%= item.location %>)<% }
+                                                                                %>
+                            </p>
+
+                            <% if (item.description) { %>
+                                <p class="mb-1">
+                                    <a class="btn btn-outline-secondary btn-sm" data-bs-toggle="collapse"
+                                        href="#collapseDesc<%= __i %>" role="button" aria-expanded="false"
+                                        aria-controls="collapseDesc<%= __i %>">Details</a>
+                                </p>
+                                <div class="collapse" id="collapseDesc<%= __i %>">
+                                    <div class="card card-body">
+                                        <%= item.description %>
+                                    </div>
+                                </div>
+                                <% } %>
+
+                                    <p class="mt-2">
+                                        <% if(item['Presentation']){ %>
+                                            <a href="<%- item['Presentation'] %>"
+                                                class="btn btn-outline-dark btn-sm">Presentation</a>
+                                            <% } %>
+                                                <% if(item['Slides']){ %>
+                                                    <a href="<%- item['Slides'] %>"
+                                                        class="btn btn-outline-dark btn-sm">Slides</a>
+                                                    <% } %>
+                                                        <% if(item['Video']){ %>
+                                                            <a href="<%- item['Video'] %>"
+                                                                class="btn btn-outline-dark btn-sm">Video</a>
+                                                            <% } %>
+                                    </p>
+                        </div>
+            </div>
+        </li>
+        <% } %>
+</ul>
+```
+<a href="<%- item['Presentation'] %>" class="btn btn-outline-dark btn-sm">Presentation</a>
+<% } %>
+    <% if(item['Slides']){ %>
+        <a href="<%- item['Slides'] %>" class="btn btn-outline-dark btn-sm">Slides</a>
+        <% } %>
+            <% if(item['Video']){ %>
+                <a href="<%- item['Video'] %>" class="btn btn-outline-dark btn-sm">Video</a>
+                <% } %>
+                    </p>
+                    </div>
+                    </div>
+                    </li>
+                    <% } %>
+                        </ul>
+                        ```
+                        ```{=html}
+
+                        <head>
+                            <style>
+                                ul.no-bullets {
+                                    <ul class="no-bullets presentations-list"><% for (const [index, item] of items.entries()) {
+                                        %><li class="presentation-item"><div class="row g-2 align-items-start"><% if (item.image) {
+                                            %><div class="col-auto"><a href="<%- item.href %>"><img src="<%- item.image %>" alt="<%- item.title %>" class="presentation-thumb" /></a></div><%
+                                        }
+
+                                        %><div class="col"><h4 class="mb-1"><a href="<%- item.href %>"><%=item.title %></a></h4><p class="meta"><% if(item.author) {
+                                            %><%=item.author %><%
+                                        }
+
+                                        %><% if(item.date) {
+                                            %>— <%=item.date %><%
+                                        }
+
+                                        %><% if(item.event) {
+                                            %>— <%=item.event %><%
+                                        }
+
+                                        %><% if(item.location) {
+                                            %>(<%=item.location %>)<%
+                                        }
+
+                                        %></p><% if (item.description) {
+                                            %><p class="mb-1"><a class="btn btn-outline-secondary btn-sm" data-bs-toggle="collapse" href="#collapseDesc<%= index %>" role="button" aria-expanded="false" aria-controls="collapseDesc<%= index %>">Details</a></p><div class="collapse" id="collapseDesc<%= index %>"><div class="card card-body"><%=item.description %></div></div><%
+                                        }
+
+                                        %><p class="mt-2"><% if(item['Presentation']) {
+                                            %><a href="<%- item['Presentation'] %>" class="btn btn-outline-dark btn-sm">Presentation</a><%
+                                        }
+
+                                        %><% if(item['Slides']) {
+                                            %><a href="<%- item['Slides'] %>" class="btn btn-outline-dark btn-sm">Slides</a><%
+                                        }
+
+                                        %><% if(item['Video']) {
+                                            %><a href="<%- item['Video'] %>" class="btn btn-outline-dark btn-sm">Video</a><%
+                                        }
+
+                                        %></p></div></div></li><%
+                                    }
+
+                                    %></ul><div class="col"><h4 class="mb-1"><a href="<%- item.href %>"><%=item.title %></a></h4><p class="meta"><% if(item.author) {
+                                        %><%=item.author %><%
+                                    }
+
+                                    %><% if(item.date) {
+                                        %>— <%=item.date %><%
+                                    }
+
+                                    %><% if(item.event) {
+                                        %>— <%=item.event %><%
+                                    }
+
+                                    %><% if(item.location) {
+                                        %>(<%=item.location %>)<%
+                                    }
+
+                                    %></p><% if (item.description) {
+                                        %><p class="mb-1"><a class="btn btn-outline-secondary btn-sm" data-bs-toggle="collapse"
+                                        href="#collapseDesc<%= index %>" role="button" aria-expanded="false"
+                                        aria-controls="collapseDesc<%= index %>">Details</a></p><div class="collapse" id="collapseDesc<%= index %>"><div class="card card-body"><%=item.description %></div></div><%
+                                    }
+
+                                    %><p class="mt-2"><% if(item['Presentation']) {
+                                        %><a href="<%- item['Presentation'] %>"
+                                        class="btn btn-outline-dark btn-sm">Presentation</a><%
+                                    }
+
+                                    %><% if(item['Slides']) {
+                                        %><a href="<%- item['Slides'] %>"
+                                        class="btn btn-outline-dark btn-sm">Slides</a><%
+                                    }
+
+                                    %><% if(item['Video']) {
+                                        %><a href="<%- item['Video'] %>"
+                                        class="btn btn-outline-dark btn-sm">Video</a><%
+                                    }
+
+                                    %></p></div></div></li><%
+                                }
+
+                                %></ul>```

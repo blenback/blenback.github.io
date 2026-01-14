@@ -1,84 +1,115 @@
 ```{=html}
-<head>
-<style>
-ul.no-bullets {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-.year-heading {
-  margin-top: 2rem;
-  margin-bottom: 0.5rem;
-  font-weight: bold;
-  font-size: 1.2rem;
-  padding-bottom: 0rem;
-}
-</style>
-</head>
 
-<% 
-let currentYear = null;
-let sortedItems = items.slice().sort((a, b) => {
-  let yearA = a.year || 'Unknown';
-  let yearB = b.year || 'Unknown';
-  if (yearA === 'In review') return -1;
-  if (yearB === 'In review') return 1;
+<style>
+  ul.no-bullets {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .year-heading {
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding-bottom: 0rem;
+  }
+
+  .author-name {
+    font-weight: bold;
+  }
+</style>
+
+<% let currentYear=null; let sortedItems=items.slice().sort((a, b)=> {
+  let yearA = String(a.year || 'Unknown');
+  let yearB = String(b.year || 'Unknown');
+
+  // Handle "In Review" items - they should appear first
+  let isReviewA = yearA.toLowerCase() === 'in review';
+  let isReviewB = yearB.toLowerCase() === 'in review';
+
+  if (isReviewA && !isReviewB) return -1;
+  if (!isReviewA && isReviewB) return 1;
+  if (isReviewA && isReviewB) return 0;
+
+  // For numeric years, sort in descending order
   let numA = parseInt(yearA);
   let numB = parseInt(yearB);
-  if (isNaN(numA)) return 1;
-  if (isNaN(numB)) return -1;
+
+  if (!isNaN(numA) && !isNaN(numB)) {
   return numB - numA;
-});
-%>
-
-<% for (let i = 0; i < sortedItems.length; i++) { 
-  let item = sortedItems[i];
-  let itemYear = item.year || 'Unknown';
-  
-  if (currentYear !== itemYear) {
-    if (currentYear !== null) { %>
-</ul>
-    <% } %>
-<h4 class="year-heading"><%= itemYear %></h4>
-<ul class="no-bullets">
-    <% currentYear = itemYear;
   }
-%>
-<li>
-  <br><%= item.authors %>. 
-  <%= item.title %>. 
-  <i><%= item.Journal %></i>.
-  <% if(item.href) { %>
-  <a href="<%- item.href %>"><%= item.href %></a>.
-  <% } %>
-  <br/>
-    <% if(item['Summary']){ %>
-    <p class="d-inline-flex gap-1">
-    <a class="btn btn-outline-dark btn-sm" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample"> Plain Langauge Summary </a>
-    </p>
-    <div class="collapse" id="collapseExample">
-    <div class="card card-body">
-    <%= item['Summary']%>
-    </div>
-    </div>
+
+  // Handle non-numeric, non-review years
+  if (isNaN(numA) && !isNaN(numB)) return 1;
+  if (!isNaN(numA) && isNaN(numB)) return -1;
+
+  // Both non-numeric: alphabetical
+  return yearA.localeCompare(yearB);
+  });
+  %>
+  <% for (let i=0; i < sortedItems.length; i++) { let item=sortedItems[i]; let itemYear=item.year || 'Unknown' ; if
+    (currentYear !==itemYear) { if (currentYear !==null) { %>
+    </ul>
     <% } %>
-    <% if(item.Bibtex){ %>
-    <a href="<%- item.Bibtex %>" class="btn btn-outline-dark btn-sm" aria-pressed="true" role="button" download="<%- item.Bibtex %>"><i class="fa-solid fa-quote-left"></i> Cite </a>
-    <% } %> 
-    <% if(item.Preprint){ %>
-    <a href="<%- item.Preprint %>" class="btn btn-outline-dark btn-sm" aria-pressed="true" role="button"> <i class="fa-solid fa-fingerprint"></i> Preprint </a>
-    <% } %>
-    <% if(item.Data){ %>
-    <a href="<%- item.Data %>" class="btn btn-outline-dark btn-sm" aria-pressed="true" role="button"> <i class="fa-solid fa-database"></i> Data </a>
-    <% } %>
-    <% if(item.Code){ %>
-    <a href="<%- item.Code %>" class="btn btn-outline-dark btn-sm" aria-pressed="true" role="button"> <i class="fa-solid fa-code"></i> Code </a>
-    <% } %>
-  </li>
-<% } %>
-</ul>
+      <h4 class="year-heading">
+        <%= itemYear %>
+      </h4>
+      <ul class="no-bullets">
+        <% currentYear=itemYear; } %>
+          <li>
+            <br>
+            <% const authors=item.authors || '' ; const parts=authors.split('Black, B.'); for (let j=0; j <
+              parts.length; j++) { %>
+              <%= parts[j] %>
+                <% if (j < parts.length - 1) { %><span class="author-name">Black, B.</span>
+                  <% } %>
+                    <% } %>.
+                      <%- item.title %>.
+                        <i>
+                          <%- item.journal %>
+                        </i>.
+                        <% if(item.doi) { %>
+                          <a href="<%- item.doi %>">
+                            <%- item.doi %>
+                          </a>.
+                          <% } %>
+                            <br />
+                            <% if(item.summary) { %>
+                              <p class="d-inline-flex gap-1">
+                                <a class="btn btn-outline-dark btn-sm" data-bs-toggle="collapse"
+                                  href="#collapseSummary<%= i %>" role="button" aria-expanded="false"
+                                  aria-controls="collapseSummary<%= i %>">Plain Language
+                                  Summary</a>
+                              </p>
+                              <div class="collapse" id="collapseSummary<%= i %>">
+                                <div class="card card-body">
+                                  <%- item.summary %>
+                                </div>
+                              </div>
+                              <% } %>
+                                <% if(item.bibtex) { %>
+                                  <a href="<%- item.bibtex %>" class="btn btn-outline-dark btn-sm" aria-pressed="true"
+                                    role="button" download="<%- item.bibtex %>"><i class="fa-solid fa-quote-left"></i>
+                                    Cite</a>
+                                  <% } %>
+                                    <% if(item.preprint_url) { %>
+                                      <a href="<%- item.preprint_url %>" class="btn btn-outline-dark btn-sm"
+                                        aria-pressed="true" role="button"><i class="fa-solid fa-fingerprint"></i>
+                                        Preprint</a>
+                                      <% } %>
+                                        <% if(item.data_url) { %>
+                                          <a href="<%- item.data_url %>" class="btn btn-outline-dark btn-sm"
+                                            aria-pressed="true" role="button"><i class="fa-solid fa-database"></i>
+                                            Data</a>
+                                          <% } %>
+                                            <% if(item.code_url) { %>
+                                              <a href="<%- item.code_url %>" class="btn btn-outline-dark btn-sm"
+                                                aria-pressed="true" role="button"><i class="fa-solid fa-code"></i>
+                                                Code</a>
+                                              <% } %>
+          </li>
+          <% } %>
+      </ul>
+
 ```
-
-
-
-    
