@@ -1,6 +1,7 @@
 project:
   type: website
   output-dir: docs
+  pre-render: fetch-publications.R
   resources:
   - media/quarto-eth-phd-thesis.pdf
 
