@@ -112,4 +112,16 @@
           <% } %>
       </ul>
 
-```
+      ```
+
+      <script>
+        // Decode HTML entities in summary content after page load
+        document.addEventListener('DOMContentLoaded', function () {
+          const summaryDivs = document.querySelectorAll('.card-body.card-text');
+          summaryDivs.forEach(function (div) {
+            const txt = document.createElement('textarea');
+            txt.innerHTML = div.innerHTML;
+            div.innerHTML = txt.value;
+          });
+        });
+      </script>

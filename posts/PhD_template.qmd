@@ -41,7 +41,7 @@ Here is an example PDF showing some of the features:
 
 ```{=html}
 <div class="embed-container">
-  <p align="center"><iframe src="../media/quarto-eth-phd-thesis.pdf" style="border: 0.5px" ></iframe
+  <p align="center"><iframe src="../assets/quarto-eth-phd-thesis.pdf" style="border: 0.5px" ></iframe
   /p>
 </div>
 ```

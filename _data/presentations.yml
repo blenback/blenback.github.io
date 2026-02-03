@@ -1,4 +1,4 @@
-# Presentations data file - used by presentations.ejs for YAML-driven listings
+# Presentations data file - used by ejs/presentations.ejs for YAML-driven listings
 - id: wbf-2024-nascent
   title: "Normative scenarios of landscape change for Nature-Positive futures in Peru"
   author: "Benjamin Black; Adrienne Grêt-Regamey"

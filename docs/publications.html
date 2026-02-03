@@ -227,13 +227,13 @@ window.Quarto = {
 <link rel="stylesheet" href="css/styles.css">
 <link rel="stylesheet" href="css/publications.css">
 <meta property="og:title" content="Ben Black">
-<meta property="og:image" content="https://blenback.github.io/publications/assets/nascent_website.png">
+<meta property="og:image" content="https://blenback.github.io/assets/nascent_website.png">
 <meta property="og:site_name" content="Ben<br>Black">
 <meta property="og:image:alt" content="">
 <meta property="og:image:height" content="784">
 <meta property="og:image:width" content="906">
 <meta name="twitter:title" content="Ben Black">
-<meta name="twitter:image" content="https://blenback.github.io/media/preview.png">
+<meta name="twitter:image" content="https://blenback.github.io/assets/preview.png">
 <meta name="twitter:creator" content="@Blen_Back">
 <meta name="twitter:site" content="@Blen_Back">
 <meta name="twitter:card" content="summary_large_image">
@@ -387,56 +387,6 @@ window.Quarto = {
                         
                             <br>
                             
-                              <p class="d-inline-flex gap-1">
-                                <a class="btn btn-outline-dark btn-sm" data-bs-toggle="collapse" href="#collapseSummary1" role="button" aria-expanded="false" aria-controls="collapseSummary1">Plain Language
-                                  Summary</a>
-                              </p>
-                              <div class="collapse" id="collapseSummary1">
-                                <div class="card card-body card-text">
-                                  <div>#### 📝 Overview
-
-Scientific models are essential tools for understanding complex systems, but communicating 
-their insights to diverse audiences—policymakers, stakeholders, and the public—remains 
-challenging. This paper introduces the **PAVE pathway**, a structured framework for 
-explaining models to people who didn't build them. PAVE stands for **Purpose, Assumptions, 
-Validation, and Engagement**, providing a systematic approach to model communication that 
-balances technical accuracy with accessibility.
-
-#### 🔍 Key Findings
-
-- **Purpose clarity is essential**: Clearly stating what a model is designed to do (and 
-what it cannot do) prevents misinterpretation and misuse of results.
-- **Assumptions must be transparent**: Making underlying assumptions explicit helps users 
-understand the model's scope and limitations.
-- **Validation builds trust**: Demonstrating how a model has been tested and evaluated 
-increases confidence in its outputs.
-- **Engagement requires adaptation**: Different audiences need different levels of detail 
-and different communication formats.
-- **The PAVE framework improves reproducibility**: Systematic documentation makes models 
-more accessible for future use and adaptation.
-
-#### 🧪 Methods
-
-The PAVE pathway was developed through collaborative workshops with modelers across multiple 
-disciplines including ecology, economics, and social sciences. The framework synthesizes 
-best practices from agent-based modeling, system dynamics, and other computational approaches. 
-Case studies demonstrate how PAVE can be applied to communicate diverse model types, from 
-land use change models to epidemiological simulations.
-
-#### 🌱 Implications
-
-- **Better science communication**: PAVE provides a template for researchers to explain 
-their models more effectively to non-technical audiences.
-- **Enhanced stakeholder engagement**: By following a structured pathway, modelers can 
-involve stakeholders more meaningfully in model development and interpretation.
-- **Improved policy relevance**: Clear communication increases the likelihood that model 
-insights will inform evidence-based decision-making.
-- **Training resource**: The PAVE framework can be used to teach students and early-career 
-researchers how to communicate their modeling work effectively.
-</div>
-                                </div>
-                              </div>
-                              
                                 
                                     
                                         
@@ -1105,6 +1055,17 @@ researchers how to communicate their modeling work effectively.
           
       </ul>
 
+<script>
+// Decode HTML entities in summary content after page load
+document.addEventListener('DOMContentLoaded', function() {
+  const summaryDivs = document.querySelectorAll('.card-body.card-text');
+  summaryDivs.forEach(function(div) {
+    const txt = document.createElement('textarea');
+    txt.innerHTML = div.innerHTML;
+    div.innerHTML = txt.value;
+  });
+});
+</script>
 <div class="listing-no-matching d-none">No matching items</div>
 </div>
 </section>
@@ -1329,7 +1290,7 @@ researchers how to communicate their modeling work effectively.
       </small>
     </div>
     <a href="https://nascent-peru.github.io/">
-      <img src="publications/assets/nascent_website.png" alt="" class="card-img-top">
+      <img src="assets/nascent_website.png" alt="" class="card-img-top">
     </a>
     
     
@@ -1345,7 +1306,7 @@ researchers how to communicate their modeling work effectively.
       </small>
     </div>
     <a href="https://www.bafu.admin.ch/bafu/de/home/themen/landschaft/publikationen-studien/publikationen/vielfaeltige-werte-der-natur.html">
-      <img src="publications/assets/valparch_report.png" alt="" class="card-img-top">
+      <img src="assets/valparch_report.png" alt="" class="card-img-top">
     </a>
     
     
@@ -1361,7 +1322,7 @@ researchers how to communicate their modeling work effectively.
       </small>
     </div>
     <a href="https://www.weforum.org/stories/2024/12/biodiversity-ecosystem-services-scenarios-climate-change/">
-      <img src="publications/assets/wef_blog.png" alt="" class="card-img-top">
+      <img src="assets/wef_blog.png" alt="" class="card-img-top">
     </a>
     
     
@@ -1377,7 +1338,7 @@ researchers how to communicate their modeling work effectively.
       </small>
     </div>
     <a href="https://valpar.ch/land-use-change-scenarios/index-en.html">
-      <img src="publications/assets/scenario_explorer.png" alt="" class="card-img-top">
+      <img src="assets/scenario_explorer.png" alt="" class="card-img-top">
     </a>
     
     

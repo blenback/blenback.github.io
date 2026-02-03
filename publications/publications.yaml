@@ -485,44 +485,4 @@
   code_url: ''
   preprint_url: ''
   results_url: ''
-  summary: |
-    #### 📝 Overview
-    
-    Scientific models are essential tools for understanding complex systems, but communicating 
-    their insights to diverse audiences—policymakers, stakeholders, and the public—remains 
-    challenging. This paper introduces the **PAVE pathway**, a structured framework for 
-    explaining models to people who didn't build them. PAVE stands for **Purpose, Assumptions, 
-    Validation, and Engagement**, providing a systematic approach to model communication that 
-    balances technical accuracy with accessibility.
-    
-    #### 🔍 Key Findings
-    
-    - **Purpose clarity is essential**: Clearly stating what a model is designed to do (and 
-    what it cannot do) prevents misinterpretation and misuse of results.
-    - **Assumptions must be transparent**: Making underlying assumptions explicit helps users 
-    understand the model's scope and limitations.
-    - **Validation builds trust**: Demonstrating how a model has been tested and evaluated 
-    increases confidence in its outputs.
-    - **Engagement requires adaptation**: Different audiences need different levels of detail 
-    and different communication formats.
-    - **The PAVE framework improves reproducibility**: Systematic documentation makes models 
-    more accessible for future use and adaptation.
-    
-    #### 🧪 Methods
-    
-    The PAVE pathway was developed through collaborative workshops with modelers across multiple 
-    disciplines including ecology, economics, and social sciences. The framework synthesizes 
-    best practices from agent-based modeling, system dynamics, and other computational approaches. 
-    Case studies demonstrate how PAVE can be applied to communicate diverse model types, from 
-    land use change models to epidemiological simulations.
-    
-    #### 🌱 Implications
-    
-    - **Better science communication**: PAVE provides a template for researchers to explain 
-    their models more effectively to non-technical audiences.
-    - **Enhanced stakeholder engagement**: By following a structured pathway, modelers can 
-    involve stakeholders more meaningfully in model development and interpretation.
-    - **Improved policy relevance**: Clear communication increases the likelihood that model 
-    insights will inform evidence-based decision-making.
-    - **Training resource**: The PAVE framework can be used to teach students and early-career 
-    researchers how to communicate their modeling work effectively.
+  

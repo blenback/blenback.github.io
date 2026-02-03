@@ -1,9 +1,9 @@
 project:
   type: website
   output-dir: docs
-  pre-render: fetch-publications.R
+  pre-render: fetch-assets.R
   resources:
-  - media/quarto-eth-phd-thesis.pdf
+  - assets/quarto-eth-phd-thesis.pdf
 
 website:
   title: "Ben<br>Black"
@@ -13,7 +13,7 @@ website:
   site-url: "https://blenback.github.io/"
   description: "Personal website for Ben Black"
   twitter-card:
-    image: "media/preview.png"
+    image: "assets/preview.png"
     card-style: "summary_large_image"
     creator: "@Blen_Back"
     site: "@Blen_Back"

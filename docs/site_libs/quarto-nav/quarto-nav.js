@@ -32,7 +32,7 @@ const announceRegister = () => {
     if (actionEl) {
       actionEl.addEventListener("click", function (e) {
         e.preventDefault();
-        // Hide the bar immediately
+        // Hide the bar imassetstely
         announceDismiss();
       });
     }

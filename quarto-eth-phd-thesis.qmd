@@ -13,7 +13,7 @@ I built this template based upon the `quarto-phd-thesis` template from `james-d-
 
 The template is geared towards producing PDF output as I would imagine this is the most common format that theses must be submitted in.
 
-Here is the example produced by the template for you to view: [Example PDF](media/quarto-eth-phd-thesis.pdf)
+Here is the example produced by the template for you to view: [Example PDF](assets/quarto-eth-phd-thesis.pdf)
 
 ## 📄 Features
 
@@ -368,7 +368,7 @@ coexaminertwo: Dr. Brian Gumble # Your 2nd co-examiner (title and name: Prof. Dr
 
 Which results in the title page being rendered as:
 
-![Rendered ETH title page](media/titlepage.png){fig-align="center" width="60%"}
+![Rendered ETH title page](assets/titlepage.png){fig-align="center" width="60%"}
 
 ### Chapters
 
@@ -398,7 +398,7 @@ For cumulative paper theses the ETH regulations state that the chapters that rep
 
 To display this information along with some other details like links to research code and data, I use custom [Quarto Callout Blocks](https://quarto.org/docs/authoring/callouts.html) at the start of each chapters `.qmd`:
 
-![Callout block for article details](media/article-details.png){fig-align="center" width="60%"}
+![Callout block for article details](assets/article-details.png){fig-align="center" width="60%"}
 
 The code for this is included in `chapters/paper-01/paper-01.qmd` and it uses the LaTeX [latex-credits](https://github.com/Pseudomanifold/latex-credits) package to produce the visualization of the author CRediT roles (Note this package is not available via CTAN so is included directly with the template `LaTeX_pkgs/credits.sty`).
 

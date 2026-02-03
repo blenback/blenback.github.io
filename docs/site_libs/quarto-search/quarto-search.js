@@ -77,9 +77,9 @@ window.document.addEventListener("DOMContentLoaded", function (_event) {
 
   // Responsively switch to overlay mode if the search is present on the navbar
   // Note that switching the sidebar to overlay mode requires more coordinate (not just
-  // the media query since we generate different HTML for sidebar overlays than we do
+  // the assets query since we generate different HTML for sidebar overlays than we do
   // for sidebar input UI)
-  const detachedMediaQuery =
+  const detachedassetsQuery =
     quartoSearchOptions.type === "overlay" ? "all" : "(max-width: 991px)";
 
   // If configured, include the analytics client to send insights
@@ -88,7 +88,7 @@ window.document.addEventListener("DOMContentLoaded", function (_event) {
   let lastState = null;
   const { setIsOpen, setQuery, setCollections } = autocomplete({
     container: searchEl,
-    detachedMediaQuery: detachedMediaQuery,
+    detachedassetsQuery: detachedassetsQuery,
     defaultActiveItemId: 0,
     panelContainer: "#quarto-search-results",
     panelPlacement: quartoSearchOptions["panel-placement"],
@@ -435,7 +435,7 @@ window.document.addEventListener("DOMContentLoaded", function (_event) {
     // Bug #7117
     // This will happen when the keyboard is shown on ios (resulting in a scroll)
     // which then closed the search UI
-    if (!window.matchMedia(detachedMediaQuery).matches) {
+    if (!window.matchassets(detachedassetsQuery).matches) {
       setIsOpen(false);
     }
   }, 50);
@@ -511,11 +511,11 @@ function configurePlugins(quartoSearchOptions) {
   }
 }
 
-// For plugins that may not load immediately, create a wrapper
+// For plugins that may not load imassetstely, create a wrapper
 // plugin and forward events and plugin data once the plugin
 // is initialized. This is useful for cases like cookie consent
 // which may prevent the analytics insights event plugin from initializing
-// immediately.
+// imassetstely.
 function deferredLoadPlugin(createPlugin) {
   let plugin = undefined;
   let subscribeObj = undefined;

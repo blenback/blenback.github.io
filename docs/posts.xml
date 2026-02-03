@@ -80,7 +80,7 @@
 <p>I have called the resulting template <code>quarto-eth-phd-thesis</code> and it is available via Github here: <a href="https://github.com/blenback/quarto-eth-phd-thesis" class="uri">https://github.com/blenback/quarto-eth-phd-thesis</a>. There is a detailed README in the repo but I have also written the instructions in page on my website: <a href="https://blenback.github.io/quarto-eth-phd-thesis.html" class="uri">https://blenback.github.io/quarto-eth-phd-thesis.html</a></p>
 <p>Here is an example PDF showing some of the features:</p>
 <div class="embed-container">
-  <p align="center"><iframe src="../media/quarto-eth-phd-thesis.pdf" style="border: 0.5px"></iframe>
+  <p align="center"><iframe src="../assets/quarto-eth-phd-thesis.pdf" style="border: 0.5px"></iframe>
 </p></div>
 
 

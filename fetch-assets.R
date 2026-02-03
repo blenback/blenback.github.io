@@ -126,4 +126,4 @@ tryCatch(
   }
 )
 
-cat("\nAll publication data files updated successfully!\n")
+cat("\nAll YAML content files and assets updated successfully!\n")

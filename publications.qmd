@@ -7,19 +7,23 @@ format:
     css: css/publications.css
 listing:
   - id: Journal-articles
-    template: publication_yearly.ejs
+    template: ejs/publication_yearly.ejs
     contents:
     - publications/publications.yaml
+    field-display-names:
+      summary: "Summary"
+    field-types:
+      summary: raw
   - id: Theses
-    template: publication.ejs
+    template: ejs/publication.ejs
     contents:
     - publications/theses.yaml
   - id: Student-theses
-    template: publication.ejs
+    template: ejs/publication.ejs
     contents:
     - publications/student_theses.yaml
   - id: Other-content
-    template: gallery.ejs
+    template: ejs/gallery.ejs
     contents: 
     - publications/other_outputs.yaml
 ---

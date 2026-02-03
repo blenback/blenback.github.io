@@ -9,7 +9,7 @@ Roboto Slab is a variable font with this axis:
 This means all the styles are contained in a single file:
   RobotoSlab-VariableFont_wght.ttf
 
-If your app fully supports variable fonts, you can now pick intermediate styles
+If your app fully supports variable fonts, you can now pick interassetste styles
 that aren’t available as static fonts. Not all apps support variable fonts, and
 in those cases you can use the static font files for Roboto Slab:
   static/RobotoSlab-Thin.ttf
