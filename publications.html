@@ -228,13 +228,13 @@ window.Quarto = {
 <link rel="stylesheet" href="css/styles.css">
 <link rel="stylesheet" href="css/publications.css">
 <meta property="og:title" content="Ben Black">
-<meta property="og:image" content="https://blenback.github.io/publications/assets/nascent_website.png">
+<meta property="og:image" content="https://blenback.github.io/assets/nascent_website.png">
 <meta property="og:site_name" content="Ben<br>Black">
 <meta property="og:image:alt" content="">
 <meta property="og:image:height" content="784">
 <meta property="og:image:width" content="906">
 <meta name="twitter:title" content="Ben Black">
-<meta name="twitter:image" content="https://blenback.github.io/media/preview.png">
+<meta name="twitter:image" content="https://blenback.github.io/assets/preview.png">
 <meta name="twitter:creator" content="@Blen_Back">
 <meta name="twitter:site" content="@Blen_Back">
 <meta name="twitter:card" content="summary_large_image">
@@ -1054,6 +1054,21 @@ window.Quarto = {
           
       </ul>
 
+      ```
+
+      <script>
+        // Decode HTML entities in summary content after page load
+        document.addEventListener('DOMContentLoaded', function () {
+          const summaryDivs = document.querySelectorAll('.card-body.card-text');
+          summaryDivs.forEach(function (div) {
+            const txt = document.createElement('textarea');
+            txt.innerHTML = div.innerHTML;
+            div.innerHTML = txt.value;
+          });
+        });
+      </script>
+
+```{=html}
 <div class="listing-no-matching d-none">No matching items</div>
 </div>
 </section>
@@ -1278,7 +1293,7 @@ window.Quarto = {
       </small>
     </div>
     <a href="https://nascent-peru.github.io/">
-      <img src="publications/assets/nascent_website.png" alt="" class="card-img-top">
+      <img src="assets/nascent_website.png" alt="" class="card-img-top">
     </a>
     
     
@@ -1294,7 +1309,7 @@ window.Quarto = {
       </small>
     </div>
     <a href="https://www.bafu.admin.ch/bafu/de/home/themen/landschaft/publikationen-studien/publikationen/vielfaeltige-werte-der-natur.html">
-      <img src="publications/assets/valparch_report.png" alt="" class="card-img-top">
+      <img src="assets/valparch_report.png" alt="" class="card-img-top">
     </a>
     
     
@@ -1310,7 +1325,7 @@ window.Quarto = {
       </small>
     </div>
     <a href="https://www.weforum.org/stories/2024/12/biodiversity-ecosystem-services-scenarios-climate-change/">
-      <img src="publications/assets/wef_blog.png" alt="" class="card-img-top">
+      <img src="assets/wef_blog.png" alt="" class="card-img-top">
     </a>
     
     
@@ -1326,7 +1341,7 @@ window.Quarto = {
       </small>
     </div>
     <a href="https://valpar.ch/land-use-change-scenarios/index-en.html">
-      <img src="publications/assets/scenario_explorer.png" alt="" class="card-img-top">
+      <img src="assets/scenario_explorer.png" alt="" class="card-img-top">
     </a>
     
     
