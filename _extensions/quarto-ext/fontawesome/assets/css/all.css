@@ -270,7 +270,7 @@
   animation-timing-function: var(--fa-animation-timing, steps(8));
 }
 
-@assets (prefers-reduced-motion: reduce) {
+@media (prefers-reduced-motion: reduce) {
 
   .fa-beat,
   .fa-bounce,

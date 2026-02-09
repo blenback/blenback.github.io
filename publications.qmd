@@ -1,5 +1,6 @@
 ---
 page-layout: full
+pagetitle: "Publications - Ben Black"
 title-block-banner: false
 format: 
   html: 

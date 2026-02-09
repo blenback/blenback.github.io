@@ -1,5 +1,6 @@
 ---
 title: "Presentations"
+pagetitle: "Presentations - Ben Black"
 listing:
   - id: Presentations
     contents:

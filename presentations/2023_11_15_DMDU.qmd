@@ -1,0 +1,19 @@
+---
+title: Exploratory modelling of stochastic land use cover change (LUCC) future scenarios
+  for spatial planning
+description: 10th Annual Conference of the Society for Decision Making Under Deep
+  Uncertainty
+author: Benjamin Black
+event: 10th Annual Conference of the Society for Decision Making Under Deep Uncertainty
+  (DMDU 2023)
+location: Delft, Netherlands
+date: '2023-11-15'
+categories:
+  - DMDU
+  - Land use change
+  - Exploratory modelling
+  - Uncertainty
+
+---
+
+

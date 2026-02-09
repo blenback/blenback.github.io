@@ -1,5 +1,6 @@
 ---
 title: "About"
+pagetitle: "About - Ben Black"
 #subtitle: "A little bit more about me outside of work"
 page-layout: full
 toc: FALSE

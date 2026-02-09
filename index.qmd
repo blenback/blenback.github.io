@@ -1,6 +1,7 @@
 ---
 #title: "Ben Black"
-#description: "Doctoral Researcher"
+#description: "Head of the Working Group Data and Modelling Infrastructure for Living Labs"
+pagetitle: "Ben Black"
 format:
   html:
     css: css/home.css
@@ -17,11 +18,12 @@ format:
 
 <h2 style="font-weight:500!important;text-align:center!important; text-decoration:none;">Ben Black</h2>
 
-<h3 style="margin:0!important;padding:0!important;text-decoration:none;">Doctoral Researcher</h3>
+<h3 style="margin:0!important;padding:0!important;text-decoration:none;">Head of the Working Group Data and Modelling Infrastructure for Living Labs</h3>
 
   <div class="social">
   <a href="https://www.linkedin.com/in/ben-black-9889a1150/" class="fa fa-brands fa-linkedin fa-2x"></a>
-  <a href="https://github.com/blenback"  class="fa fa-brands fa-github fa-2x"></a> <a href= "mailto:bblack@ethz.ch" class="fa fa-solid fa-envelope fa-2x"></a>
+  <a href="https://github.com/blenback"  class="fa fa-brands fa-github fa-2x"></a> 
+  <a href= "mailto:bblack@ethz.ch" class="fa fa-solid fa-envelope fa-2x"></a>
   <a href="https://www.researchgate.net/profile/Benjamin-Black-5"  class="fa fa-brands fa-researchgate fa-2x"></a>
   <a href="https://orcid.org/my-orcid?orcid=0000-0002-8113-2114"  class="fa fa-brands fa-orcid fa-2x"></a>
   <a href="https://twitter.com/Blen_Back"  class="fa fa-brands fa-twitter fa-2x"></a>
@@ -32,7 +34,7 @@ format:
 <div class="bio">
 <h1>Hi there!</h1>
 
-I'm Ben, a PhD student currently working within the [ValPar.CH](https://valpar.ch/index_de.php) project as part of the research group Planning of Landscape Urban Systems [(PLUS)](https://plus.ethz.ch/) at ETH Zürich.
+I'm Ben, a scientific researcher currently working as Head of the Working Group Data and Modelling Infrastructure for Living Labs at the [Leibniz Centre for Agricultural Landscape Research (ZALF)](https://www.zalf.de/en/Pages/ZALF.aspx) within the [Innovation Centre for Agricultural System Transformation](https://www.zalf.de/en/struktur/iat/Pages/default.aspx). 
 
 I'm a BIG fan of R stats for everything research related particularly for promoting open science and reproducibility. I started this site/blog to share some of my work that doesn't necessarily make it into publications in the hope that others will find it useful. Thanks for stopping by!
 <br>
@@ -49,8 +51,14 @@ I'm a BIG fan of R stats for everything research related particularly for promot
   <br>
   <div class="education-element">
   <div class="icon">{{< fa list-check >}}</div>
-  <div class="degree">  Student Affairs Manager, 2018 </div>
-  <div class="school"> The School for Field Studies Center for Conservation and Development Studies in the Lower Mekong</div>
+  <div class="degree">Post Doctoral Researcher, 2025-2026 </div>
+  <div class="school"> ETH Zürich</div>
+  </div>
+  <br>
+  <div class="education-element">
+  <div class="icon">{{< fa list-check >}}</div>
+  <div class="degree">Freelance Research Consultant, 2025-2026 </div>
+  <div class="school"> Prognos AG</div>
   </div>
   <br>
   <div class="education-element">
@@ -66,7 +74,7 @@ I'm a BIG fan of R stats for everything research related particularly for promot
   
 <div class="education-element">
 <div class="icon">{{< fa graduation-cap >}}</div>
-<div class="degree">PhD in Planning of Landscape and Urban Systems, 2020 - Present</div>
+<div class="degree">PhD in Planning of Landscape and Urban Systems, 2020 - 2025</div>
 <div class="school"> ETH Zürich</div>
 </div>
 <br>

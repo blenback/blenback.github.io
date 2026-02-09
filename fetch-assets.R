@@ -47,6 +47,10 @@ files <- list(
   "publications/other_outputs.yaml" = sprintf(
     "https://raw.githubusercontent.com/blenback/profi/main/other_outputs.yaml?cache=%s",
     cache_buster
+  ),
+  "presentations/presentations.yaml" = sprintf(
+    "https://raw.githubusercontent.com/blenback/profi/main/presentations.yaml?cache=%s",
+    cache_buster
   )
 )
 

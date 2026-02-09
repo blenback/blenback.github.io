@@ -1,14 +1,16 @@
 project:
   type: website
   output-dir: docs
-  pre-render: fetch-assets.R
+  pre-render: 
+    - fetch-assets.R
+    - create_presentation_qmds.R
   resources:
   - assets/quarto-eth-phd-thesis.pdf
 
 website:
   title: "Ben<br>Black"
   drafts:
-    - presentations/2025_14_9_IMC/IMC-2025-FW.qmd
+    - presentations/IMC-2025-FW.qmd
   search: TRUE #add search bar
   site-url: "https://blenback.github.io/"
   description: "Personal website for Ben Black"
@@ -23,7 +25,7 @@ website:
     anonymize-ip: true
   page-footer:
     left: |
-      {{< fa regular copyright >}} Benjamin Black, 2022<br>
+      {{< fa regular copyright >}} Benjamin Black, 2026<br>
       All content licensed under {{< fa brands creative-commons >}}
       {{< fa brands creative-commons-by >}} {{< fa brands creative-commons-sa >}} {{< fa brands creative-commons-nc >}} [(CC BY-NC-SA 4.0)](http://creativecommons.org/licenses/by-nc-sa/4.0/)
     right: |
