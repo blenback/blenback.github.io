@@ -34,7 +34,7 @@ section {
 }
 
 /* Set behaviour for phone screen width viewing */
-@assets (max-width: 1220px) {
+@media (max-width: 1220px) {
   section {
     margin: 0 auto;
     padding-top: 80px;
@@ -150,7 +150,7 @@ section {
 }
 
 /* site display at smaller widths i.e. mobile browsing */
-@assets (min-width: 992px) {
+@media (min-width: 992px) {
   body .page-columns {
     display: block;
   }
