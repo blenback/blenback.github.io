@@ -1,5 +1,9 @@
 [
   {
+    "listing": "/publications.html",
+    "items": []
+  },
+  {
     "listing": "/presentations.html",
     "items": [
       "/presentations/2025_25_6_CUPUM.html",
@@ -20,12 +24,9 @@
     ]
   },
   {
-    "listing": "/publications.html",
-    "items": []
-  },
-  {
     "listing": "/posts.html",
     "items": [
+      "/posts/interactive-bivariate-map-post.html",
       "/posts/thesis_defence.html",
       "/posts/PhD_template.html",
       "/posts/awesome-list.html",

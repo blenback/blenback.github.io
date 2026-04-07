@@ -6,10 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Ben Black">
-<meta name="author" content="Adrienne Grêt-Regamey">
-<meta name="dcterms.date" content="2021-06-09">
-<meta name="description" content="3rd Ecosystem Services Partnership Europe Regional conference in Tartu, Estonia">
+<meta name="author" content="Benjamin Black">
+<meta name="dcterms.date" content="2026-04-06">
+<meta name="description" content="A short write-up on developing a browser-based map for exploring the robustness of ecosystem services and biodiversity under uncertain futures.">
 
 <title>Ben Black – Ben&lt;br&gt;Black</title>
 <style>
@@ -89,21 +88,19 @@ gtag('config', 'G-9CCC34ZV10', { 'anonymize_ip': true});
 
 <link rel="stylesheet" href="../css/styles.css">
 <meta property="og:title" content="Ben Black">
-<meta property="og:description" content="3rd Ecosystem Services Partnership Europe Regional conference in Tartu, Estonia">
-<meta property="og:image" content="https://blenback.github.io//assets/2021_06_09_ESP_EI_pathways.png">
+<meta property="og:description" content="A short write-up on developing a browser-based map for exploring the robustness of ecosystem services and biodiversity under uncertain futures.">
+<meta property="og:image" content="https://blenback.github.io/assets/interative-bivar-map.png">
 <meta property="og:site_name" content="BenBlack">
-<meta property="og:image:height" content="1708">
-<meta property="og:image:width" content="2276">
-<meta property="og:image:alt" content="Pathways for Ecological Infrastructure development">
+<meta property="og:image:height" content="805">
+<meta property="og:image:width" content="1096">
 <meta name="twitter:title" content="Ben Black">
-<meta name="twitter:description" content="3rd Ecosystem Services Partnership Europe Regional conference in Tartu, Estonia">
-<meta name="twitter:image" content="https://blenback.github.io//assets/2021_06_09_ESP_EI_pathways.png">
+<meta name="twitter:description" content="A short write-up on developing a browser-based map for exploring the robustness of ecosystem services and biodiversity under uncertain futures.">
+<meta name="twitter:image" content="https://blenback.github.io/assets/interative-bivar-map.png">
 <meta name="twitter:creator" content="@Blen_Back">
 <meta name="twitter:site" content="@Blen_Back">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image-height" content="1708">
-<meta name="twitter:image-width" content="2276">
-<meta name="twitter:image:alt" content="Pathways for Ecological Infrastructure development">
+<meta name="twitter:image-height" content="805">
+<meta name="twitter:image-width" content="1096">
 </head>
 
 <body class="nav-fixed fullcontent quarto-light">
@@ -181,17 +178,19 @@ gtag('config', 'G-9CCC34ZV10', { 'anonymize_ip': true});
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Ex-ante identification of policy interventions to secure a functioning ecological infrastructure: A participatory Bayesian Network approach in Switzerland</h1>
+<h1 class="title">Building an interactive bi-variate map for exploring robustness of ecosystems services and biodiversity under future uncertainty</h1>
   <div class="quarto-categories">
-    <div class="quarto-category">ValPar.CH</div>
-    <div class="quarto-category">Bayesian Networks</div>
-    <div class="quarto-category">Ecological Infrastructure</div>
+    <div class="quarto-category">javascript</div>
+    <div class="quarto-category">d3</div>
+    <div class="quarto-category">geotiff</div>
+    <div class="quarto-category">data-visualization</div>
+    <div class="quarto-category">conservation-planning</div>
   </div>
   </div>
 
 <div>
   <div class="description">
-    3rd Ecosystem Services Partnership Europe Regional conference in Tartu, Estonia
+    A short write-up on developing a browser-based map for exploring the robustness of ecosystem services and biodiversity under uncertain futures.
   </div>
 </div>
 
@@ -199,17 +198,16 @@ gtag('config', 'G-9CCC34ZV10', { 'anonymize_ip': true});
 <div class="quarto-title-meta">
 
     <div>
-    <div class="quarto-title-meta-heading">Authors</div>
+    <div class="quarto-title-meta-heading">Author</div>
     <div class="quarto-title-meta-contents">
-             <p>Ben Black </p>
-             <p>Adrienne Grêt-Regamey </p>
+             <p>Benjamin Black </p>
           </div>
   </div>
     
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">June 9, 2021</p>
+      <p class="date">April 6, 2026</p>
     </div>
   </div>
   
@@ -221,28 +219,58 @@ gtag('config', 'G-9CCC34ZV10', { 'anonymize_ip': true});
 </header>
 
 
-<p>These are the slides for a presentation I gave on the integration of different modelling approaches within the <a href="https://valpar.ch/index_en.php?page=home_en">ValPar.CH</a> project at the 3rd Ecosystem Services Partnership (ESP) Europe Regional conference in Tartu, Estonia 2021. The abstract is available <a href="http://dx.doi.org/10.13140/RG.2.2.30177.99686">here.</a></p>
-<div class="embed-container">
-  <p align="center"><iframe src="../assets/2021_06_09_ESP_ESP_EU_2021_T5_BBlack.pdf" style="border: 0.5px"></iframe>
-</p></div>
+<p>I have been spending a bit of time recently thinking about how to show uncertainty in a way that is actually useful. That sounds obvious enough, but in practice it is surprisingly easy to produce something that is technically correct and still very hard to read.</p>
+<p>This little project was my attempt to make that problem feel a bit more tangible. The approach for quantifying robustness builds on the last paper of my PhD, which set out the underlying method in a more formal way in the accompanying <a href="https://doi.org/10.1016/j.jenvman.2025.128395">scientific publication</a>. We then developed that further as part of our work with the Canton of Bern through the broader <a href="https://bern-landscape-change-explorer.ethz.ch/">project website</a>, where the map sits alongside the wider scenario work.</p>
+<p>The underlying data come from simulations of ecosystem services and biodiversity in the Canton of Bern under 225 future scenarios, combining alternative assumptions about land use, economic development, demographic change and climate change. Rather than collapse that into a single static figure, I wanted a small interactive map that would let someone explore where outcomes are not just strong, but robust.</p>
+<p>The result is a browser-based bi-variate map that shows two dimensions at once: performance on the horizontal axis and stability on the vertical axis. The basic interaction is deliberately simple. You can switch between ecosystem services, biodiversity, or both combined, hover over any cell in the legend to focus the map on that class, and click to pin it and get the total area for that selection.</p>
+<p>If you want to try it out, the map is live here: <a href="https://blenback.github.io/interactive-bivariate-map/" class="uri">https://blenback.github.io/interactive-bivariate-map/</a>.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/interative-bivar-map.png" class="img-fluid figure-img"></p>
+<figcaption>Screenshot of the interactive bi-variate map.</figcaption>
+</figure>
+</div>
+<section id="starting-from-the-data" class="level2">
+<h2 class="anchored" data-anchor-id="starting-from-the-data">Starting from the data</h2>
+<p>One of the first design decisions was to keep the heavy lifting out of the browser. The classification work is done upstream in R and written out as GeoTIFFs and a small palette JSON. That means the web app does not need to calculate class breaks, colour scales or summary classes on the fly. It just needs to load already-classified rasters and render them reliably.</p>
+<p>That separation turned out to be very helpful. The R side handles the analytical logic, while the JavaScript side focuses on interaction and presentation. I like this split because it keeps each part of the workflow doing what it is best at. R is where I am comfortable wrangling rasters and testing classification choices; the browser is where I want responsiveness.</p>
+<p>There is also a practical benefit here: pre-classified rasters make the client code much easier to reason about. In <code>js/main.js</code>, each pixel already has a value from 1 to 9, so the rendering step becomes a matter of decoding those classes, assigning colours, and drawing the result quickly to a canvas.</p>
+</section>
+<section id="making-the-map-feel-legible" class="level2">
+<h2 class="anchored" data-anchor-id="making-the-map-feel-legible">Making the map feel legible</h2>
+<p>Most of the work in a project like this is not really about drawing a map. It is about making the map understandable.</p>
+<p>The HTML structure in <code>index.html</code> reflects that pretty directly. The map is only one part of the page. Alongside it is a compact sidebar with a legend, a short “how to explore” guide, a plain-language explanation of the two dimensions, and a methodology card for anyone who wants more detail. I wanted the interpretation help to live right next to the map rather than in a separate document that nobody opens.</p>
+<p>The legend took more attention than I expected. Bi-variate maps are only useful if the reader can trust that the legend and the map are encoding things in exactly the same way. In <code>js/legend.js</code> and <code>js/main.js</code>, the colour lookup logic is mirrored so that the raster renderer and the legend resolve classes identically. That may sound like a small implementation detail, but it is the kind of thing that quietly determines whether an interface feels dependable or confusing.</p>
+<p>Another small but important choice was to keep the interaction model very narrow. There are only three top-level views: ecosystem services, biodiversity, and the combined surface. Earlier in the workflow there are many possible scaling and classification decisions, but by the time the map reaches the browser those choices have already been made. I think that restraint helps. It keeps the viewer focused on interpretation rather than configuration.</p>
+</section>
+<section id="hover-pin-zoom" class="level2">
+<h2 class="anchored" data-anchor-id="hover-pin-zoom">Hover, pin, zoom</h2>
+<p>Once the basic rendering was working, the next step was to make exploration feel lightweight. Hovering over a legend cell temporarily dims everything else on the map and highlights the chosen class. Clicking pins that class and overlays its total area directly on the legend. It is a small interaction, but it makes it much easier to answer questions like “where are the places that perform well but are unstable?” without forcing the user to mentally scan the entire raster.</p>
+<p>The map itself is rendered to canvas for speed and then displayed inside an SVG wrapper that handles clipping, drag behaviour and zoom controls. That hybrid approach ended up feeling like a good compromise. The canvas is efficient for drawing a lot of raster pixels, while the SVG layer makes it straightforward to manage interactions and framing.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The most useful pattern in this project was probably not the map itself, but the division of labour behind it: analytical preparation in R, lightweight rendering in JavaScript, and explanatory text embedded directly in the interface.</p>
+</div>
+</div>
+</section>
+<section id="a-small-map-but-a-useful-one" class="level2">
+<h2 class="anchored" data-anchor-id="a-small-map-but-a-useful-one">A small map, but a useful one</h2>
+<p>I like projects like this because they sit in a nice middle ground between analysis and communication. The interesting part is not only whether the underlying metric is sound, but whether someone encountering it for the first time can actually make sense of it. For uncertainty-heavy environmental data, that matters a lot.</p>
+<p>This map is still a fairly compact piece of work, but it already feels like a better way of engaging with the results than a static figure alone. It gives a quick visual overview, but it also invites a more specific kind of question: not just where things look good, but where they look good consistently.</p>
+<p>That, in the end, was the point.</p>
 
 
+</section>
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{black,_adrienne_grêt-regamey2021,
-  author = {Black, Adrienne Grêt-Regamey, Ben},
-  title = {Ex-Ante Identification of Policy Interventions to Secure a
-    Functioning Ecological Infrastructure: {A} Participatory {Bayesian}
-    {Network} Approach in {Switzerland}},
-  date = {2021-06-09},
-  url = {http://dx.doi.org/10.13140/RG.2.2.30177.99686},
-  langid = {en}
-}
-</code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-black,_adrienne_grêt-regamey2021" class="csl-entry quarto-appendix-citeas" role="listitem">
-Black, Adrienne Grêt-Regamey, Ben. 2021. <span>“Ex-Ante Identification
-of Policy Interventions to Secure a Functioning Ecological
-Infrastructure: A Participatory Bayesian Network Approach in
-Switzerland.”</span> June 9. <a href="http://dx.doi.org/10.13140/RG.2.2.30177.99686">http://dx.doi.org/10.13140/RG.2.2.30177.99686</a>.
-</div></div></section></div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
@@ -643,8 +671,6 @@ Switzerland.”</span> June 9. <a href="http://dx.doi.org/10.13140/RG.2.2.30177.
     }
   });
   </script>
-<script src="https://utteranc.es/client.js" repo="blenback/blenback.github.io" issue-term="pathname" theme="github-light" crossorigin="anonymous" async="">
-</script>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
