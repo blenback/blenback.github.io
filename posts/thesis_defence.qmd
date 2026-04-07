@@ -1,7 +1,7 @@
 ---
 title: I successfully defended my PhD thesis!
 date: "2025-6-06"
-image: assets/celebration.svg
+image: ../assets/celebration.svg
 image-alt: Graphical abstract for reproducible research workshop
 categories: [thesis, PhD, research]
 ---
@@ -11,11 +11,11 @@ On the 5th of June 2025, I successfully defended my PhD thesis titled "Identifyi
 As is customary in the PLUS research group I received a doctoral hat handmade by my colleagues. As you can see it is covered with lots of small 'easter eggs' representing my time in the group including an expertly crafted paper mache Alpaca and a felt Deutsche Bahn train!
 
 ::: {layout-nrow="2"}
-![](assets/defence5.jpg){group="my-gallery"}
+![](../assets/defence5.jpg){group="my-gallery"}
 
-![](assets/defence1.jpg){group="my-gallery"}
+![](../assets/defence1.jpg){group="my-gallery"}
 
-![](assets/defence2.jpg){group="my-gallery"}
+![](../assets/defence2.jpg){group="my-gallery"}
 
-![](assets/defence3.jpg){group="my-gallery"}
+![](../assets/defence3.jpg){group="my-gallery"}
 :::

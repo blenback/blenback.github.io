@@ -1,7 +1,7 @@
 ---
 title: "Bivariate maps with R"
 date: "2025-2-11"
-image: assets/bivariate-map_bii_legend.png
+image: ../assets/bivariate-map_bii_legend.png
 image-alt:  bivariate raster map
 categories: [R, cartography, spatial analysis, data visualization]
 draft: true
@@ -57,8 +57,8 @@ theme_publication <- function(
 }
 
 # load files of biodiversity intactness index in 2000 and 2020
-bio_2000 <- terra::rast("assets/bii-2000_v2-1-1.tif")
-bio_2020 <- terra::rast("assets/bii-2020_v2-1-1.tif")
+bio_2000 <- terra::rast("../assets/bii-2000_v2-1-1.tif")
+bio_2020 <- terra::rast("../assets/bii-2020_v2-1-1.tif")
 
 # subtract the 2020 layer from 2000
 bio_diff <- bio_2020 - bio_2000
@@ -137,7 +137,7 @@ bi_var_map <- ggplot() +
         plot.background = element_rect(fill='transparent', color=NA))
 
 plot(bi_var_map)
-ggsave("assets/biodiversity_map.png",
+ggsave("../assets/biodiversity_map.png",
        plot = bi_var_map,
        width = 34,
        height = 19,
@@ -185,7 +185,7 @@ bi_var_map_legend <- bi_var_map +
                 align_to = 'full')
 
 # save the map
-ggsave("assets/biodiversity_intactness_map.svg",
+ggsave("../assets/biodiversity_intactness_map.svg",
        plot = bi_var_map_legend,
        width = 34,
        height = 19,

@@ -6,8 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Benjamin Black">
+<meta name="dcterms.date" content="2026-04-06">
+<meta name="description" content="A short write-up on developing a browser-based map for exploring the robustness of ecosystem services and biodiversity under uncertain futures.">
 
-<title>Posts - Ben Black – Ben&lt;br&gt;Black</title>
+<title>Ben Black – Ben&lt;br&gt;Black</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,27 +26,25 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-0348920b7671f696dc9078d39bff215e.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-8d3bc1e823cd3fdfe606e92bea2b1253.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
-<link href="site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-0348920b7671f696dc9078d39bff215e.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-8d3bc1e823cd3fdfe606e92bea2b1253.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -71,35 +72,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-image','listing-title','listing-description','listing-categories','listing-date',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-9CCC34ZV10"></script>
 
 <script type="text/javascript">
@@ -110,51 +82,22 @@ gtag('js', new Date());
 gtag('config', 'G-9CCC34ZV10', { 'anonymize_ip': true});
 </script>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="stylesheet" href="css/styles.css">
-<link rel="alternate" type="application/rss+xml" title="Ben<br>Black" href="posts.xml" data-external="1"><meta property="og:title" content="Posts - Ben Black">
-<meta property="og:description" content="A place for me to share updates and insights into my research but also little tips and tricks I find interesting in using R for scientific research">
+<link rel="stylesheet" href="../css/styles.css">
+<meta property="og:title" content="Ben Black">
+<meta property="og:description" content="A short write-up on developing a browser-based map for exploring the robustness of ecosystem services and biodiversity under uncertain futures.">
 <meta property="og:image" content="https://blenback.github.io/assets/interative-bivar-map.png">
 <meta property="og:site_name" content="Ben<br>Black">
 <meta property="og:image:height" content="805">
 <meta property="og:image:width" content="1096">
-<meta name="twitter:title" content="Posts - Ben Black">
-<meta name="twitter:description" content="A place for me to share updates and insights into my research but also little tips and tricks I find interesting in using R for scientific research">
-<meta name="twitter:image" content="https://blenback.github.io/assets/preview.png">
+<meta name="twitter:title" content="Ben Black">
+<meta name="twitter:description" content="A short write-up on developing a browser-based map for exploring the robustness of ecosystem services and biodiversity under uncertain futures.">
+<meta name="twitter:image" content="https://blenback.github.io/assets/interative-bivar-map.png">
 <meta name="twitter:creator" content="@Blen_Back">
 <meta name="twitter:site" content="@Blen_Back">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image-height" content="912">
-<meta name="twitter:image-width" content="1896">
+<meta name="twitter:image-height" content="805">
+<meta name="twitter:image-width" content="1096">
 </head>
 
 <body class="nav-fixed fullcontent quarto-light">
@@ -164,7 +107,7 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Ben<br>Black</span>
     </a>
   </div>
@@ -175,23 +118,23 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link" href="../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./publications.html"> 
+    <a class="nav-link" href="../publications.html"> 
 <span class="menu-text">Publications</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./presentations.html"> 
+    <a class="nav-link" href="../presentations.html"> 
 <span class="menu-text">Presentations</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./posts.html" aria-current="page"> 
+    <a class="nav-link" href="../posts.html"> 
 <span class="menu-text">Posts</span></a>
   </li>  
   <li class="nav-item">
@@ -211,7 +154,7 @@ window.Quarto = {
 <span class="menu-text"><i class="fa-brands fa-twitter" aria-label="twitter"></i></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="./posts.xml"> <i class="bi bi-rss" role="img">
+    <a class="nav-link" href="../posts.xml"> <i class="bi bi-rss" role="img">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
@@ -232,14 +175,38 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<p class="subtitle lead">A place for me to share updates and insights into my research but also little tips and tricks I find interesting in using R for scientific research</p>
-</div>
+<h1 class="title">Building an interactive bi-variate map for exploring robustness of ecosystems services and biodiversity under future uncertainty</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">javascript</div>
+    <div class="quarto-category">d3</div>
+    <div class="quarto-category">geotiff</div>
+    <div class="quarto-category">data-visualization</div>
+    <div class="quarto-category">conservation-planning</div>
+  </div>
+  </div>
 
+<div>
+  <div class="description">
+    A short write-up on developing a browser-based map for exploring the robustness of ecosystem services and biodiversity under uncertain futures.
+  </div>
+</div>
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Benjamin Black </p>
+          </div>
+  </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">April 6, 2026</p>
+    </div>
+  </div>
   
     
   </div>
@@ -249,265 +216,58 @@ window.Quarto = {
 </header>
 
 
-<!-- https://undraw.co/search/ -->
-
-
-
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="amF2YXNjcmlwdCUyQ2QzJTJDZ2VvdGlmZiUyQ2RhdGEtdmlzdWFsaXphdGlvbiUyQ2NvbnNlcnZhdGlvbi1wbGFubmluZw==" data-listing-date-sort="1775426400000" data-listing-file-modified-sort="1775553134502" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="969">
-<div class="thumbnail"><a href="./posts/interactive-bivariate-map-post.html" class="no-external">
-
-<img loading="lazy" src="./assets/interative-bivar-map.png" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/interactive-bivariate-map-post.html" class="no-external">Building an interactive bi-variate map for exploring robustness of ecosystems services and biodiversity under future uncertainty</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('amF2YXNjcmlwdA=='); return false;">javascript</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('ZDM='); return false;">d3</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('Z2VvdGlmZg=='); return false;">geotiff</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('ZGF0YS12aXN1YWxpemF0aW9u'); return false;">data-visualization</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('Y29uc2VydmF0aW9uLXBsYW5uaW5n'); return false;">conservation-planning</div>
-
+<p>I have been spending a bit of time recently thinking about how to show uncertainty in a way that is actually useful. That sounds obvious enough, but in practice it is surprisingly easy to produce something that is technically correct and still very hard to read.</p>
+<p>This little project was my attempt to make that problem feel a bit more tangible. The approach for quantifying robustness builds on the last paper of my PhD, which set out the underlying method in a more formal way in the accompanying <a href="https://doi.org/10.1016/j.jenvman.2025.128395">scientific publication</a>. We then developed that further as part of our work with the Canton of Bern through the broader <a href="https://bern-landscape-change-explorer.ethz.ch/">project website</a>, where the map sits alongside the wider scenario work.</p>
+<p>The underlying data come from simulations of ecosystem services and biodiversity in the Canton of Bern under 225 future scenarios, combining alternative assumptions about land use, economic development, demographic change and climate change. Rather than collapse that into a single static figure, I wanted a small interactive map that would let someone explore where outcomes are not just strong, but robust.</p>
+<p>The result is a browser-based bi-variate map that shows two dimensions at once: performance on the horizontal axis and stability on the vertical axis. The basic interaction is deliberately simple. You can switch between ecosystem services, biodiversity, or both combined, hover over any cell in the legend to focus the map on that class, and click to pin it and get the total area for that selection.</p>
+<p>If you want to try it out, the map is live here: <a href="https://blenback.github.io/interactive-bivariate-map/" class="uri">https://blenback.github.io/interactive-bivariate-map/</a>.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/interative-bivar-map.png" class="img-fluid figure-img"></p>
+<figcaption>Screenshot of the interactive bi-variate map.</figcaption>
+</figure>
 </div>
-<div class="delink listing-description"><a href="./posts/interactive-bivariate-map-post.html" class="no-external">
-<p>A short write-up on developing a browser-based map for exploring the robustness of ecosystem services and biodiversity under uncertain futures.</p>
-</a></div>
+<section id="starting-from-the-data" class="level2">
+<h2 class="anchored" data-anchor-id="starting-from-the-data">Starting from the data</h2>
+<p>One of the first design decisions was to keep the heavy lifting out of the browser. The classification work is done upstream in R and written out as GeoTIFFs and a small palette JSON. That means the web app does not need to calculate class breaks, colour scales or summary classes on the fly. It just needs to load already-classified rasters and render them reliably.</p>
+<p>That separation turned out to be very helpful. The R side handles the analytical logic, while the JavaScript side focuses on interaction and presentation. I like this split because it keeps each part of the workflow doing what it is best at. R is where I am comfortable wrangling rasters and testing classification choices; the browser is where I want responsiveness.</p>
+<p>There is also a practical benefit here: pre-classified rasters make the client code much easier to reason about. In <code>js/main.js</code>, each pixel already has a value from 1 to 9, so the rendering step becomes a matter of decoding those classes, assigning colours, and drawing the result quickly to a canvas.</p>
+</section>
+<section id="making-the-map-feel-legible" class="level2">
+<h2 class="anchored" data-anchor-id="making-the-map-feel-legible">Making the map feel legible</h2>
+<p>Most of the work in a project like this is not really about drawing a map. It is about making the map understandable.</p>
+<p>The HTML structure in <code>index.html</code> reflects that pretty directly. The map is only one part of the page. Alongside it is a compact sidebar with a legend, a short “how to explore” guide, a plain-language explanation of the two dimensions, and a methodology card for anyone who wants more detail. I wanted the interpretation help to live right next to the map rather than in a separate document that nobody opens.</p>
+<p>The legend took more attention than I expected. Bi-variate maps are only useful if the reader can trust that the legend and the map are encoding things in exactly the same way. In <code>js/legend.js</code> and <code>js/main.js</code>, the colour lookup logic is mirrored so that the raster renderer and the legend resolve classes identically. That may sound like a small implementation detail, but it is the kind of thing that quietly determines whether an interface feels dependable or confusing.</p>
+<p>Another small but important choice was to keep the interaction model very narrow. There are only three top-level views: ecosystem services, biodiversity, and the combined surface. Earlier in the workflow there are many possible scaling and classification decisions, but by the time the map reaches the browser those choices have already been made. I think that restraint helps. It keeps the viewer focused on interpretation rather than configuration.</p>
+</section>
+<section id="hover-pin-zoom" class="level2">
+<h2 class="anchored" data-anchor-id="hover-pin-zoom">Hover, pin, zoom</h2>
+<p>Once the basic rendering was working, the next step was to make exploration feel lightweight. Hovering over a legend cell temporarily dims everything else on the map and highlights the chosen class. Clicking pins that class and overlays its total area directly on the legend. It is a small interaction, but it makes it much easier to answer questions like “where are the places that perform well but are unstable?” without forcing the user to mentally scan the entire raster.</p>
+<p>The map itself is rendered to canvas for speed and then displayed inside an SVG wrapper that handles clipping, drag behaviour and zoom controls. That hybrid approach ended up feeling like a good compromise. The canvas is efficient for drawing a lot of raster pixels, while the SVG layer makes it straightforward to manage interactions and framing.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
 </div>
-<div class="metadata">
-<a href="./posts/interactive-bivariate-map-post.html" class="no-external">
-<div class="listing-date">
-Apr 6, 2026
-</div>
-</a>
+<div class="callout-title-container flex-fill">
+Note
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-categories="dGhlc2lzJTJDUGhEJTJDcmVzZWFyY2g=" data-listing-date-sort="1749160800000" data-listing-file-modified-sort="1775553134505" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="160">
-<div class="thumbnail"><a href="./posts/thesis_defence.html" class="no-external">
-
-<img loading="lazy" src="./assets/celebration.svg" class="thumbnail-image" alt="Graphical abstract for reproducible research workshop">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/thesis_defence.html" class="no-external">I successfully defended my PhD thesis!</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('dGhlc2lz'); return false;">thesis</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('UGhE'); return false;">PhD</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('cmVzZWFyY2g='); return false;">research</div>
-
-</div>
-<div class="delink listing-description"><a href="./posts/thesis_defence.html" class="no-external">
-On the 5th of June 2025, I successfully defended my PhD thesis titled “Identifying effective area-based conservation strategies under uncertainty”. The defence was well…
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/thesis_defence.html" class="no-external">
-<div class="listing-date">
-Jun 6, 2025
-</div>
-</a>
+<div class="callout-body-container callout-body">
+<p>The most useful pattern in this project was probably not the map itself, but the division of labour behind it: analytical preparation in R, lightweight rendering in JavaScript, and explanatory text embedded directly in the interface.</p>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="2" data-categories="UiUyQ1F1YXJ0byUyQ1JlcHJvZHVjaWJsZSUyMHJlc2VhcmNoJTJDdGhlc2lzJTJDdGVtcGxhdGUlMkNMYVRlWA==" data-listing-date-sort="1745359200000" data-listing-file-modified-sort="1775553134504" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="401">
-<div class="thumbnail"><a href="./posts/PhD_template.html" class="no-external">
+</section>
+<section id="a-small-map-but-a-useful-one" class="level2">
+<h2 class="anchored" data-anchor-id="a-small-map-but-a-useful-one">A small map, but a useful one</h2>
+<p>I like projects like this because they sit in a nice middle ground between analysis and communication. The interesting part is not only whether the underlying metric is sound, but whether someone encountering it for the first time can actually make sense of it. For uncertainty-heavy environmental data, that matters a lot.</p>
+<p>This map is still a fairly compact piece of work, but it already feels like a better way of engaging with the results than a static figure alone. It gives a quick visual overview, but it also invites a more specific kind of question: not just where things look good, but where they look good consistently.</p>
+<p>That, in the end, was the point.</p>
 
-<img loading="lazy" src="./assets/thesis_design.svg" class="thumbnail-image" alt="Graphical abstract for reproducible research workshop">
 
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/PhD_template.html" class="no-external">Creating my own PhD thesis template with Quarto</a>
-</h3>
-<div class="listing-categories">
+</section>
 
-<div class="listing-category" onclick="window.quartoListingCategory('Ug=='); return false;">R</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('UXVhcnRv'); return false;">Quarto</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('UmVwcm9kdWNpYmxlJTIwcmVzZWFyY2g='); return false;">Reproducible research</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('dGhlc2lz'); return false;">thesis</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('dGVtcGxhdGU='); return false;">template</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('TGFUZVg='); return false;">LaTeX</div>
-
-</div>
-<div class="delink listing-description"><a href="./posts/PhD_template.html" class="no-external">
-Over the last two years I have really started to use Quarto for everything in my academic work from writing manuscripts, websites for research projects, data dashboards for…
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/PhD_template.html" class="no-external">
-<div class="listing-date">
-Apr 23, 2025
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="3" data-categories="UiUyQ0dpdGh1YiUyQ0F3ZXNvbWUlMjBMaXN0JTJDUmVzb3VyY2VzJTJDQ29udGludW91cyUyMEludGVncmF0aW9u" data-listing-date-sort="1731538800000" data-listing-file-modified-sort="1775553134501" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="280">
-<div class="thumbnail"><a href="./posts/awesome-list.html" class="no-external">
-
-<img loading="lazy" src="./assets/awesome-list.svg" class="thumbnail-image" alt="Awesome list logo">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/awesome-list.html" class="no-external">Starting an awesome list for scientific resources</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('Ug=='); return false;">R</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('R2l0aHVi'); return false;">Github</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('QXdlc29tZSUyMExpc3Q='); return false;">Awesome List</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('UmVzb3VyY2Vz'); return false;">Resources</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('Q29udGludW91cyUyMEludGVncmF0aW9u'); return false;">Continuous Integration</div>
-
-</div>
-<div class="delink listing-description"><a href="./posts/awesome-list.html" class="no-external">
-In October 2024 I attended a workshop on speeding up the development of useful agent-based land use models. This was a great opportunity for me to engage in a research field…
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/awesome-list.html" class="no-external">
-<div class="listing-date">
-Nov 14, 2024
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="4" data-categories="UiUyQ1F1YXJ0byUyQ1JlcHJvZHVjaWJsZSUyMHJlc2VhcmNoJTJDRkFJUiUyQ0xhbmRzY2FwZSUyMGNvbmZlcmVuY2UlMkN3b3Jrc2hvcA==" data-listing-date-sort="1714514400000" data-listing-file-modified-sort="1775553134505" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="247">
-<div class="thumbnail"><a href="./posts/R_workshop.html" class="no-external">
-
-<img loading="lazy" src="./assets/open-source.svg" class="thumbnail-image" alt="Graphical abstract for reproducible research workshop">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/R_workshop.html" class="no-external">Upcoming workshop: Reproducible research with R and Quarto</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('Ug=='); return false;">R</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('UXVhcnRv'); return false;">Quarto</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('UmVwcm9kdWNpYmxlJTIwcmVzZWFyY2g='); return false;">Reproducible research</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('RkFJUg=='); return false;">FAIR</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('TGFuZHNjYXBlJTIwY29uZmVyZW5jZQ=='); return false;">Landscape conference</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('d29ya3Nob3A='); return false;">workshop</div>
-
-</div>
-<div class="delink listing-description"><a href="./posts/R_workshop.html" class="no-external">
-I have been a big fan of R for everything research related for several years and Rstudio has been my go-to IDE all the way from being a complete beginner to my current level…
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/R_workshop.html" class="no-external">
-<div class="listing-date">
-May 1, 2024
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="5" data-categories="UiUyQ01hcmtkb3duJTJDQXV0b21hdGlvbiUyQ0NWJTJDUmVzdW1l" data-listing-date-sort="1706742000000" data-listing-file-modified-sort="1775553134502" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="385">
-<div class="thumbnail"><a href="./posts/CV_update.html" class="no-external">
-
-<img loading="lazy" src="./assets/cv.svg" class="thumbnail-image" alt="Graphical abstract for reproducible research workshop">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/CV_update.html" class="no-external">Automating boring tasks pt.&nbsp;1: Updating my CV</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('Ug=='); return false;">R</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('TWFya2Rvd24='); return false;">Markdown</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('QXV0b21hdGlvbg=='); return false;">Automation</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('Q1Y='); return false;">CV</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('UmVzdW1l'); return false;">Resume</div>
-
-</div>
-<div class="delink listing-description"><a href="./posts/CV_update.html" class="no-external">
-If you are like me, you only ever find yourself updating your CV when you are actually unemployed and looking for a new job. This is also a task I find especially…
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/CV_update.html" class="no-external">
-<div class="listing-date">
-Feb 1, 2024
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="6" data-categories="RnV0dXJlJTIwbGFuZHNjYXBlJTIwc2NlbmFyaW9zJTJDRWNvc3lzdGVtJTIwU2VydmljZXMlMkNCaW9kaXZlcnNpdHklMkNQZXJ1JTJDU3dpc3NSRSUyQ1Byb2plY3QlMkNOQVNDRU5ULVBlcnU=" data-listing-date-sort="1701298800000" data-listing-file-modified-sort="1775553134504" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="172">
-<div class="thumbnail"><a href="./posts/nascent_announcement.html" class="no-external">
-
-<img loading="lazy" src="./assets/announcement.svg" class="thumbnail-image" alt="Logo for NASCENT-Peru project">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/nascent_announcement.html" class="no-external">New research project: NASCENT-Peru</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('RnV0dXJlJTIwbGFuZHNjYXBlJTIwc2NlbmFyaW9z'); return false;">Future landscape scenarios</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('RWNvc3lzdGVtJTIwU2VydmljZXM='); return false;">Ecosystem Services</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('QmlvZGl2ZXJzaXR5'); return false;">Biodiversity</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('UGVydQ=='); return false;">Peru</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('U3dpc3NSRQ=='); return false;">SwissRE</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('UHJvamVjdA=='); return false;">Project</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('TkFTQ0VOVC1QZXJ1'); return false;">NASCENT-Peru</div>
-
-</div>
-<div class="delink listing-description"><a href="./posts/nascent_announcement.html" class="no-external">
-I am excited to be able to introduce a new research project that I will be working on for the next two years: NASCENT-Peru.
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/nascent_announcement.html" class="no-external">
-<div class="listing-date">
-Nov 30, 2023
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
