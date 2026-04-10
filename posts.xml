@@ -9,7 +9,7 @@
 <link>https://blenback.github.io/posts.html</link>
 <atom:link href="https://blenback.github.io/posts.xml" rel="self" type="application/rss+xml"/>
 <description>Personal website for Ben Black</description>
-<generator>quarto-1.9.36</generator>
+<generator>quarto-1.9.37</generator>
 <lastBuildDate>Mon, 06 Apr 2026 00:00:00 GMT</lastBuildDate>
 <item>
   <title>Building an interactive bi-variate map for exploring robustness of ecosystems services and biodiversity under future uncertainty</title>
