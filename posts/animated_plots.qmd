@@ -1,7 +1,7 @@
 ---
 title: "Animated plots and maps in R"
 date: "2025-06-10"
-image: assets/animation.svg
+image: ../assets/animation.svg
 image-alt: Vector of someone creating an animation
 categories: [R, Animation, Cartography, Maps, Data Visualization]
 draft: true
