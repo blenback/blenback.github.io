@@ -9,8 +9,41 @@
 <link>https://blenback.github.io/posts.html</link>
 <atom:link href="https://blenback.github.io/posts.xml" rel="self" type="application/rss+xml"/>
 <description>Personal website for Ben Black</description>
-<generator>quarto-1.9.37</generator>
-<lastBuildDate>Mon, 06 Apr 2026 00:00:00 GMT</lastBuildDate>
+<generator>quarto-1.9.38</generator>
+<lastBuildDate>Thu, 30 Apr 2026 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>From research to practice: The ValPar.CH Praxis Navigator</title>
+  <link>https://blenback.github.io/posts/valparCH-praxis-navigator.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>Every scientific project hopes to see its results used in practice and policy. In reality, bringing together the diverse outputs of large, interdisciplinary projects in an accessible and usable format remains a major challenge.</p>
+<p>That’s why I’m excited to see the launch of the <a href="https://valpar.ch/praxisnavigator/">ValPar.CH Praxis Navigator</a>: a platform that brings together the research from the inter- and transdisciplinary ValPar.CH project and makes it accessible for planning, governance, and decision-making.</p>
+<p>The navigator is structured around practice-relevant entry questions, supported by keywords and filters. Following the topic of <em>Planning</em>, for example, leads to several contributions I was involved in.</p>
+<p>One example is the summary of the <a href="https://valpar.ch/praxisnavigator/content/plan-landscape-10">Bern Landscape Change Explorer</a>, a tool we developed to support the Canton of Bern in exploring how landscapes may evolve under different future scenarios—and what this means for biodiversity and ecosystem services.</p>
+<p>This kind of scenario-based approach helps identify areas that remain valuable under changing conditions, supporting more robust and forward-looking conservation planning.</p>
+<p>If you’re working in planning, nature conservation, or policy in Switzerland, the Praxis Navigator is a useful entry point to:</p>
+<ul>
+<li>Explore research-backed methods<br>
+</li>
+<li>Connect them to real-world use cases<br>
+</li>
+<li>Access the underlying scientific publications and data</li>
+</ul>
+<p><img src="https://blenback.github.io/assets/praxisnavigator-en.gif" class="img-fluid"></p>
+
+
+
+ ]]></description>
+  <category>biodiversity</category>
+  <category>spatial planning</category>
+  <category>decision support</category>
+  <guid>https://blenback.github.io/posts/valparCH-praxis-navigator.html</guid>
+  <pubDate>Thu, 30 Apr 2026 00:00:00 GMT</pubDate>
+  <media:content url="https://blenback.github.io/assets/praxisnavigator-en.gif" medium="image" type="image/gif"/>
+</item>
 <item>
   <title>Building an interactive bi-variate map for exploring robustness of ecosystems services and biodiversity under future uncertainty</title>
   <dc:creator>Benjamin Black</dc:creator>
