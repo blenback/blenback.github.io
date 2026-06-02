@@ -2,13 +2,16 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.32">
+<meta name="generator" content="quarto-1.9.37">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
 <title>Publications - Ben Black – Ben&lt;br&gt;Black</title>
 <style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -38,10 +41,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-0348920b7671f696dc9078d39bff215e.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-23bbe8b5e4efc1e257f6d59dce478b08.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-8d3bc1e823cd3fdfe606e92bea2b1253.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-76b248df9fa5b7b0ffdd3a16b84b5bfc.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
 <link href="site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
 <link href="site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
@@ -109,9 +112,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-name','listing-authors','listing-title','listing-journal','listing-doi','listing-bibtex',{ data: ['index'] },{ data: ['categories'] }],
+      valueNames: [{ data: ['index'] },{ data: ['categories'] }],
       
-      searchColumns: ["listing-name","listing-authors","listing-title","listing-journal","listing-doi","listing-bibtex"],
+      searchColumns: [],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -137,9 +140,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-name','listing-authors','listing-title','listing-year','listing-journal',{ data: ['index'] },{ data: ['categories'] }],
+      valueNames: [{ data: ['index'] },{ data: ['categories'] }],
       
-      searchColumns: ["listing-name","listing-authors","listing-title","listing-year","listing-journal"],
+      searchColumns: [],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -195,7 +198,7 @@ gtag('config', 'G-9CCC34ZV10', { 'anonymize_ip': true});
 </script>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <script type="text/javascript">
 const typesetMath = (el) => {
@@ -208,7 +211,7 @@ const typesetMath = (el) => {
     var macros = [];
     for (var i = 0; i < mathElements.length; i++) {
       var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
         window.katex.render(texText.data, mathElements[i], {
           displayMode: mathElements[i].classList.contains('display'),
           throwOnError: false,
@@ -228,7 +231,7 @@ window.Quarto = {
 <link rel="stylesheet" href="css/publications.css">
 <meta property="og:title" content="Publications - Ben Black">
 <meta property="og:image" content="https://blenback.github.io/assets/nascent_website.png">
-<meta property="og:site_name" content="Ben<br>Black">
+<meta property="og:site_name" content="BenBlack">
 <meta property="og:image:alt" content="">
 <meta property="og:image:height" content="784">
 <meta property="og:image:width" content="906">
@@ -370,29 +373,6 @@ window.Quarto = {
                                             
           </li>
           
-          <li>
-            <br>
-            
-              Bell, A., Troost, C., Filatova, T., Vincenot, C., Qin, C., Fiedler, S., Lemmen, C., Lynch, I., Pierce, M., Edmonds ,B., McIntire, E., Wang, H., Koralewski, T., Grant, W., Wang, M., 
-                <span class="author-name">Black, B.</span>
-                  
-                    
-              , Grimm, V.
-                
-                    .
-                      The PAVE pathway: how to talk about models with people who did(n't) build them.
-                        <i>
-                          Bioscience
-                        </i>.
-                        
-                            <br>
-                            
-                                
-                                    
-                                        
-                                            
-          </li>
-          
     </ul>
     
       <h4 class="year-heading anchored">
@@ -422,10 +402,10 @@ window.Quarto = {
                             <br>
                             
                               <p class="d-inline-flex gap-1">
-                                <a class="btn btn-outline-dark btn-sm" data-bs-toggle="collapse" href="#collapseSummary2" role="button" aria-expanded="false" aria-controls="collapseSummary2">Plain Language
+                                <a class="btn btn-outline-dark btn-sm" data-bs-toggle="collapse" href="#collapseSummary1" role="button" aria-expanded="false" aria-controls="collapseSummary1">Plain Language
                                   Summary</a>
                               </p>
-                              <div class="collapse" id="collapseSummary2">
+                              <div class="collapse" id="collapseSummary1">
                                 <div class="card card-body card-text">
                                   <div>&lt;div class="card-text"&gt;
   &lt;div class="section"&gt;
@@ -522,6 +502,40 @@ window.Quarto = {
                                               <a href="https://github.com/ethzplus/evoland-plus-HPC" class="btn btn-outline-dark btn-sm" aria-pressed="true" role="button"><i class="fa-solid fa-code"></i>
                                                 Code</a>
                                               
+          </li>
+          
+    </ul>
+    
+      <h4 class="year-heading anchored">
+        2026
+      </h4>
+      <ul class="no-bullets">
+        
+          <li>
+            <br>
+            
+              Bell, A., Troost, C., Filatova, T., Vincenot, C., Qin, C., Fiedler, S., Lemmen, C., Lynch, I., Pierce, M., Edmonds ,B., McIntire, E., Wang, H., Koralewski, T., Grant, W., Wang, M., 
+                <span class="author-name">Black, B.</span>
+                  
+                    
+              , Grimm, V.
+                
+                    .
+                      The PAVE pathway: how to talk about models with people who did(n't) build them.
+                        <i>
+                          Bioscience
+                        </i>.
+                        
+                          <a href="https://doi.org/10.1093/biosci/biag010">
+                            https://doi.org/10.1093/biosci/biag010
+                          </a>.
+                          
+                            <br>
+                            
+                                
+                                    
+                                        
+                                            
           </li>
           
     </ul>
@@ -1089,73 +1103,7 @@ window.Quarto = {
 
 <ul class="no-bullets">
   
-    <li>
-      <br>
-      Black, B.
-        
-          Identifying effective area-based conservation strategies under uncertainty
-            <i>
-              Doctoral thesis. ETH Zürich.
-            </i>
-            <a href="">
-              Not presently available
-            </a>
-            <br>
-            
-                
-                  <a href="https://raw.githubusercontent.com/blenback/profi/main/bibtex/MSc_thesis.bib" class="btn btn-outline-dark btn-sm" aria-pressed="true" role="button" download="https://raw.githubusercontent.com/blenback/profi/main/bibtex/MSc_thesis.bib"><i class="fa-solid fa-quote-left"></i> Cite </a>
-                  
-                    
-                        
-                            
-
-    </li><li>
-      
-    </li><li>
-      <br>
-      Black, B.
-        
-          Assessing the ecological effectiveness of protected areas in Cambodia: a quasi-experimental counterfactual estimation of avoided deforestation.
-            <i>
-              Masters thesis. Central European University.
-            </i>
-            <a href="">
-              https://doi.org/10.13140/RG.2.2.28621.10727
-            </a>
-            <br>
-            
-                
-                  <a href="https://raw.githubusercontent.com/blenback/profi/main/bibtex/MSc_thesis.bib" class="btn btn-outline-dark btn-sm" aria-pressed="true" role="button" download="https://raw.githubusercontent.com/blenback/profi/main/bibtex/MSc_thesis.bib"><i class="fa-solid fa-quote-left"></i> Cite </a>
-                  
-                    
-                        
-                            
-
-    </li><li>
-      
-    </li><li>
-      <br>
-      Black, B.
-        
-          Simulating the future potential of degraded Mangrove plots using field data from Kenya.
-            <i>
-              Bachelors thesis. Edinburgh Napier University.
-            </i>
-            <a href="">
-              https://doi.org/10.13140/RG.2.2.20232.49923
-            </a>
-            <br>
-            
-                
-                  <a href="https://raw.githubusercontent.com/blenback/profi/main/bibtex/BSc_thesis.bib" class="btn btn-outline-dark btn-sm" aria-pressed="true" role="button" download="https://raw.githubusercontent.com/blenback/profi/main/bibtex/BSc_thesis.bib"><i class="fa-solid fa-quote-left"></i> Cite </a>
-                  
-                    
-                        
-                            
-
-    </li><li>
-      
-</li></ul>
+</ul>
 <div class="listing-no-matching d-none">No matching items</div>
 </div>
 </section>
@@ -1175,107 +1123,7 @@ window.Quarto = {
 
 <ul class="no-bullets">
   
-    <li>
-      <br>
-      Wang, J.
-        2024
-          Mapping spatial pattern of changes in Nature’s Contributions to People under multiple scenarios in Switzerland, 2020-2060.
-            <i>
-              Masters thesis. ETH Zürich.
-            </i>
-            <a href="">
-              
-            </a>
-            <br>
-            
-                
-                    
-                        
-                            
-
-    </li><li>
-      
-    </li><li>
-      <br>
-      Streit, J.
-        2023
-          The development of a functioning Ecological Infrastructure in agricultural landscapes in Switzerland: A social-ecological systems perspective.
-            <i>
-              Masters thesis. ETH Zürich.
-            </i>
-            <a href="">
-              
-            </a>
-            <br>
-            
-                
-                    
-                        
-                            
-
-    </li><li>
-      
-    </li><li>
-      <br>
-      Gao, T.
-        2022
-          Characterizing concept drift in predictive models of land use transitions in Switzerland
-            <i>
-              Masters thesis. ETH Zürich.
-            </i>
-            <a href="">
-              
-            </a>
-            <br>
-            
-                
-                    
-                        
-                            
-
-    </li><li>
-      
-    </li><li>
-      <br>
-      Wild, J.
-        2022
-          Examining temporal instability in historic land use change in Swiss cantons to inform modelling
-            <i>
-              Bachelors thesis. ETH Zürich.
-            </i>
-            <a href="">
-              
-            </a>
-            <br>
-            
-                
-                    
-                        
-                            
-
-    </li><li>
-      
-    </li><li>
-      <br>
-      Wang, J.
-        2021
-          Bayesian Networks to map Nature’s Contribution to People (NCP) and driving factors analysis
-            <i>
-              Masters thesis. ETH Zürich.
-            </i>
-            <a href="">
-              
-            </a>
-            <br>
-            
-                
-                    
-                        
-                            
-
-    </li><li>
-      
-</li></ul>
+</ul>
 <div class="listing-no-matching d-none">No matching items</div>
 </div>
 </section>
@@ -1410,13 +1258,14 @@ window.Quarto = {
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
