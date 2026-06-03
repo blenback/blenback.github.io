@@ -5,7 +5,4 @@ listing:
   - id: Presentations
     contents:
       - presentations
-format:
-  html:
-    css: css/presentations.css
 ---

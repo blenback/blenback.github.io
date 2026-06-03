@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Theme preview (mock Quarto DOM)</title>
+<link rel="preconnect" href="https://api.fontshare.com">
+<link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700,900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+<link rel="stylesheet" href="preview.css"/>
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="container" style="display:flex;align-items:center;justify-content:space-between;width:100%;">
+    <span class="navbar-title">Ben <span class="brand-2">Black.</span></span>
+    <div style="display:flex;gap:.4rem;align-items:center;">
+      <a class="nav-link" href="#">Publications</a>
+      <a class="nav-link active" href="#">Presentations</a>
+      <a class="nav-link" href="#">Posts</a>
+      <a class="nav-link" href="#"><i class="fa-brands fa-github"></i></a>
+      <a class="nav-link" href="#"><span class="cv-btn">Download CV</span></a>
+    </div>
+  </div>
+</nav>
+
+<section class="bb-hero">
+  <div class="bb-hero-left">
+    <div class="bb-eyebrow">Hi there, I'm</div>
+    <h1 class="bb-name">Ben<br><span class="ln2">Black.</span></h1>
+    <p class="bb-role">Head of the Working Group <span class="at">— Data &amp; Modelling Infrastructure for Living Labs, at ZALF.</span></p>
+    <p class="bb-intro">A scientific researcher working on spatial modelling, data and scientific visualisation. I share the work that doesn't always make it into papers — code, maps and field notes — in the hope that it's useful.</p>
+    <div class="bb-social">
+      <a href="#"><i class="fa-brands fa-github"></i></a>
+      <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="#"><i class="fa-solid fa-envelope"></i></a>
+    </div>
+  </div>
+  <div class="bb-hero-right">
+    <div class="bb-portrait-wrap">
+      <div class="bb-portrait-glow"></div>
+      <div class="bb-portrait-ring"></div>
+      <div class="bb-portrait"><img src="../assets/portrait.jpg" alt="Ben Black"/></div>
+    </div>
+    <svg class="bb-squiggle" viewBox="0 0 240 130" fill="none" aria-hidden="true">
+      <path d="M6 96 C 40 120, 70 60, 110 70 S 180 110, 224 40" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-dasharray="2 11"/>
+      <path d="M224 40 l -14 2 m 14 -2 l -4 -13" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>
+    </svg>
+  </div>
+</section>
+
+<div id="quarto-document-content" class="container">
+
+  <!-- PUBLICATIONS (new .pub-list EJS output) -->
+  <section class="page-section publications-section">
+    <div class="section-head">
+      <h2 id="publications">Publications</h2>
+      <a class="section-more" href="#">All publications</a>
+    </div>
+    <h3>Journal Articles</h3>
+    <div class="pub-list">
+      <article class="pub">
+        <div class="yr">2026</div>
+        <div class="meta">
+          <div class="pt">Identifying robust area-based conservation strategies to secure ecosystem service provision under uncertainty</div>
+          <div class="pj"><i>Journal of Environmental Management</i> · <span class="author-name">Black, B.</span>, Grêt-Regamey, A.</div>
+        </div>
+        <div class="links"><a class="tagpill" href="#">DOI</a><a class="tagpill" href="#">Data</a><a class="tagpill" href="#">Code</a><a class="tagpill" href="#">Cite</a></div>
+      </article>
+      <article class="pub">
+        <div class="yr">2025</div>
+        <div class="meta">
+          <div class="pt">Where will the change come from? Identifying decision-relevant factors in land-use change</div>
+          <div class="pj"><i>Futures</i></div>
+        </div>
+        <div class="links"><a class="tagpill" href="#">DOI</a><a class="tagpill" href="#">Code</a></div>
+      </article>
+      <article class="pub">
+        <div class="yr">2022</div>
+        <div class="meta">
+          <div class="pt">Counterfactual assessment of protected area avoided deforestation in Cambodia</div>
+          <div class="pj"><i>Global Ecology and Conservation</i> · <span class="author-name">Black, B.</span>, Anthony, B. P.</div>
+        </div>
+        <div class="links"><a class="tagpill" href="#">DOI</a><a class="tagpill" href="#">Data</a></div>
+      </article>
+    </div>
+  </section>
+
+  <!-- PRESENTATIONS (tinted section, grid) -->
+  <section class="page-section section-tint">
+    <div class="section-head">
+      <h2 id="presentations">Presentations</h2>
+      <a class="section-more" href="#">All presentations</a>
+    </div>
+    <div class="quarto-listing quarto-listing-container-grid">
+      <div class="list grid">
+        <div class="g-col-1"><div class="quarto-grid-item card h-100">
+          <p class="card-img-top"><img src="../assets/pres-cupum.png" class="thumbnail-image card-img" alt=""></p>
+          <div class="card-body post-contents">
+            <div class="card-attribution"><div class="listing-date">Jun 2025</div></div>
+            <h5 class="card-title listing-title"><a href="#">A "Scope, Simulation &amp; Story" approach to identify future spatial development scenarios</a></h5>
+            <div class="listing-event">Computational Urban Planning &amp; Management</div>
+            <div class="listing-location">University College London</div>
+          </div>
+        </div></div>
+        <div class="g-col-1"><div class="quarto-grid-item card h-100">
+          <p class="card-img-top"><img src="../assets/pres-wbf.png" class="thumbnail-image card-img" alt=""></p>
+          <div class="card-body post-contents">
+            <div class="card-attribution"><div class="listing-date">Jun 2024</div></div>
+            <h5 class="card-title listing-title"><a href="#">Normative scenarios of landscape change for nature-positive futures in Peru</a></h5>
+            <div class="listing-event">World Biodiversity Forum</div>
+            <div class="listing-location">Davos, Switzerland</div>
+          </div>
+        </div></div>
+        <div class="g-col-1"><div class="quarto-grid-item card h-100">
+          <p class="card-img-top"><img src="../assets/pres-imc.png" class="thumbnail-image card-img" alt=""></p>
+          <div class="card-body post-contents">
+            <div class="card-attribution"><div class="listing-date">Sep 2022</div></div>
+            <h5 class="card-title listing-title"><a href="#">Characterising non-stationarity in predictive models of land use in Swiss mountain parks</a></h5>
+            <div class="listing-event">International Mountain Conference</div>
+            <div class="listing-location">Innsbruck, Austria</div>
+          </div>
+        </div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- POSTS (grid) -->
+  <section class="page-section">
+    <div class="section-head">
+      <h2 id="posts">From the blog</h2>
+      <a class="section-more" href="#">All posts</a>
+    </div>
+    <div class="quarto-listing quarto-listing-container-grid">
+      <div class="list grid">
+        <div class="g-col-1"><div class="quarto-grid-item card h-100">
+          <p class="card-img-top"><img src="../assets/post-interactive.png" class="thumbnail-image card-img" alt=""></p>
+          <div class="card-body post-contents">
+            <div class="card-attribution"><div class="listing-date">Apr 2026</div></div>
+            <h5 class="card-title listing-title"><a href="#">Building an interactive bivariate map for exploring robustness under uncertainty</a></h5>
+            <div class="card-text listing-description">A browser-based map showing two dimensions at once across 225 future scenarios.</div>
+            <div class="listing-categories"><div class="listing-category">javascript</div><div class="listing-category">d3</div><div class="listing-category">geotiff</div></div>
+          </div>
+        </div></div>
+        <div class="g-col-1"><div class="quarto-grid-item card h-100">
+          <p class="card-img-top"><img src="../assets/post-bivariate.png" class="thumbnail-image card-img" alt=""></p>
+          <div class="card-body post-contents">
+            <div class="card-attribution"><div class="listing-date">Feb 2025</div></div>
+            <h5 class="card-title listing-title"><a href="#">Bivariate maps with R</a></h5>
+            <div class="card-text listing-description">Showing two variables on a single raster map, and the tricks that make them readable.</div>
+            <div class="listing-categories"><div class="listing-category">R</div><div class="listing-category">cartography</div></div>
+          </div>
+        </div></div>
+        <div class="g-col-1"><div class="quarto-grid-item card h-100">
+          <p class="card-img-top"><img src="../assets/post-defence.jpg" class="thumbnail-image card-img" alt=""></p>
+          <div class="card-body post-contents">
+            <div class="card-attribution"><div class="listing-date">Jun 2025</div></div>
+            <h5 class="card-title listing-title"><a href="#">I successfully defended my PhD thesis!</a></h5>
+            <div class="card-text listing-description">Reflections on the defence, the doctoral hat, and what comes next.</div>
+            <div class="listing-categories"><div class="listing-category">PhD</div><div class="listing-category">thesis</div></div>
+          </div>
+        </div></div>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<footer class="bb-footer">
+  <div class="bb-footer-wrap">
+    <div>
+      <h3>Let's talk.</h3>
+      <p class="bb-ft-sub">Open to collaboration on spatial modelling, scientific visualisation and reproducible research.</p>
+      <a class="bb-ft-mail" href="#">benjaminsamuel.black@zalf.de</a>
+    </div>
+    <div class="bb-ft-cols">
+      <div class="bb-ft-col"><h4>Site</h4><a href="#">Publications</a><a href="#">Presentations</a><a href="#">Posts</a><a href="#">CV</a></div>
+      <div class="bb-ft-col"><h4>Elsewhere</h4><a href="#">GitHub</a><a href="#">Google Scholar</a><a href="#">ORCID</a><a href="#">LinkedIn</a></div>
+    </div>
+  </div>
+  <div class="bb-ft-bottom"><span>© Benjamin Black 2026 · CC BY-NC-SA 4.0</span><span>Made with R &amp; Quarto</span></div>
+</footer>
+
+<script>
+  (function(){var n=document.querySelector('.navbar');var hero=document.querySelector('.bb-hero');
+   function u(){n.classList.toggle('navbar-solid',(!hero)||window.scrollY>40);} u();
+   addEventListener('scroll',u,{passive:true});})();
+</script>
+</body>
+</html>

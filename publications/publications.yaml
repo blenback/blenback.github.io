@@ -363,15 +363,65 @@
     Development
   authors: Wicki, S., Black, B., Külling, N., Kurmann, M., Wang, J., Lehmann, A.,
     Gret-Regamey, A.
-  year: In Review
+  year: 2026
   journal: Regional Environmental Change
-  volume: ''
-  pages: ''
-  doi: ''
+  volume: '26'
+  pages: '103'
+  doi: 'https://doi.org/10.1007/s10113-026-02551-9'
   data_url: ''
   code_url: ''
   preprint_url: ''
   results_url: ''
+  summary: |
+    <div class="card-text">
+      <div class="section">
+        <h4>📝 Overview</h4>
+        <p>
+        Current landscape planning approaches like Ecological Infrastructure (EI) often overlook how 
+        Nature's Contributions to People (NCPs) change over space and time. This study addresses that gap 
+        by applying archetype analysis to projected future NCP changes in Switzerland. Using deep learning 
+        techniques and seven key NCPs—carbon storage, water yield, habitat quality, nutrient retention, 
+        food and feed, pollination, and sediment retention—the study identifies recurring spatial patterns 
+        of NCP change between 2020 and 2060 and contextualizes them through expert interviews, providing 
+        actionable insights for adaptive, forward-looking landscape planning.
+        </p>
+      </div>
+
+    <div class="section">
+      <h4>🔍 Key Findings</h4>
+      <ul>
+        <li>Six distinct temporal archetypes of NCP change were identified across Switzerland, ranging from regions with high NCP gains but severe water stress to lowland areas experiencing significant declines in multiple NCPs.</li>
+        <li>Lowland areas (large valley plains, the Jura, and parts of the Swiss Plateau) face the most pronounced declines, particularly in food and feed, pollination, and habitat quality.</li>
+        <li>Alpine and pre-Alpine regions tend to show stability or gains in NCPs such as water yield, carbon storage, and food and feed provision.</li>
+        <li>Nature-positive scenarios (EI-SOC, EI-CUL, EI-NAT) shifted NCP trends toward more positive outcomes compared to Business as Usual, though habitat quality and pollination still declined even under the best scenarios.</li>
+        <li>Climate change is the dominant driver for water yield and sediment retention (60–93% contribution), while land-use change disproportionately affects food and feed provision and habitat quality.</li>
+        <li>Archetypes with declining NCPs also showed reduced climate suitability for biodiversity, highlighting the interconnectedness of NCP provision and biodiversity potential.</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h4>🧪 Methods</h4>
+      <ul>
+        <li>Spatially explicit NCP change rasters (25 m resolution) were generated for seven NCPs under four scenarios (BAU, EI-SOC, EI-CUL, EI-NAT) for 2020 and 2060.</li>
+        <li>Deep Convolutional Embedded Clustering (DCEC), combining convolutional neural networks with clustering, was applied to identify six temporal archetypes of NCP change.</li>
+        <li>Silhouette analysis determined the optimal number of clusters and PCA explored dominant variance patterns across NCP layers.</li>
+        <li>Random forest models identified the dominant climatic and land-use drivers of NCP changes for each archetype.</li>
+        <li>Climate suitability projections for over 7,000 species were compared with NCP change patterns to assess biodiversity–NCP alignment.</li>
+        <li>Seven semi-structured expert interviews with stakeholders from park management, research, federal agencies, and private offices contextualized the quantitative findings.</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h4>🌱 Implications</h4>
+      <ul>
+        <li><strong>Region-specific strategies needed:</strong> The pronounced regional disparities in NCP trajectories underscore the need for spatially tailored landscape planning rather than one-size-fits-all approaches.</li>
+        <li><strong>Forward-looking planning is essential:</strong> Static, snapshot-based approaches to conservation fail to capture the dynamic nature of social-ecological systems; integrating future NCP and biodiversity projections can improve planning effectiveness.</li>
+        <li><strong>Biodiversity underpins NCPs:</strong> Experts emphasized that biodiversity is foundational to NCP delivery and cautioned against reducing conservation to NCP metrics alone.</li>
+        <li><strong>Transdisciplinary collaboration is key:</strong> Effective landscape planning requires improved communication and collaboration among policymakers, scientists, land managers, and local communities.</li>
+        <li><strong>Transferable methodology:</strong> The archetype approach combining deep learning with expert knowledge can be applied to other regions to guide sustainable landscape development under uncertain futures.</li>
+      </ul>
+    </div>
+    </div>
 - title: Where will the change come from? Identifying decision-relevant factors in
     future Land Use and Cover Change ({LUCC}) scenarios to support planning under
     uncertainty
@@ -485,4 +535,3 @@
   code_url: ''
   preprint_url: ''
   results_url: ''
-  

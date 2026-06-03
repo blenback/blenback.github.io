@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Ben Black – Ben&lt;br&gt;Black</title>
+<title>Ben Black – Ben &lt;span class='brand-2'&gt;Black.&lt;/span&gt;</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -33,16 +33,21 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-23bbe8b5e4efc1e257f6d59dce478b08.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-3680a2f5c362e71a82e33059ebe61075.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-a7bb907943a07d482dd586446b6c690a.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-3680a2f5c362e71a82e33059ebe61075.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-76b248df9fa5b7b0ffdd3a16b84b5bfc.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-c9628027cdf4f30cb9037ed26b4f5211.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-689de11a677660a6c79d43ba7e9762b3.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-c9628027cdf4f30cb9037ed26b4f5211.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <link href="site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
 <link href="site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
@@ -72,33 +77,132 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-9CCC34ZV10"></script>
+<script>
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-Journal-articles .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-authors','listing-year','listing-journal','listing-volume','listing-pages','listing-doi','listing-data_url','listing-code_url','listing-preprint_url','listing-results_url','listing-bibtex','listing-summary',{ data: ['index'] },{ data: ['categories'] }],
+      
+      searchColumns: ["listing-title","listing-authors","listing-year","listing-journal","listing-volume","listing-pages","listing-doi","listing-data_url","listing-code_url","listing-preprint_url","listing-results_url","listing-bibtex","listing-summary"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-Journal-articles'] = new List('listing-Journal-articles', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-Presentations .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-image','listing-date','listing-title','listing-event','listing-location',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-Presentations'] = new List('listing-Presentations', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-Posts .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-image','listing-title','listing-description','listing-categories','listing-date',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-Posts'] = new List('listing-Posts', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+<!-- header.html — add to _quarto.yml under format.html.include-in-header
+     Loads Satoshi (Fontshare) + Spectral (Google) + JetBrains Mono. -->
+<link rel="preconnect" href="https://api.fontshare.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700,900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;0,600;1,400;1,500&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <script type="text/javascript">
-
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'G-9CCC34ZV10', { 'anonymize_ip': true});
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
 </script>
 
-
-<link rel="stylesheet" href="css/styles.css">
-<link rel="stylesheet" href="css/home.css">
-<meta property="og:title" content="Ben Black">
-<meta property="og:image" content="https://blenback.github.io/assets/landing_portrait_cropped.jpg">
-<meta property="og:site_name" content="BenBlack">
-<meta property="og:image:alt" content="photo of Ben Black">
-<meta name="twitter:title" content="Ben Black">
-<meta name="twitter:image" content="https://blenback.github.io/assets/preview.png">
-<meta name="twitter:creator" content="@Blen_Back">
-<meta name="twitter:site" content="@Blen_Back">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image-height" content="912">
-<meta name="twitter:image-width" content="1896">
 </head>
 
-<body class="nav-fixed fullcontent quarto-light">
+<body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -106,7 +210,7 @@ gtag('config', 'G-9CCC34ZV10', { 'anonymize_ip': true});
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">Ben<br>Black</span>
+    <span class="navbar-title">Ben <span class="brand-2">Black.</span></span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -120,24 +224,16 @@ gtag('config', 'G-9CCC34ZV10', { 'anonymize_ip': true});
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
-<span class="menu-text">About</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./publications.html"> 
+    <a class="nav-link" href="./index.html#publications"> 
 <span class="menu-text">Publications</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./presentations.html"> 
+    <a class="nav-link" href="./index.html#presentations"> 
 <span class="menu-text">Presentations</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./posts.html"> 
+    <a class="nav-link" href="./index.html#posts"> 
 <span class="menu-text">Posts</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="https://blenback.github.io/curriculum-vitae/"> 
-<span class="menu-text">CV</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="mailto:benjaminsamuel.black@zalf.de"> 
@@ -147,14 +243,14 @@ gtag('config', 'G-9CCC34ZV10', { 'anonymize_ip': true});
     <a class="nav-link" href="https://github.com/blenback"> 
 <span class="menu-text"><i class="fa-brands fa-github" aria-label="github"></i></span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="https://twitter.com/Blen_Back"> 
-<span class="menu-text"><i class="fa-brands fa-twitter" aria-label="twitter"></i></span></a>
-  </li>  
   <li class="nav-item compact">
     <a class="nav-link" href="./posts.xml"> <i class="bi bi-rss" role="img">
 </i> 
 <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://blenback.github.io/curriculum-vitae/"> 
+<span class="menu-text"><span class="cv-btn">Download CV</span></span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -164,142 +260,601 @@ gtag('config', 'G-9CCC34ZV10', { 'anonymize_ip': true});
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"><h1 class="title display-7">
-Hi there!
-</h1></header>
+<main class="content column-page" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
 
 
 
-<!--# Note: Fontawesome and Schotastics quarto extensions required for icons. -->
-<p><link rel="stylesheet" href="css/academicons.min.css"></p>
-<section>
-<div class="img-bio">
-<p><img src="assets/landing_portrait_cropped.jpg" alt="photo of Ben Black" class="author-photo"></p>
-<h2 style="font-weight:500!important;text-align:center!important; text-decoration:none;" class="anchored">
-Ben Black
-</h2>
-<h3 style="margin:0!important;padding:0!important;text-decoration:none;" class="anchored">
-Head of the Working Group Data and Modelling Infrastructure for Living Labs
-</h3>
-<div class="social">
-<a href="https://www.linkedin.com/in/ben-black-9889a1150/" class="fa fa-brands fa-linkedin fa-2x"></a> <a href="https://github.com/blenback" class="fa fa-brands fa-github fa-2x"></a> <a href="mailto:bblack@ethz.ch" class="fa fa-solid fa-envelope fa-2x"></a> <a href="https://www.researchgate.net/profile/Benjamin-Black-5" class="fa fa-brands fa-researchgate fa-2x"></a> <a href="https://orcid.org/my-orcid?orcid=0000-0002-8113-2114" class="fa fa-brands fa-orcid fa-2x"></a> <a href="https://twitter.com/Blen_Back" class="fa fa-brands fa-twitter fa-2x"></a> <a href="https://scholar.google.com/citations?hl=en&amp;user=h00y-m4AAAAJ" class="ai ai-google-scholar ai-2x"></a>
-</div>
-</div>
-<div class="bio">
-
-<p>I’m Ben, a scientific researcher currently working as Head of the Working Group Data and Modelling Infrastructure for Living Labs at the <a href="https://www.zalf.de/en/Pages/ZALF.aspx">Leibniz Centre for Agricultural Landscape Research (ZALF)</a> within the <a href="https://www.zalf.de/en/struktur/iat/Pages/default.aspx">Innovation Centre for Agricultural System Transformation</a>.</p>
-I’m a BIG fan of R stats for everything research related particularly for promoting open science and reproducibility. I started this site/blog to share some of my work that doesn’t necessarily make it into publications in the hope that others will find it useful. Thanks for stopping by! <br> <br>
-<div class="activities">
-<div class="interests">
-<p><span class="activity">Experience</span></p>
-<div class="education-element">
-<div class="icon">
-<p><i class="fa-solid fa-chalkboard-user" aria-label="chalkboard-user"></i></p>
-</div>
-<div class="degree">
-Lecturer in <a href="https://irl.ethz.ch/education/courses/msc/participatory_modelling.html">Participatory Environmental Modelling</a>, 2021 - Present
-</div>
-<div class="school">
-ETH Zürich
-</div>
-</div>
-<br>
-<div class="education-element">
-<div class="icon">
-<p><i class="fa-solid fa-list-check" aria-label="list-check"></i></p>
-</div>
-<div class="degree">
-Post Doctoral Researcher, 2025-2026
-</div>
-<div class="school">
-ETH Zürich
-</div>
-</div>
-<br>
-<div class="education-element">
-<div class="icon">
-<p><i class="fa-solid fa-list-check" aria-label="list-check"></i></p>
-</div>
-<div class="degree">
-Freelance Research Consultant, 2025-2026
-</div>
-<div class="school">
-Prognos AG
-</div>
-</div>
-<br>
-<div class="education-element">
-<div class="icon">
-<p><i class="fa-solid fa-people-roof" aria-label="people-roof"></i></p>
-</div>
-<div class="degree">
-Project Manager 2015 - 2017
-</div>
-<div class="school">
-Elephant Livelihood Initiatives and Environment (E.L.I.E)
-</div>
-</div>
-</div>
-<div class="education">
-<p><span class="activity">Education</span></p>
-<div class="education-element">
-<div class="icon">
-<p><i class="fa-solid fa-graduation-cap" aria-label="graduation-cap"></i></p>
-</div>
-<div class="degree">
-PhD in Planning of Landscape and Urban Systems, 2020 - 2025
-</div>
-<div class="school">
-ETH Zürich
-</div>
-</div>
-<br>
-<div class="education-element">
-<div class="icon">
-<p><i class="fa-solid fa-graduation-cap" aria-label="graduation-cap"></i></p>
-</div>
-<div class="degree">
-MSc in Environmental Sciences, Policy and Management, 2020
-</div>
-<div class="school">
-Central European University, University of Manchester, Lund University, University of the Aegean
-</div>
-</div>
-<br>
-<div class="education-element">
-<div class="icon">
-<p><i class="fa-solid fa-graduation-cap" aria-label="graduation-cap"></i></p>
-</div>
-<div class="degree">
-BSc with 1st Class Honours in Biological Sciences, 2014
-</div>
-<div class="school">
-Edinburgh Napier University
-</div>
-</div>
-</div>
-</div>
-</div>
+<!-- TODO reduce spacing between Hero and Navbar -->
+<link href="css/academicons.css" rel="stylesheet">
+<section class="bb-hero">
+  <div class="bb-hero-left">
+    <div class="bb-eyebrow">Hi there, I'm</div>
+    <h1 class="bb-name">Ben<br><span class="ln2">Black.</span></h1>
+    <p class="bb-role">Head of the Working Group <a href="https://iat-dml.github.io/">Data &amp; Modelling Infrastructure for Living Labs</a><span class="at">, at ZALF.</span></p>
+    <p class="bb-intro">A scientific researcher working on spatial modelling, data and scientific visualisation. I share the work that doesn't always make it into papers — code, maps and field notes — in the hope that it's useful.</p>
+    <div class="bb-social">
+      <a href="https://github.com/blenback"><i class="fa-brands fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/ben-black-9889a1150/"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="mailto:benjaminsamuel.black@zalf.de"><i class="fa-solid fa-envelope"></i></a>
+      <a href="https://www.researchgate.net/profile/Benjamin-Black-5"><i class="fa-brands fa-researchgate"></i></a>
+      <a href="https://orcid.org/0000-0002-8113-2114"><i class="fa-brands fa-orcid"></i></a>
+      <a href="https://scholar.google.com/citations?hl=en&amp;user=h00y-m4AAAAJ"><i class="ai ai-google-scholar"></i></a>
+      <a href="https://blenback.github.io/curriculum-vitae/"><i class="ai ai-cv"></i></a>
+    </div>
+  </div>
+  <div class="bb-hero-right">
+    <div class="bb-portrait-wrap">
+      <div class="bb-portrait-glow"></div>
+      <div class="bb-portrait-ring"></div>
+      <div class="bb-portrait"><img src="assets/landing_portrait_cropped.jpg" alt="Ben Black"></div>
+    </div>
+    <svg class="bb-squiggle" viewbox="0 0 240 130" fill="none" aria-hidden="true">
+      <path d="M6 96 C 40 120, 70 60, 110 70 S 180 110, 224 40" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-dasharray="2 11"></path>
+      <path d="M224 40 l -14 2 m 14 -2 l -4 -13" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"></path>
+    </svg>
+  </div>
 </section>
+<div class="page-section publications-section">
+<!-- TODO increase spacing between section-head and content and listing  -->
+<div class="section-head">
+  <h2 id="publications">Selected Publications</h2>
+  <a class="section-more" href="publications.html">All publications</a>
+</div>
+<div id="listing-Journal-articles" class="quarto-listing quarto-listing-container-custom">
+
+<div class="pub-list">
+
+  <article class="pub">
+    <div class="yr">2023</div>
+    <div class="meta">
+      <div class="pt">Re-considering the status quo: Improving calibration of land use change models through validation of transition potential predictions</div>
+      <div class="pj">
+        <i>Environmental Modelling \&amp; Software</i>, 159
+         · <span class="author-name">Black, B.</span> and van Strien, M. J. and Adde, A. and Grêt-Regamey, A.
+      </div>
+      
+      <div class="pub-summary">
+        <p class="d-inline-flex gap-1 m-0">
+          <a class="tagpill" data-bs-toggle="collapse" href="#sum0" role="button" aria-expanded="false" aria-controls="sum0">Plain-language summary</a>
+        </p>
+        <div class="collapse" id="sum0"><div class="card card-body card-text"><div>&lt;div class="card-text"&gt;
+  &lt;div class="section"&gt;
+    &lt;h4&gt;📝 Overview&lt;/h4&gt;
+    &lt;p&gt;
+    This study explores how land use and land cover change (LULCC) is predicted using models called cellular automata. 
+    Typically, models are only evaluated after they simulate changes, but this paper shows that checking the predictions 
+    earlier in the process—called &lt;strong&gt;stage 1 validation&lt;/strong&gt;—can make models more accurate and easier to understand.
+    &lt;/p&gt;
+  &lt;/div&gt;
+
+&lt;div class="section"&gt;
+  &lt;h4&gt;🔍 Key Findings&lt;/h4&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;strong&gt;Stage 1 validation improves transparency:&lt;/strong&gt; Early checks reveal problems hidden in final map-only evaluations.&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;Not all transition models perform equally:&lt;/strong&gt; Some predictions were unreliable despite using advanced methods.&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;Individual model checks help:&lt;/strong&gt; Looking at transitions separately exposes weak areas like data imbalance.&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;Predictor selection improves models:&lt;/strong&gt; Removing unnecessary inputs improved performance, especially for logistic regression.&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;Random Forests generally outperformed Logistic Regression,&lt;/strong&gt; but were less sensitive to input refinement.&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;div class="section"&gt;
+&lt;h4&gt;🧪 Methods&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Study Area:&lt;/strong&gt; Land cover transitions across Switzerland from 2009 to 2018 were analyzed.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Data:&lt;/strong&gt; Swiss national land use datasets were combined with environmental and spatial predictors (e.g., elevation, soil, roads).&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Models:&lt;/strong&gt; Transition potential (TP) models were built using &lt;em&gt;Logistic Regression&lt;/em&gt; and &lt;em&gt;Random Forests&lt;/em&gt; for 174 specific land change scenarios.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Validation:&lt;/strong&gt; 
+    &lt;ul&gt;
+      &lt;li&gt;&lt;em&gt;Stage 1 validation&lt;/em&gt;: Assessed how well TP models predicted transition probabilities before simulation.&lt;/li&gt;
+      &lt;li&gt;&lt;em&gt;Stage 2 validation&lt;/em&gt;: Compared simulated maps to observed maps (used less in this study).&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Performance Metrics:&lt;/strong&gt; ROC AUC and Boyce Index were used to evaluate model accuracy and generalizability.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Variable Selection:&lt;/strong&gt; A two-step method reduced redundant predictors, tested for model performance and efficiency.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;div class="section"&gt;
+  &lt;h4&gt;🌱 Implications&lt;/h4&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;strong&gt;More efficient calibration:&lt;/strong&gt; Stage 1 saves time by avoiding full simulations for every tweak.&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;Improved interpretability:&lt;/strong&gt; Helps users understand and trust predictions, important for policy-making.&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;Need for better tools:&lt;/strong&gt; A shared calibration protocol would benefit land change modelling broadly.&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;Supports sustainable planning:&lt;/strong&gt; Better models mean better decisions for urban growth, agriculture, and nature.&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</div></div></div>
+      </div>
+      
+    </div>
+    <div class="links">
+      <a class="tagpill" href="https://10.1016/j.envsoft.2022.105574">DOI</a>
+      
+      
+      <a class="tagpill" href="https://doi.org/10.5281/zenodo.10171467">Code</a>
+      <a class="tagpill" href="https://raw.githubusercontent.com/blenback/profi/main/bibtex/ICoLCM.bib" download="https://raw.githubusercontent.com/blenback/profi/main/bibtex/ICoLCM.bib">Cite</a>
+    </div>
+  </article>
+
+  <article class="pub">
+    <div class="yr">2023</div>
+    <div class="meta">
+      <div class="pt">Archetypes of social-ecological-technological systems for managing ecological infrastructure</div>
+      <div class="pj">
+        <i>Environmental Research Letters</i>, 19
+         · Wicki, S. and <span class="author-name">Black, B.</span> and Kurmann, M. and Grêt-Regamey, A.
+      </div>
+      
+      <div class="pub-summary">
+        <p class="d-inline-flex gap-1 m-0">
+          <a class="tagpill" data-bs-toggle="collapse" href="#sum1" role="button" aria-expanded="false" aria-controls="sum1">Plain-language summary</a>
+        </p>
+        <div class="collapse" id="sum1"><div class="card card-body card-text"><div>&lt;div class="card-text"&gt;
+  &lt;div class="section"&gt;
+    &lt;h4&gt;📝 Overview&lt;/h4&gt;
+    &lt;p&gt;
+    This study explores how ecological infrastructure (EI)—like wetlands, forests, and green spaces—can be better planned 
+    and managed in urban areas. Using Geneva, Switzerland as a case study, we applied a systems-based approach 
+    combining social, ecological, and technological data to create spatial &lt;strong&gt;archetypes&lt;/strong&gt;. These archetypes help identify how 
+    different types of landscapes function and what strategies might work best to support nature and human well-being.
+    &lt;/p&gt;
+  &lt;/div&gt;
+
+&lt;div class="section"&gt;
+&lt;h4&gt;🔍 Key Findings&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;Seven distinct landscape archetypes were identified across Geneva, such as “Concrete Jungle” and “Green Frontier.”&lt;/li&gt;
+  &lt;li&gt;There is a strong disconnect between ecological conditions and social/technological systems in dense urban areas.&lt;/li&gt;
+  &lt;li&gt;Some archetypes (e.g., Cultivated Oasis) offer high ecological benefits and biodiversity, while others (e.g., Concrete Jungle) are underperforming ecologically.&lt;/li&gt;
+  &lt;li&gt;Tailored management strategies are needed for each archetype, considering their social and ecological roles.&lt;/li&gt;
+  &lt;li&gt;Stakeholders emphasized the importance of collaboration, incentives, and spatial planning to implement EI effectively.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;div class="section"&gt;
+&lt;h4&gt;🧪 Methods&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;Used a &lt;strong&gt;Social-Ecological-Technological Systems (SETS)&lt;/strong&gt; framework with high-resolution spatial data (25m grid).&lt;/li&gt;
+  &lt;li&gt;Gathered data on biodiversity, infrastructure, demographics, and ecosystem services (Nature’s Contributions to People).&lt;/li&gt;
+  &lt;li&gt;Applied machine learning (PCA and clustering) to group Geneva’s landscape into 7 archetypes based on SETS variables.&lt;/li&gt;
+  &lt;li&gt;Engaged stakeholders in interviews and workshops to validate data and develop policy recommendations per archetype.&lt;/li&gt;
+  &lt;li&gt;Mapped current and projected land use change (to 2060) to understand potential pressures and trends.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;div class="section"&gt;
+&lt;h4&gt;🌱 Implications&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Local strategies for diverse areas:&lt;/strong&gt; Each archetype needs context-specific management approaches.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Integrated planning is key:&lt;/strong&gt; Social and ecological systems must be aligned through smart design and regulation.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;EI is not one-size-fits-all:&lt;/strong&gt; Policies should reflect regional variation in land use and biodiversity potential.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Stakeholder engagement is essential:&lt;/strong&gt; Co-producing knowledge ensures practical, accepted solutions.&lt;/li&gt;
+          &lt;li&gt;&lt;strong&gt;Transferable approach:&lt;/strong&gt; This archetype method can be applied to other urban regions worldwide to guide sustainable land use.&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+</div></div></div>
+      </div>
+      
+    </div>
+    <div class="links">
+      <a class="tagpill" href="https://10.1088/1748-9326/ad1080">DOI</a>
+      
+      
+      
+      <a class="tagpill" href="https://raw.githubusercontent.com/blenback/profi/main/bibtex/Archetypes.bib" download="https://raw.githubusercontent.com/blenback/profi/main/bibtex/Archetypes.bib">Cite</a>
+    </div>
+  </article>
+
+  <article class="pub">
+    <div class="yr">2022</div>
+    <div class="meta">
+      <div class="pt">Counterfactual assessment of protected area avoided deforestation in Cambodia: Trends in effectiveness, spillover effects and the influence of establishment date</div>
+      <div class="pj">
+        <i>Global Ecology and Conservation</i>, 38
+         · <span class="author-name">Black, B.</span> and Anthony, B. P.
+      </div>
+      
+      <div class="pub-summary">
+        <p class="d-inline-flex gap-1 m-0">
+          <a class="tagpill" data-bs-toggle="collapse" href="#sum2" role="button" aria-expanded="false" aria-controls="sum2">Plain-language summary</a>
+        </p>
+        <div class="collapse" id="sum2"><div class="card card-body card-text"><div>&lt;div class="section"&gt;
+  &lt;h4&gt;📝 Overview&lt;/h4&gt;
+  &lt;p&gt;Forests play a vital role in maintaining ecological balance by storing 
+  carbon, supporting biodiversity, and regulating climate patterns. However,
+  rapid deforestation—caused by agriculture, infrastructure development, 
+  and illegal logging—poses a significant threat to these ecosystems. 
+  To counteract this issue, governments and conservation organizations have
+  established protected areas (PAs), which are designated regions where land
+  use is restricted to prevent forest loss. While these areas are intended 
+  to preserve forests, their effectiveness is often uncertain. 
+  This study aims to evaluate whether Cambodia's protected areas have
+  successfully reduced deforestation and to what extent they contribute
+  to conservation efforts.
+  &lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class="section"&gt;
+  &lt;h4&gt;🔍 Key Findings&lt;/h4&gt;
+  &lt;ul&gt;
+    &lt;li&gt;Protected areas have had a measurable impact on reducing deforestation, but their success varies widely based on location, enforcement, and external pressures.&lt;/li&gt;
+    &lt;li&gt;Some PAs significantly reduced deforestation, particularly those with strong legal enforcement and active management strategies.&lt;/li&gt;
+    &lt;li&gt;Many PAs located in high-risk areas (e.g., near expanding agricultural zones and infrastructure projects) were more effective than those in remote, less-threatened regions.&lt;/li&gt;            
+    &lt;li&gt;Despite legal protection, deforestation still occurred within some PAs, often due to weak enforcement, illegal logging, or encroachment for agricultural use.&lt;/li&gt;
+    &lt;li&gt;The study also found that some PAs were established in areas where deforestation risk was already low, making their protective impact appear greater than it actually was.&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;div class="section"&gt;
+  &lt;h4&gt;🧪 Methods&lt;/h4&gt;
+  &lt;p&gt;Rather than simply comparing protected forests to unprotected ones, 
+  this research employed a method known as &lt;strong&gt;counterfactual analysis&lt;/strong&gt;.
+  This technique helps estimate what would have happened if no protections had been put in place. 
+  By doing so, the study provides a more accurate assessment of the real impact of protected areas.
+  Without using this approach, it is difficult to determine whether a protected 
+  forest remains intact because of conservation policies or simply because 
+  it was never at high risk of deforestation.&lt;/p&gt;
+  &lt;p&gt;To conduct this analysis, satellite imagery and deforestation data 
+  were examined across different regions in Cambodia. Various factors were
+  considered, including land-use policies, road proximity, human population density,
+  and historical deforestation trends. By comparing observed deforestation within PAs 
+  to a predicted scenario without protections, the study was able to isolate the true impact of conservation efforts.
+  &lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class="section"&gt;
+  &lt;h4&gt;🌱 Implications&lt;/h4&gt;
+  &lt;ul&gt;
+    &lt;li&gt;Understanding how well protected areas function is critical for improving
+    conservation strategies. If some PAs are not successfully reducing deforestation,
+    it may indicate a need for better enforcement, improved land management policies,
+    or the establishment of protection in higher-risk areas.&lt;/li&gt;
+    &lt;li&gt;This study highlights the importance of using data-driven approaches to
+    evaluate conservation outcomes and ensure that resources are directed
+    toward efforts that have the greatest impact.&lt;/li&gt;
+    &lt;li&gt;By refining the selection 
+    and management of protected areas, policymakers and conservationists can
+    enhance their effectiveness, ensuring that Cambodia's forests continue
+    to provide ecological, economic, and social benefits for future generations.&lt;/li&gt;
+    &lt;li&gt;This research underscores the need for scientific assessments in
+    conservation planning. By continually monitoring and adapting conservation policies
+    based on evidence, we can create more effective strategies to combat
+    deforestation and preserve Cambodia's rich forest ecosystems.&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+</div></div></div>
+      </div>
+      
+    </div>
+    <div class="links">
+      <a class="tagpill" href="https://10.1016/j.gecco.2022.e02228">DOI</a>
+      
+      <a class="tagpill" href="https://zenodo.org/record/6554206#.Y7V79ZDYo2w">Data</a>
+      
+      <a class="tagpill" href="https://raw.githubusercontent.com/blenback/profi/main/bibtex/Cam_PA_effect.bib" download="https://raw.githubusercontent.com/blenback/profi/main/bibtex/Cam_PA_effect.bib">Cite</a>
+    </div>
+  </article>
+
+</div>
+<script>
+  // decode HTML entities inside collapsed summaries (matches original behaviour)
+  document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('.pub-summary .card-body.card-text').forEach(function (d) {
+      const t = document.createElement('textarea'); t.innerHTML = d.innerHTML; d.innerHTML = t.value;
+    });
+  });
+</script>
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
+</div>
+<div class="page-section section-tint">
+<div class="section-head">
+  <h2 id="presentations">Recent Presentations</h2>
+  <a class="section-more" href="presentations.html">All presentations</a>
+</div>
+<div id="listing-Presentations" class="quarto-listing quarto-listing-container-grid">
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-categories="RWNvc3lzdGVtJTIwU2VydmljZXMlMkNTb2xhciUyMEVuZXJneSUyQ0JheWVzaWFuJTIwbmV0d29ya3MlMkNVbmNlcnRhaW50eQ==" data-listing-date-sort="1757973600000" data-listing-file-modified-sort="1772458543608" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="56">
+<a href="./presentations/IMC-2025-FW.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="./assets/2025_14_9_IMC_FW-cover.svg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Addressing uncertainties in ecosystem services impacts of solar energy systems under future changes.
+</h5>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+Sep 2025
+</div>
+</div>
+<table class="card-other-values">
+
+<tbody><tr>
+<td>
+event
+</td>
+<td class="event">
+Conference presentation
+</td>
+</tr>
+
+<tr>
+<td>
+location
+</td>
+<td class="location">
+Innsbruck, Austria
+</td>
+</tr>
+
+</tbody></table>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="1" data-categories="Q2xpbWF0ZSUyMENoYW5nZSUyQ01vZGVsJTIwaW50ZWdyYXRpb24lMkNMYW5kJTIwdXNlJTIwY2hhbmdlJTIwbW9kZWxsaW5n" data-listing-date-sort="1757973600000" data-listing-file-modified-sort="1772458543611" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="39">
+<a href="./presentations/IMC-2025-JH.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="./assets/2025_14_9_IMC_JH-cover.svg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Climate Change Impacts On Swiss Mountain Ecosystem Services: A Land Use Change Perspective.
+</h5>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+Sep 2025
+</div>
+</div>
+<table class="card-other-values">
+
+<tbody><tr>
+<td>
+event
+</td>
+<td class="event">
+Conference presentation
+</td>
+</tr>
+
+<tr>
+<td>
+location
+</td>
+<td class="location">
+Innsbruck, Austria
+</td>
+</tr>
+
+</tbody></table>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="2" data-categories="Q29uc2VydmF0aW9uJTJDRWNvc3lzdGVtJTIwU2VydmljZXMlMkNSb2J1c3RuZXNzJTJDUHJvdGVjdGVkJTIwQXJlYXMlMkNOb3JtYXRpdmUlMjBTY2VuYXJpb3M=" data-listing-date-sort="1757887200000" data-listing-file-modified-sort="1772458543606" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="34">
+<a href="./presentations/IMC-2025-AGR.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="./assets/2025_14_9_IMC_AGR-cover.svg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Combining normative scenarios and exploratory conservation policies for delineating robust Alpine protected areas
+</h5>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+Sep 2025
+</div>
+</div>
+<table class="card-other-values">
+
+<tbody><tr>
+<td>
+event
+</td>
+<td class="event">
+Conference presentation
+</td>
+</tr>
+
+<tr>
+<td>
+location
+</td>
+<td class="location">
+Innsbruck, Austria
+</td>
+</tr>
+
+</tbody></table>
+</div>
+</div></a>
+</div>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
+</div>
+<div class="page-section">
+<div class="section-head">
+  <h2 id="posts">Posts</h2>
+  <a class="section-more" href="posts.html">All posts</a>
+</div>
+<div id="listing-Posts" class="quarto-listing quarto-listing-container-grid">
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-categories="YmlvZGl2ZXJzaXR5JTJDc3BhdGlhbCUyMHBsYW5uaW5nJTJDZGVjaXNpb24lMjBzdXBwb3J0" data-listing-date-sort="1777500000000" data-listing-file-modified-sort="1777540746664" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="195">
+<a href="./posts/valparCH-praxis-navigator.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="./assets/praxisnavigator-en.gif" class="thumbnail-image card-img" style="height: 150px;" alt="Screenshot of the ValPar.CH Praxis Navigator">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+From research to practice: The ValPar.CH Praxis Navigator
+</h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('YmlvZGl2ZXJzaXR5'); return false;">biodiversity</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('c3BhdGlhbCUyMHBsYW5uaW5n'); return false;">spatial planning</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZGVjaXNpb24lMjBzdXBwb3J0'); return false;">decision support</div>
+
+</div>
+<div class="card-text listing-description delink">
+Every scientific project hopes to see its results used in practice and policy. In reality, bringing together the diverse outputs of large, interdisciplinary projects in an…
+</div>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+Apr 2026
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="1" data-categories="amF2YXNjcmlwdCUyQ2QzJTJDZ2VvdGlmZiUyQ2RhdGEtdmlzdWFsaXphdGlvbiUyQ2NvbnNlcnZhdGlvbi1wbGFubmluZw==" data-listing-date-sort="1775426400000" data-listing-file-modified-sort="1780413426608" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="969">
+<a href="./posts/interactive-bivariate-map-post.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="./assets/interative-bivar-map.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Building an interactive bi-variate map for exploring robustness of ecosystems services and biodiversity under future uncertainty
+</h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('amF2YXNjcmlwdA=='); return false;">javascript</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZDM='); return false;">d3</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('Z2VvdGlmZg=='); return false;">geotiff</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZGF0YS12aXN1YWxpemF0aW9u'); return false;">data-visualization</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('Y29uc2VydmF0aW9uLXBsYW5uaW5n'); return false;">conservation-planning</div>
+
+</div>
+<div class="card-text listing-description delink">
+<p>A short write-up on developing a browser-based map for exploring the robustness of ecosystem services and biodiversity under uncertain futures.</p>
+</div>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+Apr 2026
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="2" data-categories="UiUyQ0FuaW1hdGlvbiUyQ0NhcnRvZ3JhcGh5JTJDTWFwcyUyQ0RhdGElMjBWaXN1YWxpemF0aW9u" data-listing-date-sort="1749506400000" data-listing-file-modified-sort="1780413426599" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+<a href="./posts/animated_plots.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="./assets/animation.svg" class="thumbnail-image card-img" style="height: 150px;" alt="Vector of someone creating an animation">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Animated plots and maps in R
+</h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('Ug=='); return false;">R</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('QW5pbWF0aW9u'); return false;">Animation</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('Q2FydG9ncmFwaHk='); return false;">Cartography</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('TWFwcw=='); return false;">Maps</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('RGF0YSUyMFZpc3VhbGl6YXRpb24='); return false;">Data Visualization</div>
+
+</div>
+<div class="card-text listing-description delink">
+
+</div>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+Jun 2025
+</div>
+</div>
+</div>
+</div></a>
+</div>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
+</div>
+
 
 
 
 </main> <!-- /main -->
+<!-- nav-scroll.html — add to _quarto.yml under format.html.include-after-body
+     Makes the navbar transparent over the homepage hero and solid on scroll.
+     On pages WITHOUT a hero (.bb-hero) the navbar is always solid. -->
+<script>
+  (function () {
+    function init() {
+      var navbar = document.querySelector('.navbar');
+      if (!navbar) return;
+      var hasHero = !!document.querySelector('.bb-hero');
+      function update() {
+        var solid = !hasHero || window.scrollY > 40;
+        navbar.classList.toggle('navbar-solid', solid);
+      }
+      update();
+      window.addEventListener('scroll', update, { passive: true });
+      window.addEventListener('resize', update, { passive: true });
+    }
+    if (document.readyState !== 'loading') init();
+    else document.addEventListener('DOMContentLoaded', init);
+  })();
+</script>
+<!-- bb-footer.html — add to _quarto.yml under format.html.include-after-body
+     (AFTER nav-scroll.html). Replaces Quarto's default page-footer, which the
+     theme hides. Edit the links/text to taste. -->
+<footer class="bb-footer">
+  <div class="bb-footer-wrap">
+    <div>
+      <h3>Let's talk.</h3>
+      <p class="bb-ft-sub">Open to collaboration on spatial modelling, scientific visualisation and reproducible research.</p>
+      <a class="bb-ft-mail" href="mailto:benjaminsamuel.black@zalf.de">benjaminsamuel.black@zalf.de</a>
+    </div>
+    <div class="bb-ft-cols">
+      <div class="bb-ft-col">
+        <h4>Site</h4>
+        <a href="index.html#publications">Publications</a>
+        <a href="index.html#presentations">Presentations</a>
+        <a href="index.html#posts">Posts</a>
+        <a href="https://blenback.github.io/curriculum-vitae/">CV</a>
+      </div>
+      <div class="bb-ft-col">
+        <h4>Elsewhere</h4>
+        <a href="https://github.com/blenback">GitHub</a>
+        <a href="https://scholar.google.com/citations?hl=en&amp;user=h00y-m4AAAAJ">Google Scholar</a>
+        <a href="https://orcid.org/0000-0002-8113-2114">ORCID</a>
+        <a href="https://www.linkedin.com/in/ben-black-9889a1150/">LinkedIn</a>
+      </div>
+    </div>
+  </div>
+  <div class="bb-ft-bottom">
+    <span>© Benjamin Black 2026 · CC BY-NC-SA 4.0</span>
+    <span>Made with Quarto</span>
+  </div>
+</footer>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
-    const icon = "";
-    const anchorJS = new window.AnchorJS();
-    anchorJS.options = {
-      placement: 'right',
-      icon: icon
-    };
-    anchorJS.add('.anchored');
     const isCodeAnnotation = (el) => {
       for (const clz of el.classList) {
         if (clz.startsWith('code-annotation-')) {                     
@@ -692,19 +1247,6 @@ Edinburgh Napier University
   });
   </script>
 </div> <!-- /content -->
-<footer class="footer">
-  <div class="nav-footer">
-    <div class="nav-footer-left">
-<p><i class="fa-regular fa-copyright" aria-label="copyright"></i> Benjamin Black, 2026<br> All content licensed under <i class="fa-brands fa-creative-commons" aria-label="creative-commons"></i> <i class="fa-brands fa-creative-commons-by" aria-label="creative-commons-by"></i> <i class="fa-brands fa-creative-commons-sa" aria-label="creative-commons-sa"></i> <i class="fa-brands fa-creative-commons-nc" aria-label="creative-commons-nc"></i> <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">(CC BY-NC-SA 4.0)</a></p>
-</div>   
-    <div class="nav-footer-center">
-      &nbsp;
-    </div>
-    <div class="nav-footer-right">
-<p>Made with <i class="fa-brands fa-r-project" aria-label="r-project"></i> and <a href="https://quarto.org/">Quarto</a><br></p>
-</div>
-  </div>
-</footer>
 
 
 

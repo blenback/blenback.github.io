@@ -1,0 +1,51 @@
+# _brand.yml — Ben Black
+# Quarto brand definition. Quarto reads this to generate the core Bootstrap
+# theme variables (colours, fonts, links). Component styling lives in theme.scss.
+# Docs: https://quarto.org/docs/authoring/brand.html
+
+meta:
+  name: Ben Black
+
+color:
+  palette:
+    # warm, earthy, organic
+    cream:       "#F4EEE2"   # page background
+    cream-2:     "#EFE7D7"   # alternating section background
+    surface:     "#FBF7EE"   # cards / raised surfaces
+    ink:         "#2B2620"   # primary text (warm near-black)
+    ink-soft:    "#6B6253"   # secondary text
+    ink-faint:   "#97907F"   # meta / muted text
+    forest:      "#36513C"   # primary green
+    forest-deep: "#233827"   # darkest green (footer, deep accents)
+    olive:       "#6E7350"
+    sage:        "#97A083"
+    burnt:       "#BC5C32"   # burnt-orange accent
+    burnt-deep:  "#8E3F1E"
+    tan:         "#DAC6A0"
+    sand:        "#E8DCC4"
+
+  # semantic mapping
+  foreground: ink
+  background: cream
+  primary:    forest
+  secondary:  olive
+  # Quarto maps `link` colour for anchors
+  link:       burnt
+
+typography:
+  # NOTE: Satoshi is not on Google Fonts — it is loaded via header.html
+  #       (Fontshare CDN). Spectral is loaded the same way for reliability.
+  base:
+    family: Spectral          # readable serif for body / long-form posts
+    line-height: 1.65
+    size: 1.05rem
+  headings:
+    family: Satoshi           # geometric sans for headings + UI
+    weight: 700
+    color: ink
+  monospace:
+    family: "JetBrains Mono"
+    size: 0.9em
+  link:
+    color: burnt
+    decoration: none

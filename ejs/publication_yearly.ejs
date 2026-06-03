@@ -1,127 +1,51 @@
 ```{=html}
-
-<style>
-  ul.no-bullets {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-
-  .year-heading {
-    margin-top: 2rem;
-    margin-bottom: 0.5rem;
-    font-weight: bold;
-    font-size: 1.2rem;
-    padding-bottom: 0rem;
-  }
-
-  .author-name {
-    font-weight: bold;
-  }
-</style>
-
-<% let currentYear=null; let sortedItems=items.slice().sort((a, b)=> {
-  let yearA = String(a.year || 'Unknown');
-  let yearB = String(b.year || 'Unknown');
-
-  // Handle "In Review" items - they should appear first
-  let isReviewA = yearA.toLowerCase() === 'in review';
-  let isReviewB = yearB.toLowerCase() === 'in review';
-
-  if (isReviewA && !isReviewB) return -1;
-  if (!isReviewA && isReviewB) return 1;
-  if (isReviewA && isReviewB) return 0;
-
-  // For numeric years, sort in descending order
-  let numA = parseInt(yearA);
-  let numB = parseInt(yearB);
-
-  if (!isNaN(numA) && !isNaN(numB)) {
-  return numB - numA;
-  }
-
-  // Handle non-numeric, non-review years
-  if (isNaN(numA) && !isNaN(numB)) return 1;
-  if (!isNaN(numA) && isNaN(numB)) return -1;
-
-  // Both non-numeric: alphabetical
-  return yearA.localeCompare(yearB);
+<%
+  // sort: "In Review" first, then by year descending
+  let sorted = items.slice().sort((a, b) => {
+    let ya = String(a.year || ''); let yb = String(b.year || '');
+    let ra = ya.toLowerCase() === 'in review'; let rb = yb.toLowerCase() === 'in review';
+    if (ra && !rb) return -1; if (!ra && rb) return 1;
+    let na = parseInt(ya); let nb = parseInt(yb);
+    if (!isNaN(na) && !isNaN(nb)) return nb - na;
+    return yb.localeCompare(ya);
   });
-  %>
-  <% for (let i=0; i < sortedItems.length; i++) { let item=sortedItems[i]; let itemYear=item.year || 'Unknown' ; if
-    (currentYear !==itemYear) { if (currentYear !==null) { %>
-    </ul>
-    <% } %>
-      <h4 class="year-heading">
-        <%= itemYear %>
-      </h4>
-      <ul class="no-bullets">
-        <% currentYear=itemYear; } %>
-          <li>
-            <br>
-            <% const authors=item.authors || '' ; const parts=authors.split('Black, B.'); for (let j=0; j <
-              parts.length; j++) { %>
-              <%= parts[j] %>
-                <% if (j < parts.length - 1) { %><span class="author-name">Black, B.</span>
-                  <% } %>
-                    <% } %>.
-                      <%- item.title %>.
-                        <i>
-                          <%- item.journal %>
-                        </i>.
-                        <% if(item.doi) { %>
-                          <a href="<%- item.doi %>">
-                            <%- item.doi %>
-                          </a>.
-                          <% } %>
-                            <br />
-                            <% if(item.summary) { %>
-                              <p class="d-inline-flex gap-1">
-                                <a class="btn btn-outline-dark btn-sm" data-bs-toggle="collapse"
-                                  href="#collapseSummary<%= i %>" role="button" aria-expanded="false"
-                                  aria-controls="collapseSummary<%= i %>">Plain Language
-                                  Summary</a>
-                              </p>
-                              <div class="collapse" id="collapseSummary<%= i %>">
-                                <div class="card card-body card-text">
-                                  <div><%- item.summary %></div>
-                                </div>
-                              </div>
-                              <% } %>
-                                <% if(item.bibtex) { %>
-                                  <a href="<%- item.bibtex %>" class="btn btn-outline-dark btn-sm" aria-pressed="true"
-                                    role="button" download="<%- item.bibtex %>"><i class="fa-solid fa-quote-left"></i>
-                                    Cite</a>
-                                  <% } %>
-                                    <% if(item.preprint_url) { %>
-                                      <a href="<%- item.preprint_url %>" class="btn btn-outline-dark btn-sm"
-                                        aria-pressed="true" role="button"><i class="fa-solid fa-fingerprint"></i>
-                                        Preprint</a>
-                                      <% } %>
-                                        <% if(item.data_url) { %>
-                                          <a href="<%- item.data_url %>" class="btn btn-outline-dark btn-sm"
-                                            aria-pressed="true" role="button"><i class="fa-solid fa-database"></i>
-                                            Data</a>
-                                          <% } %>
-                                            <% if(item.code_url) { %>
-                                              <a href="<%- item.code_url %>" class="btn btn-outline-dark btn-sm"
-                                                aria-pressed="true" role="button"><i class="fa-solid fa-code"></i>
-                                                Code</a>
-                                              <% } %>
-          </li>
-          <% } %>
-      </ul>
+%>
+<div class="pub-list">
+<% for (let i = 0; i < sorted.length; i++) { let item = sorted[i]; %>
+  <article class="pub">
+    <div class="yr"><%= item.year || '' %></div>
+    <div class="meta">
+      <div class="pt"><%- item.title %></div>
+      <div class="pj">
+        <i><%- item.journal %></i><% if (item.volume) { %>, <%= item.volume %><% } %>
+        <% if (item.authors) { let parts = String(item.authors).split('Black, B.'); for (let j = 0; j < parts.length; j++) { %><% if (j === 0) { %> · <% } %><%= parts[j] %><% if (j < parts.length - 1) { %><span class="author-name">Black, B.</span><% } } } %>
+      </div>
+      <% if (item.summary) { %>
+      <div class="pub-summary">
+        <p class="d-inline-flex gap-1 m-0">
+          <a class="tagpill" data-bs-toggle="collapse" href="#sum<%= i %>" role="button" aria-expanded="false" aria-controls="sum<%= i %>">Plain-language summary</a>
+        </p>
+        <div class="collapse" id="sum<%= i %>"><div class="card card-body card-text"><div><%- item.summary %></div></div></div>
+      </div>
+      <% } %>
+    </div>
+    <div class="links">
+      <% if (item.doi) { %><a class="tagpill" href="<%- item.doi %>">DOI</a><% } %>
+      <% if (item.preprint_url) { %><a class="tagpill" href="<%- item.preprint_url %>">Preprint</a><% } %>
+      <% if (item.data_url) { %><a class="tagpill" href="<%- item.data_url %>">Data</a><% } %>
+      <% if (item.code_url) { %><a class="tagpill" href="<%- item.code_url %>">Code</a><% } %>
+      <% if (item.bibtex) { %><a class="tagpill" href="<%- item.bibtex %>" download="<%- item.bibtex %>">Cite</a><% } %>
+    </div>
+  </article>
+<% } %>
+</div>
+```
 
-      ```
-
-      <script>
-        // Decode HTML entities in summary content after page load
-        document.addEventListener('DOMContentLoaded', function () {
-          const summaryDivs = document.querySelectorAll('.card-body.card-text');
-          summaryDivs.forEach(function (div) {
-            const txt = document.createElement('textarea');
-            txt.innerHTML = div.innerHTML;
-            div.innerHTML = txt.value;
-          });
-        });
-      </script>
+<script>
+  // decode HTML entities inside collapsed summaries (matches original behaviour)
+  document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('.pub-summary .card-body.card-text').forEach(function (d) {
+      const t = document.createElement('textarea'); t.innerHTML = d.innerHTML; d.innerHTML = t.value;
+    });
+  });
+</script>

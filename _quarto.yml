@@ -1,81 +1,58 @@
 project:
   type: website
   output-dir: docs
-  pre-render: 
-    - fetch-assets.R
-    - create_presentation_qmds.R
+  #pre-render: 
+  #  - fetch-assets.R
+  #  - create_presentation_qmds.R
   resources:
   - assets/quarto-eth-phd-thesis.pdf
 
 website:
-  title: "Ben<br>Black"
+  title: "Ben <span class='brand-2'>Black.</span>" 
   drafts:
     - presentations/IMC-2025-FW.qmd
-  search: TRUE #add search bar
   site-url: "https://blenback.github.io/"
   description: "Personal website for Ben Black"
-  twitter-card:
-    image: "assets/preview.png"
-    card-style: "summary_large_image"
-    creator: "@Blen_Back"
-    site: "@Blen_Back"
-  open-graph: true
-  google-analytics:
-    tracking-id: "G-9CCC34ZV10"
-    anonymize-ip: true
-  page-footer:
-    left: |
-      {{< fa regular copyright >}} Benjamin Black, 2026<br>
-      All content licensed under {{< fa brands creative-commons >}}
-      {{< fa brands creative-commons-by >}} {{< fa brands creative-commons-sa >}} {{< fa brands creative-commons-nc >}} [(CC BY-NC-SA 4.0)](http://creativecommons.org/licenses/by-nc-sa/4.0/)
-    right: |
-      Made with {{< fa brands r-project >}} and [Quarto](https://quarto.org/)<br>
   navbar:
-    #foreground: "#212529"  #This fixes the text colour of the navbar links but doesn't give the correct hover behaviour
-    right:
-      - text: "Home" 
+      right:
+      - text: "Home"
         href: index.qmd
         aria-label: "Home"
-      - text: About
-        href: about.qmd
-        aria-label: "About"
       - text: "Publications"
-        href: publications.qmd
+        href: index.qmd#publications
         aria-label: "Publications"
-      - href: presentations.qmd
+      - text: "Presentations"
+        href: index.qmd#presentations
         aria-label: "Presentations"
       - text: "Posts"
-        href: posts.qmd
+        href: index.qmd#posts
         aria-label: "Posts"
-      - text: "CV"
-        href: https://blenback.github.io/curriculum-vitae/
-        aria-label: "CV"
       - text: "{{< fa solid envelope >}}"
         href: mailto:benjaminsamuel.black@zalf.de
         aria-label: "Email"
       - text: "{{< fa brands github >}}"
         href: https://github.com/blenback
         aria-label: "Github"
-      - text: "{{< fa brands twitter >}}"
-        href: https://twitter.com/Blen_Back
-        aria-label: "Twitter"
       - icon: rss
         href: posts.xml
+      - text: "<span class='cv-btn'>Download CV</span>"
+        href: "https://blenback.github.io/curriculum-vitae/"
+        aria-label: "Download CV"
   
-
 format:
   html:
-    highlight-style: github
-    code-copy: true
-    theme: 
-      - custom_theme.scss #add custom scss inputs
-    # dark: custom_theme_dark.scss #add custom scss inputs
-    mainfont: Raleway
-    margin-left: 0.5em
-    css: css/styles.css #use css components from Maya gans
-    max-width: 1800px
-    metadata:
-      pagetitle: "Ben Black"
+    theme:
+      - brand            # pulls in _brand.yml
+      - theme.scss       # our component styles
+    include-in-header:
+      - header.html      # webfonts
+    include-after-body:
+      - nav-scroll.html  # navbar scroll behaviour
+      - bb-footer.html   # custom footer
+    toc: false
+    anchor-sections: false
+    grid:
+      body-width: 1200px
     
 
 

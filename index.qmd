@@ -1,98 +1,117 @@
 ---
-#title: "Ben Black"
-#description: "Head of the Working Group Data and Modelling Infrastructure for Living Labs"
 pagetitle: "Ben Black"
-format:
-  html:
-    css: css/home.css
+page-layout: full
+toc: false
+listing:
+  - id: Journal-articles
+  # TODO: Seperate this EJS template into a new one for this listing that doesn't include the authoers. 
+    template: ejs/publication_yearly.ejs
+    contents:
+    - publications/publications.yaml
+    max-items: 3
+    # TODO: Bug not showing most recent papers
+    sort: "date desc"
+    field-display-names:
+      summary: "Summary"
+    field-types:
+      summary: raw
+    # TODO: stylise this section into something else, Projects?
+  # - id: Other-content
+  #   template: ejs/gallery.ejs
+  #   contents:
+  #   - publications/other_outputs.yaml
+  - id: Presentations
+    contents:
+      - presentations/*.qmd
+    sort: "date desc"
+    type: grid
+    grid-columns: 3
+    max-items: 3
+    date-format: "MMM YYYY"
+    fields: [image, date, title, event, location]
+    # TODO: Change all posts to use the same image as used in Preview.html
+  - id: Posts
+    contents: posts/*.qmd
+    sort: "date desc"
+    type: grid
+    grid-columns: 3
+    max-items: 3
+    date-format: "MMM YYYY"
+    fields: [image, title, description, categories, date]
 ---
 
-<!--# Note: Fontawesome and Schotastics quarto extensions required for icons. -->
-
-<link rel="stylesheet" href="css/academicons.min.css"/>
-
-<section>
-
-<div class="img-bio">
-<img src="assets/landing_portrait_cropped.jpg" alt="photo of Ben Black" class="author-photo"/>
-
-<h2 style="font-weight:500!important;text-align:center!important; text-decoration:none;">Ben Black</h2>
-
-<h3 style="margin:0!important;padding:0!important;text-decoration:none;">Head of the Working Group Data and Modelling Infrastructure for Living Labs</h3>
-
-  <div class="social">
-  <a href="https://www.linkedin.com/in/ben-black-9889a1150/" class="fa fa-brands fa-linkedin fa-2x"></a>
-  <a href="https://github.com/blenback"  class="fa fa-brands fa-github fa-2x"></a> 
-  <a href= "mailto:bblack@ethz.ch" class="fa fa-solid fa-envelope fa-2x"></a>
-  <a href="https://www.researchgate.net/profile/Benjamin-Black-5"  class="fa fa-brands fa-researchgate fa-2x"></a>
-  <a href="https://orcid.org/my-orcid?orcid=0000-0002-8113-2114"  class="fa fa-brands fa-orcid fa-2x"></a>
-  <a href="https://twitter.com/Blen_Back"  class="fa fa-brands fa-twitter fa-2x"></a>
-  <a href="https://scholar.google.com/citations?hl=en&user=h00y-m4AAAAJ" class="ai ai-google-scholar ai-2x"></a>
+<!-- TODO reduce spacing between Hero and Navbar -->
+```{=html}
+<link href="css/academicons.css" rel="stylesheet">
+<section class="bb-hero">
+  <div class="bb-hero-left">
+    <div class="bb-eyebrow">Hi there, I'm</div>
+    <h1 class="bb-name">Ben<br><span class="ln2">Black.</span></h1>
+    <p class="bb-role">Head of the Working Group <a href="https://iat-dml.github.io/">Data &amp; Modelling Infrastructure for Living Labs</a><span class="at">, at ZALF.</span></p>
+    <p class="bb-intro">A scientific researcher working on spatial modelling, data and scientific visualisation. I share the work that doesn't always make it into papers — code, maps and field notes — in the hope that it's useful.</p>
+    <div class="bb-social">
+      <a href="https://github.com/blenback"><i class="fa-brands fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/ben-black-9889a1150/"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="mailto:benjaminsamuel.black@zalf.de"><i class="fa-solid fa-envelope"></i></a>
+      <a href="https://www.researchgate.net/profile/Benjamin-Black-5"><i class="fa-brands fa-researchgate"></i></a>
+      <a href="https://orcid.org/0000-0002-8113-2114"><i class="fa-brands fa-orcid"></i></a>
+      <a href="https://scholar.google.com/citations?hl=en&user=h00y-m4AAAAJ"><i class="ai ai-google-scholar"></i></a>
+      <a href="https://blenback.github.io/curriculum-vitae/"><i class="ai ai-cv"></i></a>
+    </div>
   </div>
-</div>
-
-<div class="bio">
-<h1>Hi there!</h1>
-
-I'm Ben, a scientific researcher currently working as Head of the Working Group Data and Modelling Infrastructure for Living Labs at the [Leibniz Centre for Agricultural Landscape Research (ZALF)](https://www.zalf.de/en/Pages/ZALF.aspx) within the [Innovation Centre for Agricultural System Transformation](https://www.zalf.de/en/struktur/iat/Pages/default.aspx). 
-
-I'm a BIG fan of R stats for everything research related particularly for promoting open science and reproducibility. I started this site/blog to share some of my work that doesn't necessarily make it into publications in the hope that others will find it useful. Thanks for stopping by!
-<br>
-<br>
-<div class="activities">
-  <div class="interests">
-  <span class="activity">Experience</span>
-
-  <div class="education-element">
-  <div class="icon">{{< fa chalkboard-user >}}</div>
-  <div class="degree">Lecturer in [Participatory Environmental Modelling](https://irl.ethz.ch/education/courses/msc/participatory_modelling.html), 2021 - Present</div>
-  <div class="school"> ETH Zürich</div>
+  <div class="bb-hero-right">
+    <div class="bb-portrait-wrap">
+      <div class="bb-portrait-glow"></div>
+      <div class="bb-portrait-ring"></div>
+      <div class="bb-portrait"><img src="assets/landing_portrait_cropped.jpg" alt="Ben Black"/></div>
+    </div>
+    <svg class="bb-squiggle" viewBox="0 0 240 130" fill="none" aria-hidden="true">
+      <path d="M6 96 C 40 120, 70 60, 110 70 S 180 110, 224 40" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-dasharray="2 11"/>
+      <path d="M224 40 l -14 2 m 14 -2 l -4 -13" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>
+    </svg>
   </div>
-  <br>
-  <div class="education-element">
-  <div class="icon">{{< fa list-check >}}</div>
-  <div class="degree">Post Doctoral Researcher, 2025-2026 </div>
-  <div class="school"> ETH Zürich</div>
-  </div>
-  <br>
-  <div class="education-element">
-  <div class="icon">{{< fa list-check >}}</div>
-  <div class="degree">Freelance Research Consultant, 2025-2026 </div>
-  <div class="school"> Prognos AG</div>
-  </div>
-  <br>
-  <div class="education-element">
-  <div class="icon">{{< fa people-roof >}}</div>
-  <div class="degree">Project Manager 2015 - 2017</div>
-  <div class="school"> Elephant Livelihood Initiatives and Environment (E.L.I.E)</div>
-  </div>
-
-  </div>
-
-<div class="education">
-  <span class="activity">Education</span>
-  
-<div class="education-element">
-<div class="icon">{{< fa graduation-cap >}}</div>
-<div class="degree">PhD in Planning of Landscape and Urban Systems, 2020 - 2025</div>
-<div class="school"> ETH Zürich</div>
-</div>
-<br>
-<div class="education-element">
-<div class="icon">{{< fa graduation-cap >}}</div>
-<div class="degree">MSc in Environmental Sciences, Policy and Management, 2020</div>
-<div class="school">Central European University, University of Manchester, Lund University, University of the Aegean</div>
-</div>
-<br>
-<div class="education-element">
-<div class="icon">{{< fa graduation-cap >}}</div>
-<div class="degree">BSc with 1st Class Honours in Biological Sciences, 2014</div>
-<div class="school">Edinburgh Napier University</div>
-</div>
-</div>
-
-</div>
-</div>
-
-
 </section>
+```
+
+:::: {.page-section .publications-section}
+
+<!-- TODO increase spacing between section-head and content and listing  -->
+```{=html}
+<div class="section-head">
+  <h2 id="publications">Selected Publications</h2>
+  <a class="section-more" href="publications.html">All publications</a>
+</div>
+```
+
+::: {#Journal-articles}
+:::
+
+::::
+
+:::: {.page-section .section-tint}
+
+```{=html}
+<div class="section-head">
+  <h2 id="presentations">Recent Presentations</h2>
+  <a class="section-more" href="presentations.html">All presentations</a>
+</div>
+```
+
+::: {#Presentations}
+:::
+
+::::
+
+:::: {.page-section}
+
+```{=html}
+<div class="section-head">
+  <h2 id="posts">Posts</h2>
+  <a class="section-more" href="posts.html">All posts</a>
+</div>
+```
+
+::: {#Posts}
+:::
+
+::::
