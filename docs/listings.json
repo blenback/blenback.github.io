@@ -2,7 +2,6 @@
   {
     "listing": "/index.html",
     "items": [
-      "/presentations/IMC-2025-FW.html",
       "/presentations/IMC-2025-JH.html",
       "/presentations/IMC-2025-AGR.html",
       "/presentations/2025_25_6_CUPUM.html",
@@ -20,14 +19,11 @@
       "/presentations/2021_06_09_ESP.html",
       "/posts/valparCH-praxis-navigator.html",
       "/posts/interactive-bivariate-map-post.html",
-      "/posts/animated_plots.html",
       "/posts/thesis_defence.html",
       "/posts/PhD_template.html",
-      "/posts/bivariate-map.html",
       "/posts/awesome-list.html",
       "/posts/R_workshop.html",
       "/posts/CV_update.html",
-      "/posts/leaflet_time_slider.html",
       "/posts/nascent_announcement.html"
     ]
   },
