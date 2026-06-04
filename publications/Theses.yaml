@@ -1,18 +1,18 @@
 - name: PhD
-  authors: Black, B.
   title: "Identifying effective area-based conservation strategies under uncertainty"
   journal: Doctoral thesis. ETH Zürich.
+  year: 2025
   doi: Not presently available
   bibtex: https://raw.githubusercontent.com/blenback/profi/main/bibtex/MSc_thesis.bib
 - name: MSc
-  authors: Black, B.
   title: "Assessing the ecological effectiveness of protected areas in Cambodia: a quasi-experimental counterfactual estimation of avoided deforestation."
   journal: Masters thesis. Central European University.
+  year: 2020
   doi: https://doi.org/10.13140/RG.2.2.28621.10727
   bibtex: https://raw.githubusercontent.com/blenback/profi/main/bibtex/MSc_thesis.bib
 - name: BSc
-  authors: Black, B.
   title: "Simulating the future potential of degraded Mangrove plots using field data from Kenya."
   journal: Bachelors thesis. Edinburgh Napier University.
+  year: 2014
   doi: https://doi.org/10.13140/RG.2.2.20232.49923
   bibtex: https://raw.githubusercontent.com/blenback/profi/main/bibtex/BSc_thesis.bib

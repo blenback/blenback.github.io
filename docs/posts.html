@@ -89,7 +89,7 @@ ul.task-list li input[type="checkbox"] {
     const options = {
       valueNames: ['listing-image','listing-title','listing-description','listing-categories','listing-date',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description"],
+      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -151,7 +151,7 @@ window.Quarto = {
 };
 </script>
 
-<link rel="alternate" type="application/rss+xml" title="Ben <span class='brand-2'>Black.</span>" href="posts.xml" data-external="1"></head>
+</head>
 
 <body class="nav-fixed fullcontent quarto-light">
 
@@ -241,56 +241,18 @@ window.Quarto = {
 
 
 
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-listing-file-modified-sort="1780592990162" data-listing-reading-time-sort="1" data-listing-word-count-sort="139">
-<div class="thumbnail"><a href="./posts/linkedin/2026-06-04-babelquarto-revealjs.html" class="no-external">
-
-<!-- img(9CEB782EFEE6)[progressive=false, height=, lazy=true]:listing:posts/linkedin/2026-06-04-babelquarto-revealjs.html -->
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/linkedin/2026-06-04-babelquarto-revealjs.html" class="no-external"></a>
-</h3>
-<div class="delink listing-description"><a href="./posts/linkedin/2026-06-04-babelquarto-revealjs.html" class="no-external">
-<!-- desc(5A0113B34292)[max=175]:posts/linkedin/2026-06-04-babelquarto-revealjs.html -->
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/linkedin/2026-06-04-babelquarto-revealjs.html" class="no-external">
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-listing-file-modified-sort="1780592990165" data-listing-reading-time-sort="1" data-listing-word-count-sort="188">
-<div class="thumbnail"><a href="./posts/linkedin/2026-06-04-quarto-presentation-templates.html" class="no-external">
-
-<!-- img(9CEB782EFEE6)[progressive=false, height=, lazy=true]:listing:posts/linkedin/2026-06-04-quarto-presentation-templates.html -->
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/linkedin/2026-06-04-quarto-presentation-templates.html" class="no-external"></a>
-</h3>
-<div class="delink listing-description"><a href="./posts/linkedin/2026-06-04-quarto-presentation-templates.html" class="no-external">
-<!-- desc(5A0113B34292)[max=175]:posts/linkedin/2026-06-04-quarto-presentation-templates.html -->
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/linkedin/2026-06-04-quarto-presentation-templates.html" class="no-external">
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-categories="UiUyQ1F1YXJ0byUyQ09wZW4lMjBzY2llbmNlJTJDUmVwcm9kdWNpYmxlJTIwcmVzZWFyY2g=" data-listing-date-sort="1780524000000" data-listing-file-modified-sort="1780592990160" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="295">
-<div class="thumbnail"><a href="./posts/2026-06-04-babelquarto-revealjs.html" class="no-external">
-
-<!-- img(9CEB782EFEE6)[progressive=false, height=, lazy=true]:listing:posts/2026-06-04-babelquarto-revealjs.html -->
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/2026-06-04-babelquarto-revealjs.html" class="no-external">Multilingual RevealJS presentations with babelquarto</a>
-</h3>
+<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
+<div class="list grid quarto-listing-cols-4">
+<div class="g-col-1" data-index="0" data-categories="UiUyQ1F1YXJ0byUyQ09wZW4lMjBzY2llbmNlJTJDUmVwcm9kdWNpYmxlJTIwcmVzZWFyY2g=" data-listing-date-sort="1780524000000" data-listing-file-modified-sort="1780601858316" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="295">
+<a href="./posts/2026-06-04-babelquarto-revealjs.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="./assets/babelquarto.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Multilingual RevealJS presentations with babelquarto
+</h5>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('Ug=='); return false;">R</div>
@@ -302,28 +264,27 @@ window.Quarto = {
 <div class="listing-category" onclick="window.quartoListingCategory('UmVwcm9kdWNpYmxlJTIwcmVzZWFyY2g='); return false;">Reproducible research</div>
 
 </div>
-<div class="delink listing-description"><a href="./posts/2026-06-04-babelquarto-revealjs.html" class="no-external">
-<!-- desc(5A0113B34292)[max=175]:posts/2026-06-04-babelquarto-revealjs.html -->
-</a></div>
+<div class="card-text listing-description delink">
+If you create Quarto presentations in more than one language, you know the problem: two <code>.qmd</code> files, two rendering passes, and a growing risk of the versions drifting apart…<code></code><code></code>
 </div>
-<div class="metadata">
-<a href="./posts/2026-06-04-babelquarto-revealjs.html" class="no-external">
+<div class="card-attribution card-text-small end">
 <div class="listing-date">
-Jun 4, 2026
-</div>
-</a>
+Jun 2026
 </div>
 </div>
-<div class="quarto-post image-right" data-index="3" data-categories="UiUyQ1F1YXJ0byUyQ1JlcHJvZHVjaWJsZSUyMHJlc2VhcmNoJTJDQXV0b21hdGlvbiUyQ09wZW4lMjBzY2llbmNl" data-listing-date-sort="1780524000000" data-listing-file-modified-sort="1780592990162" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="550">
-<div class="thumbnail"><a href="./posts/2026-06-04-quarto-presentation-templates.html" class="no-external">
-
-<img loading="lazy" src="./assets/dml-presentation-template.png" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/2026-06-04-quarto-presentation-templates.html" class="no-external">Diving into presentation templates with Quarto: RevealJS and PowerPoint</a>
-</h3>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="1" data-categories="UiUyQ1F1YXJ0byUyQ1JlcHJvZHVjaWJsZSUyMHJlc2VhcmNoJTJDQXV0b21hdGlvbiUyQ09wZW4lMjBzY2llbmNl" data-listing-date-sort="1780524000000" data-listing-file-modified-sort="1780592990162" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="550">
+<a href="./posts/2026-06-04-quarto-presentation-templates.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="./assets/dml-presentation-template.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Diving into presentation templates with Quarto: RevealJS and PowerPoint
+</h5>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('Ug=='); return false;">R</div>
@@ -337,28 +298,27 @@ Jun 4, 2026
 <div class="listing-category" onclick="window.quartoListingCategory('T3BlbiUyMHNjaWVuY2U='); return false;">Open science</div>
 
 </div>
-<div class="delink listing-description"><a href="./posts/2026-06-04-quarto-presentation-templates.html" class="no-external">
-<!-- desc(5A0113B34292)[max=175]:posts/2026-06-04-quarto-presentation-templates.html -->
-</a></div>
+<div class="card-text listing-description delink">
+If you give presentations in research settings, at some point someone will ask for ‘the slides as a PowerPoint’. This still happens more often than I expected — usually at…
 </div>
-<div class="metadata">
-<a href="./posts/2026-06-04-quarto-presentation-templates.html" class="no-external">
+<div class="card-attribution card-text-small end">
 <div class="listing-date">
-Jun 4, 2026
-</div>
-</a>
+Jun 2026
 </div>
 </div>
-<div class="quarto-post image-right" data-index="4" data-categories="YmlvZGl2ZXJzaXR5JTJDc3BhdGlhbCUyMHBsYW5uaW5nJTJDZGVjaXNpb24lMjBzdXBwb3J0" data-listing-date-sort="1777500000000" data-listing-file-modified-sort="1777540746664" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="195">
-<div class="thumbnail"><a href="./posts/valparCH-praxis-navigator.html" class="no-external">
-
-<img loading="lazy" src="./assets/praxisnavigator-en.gif" class="thumbnail-image" alt="Screenshot of the ValPar.CH Praxis Navigator">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/valparCH-praxis-navigator.html" class="no-external">From research to practice: The ValPar.CH Praxis Navigator</a>
-</h3>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="2" data-categories="YmlvZGl2ZXJzaXR5JTJDc3BhdGlhbCUyMHBsYW5uaW5nJTJDZGVjaXNpb24lMjBzdXBwb3J0" data-listing-date-sort="1777500000000" data-listing-file-modified-sort="1777540746664" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="195">
+<a href="./posts/valparCH-praxis-navigator.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="./assets/praxisnavigator-en.gif" class="thumbnail-image card-img" style="height: 150px;" alt="Screenshot of the ValPar.CH Praxis Navigator">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+From research to practice: The ValPar.CH Praxis Navigator
+</h5>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('YmlvZGl2ZXJzaXR5'); return false;">biodiversity</div>
@@ -368,28 +328,27 @@ Jun 4, 2026
 <div class="listing-category" onclick="window.quartoListingCategory('ZGVjaXNpb24lMjBzdXBwb3J0'); return false;">decision support</div>
 
 </div>
-<div class="delink listing-description"><a href="./posts/valparCH-praxis-navigator.html" class="no-external">
-<!-- desc(5A0113B34292)[max=175]:posts/valparCH-praxis-navigator.html -->
-</a></div>
+<div class="card-text listing-description delink">
+Every scientific project hopes to see its results used in practice and policy. In reality, bringing together the diverse outputs of large, interdisciplinary projects in an…
 </div>
-<div class="metadata">
-<a href="./posts/valparCH-praxis-navigator.html" class="no-external">
+<div class="card-attribution card-text-small end">
 <div class="listing-date">
-Apr 30, 2026
-</div>
-</a>
+Apr 2026
 </div>
 </div>
-<div class="quarto-post image-right" data-index="5" data-categories="amF2YXNjcmlwdCUyQ2QzJTJDZ2VvdGlmZiUyQ2RhdGEtdmlzdWFsaXphdGlvbiUyQ2NvbnNlcnZhdGlvbi1wbGFubmluZw==" data-listing-date-sort="1775426400000" data-listing-file-modified-sort="1780413426608" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="969">
-<div class="thumbnail"><a href="./posts/interactive-bivariate-map-post.html" class="no-external">
-
-<img loading="lazy" src="./assets/interative-bivar-map.png" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/interactive-bivariate-map-post.html" class="no-external">Building an interactive bi-variate map for exploring robustness of ecosystems services and biodiversity under future uncertainty</a>
-</h3>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="3" data-categories="amF2YXNjcmlwdCUyQ2QzJTJDZ2VvdGlmZiUyQ2RhdGEtdmlzdWFsaXphdGlvbiUyQ2NvbnNlcnZhdGlvbi1wbGFubmluZw==" data-listing-date-sort="1775426400000" data-listing-file-modified-sort="1780413426608" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="969">
+<a href="./posts/interactive-bivariate-map-post.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="./assets/interative-bivar-map.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Building an interactive bi-variate map for exploring robustness of ecosystems services and biodiversity under future uncertainty
+</h5>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('amF2YXNjcmlwdA=='); return false;">javascript</div>
@@ -403,28 +362,27 @@ Apr 30, 2026
 <div class="listing-category" onclick="window.quartoListingCategory('Y29uc2VydmF0aW9uLXBsYW5uaW5n'); return false;">conservation-planning</div>
 
 </div>
-<div class="delink listing-description"><a href="./posts/interactive-bivariate-map-post.html" class="no-external">
+<div class="card-text listing-description delink">
 <p>A short write-up on developing a browser-based map for exploring the robustness of ecosystem services and biodiversity under uncertain futures.</p>
-</a></div>
 </div>
-<div class="metadata">
-<a href="./posts/interactive-bivariate-map-post.html" class="no-external">
+<div class="card-attribution card-text-small end">
 <div class="listing-date">
-Apr 6, 2026
-</div>
-</a>
+Apr 2026
 </div>
 </div>
-<div class="quarto-post image-right" data-index="6" data-categories="dGhlc2lzJTJDUGhEJTJDcmVzZWFyY2g=" data-listing-date-sort="1749160800000" data-listing-file-modified-sort="1780558532827" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="160">
-<div class="thumbnail"><a href="./posts/thesis_defence.html" class="no-external">
-
-<img loading="lazy" src="./assets/defence1.jpg" class="thumbnail-image" alt="Photo from my PhD thesis defence">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/thesis_defence.html" class="no-external">I successfully defended my PhD thesis!</a>
-</h3>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="4" data-categories="dGhlc2lzJTJDUGhEJTJDcmVzZWFyY2g=" data-listing-date-sort="1749160800000" data-listing-file-modified-sort="1780558532827" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="160">
+<a href="./posts/thesis_defence.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="./assets/defence1.jpg" class="thumbnail-image card-img" style="height: 150px;" alt="Photo from my PhD thesis defence">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+I successfully defended my PhD thesis!
+</h5>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('dGhlc2lz'); return false;">thesis</div>
@@ -434,28 +392,27 @@ Apr 6, 2026
 <div class="listing-category" onclick="window.quartoListingCategory('cmVzZWFyY2g='); return false;">research</div>
 
 </div>
-<div class="delink listing-description"><a href="./posts/thesis_defence.html" class="no-external">
-<!-- desc(5A0113B34292)[max=175]:posts/thesis_defence.html -->
-</a></div>
+<div class="card-text listing-description delink">
+On the 5th of June 2025, I successfully defended my PhD thesis titled “Identifying effective area-based conservation strategies under uncertainty”. The defence was well…
 </div>
-<div class="metadata">
-<a href="./posts/thesis_defence.html" class="no-external">
+<div class="card-attribution card-text-small end">
 <div class="listing-date">
-Jun 6, 2025
-</div>
-</a>
+Jun 2025
 </div>
 </div>
-<div class="quarto-post image-right" data-index="7" data-categories="UiUyQ1F1YXJ0byUyQ1JlcHJvZHVjaWJsZSUyMHJlc2VhcmNoJTJDdGhlc2lzJTJDdGVtcGxhdGUlMkNMYVRlWA==" data-listing-date-sort="1745359200000" data-listing-file-modified-sort="1780558532810" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="401">
-<div class="thumbnail"><a href="./posts/PhD_template.html" class="no-external">
-
-<img loading="lazy" src="./assets/titlepage.png" class="thumbnail-image" alt="Title page of my Quarto PhD thesis template">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/PhD_template.html" class="no-external">Creating my own PhD thesis template with Quarto</a>
-</h3>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="5" data-categories="UiUyQ1F1YXJ0byUyQ1JlcHJvZHVjaWJsZSUyMHJlc2VhcmNoJTJDdGhlc2lzJTJDdGVtcGxhdGUlMkNMYVRlWA==" data-listing-date-sort="1745359200000" data-listing-file-modified-sort="1780558532810" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="401">
+<a href="./posts/PhD_template.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="./assets/titlepage.png" class="thumbnail-image card-img" style="height: 150px;" alt="Title page of my Quarto PhD thesis template">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Creating my own PhD thesis template with Quarto
+</h5>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('Ug=='); return false;">R</div>
@@ -471,28 +428,27 @@ Jun 6, 2025
 <div class="listing-category" onclick="window.quartoListingCategory('TGFUZVg='); return false;">LaTeX</div>
 
 </div>
-<div class="delink listing-description"><a href="./posts/PhD_template.html" class="no-external">
-<!-- desc(5A0113B34292)[max=175]:posts/PhD_template.html -->
-</a></div>
+<div class="card-text listing-description delink">
+Over the last two years I have really started to use Quarto for everything in my academic work from writing manuscripts, websites for research projects, data dashboards for…
 </div>
-<div class="metadata">
-<a href="./posts/PhD_template.html" class="no-external">
+<div class="card-attribution card-text-small end">
 <div class="listing-date">
-Apr 23, 2025
-</div>
-</a>
+Apr 2025
 </div>
 </div>
-<div class="quarto-post image-right" data-index="8" data-categories="UiUyQ0dpdGh1YiUyQ0F3ZXNvbWUlMjBMaXN0JTJDUmVzb3VyY2VzJTJDQ29udGludW91cyUyMEludGVncmF0aW9u" data-listing-date-sort="1731538800000" data-listing-file-modified-sort="1780558532810" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="280">
-<div class="thumbnail"><a href="./posts/awesome-list.html" class="no-external">
-
-<img loading="lazy" src="./assets/abm-workshop.jpg" class="thumbnail-image" alt="Photo from the agent-based modelling workshop that sparked the awesome list">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/awesome-list.html" class="no-external">Starting an awesome list for scientific resources</a>
-</h3>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="6" data-categories="UiUyQ0dpdGh1YiUyQ0F3ZXNvbWUlMjBMaXN0JTJDUmVzb3VyY2VzJTJDQ29udGludW91cyUyMEludGVncmF0aW9u" data-listing-date-sort="1731538800000" data-listing-file-modified-sort="1780558532810" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="280">
+<a href="./posts/awesome-list.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="./assets/abm-workshop.jpg" class="thumbnail-image card-img" style="height: 150px;" alt="Photo from the agent-based modelling workshop that sparked the awesome list">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Starting an awesome list for scientific resources
+</h5>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('Ug=='); return false;">R</div>
@@ -506,28 +462,27 @@ Apr 23, 2025
 <div class="listing-category" onclick="window.quartoListingCategory('Q29udGludW91cyUyMEludGVncmF0aW9u'); return false;">Continuous Integration</div>
 
 </div>
-<div class="delink listing-description"><a href="./posts/awesome-list.html" class="no-external">
-<!-- desc(5A0113B34292)[max=175]:posts/awesome-list.html -->
-</a></div>
+<div class="card-text listing-description delink">
+In October 2024 I attended a workshop on speeding up the development of useful agent-based land use models. This was a great opportunity for me to engage in a research field…
 </div>
-<div class="metadata">
-<a href="./posts/awesome-list.html" class="no-external">
+<div class="card-attribution card-text-small end">
 <div class="listing-date">
-Nov 14, 2024
-</div>
-</a>
+Nov 2024
 </div>
 </div>
-<div class="quarto-post image-right" data-index="9" data-categories="UiUyQ1F1YXJ0byUyQ1JlcHJvZHVjaWJsZSUyMHJlc2VhcmNoJTJDRkFJUiUyQ0xhbmRzY2FwZSUyMGNvbmZlcmVuY2UlMkN3b3Jrc2hvcA==" data-listing-date-sort="1714514400000" data-listing-file-modified-sort="1780558532810" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="247">
-<div class="thumbnail"><a href="./posts/R_workshop.html" class="no-external">
-
-<img loading="lazy" src="./assets/workshop_abstract.png" class="thumbnail-image" alt="Graphical abstract for reproducible research workshop">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/R_workshop.html" class="no-external">Upcoming workshop: Reproducible research with R and Quarto</a>
-</h3>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="7" data-categories="UiUyQ1F1YXJ0byUyQ1JlcHJvZHVjaWJsZSUyMHJlc2VhcmNoJTJDRkFJUiUyQ0xhbmRzY2FwZSUyMGNvbmZlcmVuY2UlMkN3b3Jrc2hvcA==" data-listing-date-sort="1714514400000" data-listing-file-modified-sort="1780558532810" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="247">
+<a href="./posts/R_workshop.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="./assets/workshop_abstract.png" class="thumbnail-image card-img" style="height: 150px;" alt="Graphical abstract for reproducible research workshop">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Upcoming workshop: Reproducible research with R and Quarto
+</h5>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('Ug=='); return false;">R</div>
@@ -543,28 +498,27 @@ Nov 14, 2024
 <div class="listing-category" onclick="window.quartoListingCategory('d29ya3Nob3A='); return false;">workshop</div>
 
 </div>
-<div class="delink listing-description"><a href="./posts/R_workshop.html" class="no-external">
-<!-- desc(5A0113B34292)[max=175]:posts/R_workshop.html -->
-</a></div>
+<div class="card-text listing-description delink">
+I have been a big fan of R for everything research related for several years and Rstudio has been my go-to IDE all the way from being a complete beginner to my current level…
 </div>
-<div class="metadata">
-<a href="./posts/R_workshop.html" class="no-external">
+<div class="card-attribution card-text-small end">
 <div class="listing-date">
-May 1, 2024
-</div>
-</a>
+May 2024
 </div>
 </div>
-<div class="quarto-post image-right" data-index="10" data-categories="UiUyQ01hcmtkb3duJTJDQXV0b21hdGlvbiUyQ0NWJTJDUmVzdW1l" data-listing-date-sort="1706742000000" data-listing-file-modified-sort="1780558532807" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="385">
-<div class="thumbnail"><a href="./posts/CV_update.html" class="no-external">
-
-<img loading="lazy" src="./assets/cv_update.jpg" class="thumbnail-image" alt="Screenshot of my automatically generated CV">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/CV_update.html" class="no-external">Automating boring tasks pt.&nbsp;1: Updating my CV</a>
-</h3>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="8" data-categories="UiUyQ01hcmtkb3duJTJDQXV0b21hdGlvbiUyQ0NWJTJDUmVzdW1l" data-listing-date-sort="1706742000000" data-listing-file-modified-sort="1780558532807" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="385">
+<a href="./posts/CV_update.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="./assets/cv_update.jpg" class="thumbnail-image card-img" style="height: 150px;" alt="Screenshot of my automatically generated CV">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Automating boring tasks pt.&nbsp;1: Updating my CV
+</h5>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('Ug=='); return false;">R</div>
@@ -578,28 +532,27 @@ May 1, 2024
 <div class="listing-category" onclick="window.quartoListingCategory('UmVzdW1l'); return false;">Resume</div>
 
 </div>
-<div class="delink listing-description"><a href="./posts/CV_update.html" class="no-external">
-<!-- desc(5A0113B34292)[max=175]:posts/CV_update.html -->
-</a></div>
+<div class="card-text listing-description delink">
+If you are like me, you only ever find yourself updating your CV when you are actually unemployed and looking for a new job. This is also a task I find especially…
 </div>
-<div class="metadata">
-<a href="./posts/CV_update.html" class="no-external">
+<div class="card-attribution card-text-small end">
 <div class="listing-date">
-Feb 1, 2024
-</div>
-</a>
+Feb 2024
 </div>
 </div>
-<div class="quarto-post image-right" data-index="11" data-categories="RnV0dXJlJTIwbGFuZHNjYXBlJTIwc2NlbmFyaW9zJTJDRWNvc3lzdGVtJTIwU2VydmljZXMlMkNCaW9kaXZlcnNpdHklMkNQZXJ1JTJDU3dpc3NSRSUyQ1Byb2plY3QlMkNOQVNDRU5ULVBlcnU=" data-listing-date-sort="1701298800000" data-listing-file-modified-sort="1780558532825" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="172">
-<div class="thumbnail"><a href="./posts/nascent_announcement.html" class="no-external">
-
-<img loading="lazy" src="./assets/nascent_website.png" class="thumbnail-image" alt="Screenshot of the NASCENT-Peru project website">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/nascent_announcement.html" class="no-external">New research project: NASCENT-Peru</a>
-</h3>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="9" data-categories="RnV0dXJlJTIwbGFuZHNjYXBlJTIwc2NlbmFyaW9zJTJDRWNvc3lzdGVtJTIwU2VydmljZXMlMkNCaW9kaXZlcnNpdHklMkNQZXJ1JTJDU3dpc3NSRSUyQ1Byb2plY3QlMkNOQVNDRU5ULVBlcnU=" data-listing-date-sort="1701298800000" data-listing-file-modified-sort="1780558532825" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="172">
+<a href="./posts/nascent_announcement.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="./assets/nascent_website.png" class="thumbnail-image card-img" style="height: 150px;" alt="Screenshot of the NASCENT-Peru project website">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+New research project: NASCENT-Peru
+</h5>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('RnV0dXJlJTIwbGFuZHNjYXBlJTIwc2NlbmFyaW9z'); return false;">Future landscape scenarios</div>
@@ -617,17 +570,16 @@ Feb 1, 2024
 <div class="listing-category" onclick="window.quartoListingCategory('TkFTQ0VOVC1QZXJ1'); return false;">NASCENT-Peru</div>
 
 </div>
-<div class="delink listing-description"><a href="./posts/nascent_announcement.html" class="no-external">
-<!-- desc(5A0113B34292)[max=175]:posts/nascent_announcement.html -->
-</a></div>
+<div class="card-text listing-description delink">
+I am excited to be able to introduce a new research project that I will be working on for the next two years: NASCENT-Peru.
 </div>
-<div class="metadata">
-<a href="./posts/nascent_announcement.html" class="no-external">
+<div class="card-attribution card-text-small end">
 <div class="listing-date">
-Nov 30, 2023
+Nov 2023
 </div>
-</a>
 </div>
+</div>
+</div></a>
 </div>
 </div>
 <div class="listing-no-matching d-none">No matching items</div>

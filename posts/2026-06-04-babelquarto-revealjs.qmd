@@ -3,6 +3,7 @@ title: "Multilingual RevealJS presentations with babelquarto"
 date: "2026-06-04"
 categories: [R, Quarto, Open science, Reproducible research]
 draft: false
+image: ../assets/babelquarto.png
 ---
 
 If you create Quarto presentations in more than one language, you know the problem: two `.qmd` files, two rendering passes, and a growing risk of the versions drifting apart as you iterate. The [babelquarto](https://docs.ropensci.org/babelquarto/) package from rOpenSci already solves this for books and websites — it handles per-language rendering, a file-suffix convention (e.g. `index.qmd` and `index.de.qmd`), and cross-language navigation links from a single project. RevealJS presentations, however, were not supported.

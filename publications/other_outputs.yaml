@@ -1,4 +1,10 @@
 
+
+- title: Bern Landscape Change Explorer
+  path: https://bern-landscape-change-explorer.ethz.ch/
+  image: assets/bern-explorer.png
+  description: "Platform for exploring spatially explicit scenarios of land use change, biodiversity and ecosystem services to support conservation planning in the Canton of Bern."
+  categories: [Interactive tool]
 - title: NASCENT-Peru Project Website
   path: https://nascent-peru.github.io/
   image: assets/nascent_website.png

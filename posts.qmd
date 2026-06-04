@@ -4,10 +4,10 @@ pagetitle: "Posts - Ben Black"
 subtitle: "A place for me to share updates and insights into my research but also little tips and tricks I find interesting in using R for scientific research"   
 
 listing: 
-  contents: posts 
-  type: default 
-  sort: "date desc" 
-  categories: false 
-  feed: true
+  contents: posts/*.qmd
+  sort: "date desc"
+  type: grid
+  grid-columns: 4
+  date-format: "MMM YYYY"
   fields: [image, title, description, categories, date]
 ---

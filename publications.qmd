@@ -26,22 +26,22 @@ listing:
     - publications/other_outputs.yaml
     type: grid
     grid-columns: 3
-    fields: [image, title, categories]
+    fields: [image, title, description, categories]
 ---
 
-### Journal Articles 
+## Journal Articles 
 ::: {#Journal-articles}
 :::
 
-### Theses
+## Theses
 ::: {#Theses}
 :::
 
-### Student theses supervised
+## Student theses supervised
 ::: {#Student-theses}
 :::
 
-### Beyond the papers
+## Beyond the papers
 ::: {#Other-content}
 :::
 
