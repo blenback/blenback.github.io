@@ -3,6 +3,7 @@ title: "Diving into presentation templates with Quarto: RevealJS and PowerPoint"
 date: "2026-06-04"
 categories: [R, Quarto, Reproducible research, Automation, Open science]
 draft: false
+image: ../assets/dml-presentation-template.png
 ---
 
 If you give presentations in research settings, at some point someone will ask for 'the slides as a PowerPoint'. This still happens more often than I expected — usually at conferences where organisers consolidate files onto a central laptop, or where participants want to annotate a local copy. The alternative, a self-hosted HTML deck, is much better for online talks, sharing a live URL, and embedding interactive content. So the format question ends up depending on the audience, and the obvious solution — maintaining two separate files for the same content — is exactly the kind of friction that quietly eats time.

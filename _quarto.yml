@@ -1,9 +1,9 @@
 project:
   type: website
   output-dir: docs
-  #pre-render: 
-  #  - fetch-assets.R
-  #  - create_presentation_qmds.R
+  pre-render: 
+    - fetch-assets.R
+    - create_presentation_qmds.R
   resources:
   - assets/quarto-eth-phd-thesis.pdf
 

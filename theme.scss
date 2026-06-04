@@ -568,8 +568,11 @@ ul.no-bullets > li i { color: var(--bb-ink-soft); }
   font-family: var(--bb-font-sans);
   padding: 70px 0 36px; margin-top: 60px;
   position: relative; z-index: 1;
-  /* at body level, width: auto = 100% of viewport content width (no scrollbar overshoot) */
-  width: 100%;
+  /* Viewport bleed: overrides any grid-container constraint on article pages.
+     On full-width pages 100% == 100vw so margin-left == 0; on narrower containers
+     it shifts the footer left to the true viewport edge. */
+  width: 100vw;
+  margin-left: calc((100% - 100vw) / 2);
   box-sizing: border-box;
 }
 .bb-footer .bb-footer-wrap {
@@ -594,6 +597,36 @@ ul.no-bullets > li i { color: var(--bb-ink-soft); }
 @media (max-width: 760px) {
   .bb-footer .bb-footer-wrap { grid-template-columns: 1fr; }
   .bb-footer .bb-ft-cols { justify-content: flex-start; gap: 40px; }
+}
+
+/* ==========================================================
+   EMBED CONTAINER  — responsive iframes (presentations)
+   Wraps <iframe> in a 16:9 padding-box so the iframe fills
+   the available body width regardless of hardcoded dimensions.
+   ========================================================== */
+.embed-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+  overflow: hidden;
+  margin: 1.5rem 0;
+  border-radius: var(--bb-radius);
+  box-shadow: var(--bb-shadow-card);
+}
+.embed-container p,
+.embed-container p[align] {
+  position: absolute !important;
+  inset: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.embed-container iframe {
+  position: absolute;
+  inset: 0;
+  width: 100% !important;
+  height: 100% !important;
+  border: 0;
 }
 
 /* ==========================================================
