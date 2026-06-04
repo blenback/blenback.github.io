@@ -10,7 +10,95 @@
 <atom:link href="https://blenback.github.io/posts.xml" rel="self" type="application/rss+xml"/>
 <description>Personal website for Ben Black</description>
 <generator>quarto-1.9.38</generator>
-<lastBuildDate>Thu, 30 Apr 2026 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Thu, 04 Jun 2026 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Multilingual RevealJS presentations with babelquarto</title>
+  <link>https://blenback.github.io/posts/2026-06-04-babelquarto-revealjs.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>If you create Quarto presentations in more than one language, you know the problem: two <code>.qmd</code> files, two rendering passes, and a growing risk of the versions drifting apart as you iterate. The <a href="https://docs.ropensci.org/babelquarto/">babelquarto</a> package from rOpenSci already solves this for books and websites — it handles per-language rendering, a file-suffix convention (e.g.&nbsp;<code>index.qmd</code> and <code>index.de.qmd</code>), and cross-language navigation links from a single project. RevealJS presentations, however, were not supported.</p>
+<p>I use babelquarto on the <a href="https://damifll.github.io/">DML group site</a> to maintain parallel English and German content, and the same need came up for slide decks. Rather than maintain separate files or patch around the gap, I decided to extend the package.</p>
+<p>The contribution, submitted as <a href="https://github.com/ropensci-review-tools/babelquarto/pull/128">PR #128</a>, adds two new functions. <code>quarto_multilingual_presentation()</code> scaffolds a new multilingual presentation project using the same file-suffix convention the package already uses for websites. <code>render_presentation()</code> then renders the project and injects a language-switch pill into every slide.</p>
+<p>Under the hood, the implementation delegates to the existing <code>render(type = "website")</code> pipeline rather than duplicating rendering logic — presentations are treated as website-format projects rendered with RevealJS. The main new work is in HTML post-processing: a dispatcher identifies RevealJS pages via <code>is_revealjs()</code> and injects the language pill directly into the <code>&lt;body&gt;</code> element, outside the <code>.reveal</code> container. Placing it there is necessary because the <code>.reveal</code> div applies CSS transforms that break fixed positioning, which would cause the pill to disappear or shift unpredictably. Non-RevealJS pages continue through the existing <code>add_links()</code> path unchanged. The pill label is drawn from <code>babelquarto.languagecodes.text</code> in <code>_quarto.yml</code>, falling back to the uppercase language code — consistent with how babelquarto already handles language naming across the rest of the package.</p>
+<p>The PR is open for review. If you work with multilingual Quarto presentations and want to test it or leave feedback, it is at <a href="https://github.com/ropensci-review-tools/babelquarto/pull/128">github.com/ropensci-review-tools/babelquarto/pull/128</a>.</p>
+
+
+
+ ]]></description>
+  <category>R</category>
+  <category>Quarto</category>
+  <category>Open science</category>
+  <category>Reproducible research</category>
+  <guid>https://blenback.github.io/posts/2026-06-04-babelquarto-revealjs.html</guid>
+  <pubDate>Thu, 04 Jun 2026 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Diving into presentation templates with Quarto: RevealJS and PowerPoint</title>
+  <link>https://blenback.github.io/posts/2026-06-04-quarto-presentation-templates.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>If you give presentations in research settings, at some point someone will ask for ‘the slides as a PowerPoint’. This still happens more often than I expected — usually at conferences where organisers consolidate files onto a central laptop, or where participants want to annotate a local copy. The alternative, a self-hosted HTML deck, is much better for online talks, sharing a live URL, and embedding interactive content. So the format question ends up depending on the audience, and the obvious solution — maintaining two separate files for the same content — is exactly the kind of friction that quietly eats time.</p>
+<p>Quarto handles this by letting you declare multiple output formats in the same document. A single <code>quarto render</code> produces all of them:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb1-1"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">format</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">:</span></span>
+<span id="cb1-2"><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">  </span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">dml-revealjs-revealjs</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">:</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;"> default</span></span>
+<span id="cb1-3"><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">  </span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">pptx</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">:</span></span>
+<span id="cb1-4"><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">    </span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">reference-doc</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">:</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;"> dml-template-powerpoint.potx</span></span></code></pre></div></div>
+<p>The RevealJS output gets the full HTML treatment — browser navigation, interactive components, speaker notes in a separate view. The PPTX output picks up branding from a <code>.potx</code> PowerPoint template file pointed to by <code>reference-doc</code>. Both outputs render from the same markdown source, sharing all the slide content. This is the setup I now use for DML group presentations.</p>
+<p>The RevealJS side is a Quarto extension — a format called <code>dml-revealjs</code>, installed with <code>quarto use template</code>. Extensions bundle things that would otherwise need repeating in every project’s YAML. The <code>_extension.yml</code> sets sensible defaults (1280×720, slide numbers, no transition animations, no navigation menu), registers a brand file, and attaches two hooks: a custom title slide partial and a script injected after the body.</p>
+<p>The title slide is a Pandoc template partial (<code>title-slide.html</code>) that replaces Quarto’s default. It uses Pandoc’s own template syntax — <code>$title$</code>, <code>$for(by-author)$</code> — to build a layout with a working group eyebrow line, a hero panel for the title and author block, a logo mark, and a full-width footer image at the bottom. The result is a distinct opening slide without any per-presentation configuration.</p>
+<p>Colours and fonts are declared in a <code>_brand.yml</code> file using Quarto’s brand system, introduced in version 1.6. Defining them there means the same tokens cascade through callout blocks, code backgrounds, link colours, and table borders automatically. The custom SCSS then maps those brand tokens to RevealJS’s own theme variables, so updating a colour in <code>_brand.yml</code> updates the whole theme.</p>
+<p>The interactive diagrams are the part I find most useful in talks. Two JavaScript components — a clickable ring diagram for the three service pillars and a tiered service overview — are bundled as a script injected via <code>include-after-body</code>. They mount on any slide that has the relevant <code>data-</code> attribute, so you drop a single attribute onto a <code>&lt;div&gt;</code> in the markdown and the full interactive component appears. Both hook into Reveal’s <code>slidechanged</code> event to reset their state when you navigate away, which keeps them behaving cleanly if you move back through the deck.</p>
+<p>The PPTX side is simpler: a <code>.potx</code> file referenced with <code>reference-doc</code>. Quarto uses it to carry over master slide styles, fonts, and colour themes. The mapping from Quarto’s slide elements to PowerPoint slide layouts is imperfect — complex RevealJS column layouts don’t translate directly — but for the typical mix of title slides, bullet points, two-column content, and code blocks it produces something consistent and on-brand rather than the Quarto default.</p>
+<p>Both templates are in the <a href="https://github.com/iat-dml/templates">DML templates repository</a>, with installation instructions in the README.</p>
+
+
+
+ ]]></description>
+  <category>R</category>
+  <category>Quarto</category>
+  <category>Reproducible research</category>
+  <category>Automation</category>
+  <category>Open science</category>
+  <guid>https://blenback.github.io/posts/2026-06-04-quarto-presentation-templates.html</guid>
+  <pubDate>Thu, 04 Jun 2026 00:00:00 GMT</pubDate>
+  <media:content url="https://blenback.github.io/assets/dml-presentation-template.png" medium="image" type="image/png" height="80" width="144"/>
+</item>
 <item>
   <title>From research to practice: The ValPar.CH Praxis Navigator</title>
   <link>https://blenback.github.io/posts/valparCH-praxis-navigator.html</link>

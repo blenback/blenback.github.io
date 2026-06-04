@@ -6,16 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Ben Black">
-<meta name="author" content="Antoine Adde">
-<meta name="author" content="Nathan Külling">
-<meta name="author" content="Adrienne Grêt-Regamey">
-<meta name="author" content="Antoine Guisan">
-<meta name="author" content="Anthony Lehmann">
-<meta name="dcterms.date" content="2022-07-02">
-<meta name="description" content="11th International Environmental Modelling and Software Society conference.">
+<meta name="dcterms.date" content="2026-06-04">
 
-<title>ValPar.CH: Integrating land use change, Ecosystem Service and Biodiversity modelling to simulate pathways for a functioning Ecological Infrastructure for Switzerland. – Ben Black.</title>
+<title>Multilingual RevealJS presentations with babelquarto – Ben Black.</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -161,40 +154,24 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">ValPar.CH: Integrating land use change, Ecosystem Service and Biodiversity modelling to simulate pathways for a functioning Ecological Infrastructure for Switzerland.</h1>
+<h1 class="title">Multilingual RevealJS presentations with babelquarto</h1>
   <div class="quarto-categories">
-    <div class="quarto-category">ValPar.CH</div>
-    <div class="quarto-category">Ecosystem service modelling</div>
-    <div class="quarto-category">Land use change modelling</div>
-    <div class="quarto-category">Species distribution modelling</div>
+    <div class="quarto-category">R</div>
+    <div class="quarto-category">Quarto</div>
+    <div class="quarto-category">Open science</div>
+    <div class="quarto-category">Reproducible research</div>
   </div>
   </div>
 
-<div>
-  <div class="description">
-    11th International Environmental Modelling and Software Society conference.
-  </div>
-</div>
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Authors</div>
-    <div class="quarto-title-meta-contents">
-             <p>Ben Black </p>
-             <p>Antoine Adde </p>
-             <p>Nathan Külling </p>
-             <p>Adrienne Grêt-Regamey </p>
-             <p>Antoine Guisan </p>
-             <p>Anthony Lehmann </p>
-          </div>
-  </div>
     
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">July 2, 2022</p>
+      <p class="date">June 4, 2026</p>
     </div>
   </div>
   
@@ -206,30 +183,15 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>These are the slides iEMSs_ValPar_pres.pdf for a presentation I gave on the integration of different modelling approaches within the <a href="https://valpar.ch/index_en.php?page=home_en">ValPar.CH</a> project at the 11th International Environmental Modelling and Software Society (IEMSs) 2022 conference. The abstract is available <a href="http://dx.doi.org/10.13140/RG.2.2.20111.66720">here.</a></p>
-<div class="embed-container">
-  <p align="center"><iframe src="../assets/2022_07_01_IEMSs_ValParCH_pres_iEMSs_ValPar_pres.pdf" style="border: 0.5px"></iframe>
-</p></div>
+<p>If you create Quarto presentations in more than one language, you know the problem: two <code>.qmd</code> files, two rendering passes, and a growing risk of the versions drifting apart as you iterate. The <a href="https://docs.ropensci.org/babelquarto/">babelquarto</a> package from rOpenSci already solves this for books and websites — it handles per-language rendering, a file-suffix convention (e.g.&nbsp;<code>index.qmd</code> and <code>index.de.qmd</code>), and cross-language navigation links from a single project. RevealJS presentations, however, were not supported.</p>
+<p>I use babelquarto on the <a href="https://damifll.github.io/">DML group site</a> to maintain parallel English and German content, and the same need came up for slide decks. Rather than maintain separate files or patch around the gap, I decided to extend the package.</p>
+<p>The contribution, submitted as <a href="https://github.com/ropensci-review-tools/babelquarto/pull/128">PR #128</a>, adds two new functions. <code>quarto_multilingual_presentation()</code> scaffolds a new multilingual presentation project using the same file-suffix convention the package already uses for websites. <code>render_presentation()</code> then renders the project and injects a language-switch pill into every slide.</p>
+<p>Under the hood, the implementation delegates to the existing <code>render(type = "website")</code> pipeline rather than duplicating rendering logic — presentations are treated as website-format projects rendered with RevealJS. The main new work is in HTML post-processing: a dispatcher identifies RevealJS pages via <code>is_revealjs()</code> and injects the language pill directly into the <code>&lt;body&gt;</code> element, outside the <code>.reveal</code> container. Placing it there is necessary because the <code>.reveal</code> div applies CSS transforms that break fixed positioning, which would cause the pill to disappear or shift unpredictably. Non-RevealJS pages continue through the existing <code>add_links()</code> path unchanged. The pill label is drawn from <code>babelquarto.languagecodes.text</code> in <code>_quarto.yml</code>, falling back to the uppercase language code — consistent with how babelquarto already handles language naming across the rest of the package.</p>
+<p>The PR is open for review. If you work with multilingual Quarto presentations and want to test it or leave feedback, it is at <a href="https://github.com/ropensci-review-tools/babelquarto/pull/128">github.com/ropensci-review-tools/babelquarto/pull/128</a>.</p>
 
 
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{black2022,
-  author = {Black, Ben and Black, Ben and Adde, Antoine and Külling,
-    Nathan and Grêt-Regamey, Adrienne and Guisan, Antoine and Lehmann,
-    Anthony},
-  title = {ValPar.CH: {Integrating} Land Use Change, {Ecosystem}
-    {Service} and {Biodiversity} Modelling to Simulate Pathways for a
-    Functioning {Ecological} {Infrastructure} for {Switzerland.}},
-  date = {2022-07-02},
-  url = {http://dx.doi.org/10.13140/RG.2.2.20111.66720},
-  langid = {en}
-}
-</code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-black2022" class="csl-entry quarto-appendix-citeas" role="listitem">
-Black, Ben, Ben Black, Antoine Adde, et al. 2022. <span>“ValPar.CH:
-Integrating Land Use Change, Ecosystem Service and Biodiversity
-Modelling to Simulate Pathways for a Functioning Ecological
-Infrastructure for Switzerland.”</span> July 2. <a href="http://dx.doi.org/10.13140/RG.2.2.20111.66720">http://dx.doi.org/10.13140/RG.2.2.20111.66720</a>.
-</div></div></section></div></main> <!-- /main -->
+</main> <!-- /main -->
 <!-- nav-scroll.html — add to _quarto.yml under format.html.include-after-body
      Makes the navbar transparent over the homepage hero and solid on scroll.
      On pages WITHOUT a hero (.bb-hero) the navbar is always solid. -->
