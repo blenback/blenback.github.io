@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.37">
+<meta name="generator" content="quarto-1.9.38">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -39,14 +39,14 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-3680a2f5c362e71a82e33059ebe61075.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-a7bb907943a07d482dd586446b6c690a.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-3680a2f5c362e71a82e33059ebe61075.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-c0afc63e9a80b9723b8dcfef7e97a44b.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-d012fd002b147bbe3fd55e9dd79bfc21.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-c0afc63e9a80b9723b8dcfef7e97a44b.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-49c7e8be8e1c15b28b0d17452380d61a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-d76bfa8e71ba8aba5b7f96369e0419c5.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-49c7e8be8e1c15b28b0d17452380d61a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-60afb8a3ff6f55314bdc248c60bb76d6.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-d0fb1cc59668a74df5115b571048978c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-60afb8a3ff6f55314bdc248c60bb76d6.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
 <link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
@@ -77,12 +77,19 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 <!-- header.html — add to _quarto.yml under format.html.include-in-header
+
      Loads Satoshi (Fontshare) + Spectral (Google) + JetBrains Mono. -->
+
 <link rel="preconnect" href="https://api.fontshare.com">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
+
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+
 <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700,900&amp;display=swap" rel="stylesheet">
+
 <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;0,600;1,400;1,500&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+
 
 
 </head>
@@ -207,58 +214,111 @@ ul.task-list li input[type="checkbox"] {
 
 </main> <!-- /main -->
 <!-- nav-scroll.html — add to _quarto.yml under format.html.include-after-body
+
      Makes the navbar transparent over the homepage hero and solid on scroll.
+
      On pages WITHOUT a hero (.bb-hero) the navbar is always solid. -->
+
 <script>
+
   (function () {
+
     function init() {
+
       var navbar = document.querySelector('.navbar');
+
       if (!navbar) return;
+
       var hasHero = !!document.querySelector('.bb-hero');
+
       function update() {
+
         var solid = !hasHero || window.scrollY > 40;
+
         navbar.classList.toggle('navbar-solid', solid);
+
       }
+
       update();
+
       window.addEventListener('scroll', update, { passive: true });
+
       window.addEventListener('resize', update, { passive: true });
+
     }
+
     if (document.readyState !== 'loading') init();
+
     else document.addEventListener('DOMContentLoaded', init);
+
   })();
+
 </script>
+
 <!-- bb-footer.html — add to _quarto.yml under format.html.include-after-body
+
      (AFTER nav-scroll.html). Replaces Quarto's default page-footer, which the
+
      theme hides. Edit the links/text to taste. -->
+
 <footer class="bb-footer">
+
   <div class="bb-footer-wrap">
+
     <div>
+
       <h3>Let's talk.</h3>
+
       <p class="bb-ft-sub">Open to collaboration on spatial modelling, scientific visualisation and reproducible research.</p>
+
       <a class="bb-ft-mail" href="mailto:benjaminsamuel.black@zalf.de">benjaminsamuel.black@zalf.de</a>
+
     </div>
+
     <div class="bb-ft-cols">
+
       <div class="bb-ft-col">
+
         <h4>Site</h4>
+
         <a href="index.html#publications">Publications</a>
+
         <a href="index.html#presentations">Presentations</a>
+
         <a href="index.html#posts">Posts</a>
+
         <a href="https://blenback.github.io/curriculum-vitae/">CV</a>
+
       </div>
+
       <div class="bb-ft-col">
+
         <h4>Elsewhere</h4>
+
         <a href="https://github.com/blenback">GitHub</a>
+
         <a href="https://scholar.google.com/citations?hl=en&amp;user=h00y-m4AAAAJ">Google Scholar</a>
+
         <a href="https://orcid.org/0000-0002-8113-2114">ORCID</a>
+
         <a href="https://www.linkedin.com/in/ben-black-9889a1150/">LinkedIn</a>
+
       </div>
+
     </div>
+
   </div>
+
   <div class="bb-ft-bottom">
+
     <span>© Benjamin Black 2026 · CC BY-NC-SA 4.0</span>
-    <span>Made with R &amp; Quarto</span>
+
+    <span>Made with <a href="https://quarto.org/">Quarto</a></span>
+
   </div>
+
 </footer>
+
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const isCodeAnnotation = (el) => {

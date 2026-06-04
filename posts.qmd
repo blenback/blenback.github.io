@@ -4,10 +4,10 @@ pagetitle: "Posts - Ben Black"
 subtitle: "A place for me to share updates and insights into my research but also little tips and tricks I find interesting in using R for scientific research"   
 
 listing: 
-  contents: posts # all Quarto docs in the `posts` directory will be included on your listing page
-  type: default # or `default` or `table`; each type has its own set of yaml options to include
-  sort: "date desc" # can also sort on more than one field
-  categories: false # allows you to sort posts by assigned categories
+  contents: posts 
+  type: default 
+  sort: "date desc" 
+  categories: false 
   feed: true
   fields: [image, title, description, categories, date]
 ---
