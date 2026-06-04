@@ -1,11 +1,9 @@
 ---
 page-layout: full
-pagetitle: "Publications - Ben Black"
 title-block-banner: false
 format: 
   html: 
     anchor-sections: true
-    css: css/publications.css
 listing:
   - id: Journal-articles
     template: ejs/publication_yearly.ejs
@@ -24,9 +22,11 @@ listing:
     contents:
     - publications/student_theses.yaml
   - id: Other-content
-    template: ejs/gallery.ejs
-    contents: 
+    contents:
     - publications/other_outputs.yaml
+    type: grid
+    grid-columns: 3
+    fields: [image, title, categories]
 ---
 
 ### Journal Articles 
@@ -41,7 +41,7 @@ listing:
 ::: {#Student-theses}
 :::
 
-### Other content
+### Beyond the papers
 ::: {#Other-content}
 :::
 

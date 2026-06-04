@@ -12,71 +12,48 @@
   preprint_url: ''
   results_url: ''
   bibtex: https://raw.githubusercontent.com/blenback/profi/main/bibtex/Cam_PA_effect.bib
-  summary: | 
-      <div class="section">
-        <h4>📝 Overview</h4>
-        <p>Forests play a vital role in maintaining ecological balance by storing 
-        carbon, supporting biodiversity, and regulating climate patterns. However,
-        rapid deforestation—caused by agriculture, infrastructure development, 
-        and illegal logging—poses a significant threat to these ecosystems. 
-        To counteract this issue, governments and conservation organizations have
-        established protected areas (PAs), which are designated regions where land
-        use is restricted to prevent forest loss. While these areas are intended 
-        to preserve forests, their effectiveness is often uncertain. 
-        This study aims to evaluate whether Cambodia's protected areas have
-        successfully reduced deforestation and to what extent they contribute
-        to conservation efforts.
-        </p>
-      </div>
-      
-      <div class="section">
-        <h4>🔍 Key Findings</h4>
-        <ul>
-          <li>Protected areas have had a measurable impact on reducing deforestation, but their success varies widely based on location, enforcement, and external pressures.</li>
-          <li>Some PAs significantly reduced deforestation, particularly those with strong legal enforcement and active management strategies.</li>
-          <li>Many PAs located in high-risk areas (e.g., near expanding agricultural zones and infrastructure projects) were more effective than those in remote, less-threatened regions.</li>            
-          <li>Despite legal protection, deforestation still occurred within some PAs, often due to weak enforcement, illegal logging, or encroachment for agricultural use.</li>
-          <li>The study also found that some PAs were established in areas where deforestation risk was already low, making their protective impact appear greater than it actually was.</li>
-        </ul>
-      </div>
-      
-      <div class="section">
-        <h4>🧪 Methods</h4>
-        <p>Rather than simply comparing protected forests to unprotected ones, 
-        this research employed a method known as <strong>counterfactual analysis</strong>.
-        This technique helps estimate what would have happened if no protections had been put in place. 
-        By doing so, the study provides a more accurate assessment of the real impact of protected areas.
-        Without using this approach, it is difficult to determine whether a protected 
-        forest remains intact because of conservation policies or simply because 
-        it was never at high risk of deforestation.</p>
-        <p>To conduct this analysis, satellite imagery and deforestation data 
-        were examined across different regions in Cambodia. Various factors were
-        considered, including land-use policies, road proximity, human population density,
-        and historical deforestation trends. By comparing observed deforestation within PAs 
-        to a predicted scenario without protections, the study was able to isolate the true impact of conservation efforts.
-        </p>
-      </div>
-      
-      <div class="section">
-        <h4>🌱 Implications</h4>
-        <ul>
-          <li>Understanding how well protected areas function is critical for improving
-          conservation strategies. If some PAs are not successfully reducing deforestation,
-          it may indicate a need for better enforcement, improved land management policies,
-          or the establishment of protection in higher-risk areas.</li>
-          <li>This study highlights the importance of using data-driven approaches to
-          evaluate conservation outcomes and ensure that resources are directed
-          toward efforts that have the greatest impact.</li>
-          <li>By refining the selection 
-          and management of protected areas, policymakers and conservationists can
-          enhance their effectiveness, ensuring that Cambodia's forests continue
-          to provide ecological, economic, and social benefits for future generations.</li>
-          <li>This research underscores the need for scientific assessments in
-          conservation planning. By continually monitoring and adapting conservation policies
-          based on evidence, we can create more effective strategies to combat
-          deforestation and preserve Cambodia's rich forest ecosystems.</li>
-        </ul>
-      </div>
+  summary:
+    overview: |
+      <p>Forests play a vital role in maintaining ecological balance by storing
+      carbon, supporting biodiversity, and regulating climate patterns. However,
+      rapid deforestation—caused by agriculture, infrastructure development, and
+      illegal logging—poses a significant threat to these ecosystems. To counteract
+      this issue, governments and conservation organizations have established
+      protected areas (PAs), which are designated regions where land use is
+      restricted to prevent forest loss. While these areas are intended to preserve
+      forests, their effectiveness is often uncertain. This study aims to evaluate
+      whether Cambodia's protected areas have successfully reduced deforestation
+      and to what extent they contribute to conservation efforts.</p>
+    findings: |
+      <ul>
+        <li>Protected areas have had a measurable impact on reducing deforestation, but their success varies widely based on location, enforcement, and external pressures.</li>
+        <li>Some PAs significantly reduced deforestation, particularly those with strong legal enforcement and active management strategies.</li>
+        <li>Many PAs located in high-risk areas (e.g., near expanding agricultural zones and infrastructure projects) were more effective than those in remote, less-threatened regions.</li>
+        <li>Despite legal protection, deforestation still occurred within some PAs, often due to weak enforcement, illegal logging, or encroachment for agricultural use.</li>
+        <li>The study also found that some PAs were established in areas where deforestation risk was already low, making their protective impact appear greater than it actually was.</li>
+      </ul>
+    methods: |
+      <p>Rather than simply comparing protected forests to unprotected ones, this
+      research employed a method known as <strong>counterfactual analysis</strong>.
+      This technique helps estimate what would have happened if no protections had
+      been put in place. By doing so, the study provides a more accurate assessment
+      of the real impact of protected areas. Without using this approach, it is
+      difficult to determine whether a protected forest remains intact because of
+      conservation policies or simply because it was never at high risk of
+      deforestation.</p>
+      <p>To conduct this analysis, satellite imagery and deforestation data were
+      examined across different regions in Cambodia. Various factors were considered,
+      including land-use policies, road proximity, human population density, and
+      historical deforestation trends. By comparing observed deforestation within
+      PAs to a predicted scenario without protections, the study was able to isolate
+      the true impact of conservation efforts.</p>
+    implications: |
+      <ul>
+        <li>Understanding how well protected areas function is critical for improving conservation strategies. If some PAs are not successfully reducing deforestation, it may indicate a need for better enforcement, improved land management policies, or the establishment of protection in higher-risk areas.</li>
+        <li>This study highlights the importance of using data-driven approaches to evaluate conservation outcomes and ensure that resources are directed toward efforts that have the greatest impact.</li>
+        <li>By refining the selection and management of protected areas, policymakers and conservationists can enhance their effectiveness, ensuring that Cambodia's forests continue to provide ecological, economic, and social benefits for future generations.</li>
+        <li>This research underscores the need for scientific assessments in conservation planning. By continually monitoring and adapting conservation policies based on evidence, we can create more effective strategies to combat deforestation and preserve Cambodia's rich forest ecosystems.</li>
+      </ul>
 - title: 'Re-considering the status quo: Improving calibration of land use change
     models through validation of transition potential predictions'
   authors: Black, B. and van Strien, M. J. and Adde, A. and Grêt-Regamey, A.
@@ -90,19 +67,14 @@
   preprint_url: ''
   results_url: ''
   bibtex: https://raw.githubusercontent.com/blenback/profi/main/bibtex/ICoLCM.bib
-  summary: |
-    <div class="card-text">
-      <div class="section">
-        <h4>📝 Overview</h4>
-        <p>
-        This study explores how land use and land cover change (LULCC) is predicted using models called cellular automata. 
-        Typically, models are only evaluated after they simulate changes, but this paper shows that checking the predictions 
-        earlier in the process—called <strong>stage 1 validation</strong>—can make models more accurate and easier to understand.
-        </p>
-      </div>
-    
-    <div class="section">
-      <h4>🔍 Key Findings</h4>
+  summary:
+    overview: |
+      <p>This study explores how land use and land cover change (LULCC) is predicted
+      using models called cellular automata. Typically, models are only evaluated
+      after they simulate changes, but this paper shows that checking the predictions
+      earlier in the process—called <strong>stage 1 validation</strong>—can make
+      models more accurate and easier to understand.</p>
+    findings: |
       <ul>
         <li><strong>Stage 1 validation improves transparency:</strong> Early checks reveal problems hidden in final map-only evaluations.</li>
         <li><strong>Not all transition models perform equally:</strong> Some predictions were unreliable despite using advanced methods.</li>
@@ -110,35 +82,27 @@
         <li><strong>Predictor selection improves models:</strong> Removing unnecessary inputs improved performance, especially for logistic regression.</li>
         <li><strong>Random Forests generally outperformed Logistic Regression,</strong> but were less sensitive to input refinement.</li>
       </ul>
-    </div>
-    
-    <div class="section">
-    <h4>🧪 Methods</h4>
-    <ul>
-      <li><strong>Study Area:</strong> Land cover transitions across Switzerland from 2009 to 2018 were analyzed.</li>
-      <li><strong>Data:</strong> Swiss national land use datasets were combined with environmental and spatial predictors (e.g., elevation, soil, roads).</li>
-      <li><strong>Models:</strong> Transition potential (TP) models were built using <em>Logistic Regression</em> and <em>Random Forests</em> for 174 specific land change scenarios.</li>
-      <li><strong>Validation:</strong> 
-        <ul>
-          <li><em>Stage 1 validation</em>: Assessed how well TP models predicted transition probabilities before simulation.</li>
-          <li><em>Stage 2 validation</em>: Compared simulated maps to observed maps (used less in this study).</li>
-        </ul>
-      </li>
-      <li><strong>Performance Metrics:</strong> ROC AUC and Boyce Index were used to evaluate model accuracy and generalizability.</li>
-      <li><strong>Variable Selection:</strong> A two-step method reduced redundant predictors, tested for model performance and efficiency.</li>
-    </ul>
-    </div>
-
-    <div class="section">
-      <h4>🌱 Implications</h4>
+    methods: |
+      <ul>
+        <li><strong>Study Area:</strong> Land cover transitions across Switzerland from 2009 to 2018 were analyzed.</li>
+        <li><strong>Data:</strong> Swiss national land use datasets were combined with environmental and spatial predictors (e.g., elevation, soil, roads).</li>
+        <li><strong>Models:</strong> Transition potential (TP) models were built using <em>Logistic Regression</em> and <em>Random Forests</em> for 174 specific land change scenarios.</li>
+        <li><strong>Validation:</strong>
+          <ul>
+            <li><em>Stage 1 validation</em>: Assessed how well TP models predicted transition probabilities before simulation.</li>
+            <li><em>Stage 2 validation</em>: Compared simulated maps to observed maps (used less in this study).</li>
+          </ul>
+        </li>
+        <li><strong>Performance Metrics:</strong> ROC AUC and Boyce Index were used to evaluate model accuracy and generalizability.</li>
+        <li><strong>Variable Selection:</strong> A two-step method reduced redundant predictors, tested for model performance and efficiency.</li>
+      </ul>
+    implications: |
       <ul>
         <li><strong>More efficient calibration:</strong> Stage 1 saves time by avoiding full simulations for every tweak.</li>
         <li><strong>Improved interpretability:</strong> Helps users understand and trust predictions, important for policy-making.</li>
         <li><strong>Need for better tools:</strong> A shared calibration protocol would benefit land change modelling broadly.</li>
         <li><strong>Supports sustainable planning:</strong> Better models mean better decisions for urban growth, agriculture, and nature.</li>
       </ul>
-    </div>
-    </div>
 - title: Archetypes of social-ecological-technological systems for managing ecological
     infrastructure
   authors: Wicki, S. and Black, B. and Kurmann, M. and Grêt-Regamey, A.
@@ -152,53 +116,39 @@
   preprint_url: ''
   results_url: ''
   bibtex: https://raw.githubusercontent.com/blenback/profi/main/bibtex/Archetypes.bib
-  summary: |
-    <div class="card-text">
-      <div class="section">
-        <h4>📝 Overview</h4>
-        <p>
-        This study explores how ecological infrastructure (EI)—like wetlands, forests, and green spaces—can be better planned 
-        and managed in urban areas. Using Geneva, Switzerland as a case study, we applied a systems-based approach 
-        combining social, ecological, and technological data to create spatial <strong>archetypes</strong>. These archetypes help identify how 
-        different types of landscapes function and what strategies might work best to support nature and human well-being.
-        </p>
-      </div>
-
-    <div class="section">
-    <h4>🔍 Key Findings</h4>
-    <ul>
-      <li>Seven distinct landscape archetypes were identified across Geneva, such as “Concrete Jungle” and “Green Frontier.”</li>
-      <li>There is a strong disconnect between ecological conditions and social/technological systems in dense urban areas.</li>
-      <li>Some archetypes (e.g., Cultivated Oasis) offer high ecological benefits and biodiversity, while others (e.g., Concrete Jungle) are underperforming ecologically.</li>
-      <li>Tailored management strategies are needed for each archetype, considering their social and ecological roles.</li>
-      <li>Stakeholders emphasized the importance of collaboration, incentives, and spatial planning to implement EI effectively.</li>
-    </ul>
-    </div>
-
-    <div class="section">
-    <h4>🧪 Methods</h4>
-    <ul>
-      <li>Used a <strong>Social-Ecological-Technological Systems (SETS)</strong> framework with high-resolution spatial data (25m grid).</li>
-      <li>Gathered data on biodiversity, infrastructure, demographics, and ecosystem services (Nature’s Contributions to People).</li>
-      <li>Applied machine learning (PCA and clustering) to group Geneva’s landscape into 7 archetypes based on SETS variables.</li>
-      <li>Engaged stakeholders in interviews and workshops to validate data and develop policy recommendations per archetype.</li>
-      <li>Mapped current and projected land use change (to 2060) to understand potential pressures and trends.</li>
-    </ul>
-    </div>
-
-    <div class="section">
-    <h4>🌱 Implications</h4>
-    <ul>
-      <li><strong>Local strategies for diverse areas:</strong> Each archetype needs context-specific management approaches.</li>
-      <li><strong>Integrated planning is key:</strong> Social and ecological systems must be aligned through smart design and regulation.</li>
-      <li><strong>EI is not one-size-fits-all:</strong> Policies should reflect regional variation in land use and biodiversity potential.</li>
-      <li><strong>Stakeholder engagement is essential:</strong> Co-producing knowledge ensures practical, accepted solutions.</li>
-              <li><strong>Transferable approach:</strong> This archetype method can be applied to other urban regions worldwide to guide sustainable land use.</li>
+  summary:
+    overview: |
+      <p>This study explores how ecological infrastructure (EI)—like wetlands,
+      forests, and green spaces—can be better planned and managed in urban areas.
+      Using Geneva, Switzerland as a case study, we applied a systems-based approach
+      combining social, ecological, and technological data to create spatial
+      <strong>archetypes</strong>. These archetypes help identify how different types
+      of landscapes function and what strategies might work best to support nature
+      and human well-being.</p>
+    findings: |
+      <ul>
+        <li>Seven distinct landscape archetypes were identified across Geneva, such as “Concrete Jungle” and “Green Frontier.”</li>
+        <li>There is a strong disconnect between ecological conditions and social/technological systems in dense urban areas.</li>
+        <li>Some archetypes (e.g., Cultivated Oasis) offer high ecological benefits and biodiversity, while others (e.g., Concrete Jungle) are underperforming ecologically.</li>
+        <li>Tailored management strategies are needed for each archetype, considering their social and ecological roles.</li>
+        <li>Stakeholders emphasized the importance of collaboration, incentives, and spatial planning to implement EI effectively.</li>
       </ul>
-    </div>
-    </div>
-    </ul>
-    </div>
+    methods: |
+      <ul>
+        <li>Used a <strong>Social-Ecological-Technological Systems (SETS)</strong> framework with high-resolution spatial data (25m grid).</li>
+        <li>Gathered data on biodiversity, infrastructure, demographics, and ecosystem services (Nature's Contributions to People).</li>
+        <li>Applied machine learning (PCA and clustering) to group Geneva's landscape into 7 archetypes based on SETS variables.</li>
+        <li>Engaged stakeholders in interviews and workshops to validate data and develop policy recommendations per archetype.</li>
+        <li>Mapped current and projected land use change (to 2060) to understand potential pressures and trends.</li>
+      </ul>
+    implications: |
+      <ul>
+        <li><strong>Local strategies for diverse areas:</strong> Each archetype needs context-specific management approaches.</li>
+        <li><strong>Integrated planning is key:</strong> Social and ecological systems must be aligned through smart design and regulation.</li>
+        <li><strong>EI is not one-size-fits-all:</strong> Policies should reflect regional variation in land use and biodiversity potential.</li>
+        <li><strong>Stakeholder engagement is essential:</strong> Co-producing knowledge ensures practical, accepted solutions.</li>
+        <li><strong>Transferable approach:</strong> This archetype method can be applied to other urban regions worldwide to guide sustainable land use.</li>
+      </ul>
 - title: 'Broadening the horizon in land use change modelling: Normative scenarios
     for nature positive futures in Switzerland'
   authors: Black, B. and Adde, A. and Farinotti, D. and Guisan, A. and Külling, N.
@@ -214,19 +164,15 @@
   preprint_url: ''
   results_url: ''
   bibtex: https://raw.githubusercontent.com/blenback/profi/main/bibtex/lulcc_ch.bib
-  summary: |
-    <div class="card-text">
-      <div class="section">
-        <h4>📝 Overview</h4>
-        <p>
-        This research explores how to model future land use in Switzerland using scenarios that focus on positive outcomes for nature and society. 
-        Instead of simply predicting what might happen, we created five future scenarios—three "normative" (based on goals) and two "exploratory" 
-        (based on trends). They used a sophisticated spatial simulation model to test how different choices might shape the landscape between 2020 and 2060.
-        </p>
-      </div>
-
-    <div class="section">
-      <h4>🔍 Key Findings</h4>
+  summary:
+    overview: |
+      <p>This research explores how to model future land use in Switzerland using
+      scenarios that focus on positive outcomes for nature and society. Instead of
+      simply predicting what might happen, we created five future scenarios—three
+      "normative" (based on goals) and two "exploratory" (based on trends). They used
+      a sophisticated spatial simulation model to test how different choices might
+      shape the landscape between 2020 and 2060.</p>
+    findings: |
       <ul>
         <li><strong>Normative scenarios led to more sustainable landscapes</strong> compared to business-as-usual or worst-case scenarios.</li>
         <li><strong>Urban expansion and landscape fragmentation</strong> were much higher in exploratory scenarios.</li>
@@ -234,36 +180,27 @@
         <li><strong>Expert feedback was mixed:</strong> while useful, users found it hard to engage with highly detailed simulation maps.</li>
         <li><strong>Key challenge:</strong> making spatial simulation results easily interpretable for strategic decision-making.</li>
       </ul>
-    </div>
-
-    <div class="section">
-      <h4>🧪 Methods</h4>
+    methods: |
       <ul>
         <li>Five future scenarios were simulated using a <strong>Land Use and Land Cover Change - Constrained Cellular Automata (LULCC-CCA)</strong> model.</li>
         <li>Inputs were derived from <strong>expert workshops, demographic projections, climate models, and economic data</strong>.</li>
-        <li>Each scenario was defined by <strong>different values and goals</strong>, aligned with the IPBES “Nature Futures Framework.”</li>
+        <li>Each scenario was defined by <strong>different values and goals</strong>, aligned with the IPBES "Nature Futures Framework."</li>
         <li>Scenario elements included:
           <ul>
-          <li>Dynamic climate and population drivers</li>
-          <li>Land use transition rules and probabilities</li>
-          <li>Spatial interventions like zoning and protected areas</li>
-        </ul>
-      </li>
-      <li>Model validation included comparison with historical land use and feedback from experts via an <strong>interactive web platform</strong>.</li>
-    </ul>
-    </div>
-
-    <div class="section">
-      <h4>🌱 Implications</h4>
+            <li>Dynamic climate and population drivers</li>
+            <li>Land use transition rules and probabilities</li>
+            <li>Spatial interventions like zoning and protected areas</li>
+          </ul>
+        </li>
+        <li>Model validation included comparison with historical land use and feedback from experts via an <strong>interactive web platform</strong>.</li>
+      </ul>
+    implications: |
       <ul>
         <li><strong>Normative scenarios support sustainability:</strong> This approach can help plan land use that protects biodiversity and ecosystem services.</li>
         <li><strong>Participatory modelling is essential:</strong> Combining expert and stakeholder input ensures models reflect diverse values.</li>
         <li><strong>Better communication tools are needed:</strong> To involve more people in decision-making, simulation results must be clearer and more accessible.</li>
         <li><strong>Future planning can benefit from scenario modelling</strong> by identifying trade-offs and synergies before decisions are made.</li>
       </ul>
-    </div>
-    </div>
-    </div>  
 - title: Identifying robust area-based conservation strategies to secure ecosystem service provision
     under uncertainties
   authors: Black, B. and Adde, A. and Külling, N. and Büth, C. and Kurmann, M. and
@@ -277,101 +214,107 @@
   code_url: 'https://github.com/ethzplus/evoland-plus-HPC'
   preprint_url: 'https://dx.doi.org/10.2139/ssrn.5447007'
   results_url: ''
-  summary: |
-    <div class="card-text">
-      <div class="section">
-        <h4>📝 Overview</h4>
-        <p>Protected areas are the primary strategy for preserving biodiversity globally, 
-        with countries committed to protecting 30% of land by 2030 under the Kunming-Montreal 
-        Global Biodiversity Framework. However, conservation planning typically relies on 
-        current data about where species live and which areas provide important ecosystem 
-        services, without adequately considering two critical uncertainties: how climate change 
-        and land use will shift these patterns in the future, and what society values most 
-        in terms of conservation goals. This study demonstrates a comprehensive approach to 
-        testing different conservation strategies under uncertain future conditions, using 
-        Switzerland as a case study to identify which approaches will be most effective 
-        regardless of how the future unfolds.</p>
-      </div>
-    
-    <div class="section">
-        <h4>🔍 Key Findings</h4>
-        <ul>
-            <li>Areas currently prioritized for protection based on their ecological value 
-            showed little overlap with regions that will be most robust for ecosystem services 
-            in the future, highlighting the danger of ignoring future changes in conservation planning.</li>
-            <li>The most consistently effective strategy across all scenarios involved rapidly 
-            expanding protected areas to 30% coverage, beginning as soon as possible, and 
-            prioritizing many small patches rather than a few large ones.</li>
-            <li>Combining both preservation (protecting existing natural areas) and restoration 
-            (converting degraded land back to natural states) proved more robust than relying 
-            on either approach alone.</li>
-            <li>High-elevation regions in the Swiss Alps showed the most stable and increasing 
-            ecosystem service provision under future scenarios, while lower-elevation areas 
-            face more variable outcomes depending on urbanization and agricultural pressures.</li>
-            <li>Different ecosystem services responded differently to conservation strategies, 
-            meaning optimal approaches must account for societal preferences about which services 
-            to prioritize.</li>
-        </ul>
-    </div>
-    
-    <div class="section">
-        <h4>🧪 Methods</h4>
-        <p>This research integrated spatial conservation planning software with scenario-based 
-        simulation modeling to test 216 different conservation strategies under five scenarios 
-        representing different climate futures, land use changes, and conservation priorities. 
-        The scenarios were developed through a participatory process and ranged from prioritizing 
-        biodiversity hotspots to focusing on culturally significant landscapes or areas providing 
-        high ecosystem services.</p>
-        <p>For each combination of strategy and scenario (1,080 simulations total), the team 
-        modeled land use changes and mapped 10 ecosystem services across Switzerland from 2020 
-        to 2060 at high spatial resolution. These services included habitat quality, carbon 
-        storage, water regulation, pollination, agricultural productivity, recreation potential, 
-        and habitat for emblematic species. The simulations tested variations in when to establish 
-        protected areas, how quickly to expand them, what total coverage to achieve, whether to 
-        prioritize large or small patches, and whether to focus on preservation or restoration.</p>
-        <p>Statistical modeling and clustering techniques identified which strategies consistently 
-        led to optimal ecosystem service outcomes across the different future scenarios, revealing 
-        approaches that are robust to uncertainty rather than optimized for a single predicted future.</p>
-    </div>
-    
-    <div class="section">
-        <h4>🌱 Implications</h4>
-        <ul>
-            <li>Conservation planning must shift from using static snapshots of current conditions 
-            to "stress-testing" proposed plans against multiple plausible future scenarios of 
-            climate and land use change.</li>
-            <li>For Switzerland specifically, achieving the 30% protection target will require 
-            immediate action, as delaying establishment of new protected areas significantly 
-            reduces their effectiveness in maintaining ecosystem services.</li>
-            <li>The finding that small patches distributed across human-dominated landscapes 
-            performed better than large consolidated areas suggests conservation should focus 
-            on protecting numerous smaller sites, particularly in lowland agricultural and 
-            urban regions.</li>
-            <li>The methodology demonstrated here can be applied by other countries pursuing 
-            the global 30x30 target, providing a framework for identifying conservation strategies 
-            that remain effective despite uncertainty about future conditions.</li>
-            <li>Conservation plans should directly incorporate ecosystem services alongside 
-            biodiversity data, as prioritizing areas based on current service provision proved 
-            more effective than focusing solely on species distributions.</li>
-        <li>Successful conservation will require adaptive management that combines multiple 
-        approaches—preservation and restoration, large reserves and small patches—tailored 
-        to different regional contexts rather than applying a one-size-fits-all strategy.</li>
+  summary:
+    overview: |
+      <p>Protected areas are the primary strategy for preserving biodiversity
+      globally, with countries committed to protecting 30% of land by 2030 under the
+      Kunming-Montreal Global Biodiversity Framework. However, conservation planning
+      typically relies on current data about where species live and which areas
+      provide important ecosystem services, without adequately considering two
+      critical uncertainties: how climate change and land use will shift these
+      patterns in the future, and what society values most in terms of conservation
+      goals. This study demonstrates a comprehensive approach to testing different
+      conservation strategies under uncertain future conditions, using Switzerland as
+      a case study to identify which approaches will be most effective regardless of
+      how the future unfolds.</p>
+    findings: |
+      <ul>
+        <li>Areas currently prioritized for protection based on their ecological value showed little overlap with regions that will be most robust for ecosystem services in the future, highlighting the danger of ignoring future changes in conservation planning.</li>
+        <li>The most consistently effective strategy across all scenarios involved rapidly expanding protected areas to 30% coverage, beginning as soon as possible, and prioritizing many small patches rather than a few large ones.</li>
+        <li>Combining both preservation (protecting existing natural areas) and restoration (converting degraded land back to natural states) proved more robust than relying on either approach alone.</li>
+        <li>High-elevation regions in the Swiss Alps showed the most stable and increasing ecosystem service provision under future scenarios, while lower-elevation areas face more variable outcomes depending on urbanization and agricultural pressures.</li>
+        <li>Different ecosystem services responded differently to conservation strategies, meaning optimal approaches must account for societal preferences about which services to prioritize.</li>
       </ul>
-    </div>
-    </div>
+    methods: |
+      <p>This research integrated spatial conservation planning software with
+      scenario-based simulation modeling to test 216 different conservation strategies
+      under five scenarios representing different climate futures, land use changes,
+      and conservation priorities. The scenarios were developed through a
+      participatory process and ranged from prioritizing biodiversity hotspots to
+      focusing on culturally significant landscapes or areas providing high ecosystem
+      services.</p>
+      <p>For each combination of strategy and scenario (1,080 simulations total), the
+      team modeled land use changes and mapped 10 ecosystem services across
+      Switzerland from 2020 to 2060 at high spatial resolution. These services
+      included habitat quality, carbon storage, water regulation, pollination,
+      agricultural productivity, recreation potential, and habitat for emblematic
+      species. The simulations tested variations in when to establish protected areas,
+      how quickly to expand them, what total coverage to achieve, whether to
+      prioritize large or small patches, and whether to focus on preservation or
+      restoration.</p>
+      <p>Statistical modeling and clustering techniques identified which strategies
+      consistently led to optimal ecosystem service outcomes across the different
+      future scenarios, revealing approaches that are robust to uncertainty rather
+      than optimized for a single predicted future.</p>
+    implications: |
+      <ul>
+        <li>Conservation planning must shift from using static snapshots of current conditions to "stress-testing" proposed plans against multiple plausible future scenarios of climate and land use change.</li>
+        <li>For Switzerland specifically, achieving the 30% protection target will require immediate action, as delaying establishment of new protected areas significantly reduces their effectiveness in maintaining ecosystem services.</li>
+        <li>The finding that small patches distributed across human-dominated landscapes performed better than large consolidated areas suggests conservation should focus on protecting numerous smaller sites, particularly in lowland agricultural and urban regions.</li>
+        <li>The methodology demonstrated here can be applied by other countries pursuing the global 30x30 target, providing a framework for identifying conservation strategies that remain effective despite uncertainty about future conditions.</li>
+        <li>Conservation plans should directly incorporate ecosystem services alongside biodiversity data, as prioritizing areas based on current service provision proved more effective than focusing solely on species distributions.</li>
+        <li>Successful conservation will require adaptive management that combines multiple approaches—preservation and restoration, large reserves and small patches—tailored to different regional contexts rather than applying a one-size-fits-all strategy.</li>
+      </ul>
 - title: Temporal Archetypes of Nature's Contributions to People for Sustainable Landscape
     Development
   authors: Wicki, S., Black, B., Külling, N., Kurmann, M., Wang, J., Lehmann, A.,
     Gret-Regamey, A.
-  year: In Review
+  year: '2026'
   journal: Regional Environmental Change
-  volume: ''
-  pages: ''
-  doi: ''
+  volume: '26'
+  pages: '103'
+  doi: 'https://doi.org/10.1007/s10113-026-02551-9'
   data_url: ''
   code_url: ''
   preprint_url: ''
   results_url: ''
+  summary:
+    overview: |
+      <p>Current landscape planning approaches like Ecological Infrastructure (EI)
+      often overlook how Nature's Contributions to People (NCPs) change over space and
+      time. This study addresses that gap by applying archetype analysis to projected
+      future NCP changes in Switzerland. Using deep learning techniques and seven key
+      NCPs—carbon storage, water yield, habitat quality, nutrient retention, food and
+      feed, pollination, and sediment retention—the study identifies recurring spatial
+      patterns of NCP change between 2020 and 2060 and contextualizes them through
+      expert interviews, providing actionable insights for adaptive, forward-looking
+      landscape planning.</p>
+    findings: |
+      <ul>
+        <li>Six distinct temporal archetypes of NCP change were identified across Switzerland, ranging from regions with high NCP gains but severe water stress to lowland areas experiencing significant declines in multiple NCPs.</li>
+        <li>Lowland areas (large valley plains, the Jura, and parts of the Swiss Plateau) face the most pronounced declines, particularly in food and feed, pollination, and habitat quality.</li>
+        <li>Alpine and pre-Alpine regions tend to show stability or gains in NCPs such as water yield, carbon storage, and food and feed provision.</li>
+        <li>Nature-positive scenarios (EI-SOC, EI-CUL, EI-NAT) shifted NCP trends toward more positive outcomes compared to Business as Usual, though habitat quality and pollination still declined even under the best scenarios.</li>
+        <li>Climate change is the dominant driver for water yield and sediment retention (60–93% contribution), while land-use change disproportionately affects food and feed provision and habitat quality.</li>
+        <li>Archetypes with declining NCPs also showed reduced climate suitability for biodiversity, highlighting the interconnectedness of NCP provision and biodiversity potential.</li>
+      </ul>
+    methods: |
+      <ul>
+        <li>Spatially explicit NCP change rasters (25 m resolution) were generated for seven NCPs under four scenarios (BAU, EI-SOC, EI-CUL, EI-NAT) for 2020 and 2060.</li>
+        <li>Deep Convolutional Embedded Clustering (DCEC), combining convolutional neural networks with clustering, was applied to identify six temporal archetypes of NCP change.</li>
+        <li>Silhouette analysis determined the optimal number of clusters and PCA explored dominant variance patterns across NCP layers.</li>
+        <li>Random forest models identified the dominant climatic and land-use drivers of NCP changes for each archetype.</li>
+        <li>Climate suitability projections for over 7,000 species were compared with NCP change patterns to assess biodiversity–NCP alignment.</li>
+        <li>Seven semi-structured expert interviews with stakeholders from park management, research, federal agencies, and private offices contextualized the quantitative findings.</li>
+      </ul>
+    implications: |
+      <ul>
+        <li><strong>Region-specific strategies needed:</strong> The pronounced regional disparities in NCP trajectories underscore the need for spatially tailored landscape planning rather than one-size-fits-all approaches.</li>
+        <li><strong>Forward-looking planning is essential:</strong> Static, snapshot-based approaches to conservation fail to capture the dynamic nature of social-ecological systems; integrating future NCP and biodiversity projections can improve planning effectiveness.</li>
+        <li><strong>Biodiversity underpins NCPs:</strong> Experts emphasized that biodiversity is foundational to NCP delivery and cautioned against reducing conservation to NCP metrics alone.</li>
+        <li><strong>Transdisciplinary collaboration is key:</strong> Effective landscape planning requires improved communication and collaboration among policymakers, scientists, land managers, and local communities.</li>
+        <li><strong>Transferable methodology:</strong> The archetype approach combining deep learning with expert knowledge can be applied to other regions to guide sustainable landscape development under uncertain futures.</li>
+      </ul>
 - title: Where will the change come from? Identifying decision-relevant factors in
     future Land Use and Cover Change ({LUCC}) scenarios to support planning under
     uncertainty
@@ -385,98 +328,66 @@
   code_url: ''
   preprint_url: ''
   results_url: ''
-  summary: |
-    <div class="card-text">
-    <div class="section">
-        <h4>📝 Overview</h4>
-        <p>Land use and cover change (LUCC) affects fundamental resources like food, water, and 
-        energy, making it crucial for sustainable development planning. Traditional approaches to 
-        predicting future land use focus on improving model accuracy through extensive calibration 
-        and validation, treating models as tools to generate the "best" prediction of the future. 
-        However, long-term predictions face deep uncertainty—factors that cannot be precisely known 
-        or controlled, like climate extremes, economic shifts, and policy changes. This paper proposes 
-        a different approach called "exploratory modelling" that embraces uncertainty by simulating 
-        thousands of plausible future scenarios rather than attempting a single prediction. The 
-        framework identifies which factors drive change most strongly and maps "decision boundaries"—
-        the conditions under which planning goals are likely to be achieved or missed—providing 
-        actionable insights for decision-makers facing uncertain futures.</p>
-    </div>
-    
-    <div class="section">
-        <h4>🔍 Key Findings</h4>
-        <ul>
-            <li>The framework successfully quantified the relative importance of three types of factors 
-            driving land use change: external uncertainties (uncontrollable factors like population 
-            growth), planning decisions (controllable interventions like infrastructure development), 
-            and system stochasticity (inherent randomness in how land use evolves).</li>
-            <li>In the Lausanne-Morges case study, the development of new urban rail infrastructure 
-            (metro and tramway) consistently supported urban densification goals across a wide range 
-            of future scenarios, though the magnitude of this effect varied substantially by location.</li>
-            <li>Sites already served by existing metro lines showed only minor additional benefits from 
-            new infrastructure, while sites far from current rail networks experienced dramatic shifts 
-            in development patterns when new infrastructure was added.</li>
-            <li>For some outcomes and locations, stochasticity explained up to 100% of the variance, 
-            indicating that natural randomness in the land use system dominated over any planned 
-            interventions or external trends—highlighting areas where planners have limited control.</li>
-            <li>Interactions between different factors explained up to 15% of variance in outcomes, 
-            demonstrating that factors don't act independently and that sophisticated sensitivity 
-            analysis methods are essential for understanding complex land use systems.</li>
-        </ul>
-    </div>
-    
-    <div class="section">
-        <h4>🧪 Methods</h4>
-        <p>The framework combines land use change simulation models with Global Sensitivity Analysis 
-        (GSA) techniques to systematically explore uncertainty. The case study used a cellular automata 
-        model in Dinamica EGO software to simulate urban development in the Lausanne-Morges agglomeration 
-        of Switzerland from 2012 to 2050. The model incorporated six external uncertainties (such as 
-        rates of urban densification and sprawl), two planning decisions (whether to build a new metro 
-        line and tramway), and the model's inherent stochasticity.</p>
-        <p>Using Latin Hypercube Sampling, the team generated 60,000 simulations covering the full range 
-        of possible combinations of these factors. Each simulation produced detailed spatial maps showing 
-        where different types of land use change occurred. Sobol indices—a variance-based sensitivity 
-        analysis technique—were then calculated to decompose the total variance in outcomes and attribute 
-        specific proportions to each factor and their interactions. This revealed which factors most 
-        strongly influenced outcomes like total population, residential density, and industrial/commercial 
-        development in different strategic sites.</p>
-        <p>To map decision boundaries, logistic regression models identified the combinations of factors 
-        that led to achieving or failing to achieve target population goals. These boundaries were 
-        visualized in two-dimensional plots showing the probability of success under different scenarios, 
-        separated by whether new infrastructure was developed or not. This allowed planners to see under 
-        what conditions their interventions would likely succeed.</p>
-    </div>
-    
-    <div class="section">
-        <h4>🌱 Implications</h4>
-        <ul>
-            <li>Land use change modeling should shift from a "consolidative" approach (seeking perfect 
-            predictions) to an "exploratory" approach (understanding system behavior under multiple 
-            plausible futures), especially for long-term planning where deep uncertainty is unavoidable.</li>
-            <li>For the Lausanne-Morges agglomeration specifically, new urban rail infrastructure should 
-            be prioritized in areas not currently served by metro lines, as these locations showed the 
-            strongest potential for achieving densification targets through infrastructure investment.</li>
-            <li>Planning strategies must be tailored to local conditions: sites dominated by external 
-            uncertainties require monitoring systems and adaptive management, while sites dominated by 
-            planning decisions benefit from strategic infrastructure investment, and sites dominated by 
-            stochasticity may need entirely different approaches or acceptance of limited control.</li>
-            <li>The framework provides a systematic way to justify infrastructure investments by 
-            demonstrating their effectiveness across thousands of plausible futures rather than relying 
-            on single-scenario predictions, potentially strengthening cases for public funding.</li>
-            <li>The methodology is generalizable beyond this case study and can be applied to other 
-            regions, scales, and planning domains, though it requires sufficient computational resources 
-            to run thousands of simulations (feasible when individual model runs take seconds to minutes).</li>
-            <li>Future research should explore the use of surrogate models (faster approximations of 
-            complex models) to enable this approach for larger study areas or more detailed models where 
-            computational demands would otherwise be prohibitive.</li>
-        </ul>
-    </div>
-    </div>
+  summary:
+    overview: |
+      <p>Land use and cover change (LUCC) affects fundamental resources like food,
+      water, and energy, making it crucial for sustainable development planning.
+      Traditional approaches to predicting future land use focus on improving model
+      accuracy through extensive calibration and validation, treating models as tools
+      to generate the "best" prediction of the future. However, long-term predictions
+      face deep uncertainty—factors that cannot be precisely known or controlled, like
+      climate extremes, economic shifts, and policy changes. This paper proposes a
+      different approach called "exploratory modelling" that embraces uncertainty by
+      simulating thousands of plausible future scenarios rather than attempting a
+      single prediction. The framework identifies which factors drive change most
+      strongly and maps "decision boundaries"—the conditions under which planning
+      goals are likely to be achieved or missed—providing actionable insights for
+      decision-makers facing uncertain futures.</p>
+    findings: |
+      <ul>
+        <li>The framework successfully quantified the relative importance of three types of factors driving land use change: external uncertainties (uncontrollable factors like population growth), planning decisions (controllable interventions like infrastructure development), and system stochasticity (inherent randomness in how land use evolves).</li>
+        <li>In the Lausanne-Morges case study, the development of new urban rail infrastructure (metro and tramway) consistently supported urban densification goals across a wide range of future scenarios, though the magnitude of this effect varied substantially by location.</li>
+        <li>Sites already served by existing metro lines showed only minor additional benefits from new infrastructure, while sites far from current rail networks experienced dramatic shifts in development patterns when new infrastructure was added.</li>
+        <li>For some outcomes and locations, stochasticity explained up to 100% of the variance, indicating that natural randomness in the land use system dominated over any planned interventions or external trends—highlighting areas where planners have limited control.</li>
+        <li>Interactions between different factors explained up to 15% of variance in outcomes, demonstrating that factors don't act independently and that sophisticated sensitivity analysis methods are essential for understanding complex land use systems.</li>
+      </ul>
+    methods: |
+      <p>The framework combines land use change simulation models with Global
+      Sensitivity Analysis (GSA) techniques to systematically explore uncertainty. The
+      case study used a cellular automata model in Dinamica EGO software to simulate
+      urban development in the Lausanne-Morges agglomeration of Switzerland from 2012
+      to 2050. The model incorporated six external uncertainties (such as rates of
+      urban densification and sprawl), two planning decisions (whether to build a new
+      metro line and tramway), and the model's inherent stochasticity.</p>
+      <p>Using Latin Hypercube Sampling, the team generated 60,000 simulations covering
+      the full range of possible combinations of these factors. Each simulation
+      produced detailed spatial maps showing where different types of land use change
+      occurred. Sobol indices—a variance-based sensitivity analysis technique—were then
+      calculated to decompose the total variance in outcomes and attribute specific
+      proportions to each factor and their interactions. This revealed which factors
+      most strongly influenced outcomes like total population, residential density, and
+      industrial/commercial development in different strategic sites.</p>
+      <p>To map decision boundaries, logistic regression models identified the
+      combinations of factors that led to achieving or failing to achieve target
+      population goals. These boundaries were visualized in two-dimensional plots
+      showing the probability of success under different scenarios, separated by
+      whether new infrastructure was developed or not. This allowed planners to see
+      under what conditions their interventions would likely succeed.</p>
+    implications: |
+      <ul>
+        <li>Land use change modeling should shift from a "consolidative" approach (seeking perfect predictions) to an "exploratory" approach (understanding system behavior under multiple plausible futures), especially for long-term planning where deep uncertainty is unavoidable.</li>
+        <li>For the Lausanne-Morges agglomeration specifically, new urban rail infrastructure should be prioritized in areas not currently served by metro lines, as these locations showed the strongest potential for achieving densification targets through infrastructure investment.</li>
+        <li>Planning strategies must be tailored to local conditions: sites dominated by external uncertainties require monitoring systems and adaptive management, while sites dominated by planning decisions benefit from strategic infrastructure investment, and sites dominated by stochasticity may need entirely different approaches or acceptance of limited control.</li>
+        <li>The framework provides a systematic way to justify infrastructure investments by demonstrating their effectiveness across thousands of plausible futures rather than relying on single-scenario predictions, potentially strengthening cases for public funding.</li>
+        <li>The methodology is generalizable beyond this case study and can be applied to other regions, scales, and planning domains, though it requires sufficient computational resources to run thousands of simulations (feasible when individual model runs take seconds to minutes).</li>
+        <li>Future research should explore the use of surrogate models (faster approximations of complex models) to enable this approach for larger study areas or more detailed models where computational demands would otherwise be prohibitive.</li>
+      </ul>
 - title: "The PAVE pathway: how to talk about models with people who did(n't) build
     them"
   authors: Bell, A., Troost, C., Filatova, T., Vincenot, C., Qin, C., Fiedler, S.,
     Lemmen, C., Lynch, I., Pierce, M., Edmonds ,B., McIntire, E., Wang, H., Koralewski,
     T., Grant, W., Wang, M., Black, B., Grimm, V.
-  year: 2026
+  year: '2026'
   journal: Bioscience
   volume: ''
   pages: ''
@@ -485,4 +396,3 @@
   code_url: ''
   preprint_url: ''
   results_url: ''
-  

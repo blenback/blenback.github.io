@@ -1,0 +1,21 @@
+<!-- nav-scroll.html — add to _quarto.yml under format.html.include-after-body
+     Makes the navbar transparent over the homepage hero and solid on scroll.
+     On pages WITHOUT a hero (.bb-hero) the navbar is always solid. -->
+<script>
+  (function () {
+    function init() {
+      var navbar = document.querySelector('.navbar');
+      if (!navbar) return;
+      var hasHero = !!document.querySelector('.bb-hero');
+      function update() {
+        var solid = !hasHero || window.scrollY > 40;
+        navbar.classList.toggle('navbar-solid', solid);
+      }
+      update();
+      window.addEventListener('scroll', update, { passive: true });
+      window.addEventListener('resize', update, { passive: true });
+    }
+    if (document.readyState !== 'loading') init();
+    else document.addEventListener('DOMContentLoaded', init);
+  })();
+</script>

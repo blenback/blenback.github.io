@@ -1,8 +1,8 @@
 ---
 title: "Leafleting: Time slider map of land use change scenarios"
 date: "2024-2-1"
-image: ../assets/map.svg
-image-alt: Placeholder of time-slider map
+image: ../assets/scenario_explorer.png
+image-alt: Screenshot of the land use change scenario explorer map
 categories: [R, Leaflet, Maps, Land use, research results]
 draft: true
 ---

@@ -1,0 +1,53 @@
+```{=html}
+<%
+  // sort: "In Review" first, then by year descending
+  let sorted = items.slice().sort((a, b) => {
+    let ya = String(a.year || ''); let yb = String(b.year || '');
+    let ra = ya.toLowerCase() === 'in review'; let rb = yb.toLowerCase() === 'in review';
+    if (ra && !rb) return -1; if (!ra && rb) return 1;
+    let na = parseInt(ya); let nb = parseInt(yb);
+    if (!isNaN(na) && !isNaN(nb)) return nb - na;
+    return yb.localeCompare(ya);
+  });
+%>
+<div class="pub-list">
+<% for (let i = 0; i < sorted.length; i++) { let item = sorted[i]; %>
+  <article class="pub">
+    <div class="yr"><%= item.year || '' %></div>
+    <div class="meta">
+      <div class="pt"><%- item.title %></div>
+      <div class="pj">
+        <i><%- item.journal %></i>
+      </div>
+      <div class="links">
+        <% if (item.doi) { %><a class="tagpill" href="<%- item.doi %>">DOI</a><% } %>
+        <% if (item.preprint_url) { %><a class="tagpill" href="<%- item.preprint_url %>">Preprint</a><% } %>
+        <% if (item.data_url) { %><a class="tagpill" href="<%- item.data_url %>">Data</a><% } %>
+        <% if (item.code_url) { %><a class="tagpill" href="<%- item.code_url %>">Code</a><% } %>
+        <% if (item.bibtex) { %><a class="tagpill" href="<%- item.bibtex %>" download="<%- item.bibtex %>">Cite</a><% } %>
+        <% if (item.summary) { %><a class="tagpill tagpill-summary" data-bs-toggle="collapse" href="#sum<%= i %>" role="button" aria-expanded="false" aria-controls="sum<%= i %>">Plain-language summary</a><% } %>
+      </div>
+      <% if (item.summary) { %>
+      <div class="collapse pub-summary" id="sum<%= i %>">
+        <div class="pub-summary-body">
+          <% if (item.summary.overview) { %><section class="pub-sum-section"><h4>Overview</h4><div class="pub-sum-content"><%- item.summary.overview %></div></section><% } %>
+          <% if (item.summary.findings) { %><section class="pub-sum-section"><h4>Key findings</h4><div class="pub-sum-content"><%- item.summary.findings %></div></section><% } %>
+          <% if (item.summary.methods) { %><section class="pub-sum-section"><h4>Methods</h4><div class="pub-sum-content"><%- item.summary.methods %></div></section><% } %>
+          <% if (item.summary.implications) { %><section class="pub-sum-section"><h4>Implications</h4><div class="pub-sum-content"><%- item.summary.implications %></div></section><% } %>
+        </div>
+      </div>
+      <% } %>
+    </div>
+  </article>
+<% } %>
+</div>
+```
+
+<script>
+  // decode HTML entities inside collapsed summary sections (Quarto escapes raw HTML in YAML fields)
+  document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('.pub-summary .pub-sum-content').forEach(function (d) {
+      const t = document.createElement('textarea'); t.innerHTML = d.innerHTML; d.innerHTML = t.value;
+    });
+  });
+</script>

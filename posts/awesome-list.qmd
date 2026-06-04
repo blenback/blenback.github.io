@@ -1,8 +1,8 @@
 ---
 title: "Starting an awesome list for scientific resources"
 date: "2024-11-14"
-image: ../assets/awesome-list.svg
-image-alt: Awesome list logo
+image: ../assets/abm-workshop.jpg
+image-alt: Photo from the agent-based modelling workshop that sparked the awesome list
 categories: [R, Github, Awesome List, Resources, Continuous Integration]
 ---
 

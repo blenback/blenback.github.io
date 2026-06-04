@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.32">
+<meta name="generator" content="quarto-1.9.37">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -10,8 +10,11 @@
 <meta name="dcterms.date" content="2026-04-06">
 <meta name="description" content="A short write-up on developing a browser-based map for exploring the robustness of ecosystem services and biodiversity under uncertain futures.">
 
-<title>Ben Black – Ben&lt;br&gt;Black</title>
+<title>Building an interactive bi-variate map for exploring robustness of ecosystems services and biodiversity under future uncertainty – Ben Black.</title>
 <style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -37,12 +40,15 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-0348920b7671f696dc9078d39bff215e.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-3680a2f5c362e71a82e33059ebe61075.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-a7bb907943a07d482dd586446b6c690a.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-3680a2f5c362e71a82e33059ebe61075.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-8d3bc1e823cd3fdfe606e92bea2b1253.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-49c7e8be8e1c15b28b0d17452380d61a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-d76bfa8e71ba8aba5b7f96369e0419c5.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-49c7e8be8e1c15b28b0d17452380d61a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
 <link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
@@ -72,32 +78,15 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-9CCC34ZV10"></script>
-
-<script type="text/javascript">
-
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'G-9CCC34ZV10', { 'anonymize_ip': true});
-</script>
+<!-- header.html — add to _quarto.yml under format.html.include-in-header
+     Loads Satoshi (Fontshare) + Spectral (Google) + JetBrains Mono. -->
+<link rel="preconnect" href="https://api.fontshare.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700,900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;0,600;1,400;1,500&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
 
 
-<link rel="stylesheet" href="../css/styles.css">
-<meta property="og:title" content="Ben Black">
-<meta property="og:description" content="A short write-up on developing a browser-based map for exploring the robustness of ecosystem services and biodiversity under uncertain futures.">
-<meta property="og:image" content="https://blenback.github.io/assets/interative-bivar-map.png">
-<meta property="og:site_name" content="Ben<br>Black">
-<meta property="og:image:height" content="805">
-<meta property="og:image:width" content="1096">
-<meta name="twitter:title" content="Ben Black">
-<meta name="twitter:description" content="A short write-up on developing a browser-based map for exploring the robustness of ecosystem services and biodiversity under uncertain futures.">
-<meta name="twitter:image" content="https://blenback.github.io/assets/interative-bivar-map.png">
-<meta name="twitter:creator" content="@Blen_Back">
-<meta name="twitter:site" content="@Blen_Back">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image-height" content="805">
-<meta name="twitter:image-width" content="1096">
 </head>
 
 <body class="nav-fixed fullcontent quarto-light">
@@ -108,7 +97,7 @@ gtag('config', 'G-9CCC34ZV10', { 'anonymize_ip': true});
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="../index.html">
-    <span class="navbar-title">Ben<br>Black</span>
+    <span class="navbar-title">Ben <span class="brand-2">Black.</span></span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -122,24 +111,16 @@ gtag('config', 'G-9CCC34ZV10', { 'anonymize_ip': true});
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../about.html"> 
-<span class="menu-text">About</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../publications.html"> 
+    <a class="nav-link" href="../index.html#publications"> 
 <span class="menu-text">Publications</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../presentations.html"> 
+    <a class="nav-link" href="../index.html#presentations"> 
 <span class="menu-text">Presentations</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../posts.html"> 
+    <a class="nav-link" href="../index.html#posts"> 
 <span class="menu-text">Posts</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="https://blenback.github.io/curriculum-vitae/"> 
-<span class="menu-text">CV</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="mailto:benjaminsamuel.black@zalf.de"> 
@@ -149,14 +130,14 @@ gtag('config', 'G-9CCC34ZV10', { 'anonymize_ip': true});
     <a class="nav-link" href="https://github.com/blenback"> 
 <span class="menu-text"><i class="fa-brands fa-github" aria-label="github"></i></span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="https://twitter.com/Blen_Back"> 
-<span class="menu-text"><i class="fa-brands fa-twitter" aria-label="twitter"></i></span></a>
-  </li>  
   <li class="nav-item compact">
     <a class="nav-link" href="../posts.xml"> <i class="bi bi-rss" role="img">
 </i> 
 <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://blenback.github.io/curriculum-vitae/"> 
+<span class="menu-text"><span class="cv-btn">Download CV</span></span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -228,20 +209,20 @@ gtag('config', 'G-9CCC34ZV10', { 'anonymize_ip': true});
 </figure>
 </div>
 <section id="starting-from-the-data" class="level2">
-<h2 class="anchored" data-anchor-id="starting-from-the-data">Starting from the data</h2>
+<h2 data-anchor-id="starting-from-the-data">Starting from the data</h2>
 <p>One of the first design decisions was to keep the heavy lifting out of the browser. The classification work is done upstream in R and written out as GeoTIFFs and a small palette JSON. That means the web app does not need to calculate class breaks, colour scales or summary classes on the fly. It just needs to load already-classified rasters and render them reliably.</p>
 <p>That separation turned out to be very helpful. The R side handles the analytical logic, while the JavaScript side focuses on interaction and presentation. I like this split because it keeps each part of the workflow doing what it is best at. R is where I am comfortable wrangling rasters and testing classification choices; the browser is where I want responsiveness.</p>
 <p>There is also a practical benefit here: pre-classified rasters make the client code much easier to reason about. In <code>js/main.js</code>, each pixel already has a value from 1 to 9, so the rendering step becomes a matter of decoding those classes, assigning colours, and drawing the result quickly to a canvas.</p>
 </section>
 <section id="making-the-map-feel-legible" class="level2">
-<h2 class="anchored" data-anchor-id="making-the-map-feel-legible">Making the map feel legible</h2>
+<h2 data-anchor-id="making-the-map-feel-legible">Making the map feel legible</h2>
 <p>Most of the work in a project like this is not really about drawing a map. It is about making the map understandable.</p>
 <p>The HTML structure in <code>index.html</code> reflects that pretty directly. The map is only one part of the page. Alongside it is a compact sidebar with a legend, a short “how to explore” guide, a plain-language explanation of the two dimensions, and a methodology card for anyone who wants more detail. I wanted the interpretation help to live right next to the map rather than in a separate document that nobody opens.</p>
 <p>The legend took more attention than I expected. Bi-variate maps are only useful if the reader can trust that the legend and the map are encoding things in exactly the same way. In <code>js/legend.js</code> and <code>js/main.js</code>, the colour lookup logic is mirrored so that the raster renderer and the legend resolve classes identically. That may sound like a small implementation detail, but it is the kind of thing that quietly determines whether an interface feels dependable or confusing.</p>
 <p>Another small but important choice was to keep the interaction model very narrow. There are only three top-level views: ecosystem services, biodiversity, and the combined surface. Earlier in the workflow there are many possible scaling and classification decisions, but by the time the map reaches the browser those choices have already been made. I think that restraint helps. It keeps the viewer focused on interpretation rather than configuration.</p>
 </section>
 <section id="hover-pin-zoom" class="level2">
-<h2 class="anchored" data-anchor-id="hover-pin-zoom">Hover, pin, zoom</h2>
+<h2 data-anchor-id="hover-pin-zoom">Hover, pin, zoom</h2>
 <p>Once the basic rendering was working, the next step was to make exploration feel lightweight. Hovering over a legend cell temporarily dims everything else on the map and highlights the chosen class. Clicking pins that class and overlays its total area directly on the legend. It is a small interaction, but it makes it much easier to answer questions like “where are the places that perform well but are unstable?” without forcing the user to mentally scan the entire raster.</p>
 <p>The map itself is rendered to canvas for speed and then displayed inside an SVG wrapper that handles clipping, drag behaviour and zoom controls. That hybrid approach ended up feeling like a good compromise. The canvas is efficient for drawing a lot of raster pixels, while the SVG layer makes it straightforward to manage interactions and framing.</p>
 <div class="callout callout-style-default callout-note callout-titled">
@@ -259,7 +240,7 @@ Note
 </div>
 </section>
 <section id="a-small-map-but-a-useful-one" class="level2">
-<h2 class="anchored" data-anchor-id="a-small-map-but-a-useful-one">A small map, but a useful one</h2>
+<h2 data-anchor-id="a-small-map-but-a-useful-one">A small map, but a useful one</h2>
 <p>I like projects like this because they sit in a nice middle ground between analysis and communication. The interesting part is not only whether the underlying metric is sound, but whether someone encountering it for the first time can actually make sense of it. For uncertainty-heavy environmental data, that matters a lot.</p>
 <p>This map is still a fairly compact piece of work, but it already feels like a better way of engaging with the results than a static figure alone. It gives a quick visual overview, but it also invites a more specific kind of question: not just where things look good, but where they look good consistently.</p>
 <p>That, in the end, was the point.</p>
@@ -268,15 +249,61 @@ Note
 </section>
 
 </main> <!-- /main -->
+<!-- nav-scroll.html — add to _quarto.yml under format.html.include-after-body
+     Makes the navbar transparent over the homepage hero and solid on scroll.
+     On pages WITHOUT a hero (.bb-hero) the navbar is always solid. -->
+<script>
+  (function () {
+    function init() {
+      var navbar = document.querySelector('.navbar');
+      if (!navbar) return;
+      var hasHero = !!document.querySelector('.bb-hero');
+      function update() {
+        var solid = !hasHero || window.scrollY > 40;
+        navbar.classList.toggle('navbar-solid', solid);
+      }
+      update();
+      window.addEventListener('scroll', update, { passive: true });
+      window.addEventListener('resize', update, { passive: true });
+    }
+    if (document.readyState !== 'loading') init();
+    else document.addEventListener('DOMContentLoaded', init);
+  })();
+</script>
+<!-- bb-footer.html — add to _quarto.yml under format.html.include-after-body
+     (AFTER nav-scroll.html). Replaces Quarto's default page-footer, which the
+     theme hides. Edit the links/text to taste. -->
+<footer class="bb-footer">
+  <div class="bb-footer-wrap">
+    <div>
+      <h3>Let's talk.</h3>
+      <p class="bb-ft-sub">Open to collaboration on spatial modelling, scientific visualisation and reproducible research.</p>
+      <a class="bb-ft-mail" href="mailto:benjaminsamuel.black@zalf.de">benjaminsamuel.black@zalf.de</a>
+    </div>
+    <div class="bb-ft-cols">
+      <div class="bb-ft-col">
+        <h4>Site</h4>
+        <a href="index.html#publications">Publications</a>
+        <a href="index.html#presentations">Presentations</a>
+        <a href="index.html#posts">Posts</a>
+        <a href="https://blenback.github.io/curriculum-vitae/">CV</a>
+      </div>
+      <div class="bb-ft-col">
+        <h4>Elsewhere</h4>
+        <a href="https://github.com/blenback">GitHub</a>
+        <a href="https://scholar.google.com/citations?hl=en&amp;user=h00y-m4AAAAJ">Google Scholar</a>
+        <a href="https://orcid.org/0000-0002-8113-2114">ORCID</a>
+        <a href="https://www.linkedin.com/in/ben-black-9889a1150/">LinkedIn</a>
+      </div>
+    </div>
+  </div>
+  <div class="bb-ft-bottom">
+    <span>© Benjamin Black 2026 · CC BY-NC-SA 4.0</span>
+    <span>Made with R &amp; Quarto</span>
+  </div>
+</footer>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
-    const icon = "";
-    const anchorJS = new window.AnchorJS();
-    anchorJS.options = {
-      placement: 'right',
-      icon: icon
-    };
-    anchorJS.add('.anchored');
     const isCodeAnnotation = (el) => {
       for (const clz of el.classList) {
         if (clz.startsWith('code-annotation-')) {                     
@@ -319,13 +346,14 @@ Note
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
@@ -668,19 +696,6 @@ Note
   });
   </script>
 </div> <!-- /content -->
-<footer class="footer">
-  <div class="nav-footer">
-    <div class="nav-footer-left">
-<p><i class="fa-regular fa-copyright" aria-label="copyright"></i> Benjamin Black, 2026<br> All content licensed under <i class="fa-brands fa-creative-commons" aria-label="creative-commons"></i> <i class="fa-brands fa-creative-commons-by" aria-label="creative-commons-by"></i> <i class="fa-brands fa-creative-commons-sa" aria-label="creative-commons-sa"></i> <i class="fa-brands fa-creative-commons-nc" aria-label="creative-commons-nc"></i> <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">(CC BY-NC-SA 4.0)</a></p>
-</div>   
-    <div class="nav-footer-center">
-      &nbsp;
-    </div>
-    <div class="nav-footer-right">
-<p>Made with <i class="fa-brands fa-r-project" aria-label="r-project"></i> and <a href="https://quarto.org/">Quarto</a><br></p>
-</div>
-  </div>
-</footer>
 
 
 

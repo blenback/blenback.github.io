@@ -2,13 +2,16 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.32">
+<meta name="generator" content="quarto-1.9.37">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Ben Black – Ben&lt;br&gt;Black</title>
+<title>Quarto PhD thesis template for ETH Zurich – Ben Black.</title>
 <style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -69,12 +72,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-0348920b7671f696dc9078d39bff215e.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-3680a2f5c362e71a82e33059ebe61075.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-a7bb907943a07d482dd586446b6c690a.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-3680a2f5c362e71a82e33059ebe61075.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-8d3bc1e823cd3fdfe606e92bea2b1253.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-49c7e8be8e1c15b28b0d17452380d61a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-d76bfa8e71ba8aba5b7f96369e0419c5.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-49c7e8be8e1c15b28b0d17452380d61a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <link href="site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
 <link href="site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
@@ -104,32 +110,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-label": "Search"
   }
 }</script>
-<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-9CCC34ZV10"></script>
-
-<script type="text/javascript">
-
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'G-9CCC34ZV10', { 'anonymize_ip': true});
-</script>
+<!-- header.html — add to _quarto.yml under format.html.include-in-header
+     Loads Satoshi (Fontshare) + Spectral (Google) + JetBrains Mono. -->
+<link rel="preconnect" href="https://api.fontshare.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700,900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;0,600;1,400;1,500&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
 
 
-<link rel="stylesheet" href="css/styles.css">
-<meta property="og:title" content="Ben Black">
-<meta property="og:description" content="Personal website for Ben Black">
-<meta property="og:image" content="https://blenback.github.io/assets/titlepage.png">
-<meta property="og:site_name" content="Ben<br>Black">
-<meta property="og:image:height" content="2339">
-<meta property="og:image:width" content="1654">
-<meta name="twitter:title" content="Ben Black">
-<meta name="twitter:description" content="Personal website for Ben Black">
-<meta name="twitter:image" content="https://blenback.github.io/assets/preview.png">
-<meta name="twitter:creator" content="@Blen_Back">
-<meta name="twitter:site" content="@Blen_Back">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image-height" content="912">
-<meta name="twitter:image-width" content="1896">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -140,7 +129,7 @@ gtag('config', 'G-9CCC34ZV10', { 'anonymize_ip': true});
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">Ben<br>Black</span>
+    <span class="navbar-title">Ben <span class="brand-2">Black.</span></span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -154,24 +143,16 @@ gtag('config', 'G-9CCC34ZV10', { 'anonymize_ip': true});
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
-<span class="menu-text">About</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./publications.html"> 
+    <a class="nav-link" href="./index.html#publications"> 
 <span class="menu-text">Publications</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./presentations.html"> 
+    <a class="nav-link" href="./index.html#presentations"> 
 <span class="menu-text">Presentations</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./posts.html"> 
+    <a class="nav-link" href="./index.html#posts"> 
 <span class="menu-text">Posts</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="https://blenback.github.io/curriculum-vitae/"> 
-<span class="menu-text">CV</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="mailto:benjaminsamuel.black@zalf.de"> 
@@ -181,14 +162,14 @@ gtag('config', 'G-9CCC34ZV10', { 'anonymize_ip': true});
     <a class="nav-link" href="https://github.com/blenback"> 
 <span class="menu-text"><i class="fa-brands fa-github" aria-label="github"></i></span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="https://twitter.com/Blen_Back"> 
-<span class="menu-text"><i class="fa-brands fa-twitter" aria-label="twitter"></i></span></a>
-  </li>  
   <li class="nav-item compact">
     <a class="nav-link" href="./posts.xml"> <i class="bi bi-rss" role="img">
 </i> 
 <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://blenback.github.io/curriculum-vitae/"> 
+<span class="menu-text"><span class="cv-btn">Download CV</span></span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -256,7 +237,7 @@ gtag('config', 'G-9CCC34ZV10', { 'anonymize_ip': true});
 <p>The template is geared towards producing PDF output as I would imagine this is the most common format that theses must be submitted in.</p>
 <p>Here is the example produced by the template for you to view: <a href="assets/quarto-eth-phd-thesis.pdf">Example PDF</a></p>
 <section id="features" class="level2">
-<h2 class="anchored" data-anchor-id="features">📄 Features</h2>
+<h2 data-anchor-id="features">📄 Features</h2>
 <ul>
 <li><p>The ability to add a cover page using the <a href="https://nmfs-opensci.github.io/quarto_titlepages/"><code>quarto_titlepages</code></a> extension</p></li>
 <li><p>Custom functions to ensure consistent formatting of all figures and tables according to user specified color palettes.</p></li>
@@ -267,9 +248,9 @@ gtag('config', 'G-9CCC34ZV10', { 'anonymize_ip': true});
 </ul>
 </section>
 <section id="getting-started" class="level2">
-<h2 class="anchored" data-anchor-id="getting-started">🚀 Getting Started</h2>
+<h2 data-anchor-id="getting-started">🚀 Getting Started</h2>
 <section id="prerequisites" class="level3">
-<h3 class="anchored" data-anchor-id="prerequisites">1. Prerequisites</h3>
+<h3 data-anchor-id="prerequisites">1. Prerequisites</h3>
 <p>Ensure the following are installed:</p>
 <ul>
 <li><a href="https://quarto.org/">Quarto</a></li>
@@ -278,35 +259,35 @@ gtag('config', 'G-9CCC34ZV10', { 'anonymize_ip': true});
 </ul>
 </section>
 <section id="install-the-template" class="level3">
-<h3 class="anchored" data-anchor-id="install-the-template">2. Install the template</h3>
+<h3 data-anchor-id="install-the-template">2. Install the template</h3>
 <p>Directly using Quarto from the the terminal:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>quarto use template blenback<span class="sc">/</span>quarto<span class="sc">-</span>eth<span class="sc">-</span>phd<span class="sc">-</span>thesis</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>quarto use template blenback<span class="sc">/</span>quarto<span class="sc">-</span>eth<span class="sc">-</span>phd<span class="sc">-</span>thesis</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>It will ask for an empty directory name where to put the files, give it a new directory name.</p>
 <p>Once you do that you can render from within the directory.</p>
 <p>Or by cloning the repository</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>git clone https<span class="sc">:</span><span class="er">//</span>github.com<span class="sc">/</span>YOUR_USERNAME<span class="sc">/</span>quarto<span class="sc">-</span>eth<span class="sc">-</span>phd<span class="sc">-</span>thesis.git</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>cd quarto<span class="sc">-</span>eth<span class="sc">-</span>phd<span class="sc">-</span>thesis</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>git clone https<span class="sc">:</span><span class="er">//</span>github.com<span class="sc">/</span>YOUR_USERNAME<span class="sc">/</span>quarto<span class="sc">-</span>eth<span class="sc">-</span>phd<span class="sc">-</span>thesis.git</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>cd quarto<span class="sc">-</span>eth<span class="sc">-</span>phd<span class="sc">-</span>thesis</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </section>
 <section id="open-in-rstudio" class="level3">
-<h3 class="anchored" data-anchor-id="open-in-rstudio">3. Open in RStudio</h3>
+<h3 data-anchor-id="open-in-rstudio">3. Open in RStudio</h3>
 <p>Open the <code>quarto-eth-phd-thesis.Rproj</code> file in RStudio to access the full project environment.</p>
 </section>
 <section id="render-the-thesis" class="level3">
-<h3 class="anchored" data-anchor-id="render-the-thesis">4. Render the Thesis</h3>
+<h3 data-anchor-id="render-the-thesis">4. Render the Thesis</h3>
 <p>From the RStudio console or terminal:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>quarto render</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>quarto render</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </section>
 </section>
 <section id="project-structure" class="level2">
-<h2 class="anchored" data-anchor-id="project-structure">🗂️ Project Structure</h2>
+<h2 data-anchor-id="project-structure">🗂️ Project Structure</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto-eth-phd-thesis/</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto-eth-phd-thesis/</span></span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  <span class="ex">├──</span> bibliography.bib <span class="co"># BibTeX file for references</span></span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>  <span class="ex">├──</span> _book/ <span class="co"># Output directory for rendered book</span></span>
 <span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>  <span class="ex">├──</span> chapters/ <span class="co"># Main content chapters^</span></span>
@@ -359,28 +340,28 @@ gtag('config', 'G-9CCC34ZV10', { 'anonymize_ip': true});
 <span id="cb4-51"><a href="#cb4-51" aria-hidden="true" tabindex="-1"></a>  <span class="ex">├──</span> _quarto.yml <span class="co"># Main Quarto project config</span></span>
 <span id="cb4-52"><a href="#cb4-52" aria-hidden="true" tabindex="-1"></a>  <span class="ex">├──</span> README.md <span class="co"># This file</span></span>
 <span id="cb4-53"><a href="#cb4-53" aria-hidden="true" tabindex="-1"></a>  <span class="ex">├──</span> .gitignore <span class="co"># Git ignore file</span></span>
-<span id="cb4-54"><a href="#cb4-54" aria-hidden="true" tabindex="-1"></a>  <span class="ex">├──</span> .Rprofile <span class="co"># R profile for package loading</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb4-54"><a href="#cb4-54" aria-hidden="true" tabindex="-1"></a>  <span class="ex">├──</span> .Rprofile <span class="co"># R profile for package loading</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </section>
 <section id="customization" class="level2">
-<h2 class="anchored" data-anchor-id="customization">🛠️ Customization</h2>
+<h2 data-anchor-id="customization">🛠️ Customization</h2>
 <section id="package-loading" class="level3">
-<h3 class="anchored" data-anchor-id="package-loading">Package loading</h3>
+<h3 data-anchor-id="package-loading">Package loading</h3>
 <p>I use the <code>.Rprofile</code> to load R packages rather than specifying packages within individual <code>.qmd</code> files or <code>.R</code> scripts as the .Rprofile is called prior to rendering each file. Add any additional packages you require here.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co">#load packages</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co">#load packages</span></span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>packs<span class="ot">&lt;-</span><span class="fu">c</span>(<span class="st">"ggplot2"</span>, <span class="st">"knitr"</span>, <span class="st">"kableExtra"</span>, <span class="st">"ggthemes"</span>, <span class="st">"stringr"</span>)</span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Load required packages</span></span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="fu">invisible</span>(<span class="fu">lapply</span>(packs, require, <span class="at">character.only =</span> <span class="cn">TRUE</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="fu">invisible</span>(<span class="fu">lapply</span>(packs, require, <span class="at">character.only =</span> <span class="cn">TRUE</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </section>
 <section id="unified-table-and-figure-theming" class="level3">
-<h3 class="anchored" data-anchor-id="unified-table-and-figure-theming">Unified table and figure theming</h3>
+<h3 data-anchor-id="unified-table-and-figure-theming">Unified table and figure theming</h3>
 <p>Also in the <code>.Rprofile</code> are some functions to streamline uniform styling of figures and tables throughout your document</p>
 <p>For tables the <code>thesis_tbl()</code> function sets options for <code>knitr::kbl()</code> and <code>kableExtra::kable_styling()</code> to produce booktabs style tables, with center aligned content and bold column titles:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>thesis_tbl <span class="ot">&lt;-</span> <span class="cf">function</span>(x, escape, <span class="at">ltable =</span> <span class="cn">FALSE</span>) {</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>thesis_tbl <span class="ot">&lt;-</span> <span class="cf">function</span>(x, escape, <span class="at">ltable =</span> <span class="cn">FALSE</span>) {</span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>  x <span class="sc">%&gt;%</span></span>
 <span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">kbl</span>(<span class="at">digits =</span> <span class="dv">3</span>,</span>
 <span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>        <span class="at">align =</span> <span class="st">"c"</span>,</span>
@@ -396,11 +377,11 @@ gtag('config', 'G-9CCC34ZV10', { 'anonymize_ip': true});
 <span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a>                <span class="at">latex_valign =</span> <span class="st">"t"</span>) <span class="sc">%&gt;%</span></span>
 <span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a>    <span class="fu">row_spec</span>(<span class="dv">0</span>, <span class="at">bold=</span><span class="cn">TRUE</span>) <span class="sc">%&gt;%</span></span>
 <span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a>    <span class="fu">asis_output</span>()</span>
-<span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>An example of applying this function is included in <code>chapters/paper-01-qmd</code>:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co">#load csv of allocation parameter summary statistics</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co">#load csv of allocation parameter summary statistics</span></span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>Calibration_summary <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"chapters/paper-01/data/Validation_summary.csv"</span>)</span>
 <span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="co">#replace . in column names with white space</span></span>
@@ -409,11 +390,11 @@ gtag('config', 'G-9CCC34ZV10', { 'anonymize_ip': true});
 <span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a><span class="co">#output as markdown table with Knitr::kable</span></span>
 <span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a><span class="co">#knitr::kable(Calibration_summary, align=rep('c', ncol(LULC_agg_summary)), format = "markdown")</span></span>
 <span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>Calibration_summary <span class="sc">%&gt;%</span> </span>
-<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">thesis_tbl</span>(<span class="at">escape =</span> <span class="cn">FALSE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">thesis_tbl</span>(<span class="at">escape =</span> <span class="cn">FALSE</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>For figures the function <code>theme_publication()</code> sets a custom <code>ggplot2</code> theme:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co">#' theme_publication</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co">#' theme_publication</span></span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="co">#' </span></span>
 <span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="co">#' custom ggplot2 theme to apply to all plots</span></span>
 <span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a><span class="co">#' </span></span>
@@ -454,11 +435,11 @@ gtag('config', 'G-9CCC34ZV10', { 'anonymize_ip': true});
 <span id="cb8-39"><a href="#cb8-39" aria-hidden="true" tabindex="-1"></a>       <span class="at">strip.text =</span> <span class="fu">element_text</span>(<span class="at">face=</span><span class="st">"bold"</span>)</span>
 <span id="cb8-40"><a href="#cb8-40" aria-hidden="true" tabindex="-1"></a>     )</span>
 <span id="cb8-41"><a href="#cb8-41" aria-hidden="true" tabindex="-1"></a>  )</span>
-<span id="cb8-42"><a href="#cb8-42" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb8-42"><a href="#cb8-42" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>In addition the <code>.Rprofile</code> contains a series of functions for producing custom continuous and discrete color palettes with the base set of colors specified within the function <code>thesis_color()</code>:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>thesis_color <span class="ot">&lt;-</span> <span class="cf">function</span>(...) {</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>thesis_color <span class="ot">&lt;-</span> <span class="cf">function</span>(...) {</span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>  </span>
 <span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>  thesis_colors <span class="ot">&lt;-</span> <span class="fu">c</span>(</span>
 <span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>  <span class="st">'Seafoam'</span> <span class="ot">=</span> <span class="st">"#86B4A4"</span>, </span>
@@ -487,11 +468,11 @@ gtag('config', 'G-9CCC34ZV10', { 'anonymize_ip': true});
 <span id="cb9-27"><a href="#cb9-27" aria-hidden="true" tabindex="-1"></a>    <span class="fu">return</span> (thesis_colors)</span>
 <span id="cb9-28"><a href="#cb9-28" aria-hidden="true" tabindex="-1"></a>  </span>
 <span id="cb9-29"><a href="#cb9-29" aria-hidden="true" tabindex="-1"></a>  thesis_colors[cols]</span>
-<span id="cb9-30"><a href="#cb9-30" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb9-30"><a href="#cb9-30" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>These color palettes can be applied using defined <code>ggplot2::scale_color_*</code> and <code>ggplot2::scale_fill_*</code> methods. An example of applying the <code>theme_thesis()</code> and <code>scale_color_thesis()</code> functions is provided in <code>chapters/paper-01/paper-01-figs.R:</code></p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>p <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(mtcars, <span class="fu">aes</span>(<span class="at">x =</span> wt, <span class="at">y =</span> mpg, <span class="at">color =</span> <span class="fu">factor</span>(cyl))) <span class="sc">+</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>p <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(mtcars, <span class="fu">aes</span>(<span class="at">x =</span> wt, <span class="at">y =</span> mpg, <span class="at">color =</span> <span class="fu">factor</span>(cyl))) <span class="sc">+</span></span>
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">size =</span> <span class="dv">3</span>) <span class="sc">+</span></span>
 <span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
 <span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Fuel Efficiency vs. Car Weight"</span>,</span>
@@ -500,14 +481,14 @@ gtag('config', 'G-9CCC34ZV10', { 'anonymize_ip': true});
 <span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">color =</span> <span class="st">"Cylinders"</span></span>
 <span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
 <span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_color_thesis</span>(<span class="at">palette =</span> <span class="st">"test_pal"</span>)<span class="sc">+</span></span>
-<span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_thesis</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_thesis</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </section>
 <section id="cover-page" class="level3">
-<h3 class="anchored" data-anchor-id="cover-page">Cover page</h3>
+<h3 data-anchor-id="cover-page">Cover page</h3>
 <p>The template allows you to add a coverpage using the <a href="https://nmfs-opensci.github.io/quarto_titlepages/"><code>quarto_titlepages</code></a> extension. The cover page YAML options are set in in <code>index.qmd</code>:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="sc">---</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="sc">---</span></span>
 <span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>format<span class="sc">:</span> </span>
 <span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>  pdf<span class="sc">:</span></span>
 <span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>    coverpage<span class="sc">:</span> true</span>
@@ -534,26 +515,26 @@ gtag('config', 'G-9CCC34ZV10', { 'anonymize_ip': true});
 <span id="cb11-25"><a href="#cb11-25" aria-hidden="true" tabindex="-1"></a>      date<span class="sc">-</span>style<span class="sc">:</span> <span class="st">"none"</span></span>
 <span id="cb11-26"><a href="#cb11-26" aria-hidden="true" tabindex="-1"></a>      bg<span class="sc">-</span>image<span class="sc">-</span>fading<span class="sc">:</span> <span class="st">"north"</span></span>
 <span id="cb11-27"><a href="#cb11-27" aria-hidden="true" tabindex="-1"></a>      bg<span class="sc">-</span>image<span class="sc">-</span>opacity<span class="sc">:</span> <span class="fl">0.8</span></span>
-<span id="cb11-28"><a href="#cb11-28" aria-hidden="true" tabindex="-1"></a><span class="sc">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb11-28"><a href="#cb11-28" aria-hidden="true" tabindex="-1"></a><span class="sc">---</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>Here I have set the title and subtitle using the extension options but you could just as easily include these manually within your background image. For the details of all the YAML options see the guide for the <code>quarto_titlepages</code> extension:</p>
 </section>
 <section id="front-matter" class="level3">
-<h3 class="anchored" data-anchor-id="front-matter">Front matter</h3>
+<h3 data-anchor-id="front-matter">Front matter</h3>
 <section id="translated-summary" class="level4">
-<h4 class="anchored" data-anchor-id="translated-summary">Translated Summary</h4>
+<h4 data-anchor-id="translated-summary">Translated Summary</h4>
 <p>The ETH doctoral regulations stipulate that the thesis must include a translation of the summary or abstract into one of the Swiss national languages (following the English version). I have added a seperate <code>.qmd</code> file to include this and YAML key for specifying the translation of summary in <code>_quarto.yml</code>:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="sc">---</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="sc">---</span></span>
 <span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>summarytitle<span class="sc">:</span> Zusammenfassung</span>
-<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="sc">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="sc">---</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </section>
 <section id="eth-zurich-title-page" class="level4">
-<h4 class="anchored" data-anchor-id="eth-zurich-title-page">ETH Zurich title page</h4>
+<h4 data-anchor-id="eth-zurich-title-page">ETH Zurich title page</h4>
 <p>To create the standard ETH title page for thesis I have adapted an <a href="https://github.com/tuxu/ethz-thesis/blob/master/frontbackmatter/titlepage.tex">existing LaTeX template</a> with the relevant lines included in <code>ETH-thesis-template.cls</code>. Rather than directly editing the LaTeX I have defined YAML keys in <code>partials/title.tex</code> so that the fields can be filled directly in <code>_quarto.yml</code>:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="sc">---</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="sc">---</span></span>
 <span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>titlepage<span class="sc">-</span>title<span class="sc">:</span> <span class="st">"Your thesis title"</span></span>
 <span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>titlepage<span class="sc">-</span>author<span class="sc">:</span> <span class="st">"Jane Doe"</span></span>
 <span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>summarytitle<span class="sc">:</span> Zusammenfassung</span>
@@ -567,7 +548,7 @@ gtag('config', 'G-9CCC34ZV10', { 'anonymize_ip': true});
 <span id="cb13-12"><a href="#cb13-12" aria-hidden="true" tabindex="-1"></a>examiner<span class="sc">:</span> Prof. Dr. Dwayne Johnson <span class="co"># Your examiner (title and name: Prof. Dr. X)</span></span>
 <span id="cb13-13"><a href="#cb13-13" aria-hidden="true" tabindex="-1"></a>coexaminerone<span class="sc">:</span> Prof. Dr. Stevie Irwin <span class="co"># Your 1st co-examiner (title and name: Prof. Dr. X)</span></span>
 <span id="cb13-14"><a href="#cb13-14" aria-hidden="true" tabindex="-1"></a>coexaminertwo<span class="sc">:</span> Dr. Brian Gumble <span class="co"># Your 2nd co-examiner (title and name: Prof. Dr. X)</span></span>
-<span id="cb13-15"><a href="#cb13-15" aria-hidden="true" tabindex="-1"></a><span class="sc">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb13-15"><a href="#cb13-15" aria-hidden="true" tabindex="-1"></a><span class="sc">---</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>Which results in the title page being rendered as:</p>
 <div class="quarto-figure quarto-figure-center">
@@ -579,10 +560,10 @@ gtag('config', 'G-9CCC34ZV10', { 'anonymize_ip': true});
 </section>
 </section>
 <section id="chapters" class="level3">
-<h3 class="anchored" data-anchor-id="chapters">Chapters</h3>
+<h3 data-anchor-id="chapters">Chapters</h3>
 <p>In the template I have included typical chapters such as the Introduction, State of the Art, Structure, Synthesis and an example of chapter based on a published paper (<code>chapters/paper-01-qmd</code>). Each chapter is a separate <code>.qmd</code> file and you can include/exclude them, or add additional chapters, using the <code>chapters</code> YAML key in <code>_quarto.yml</code>:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>book<span class="sc">:</span> </span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>book<span class="sc">:</span> </span>
 <span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>  date<span class="sc">:</span> last<span class="sc">-</span>modified</span>
 <span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>  chapters<span class="sc">:</span></span>
 <span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>    <span class="sc">-</span> index.qmd <span class="co"># Used to enter the cover page yaml, glossary, abbreviations, etc.</span></span>
@@ -593,11 +574,11 @@ gtag('config', 'G-9CCC34ZV10', { 'anonymize_ip': true});
 <span id="cb14-9"><a href="#cb14-9" aria-hidden="true" tabindex="-1"></a>    <span class="sc">-</span> chapters<span class="sc">/</span>synthesis<span class="sc">/</span>synthesis.qmd</span>
 <span id="cb14-10"><a href="#cb14-10" aria-hidden="true" tabindex="-1"></a>    <span class="sc">-</span> endmatter<span class="sc">/</span>references.qmd</span>
 <span id="cb14-11"><a href="#cb14-11" aria-hidden="true" tabindex="-1"></a>    <span class="sc">-</span> endmatter<span class="sc">/</span>appendices.qmd</span>
-<span id="cb14-12"><a href="#cb14-12" aria-hidden="true" tabindex="-1"></a>    <span class="sc">-</span> endmatter<span class="sc">/</span>CV.qmd</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb14-12"><a href="#cb14-12" aria-hidden="true" tabindex="-1"></a>    <span class="sc">-</span> endmatter<span class="sc">/</span>CV.qmd</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>I have given each chapter a nested sub-directory in order to organize all of the content related to it but this is a personal stylistic decision. However, note that <code>index.qmd</code>, which includes the gloassary must be at the root of the project.</p>
 <section id="paper-based-chapters" class="level4">
-<h4 class="anchored" data-anchor-id="paper-based-chapters">Paper-based chapters</h4>
+<h4 data-anchor-id="paper-based-chapters">Paper-based chapters</h4>
 <p>For cumulative paper theses the ETH regulations state that the chapters that represent published papers should include relevant details of the original article such as a full citation, date of publication, author contributions highlights and statement regarding any chages to the content.</p>
 <p>To display this information along with some other details like links to research code and data, I use custom <a href="https://quarto.org/docs/authoring/callouts.html">Quarto Callout Blocks</a> at the start of each chapters <code>.qmd</code>:</p>
 <div class="quarto-figure quarto-figure-center">
@@ -609,55 +590,101 @@ gtag('config', 'G-9CCC34ZV10', { 'anonymize_ip': true});
 <p>The code for this is included in <code>chapters/paper-01/paper-01.qmd</code> and it uses the LaTeX <a href="https://github.com/Pseudomanifold/latex-credits">latex-credits</a> package to produce the visualization of the author CRediT roles (Note this package is not available via CTAN so is included directly with the template <code>LaTeX_pkgs/credits.sty</code>).</p>
 </section>
 <section id="updatingincluding-figures" class="level4">
-<h4 class="anchored" data-anchor-id="updatingincluding-figures">Updating/including figures</h4>
+<h4 data-anchor-id="updatingincluding-figures">Updating/including figures</h4>
 <p>My preferred method of preparing figures for Quarto documents is to produce and save them via dedicated R scripts rather than directly within the <code>.qmd</code> files themselves. This R script is then sourced directly at the head of the respective <code>.qmd</code> file to ensure the most up to date figures are used and the images are then included for each figure as in <code>paper-01.qmd</code>:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co">#source the script that prepares all the figures</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co">#source the script that prepares all the figures</span></span>
 <span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="fu">source</span>(<span class="st">"chapters/paper-01/paper-01-figs.R"</span>)</span>
 <span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a><span class="sc">!</span>[Dummy figure](figures<span class="sc">/</span>dummy_plot.png){<span class="co">#fig-dummy} </span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a><span class="sc">!</span>[Dummy figure](figures<span class="sc">/</span>dummy_plot.png){<span class="co">#fig-dummy} </span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>I do this because I find that when I have multiple figures with quite lengthy code it can make navigating the document a bit annoying. Again, this is a stylistic choice and you should feel free to include figure code directly within the <code>.qmd</code>’s.</p>
 </section>
 </section>
 <section id="end-matter" class="level3">
-<h3 class="anchored" data-anchor-id="end-matter">End matter</h3>
+<h3 data-anchor-id="end-matter">End matter</h3>
 <section id="references" class="level4">
-<h4 class="anchored" data-anchor-id="references">References</h4>
+<h4 data-anchor-id="references">References</h4>
 <p><code>endmatter/references.qmd</code> places a div to ensure that all references for all chapters are placed in this section:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="ex">:::</span> {#refs}</span>
-<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="ex">:::</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb16"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="ex">:::</span> {#refs}</span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="ex">:::</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </section>
 <section id="appendices" class="level4">
-<h4 class="anchored" data-anchor-id="appendices">Appendices</h4>
+<h4 data-anchor-id="appendices">Appendices</h4>
 <p>I have elected to have all appendices for each chapter be placed together after the reference list rather than after their respective chapters. As far I know the ETH regulations are ambiguous as to which of these options is preferred but given that I tend to have have long appendices this was preferable for me.</p>
 <p>I have also chosen to use Alpha-numeric (e.g.&nbsp;A.1) section numbering for the appendices which is specified at the head of <code>endmatter/appendices.qmd</code> before the .qmd files for the individual appendices for each chapter are sourced in sequence. Note: if you add additional chapters you will need to add lines to source the appendices in <code>endmatter/appendices.qmd</code>.</p>
 </section>
 <section id="curriculum-vitae" class="level4">
-<h4 class="anchored" data-anchor-id="curriculum-vitae">Curriculum vitae</h4>
+<h4 data-anchor-id="curriculum-vitae">Curriculum vitae</h4>
 <p>The ETH regulations require that you include your curriculum vitae at the end of your thesis, <code>CV.qmd</code> uses the LaTeX command <code>\includepdf[pages=-]{}</code> to add in your CV from a provided <code>.pdf</code>.</p>
 </section>
 </section>
 </section>
 <section id="license" class="level2">
-<h2 class="anchored" data-anchor-id="license">📄 License</h2>
+<h2 data-anchor-id="license">📄 License</h2>
 <p>This project is licensed under the terms of the LICENSE file included in the repository.</p>
 
 
 </section>
 
 </main> <!-- /main -->
+<!-- nav-scroll.html — add to _quarto.yml under format.html.include-after-body
+     Makes the navbar transparent over the homepage hero and solid on scroll.
+     On pages WITHOUT a hero (.bb-hero) the navbar is always solid. -->
+<script>
+  (function () {
+    function init() {
+      var navbar = document.querySelector('.navbar');
+      if (!navbar) return;
+      var hasHero = !!document.querySelector('.bb-hero');
+      function update() {
+        var solid = !hasHero || window.scrollY > 40;
+        navbar.classList.toggle('navbar-solid', solid);
+      }
+      update();
+      window.addEventListener('scroll', update, { passive: true });
+      window.addEventListener('resize', update, { passive: true });
+    }
+    if (document.readyState !== 'loading') init();
+    else document.addEventListener('DOMContentLoaded', init);
+  })();
+</script>
+<!-- bb-footer.html — add to _quarto.yml under format.html.include-after-body
+     (AFTER nav-scroll.html). Replaces Quarto's default page-footer, which the
+     theme hides. Edit the links/text to taste. -->
+<footer class="bb-footer">
+  <div class="bb-footer-wrap">
+    <div>
+      <h3>Let's talk.</h3>
+      <p class="bb-ft-sub">Open to collaboration on spatial modelling, scientific visualisation and reproducible research.</p>
+      <a class="bb-ft-mail" href="mailto:benjaminsamuel.black@zalf.de">benjaminsamuel.black@zalf.de</a>
+    </div>
+    <div class="bb-ft-cols">
+      <div class="bb-ft-col">
+        <h4>Site</h4>
+        <a href="index.html#publications">Publications</a>
+        <a href="index.html#presentations">Presentations</a>
+        <a href="index.html#posts">Posts</a>
+        <a href="https://blenback.github.io/curriculum-vitae/">CV</a>
+      </div>
+      <div class="bb-ft-col">
+        <h4>Elsewhere</h4>
+        <a href="https://github.com/blenback">GitHub</a>
+        <a href="https://scholar.google.com/citations?hl=en&amp;user=h00y-m4AAAAJ">Google Scholar</a>
+        <a href="https://orcid.org/0000-0002-8113-2114">ORCID</a>
+        <a href="https://www.linkedin.com/in/ben-black-9889a1150/">LinkedIn</a>
+      </div>
+    </div>
+  </div>
+  <div class="bb-ft-bottom">
+    <span>© Benjamin Black 2026 · CC BY-NC-SA 4.0</span>
+    <span>Made with R &amp; Quarto</span>
+  </div>
+</footer>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
-    const icon = "";
-    const anchorJS = new window.AnchorJS();
-    anchorJS.options = {
-      placement: 'right',
-      icon: icon
-    };
-    anchorJS.add('.anchored');
     const isCodeAnnotation = (el) => {
       for (const clz of el.classList) {
         if (clz.startsWith('code-annotation-')) {                     
@@ -700,13 +727,14 @@ gtag('config', 'G-9CCC34ZV10', { 'anonymize_ip': true});
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
@@ -1049,19 +1077,6 @@ gtag('config', 'G-9CCC34ZV10', { 'anonymize_ip': true});
   });
   </script>
 </div> <!-- /content -->
-<footer class="footer">
-  <div class="nav-footer">
-    <div class="nav-footer-left">
-<p><i class="fa-regular fa-copyright" aria-label="copyright"></i> Benjamin Black, 2026<br> All content licensed under <i class="fa-brands fa-creative-commons" aria-label="creative-commons"></i> <i class="fa-brands fa-creative-commons-by" aria-label="creative-commons-by"></i> <i class="fa-brands fa-creative-commons-sa" aria-label="creative-commons-sa"></i> <i class="fa-brands fa-creative-commons-nc" aria-label="creative-commons-nc"></i> <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">(CC BY-NC-SA 4.0)</a></p>
-</div>   
-    <div class="nav-footer-center">
-      &nbsp;
-    </div>
-    <div class="nav-footer-right">
-<p>Made with <i class="fa-brands fa-r-project" aria-label="r-project"></i> and <a href="https://quarto.org/">Quarto</a><br></p>
-</div>
-  </div>
-</footer>
 
 
 

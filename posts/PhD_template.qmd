@@ -1,8 +1,8 @@
 ---
 title: Creating my own PhD thesis template with Quarto
 date: "2025-4-23"
-image: ../assets/thesis_design.svg
-image-alt: Graphical abstract for reproducible research workshop
+image: ../assets/titlepage.png
+image-alt: Title page of my Quarto PhD thesis template
 categories: [R, Quarto, Reproducible research, thesis, template, LaTeX]
 ---
 Over the last two years I have really started to use Quarto for everything in my academic work from writing manuscripts, websites for research projects, data dashboards for workshops, chain letter writing, and presentations. So when it came to writing my PhD thesis I already knew I wanted to use Quarto.

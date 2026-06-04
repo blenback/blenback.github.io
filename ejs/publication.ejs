@@ -1,58 +1,26 @@
 ```{=html}
-
-<head>
-  <style>
-    ul.no-bullets {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-    }
-  </style>
-</head>
-
-<ul class="no-bullets">
-  <% for (const item of items) { %>
-    <li>
-      <br>
-      <%= item['authors'] %>
-        <%= item['year'] %>
-          <%= item['title'] %>
-            <i>
-              <%= item['journal'] %>
-            </i>
-            <a href="<%- item.href %>">
-              <%= item.doi %>
-            </a>
-            <br />
-            <% if(item['summary']){ %>
-              <p class="d-inline-flex gap-1">
-                <a class="btn btn-outline-dark btn-sm" data_url-bs-toggle="collapse" href="#collapseExample"
-                  role="button" aria-expanded="false" aria-controls="collapseExample"> Plain Langauge summary </a>
-              </p>
-              <div class="collapse" id="collapseExample">
-                <div class="card card-body">
-                  <%= item['summary']%>
-                </div>
-              </div>
-              <% } %>
-                <% if(item['bibtex']){ %>
-                  <a href="<%- item['bibtex']%>" class="btn btn-outline-dark btn-sm" aria-pressed="true" role="button"
-                    download="<%- item['bibtex']%>"><i class="fa-solid fa-quote-left"></i> Cite </a>
-                  <% } %>
-                    <% if(item['preprint_url']){ %>
-                      <a href="<%- item['preprint_url']%>" class="btn btn-outline-dark btn-sm" aria-pressed="true"
-                        role="button"> <i class="fa-solid fa-fingerprint"></i> preprint_url </a>
-                      <% } %>
-                        <% if(item['data_url']){ %>
-                          <a href="<%- item['data_url']%>" class="btn btn-outline-dark btn-sm" aria-pressed="true"
-                            role="button"> <i class="fa-solid fa-data_urlbase"></i> data_url </a>
-                          <% } %>
-                            <% if(item['code_url']){ %>
-                              <a href="<%- item['code_url']%>" class="btn btn-outline-dark btn-sm" aria-pressed="true"
-                                role="button"> <i class="fa-solid fa-code_url"></i> code_url </a>
-                              <% } %>
-
-    <li>
-      <% } %>
-</ul>
+<%
+  let sorted = items.slice().sort((a, b) => {
+    let na = parseInt(String(a.year || '')); let nb = parseInt(String(b.year || ''));
+    if (!isNaN(na) && !isNaN(nb)) return nb - na; return 0;
+  });
+%>
+<div class="pub-list">
+<% for (let item of sorted) { %>
+  <article class="pub">
+    <div class="yr"><%= item.year || '' %></div>
+    <div class="meta">
+      <div class="pt"><%- item.title %></div>
+      <div class="pj">
+        <% if (item.authors || item.author) { %><%= item.authors || item.author %><% } %><% if ((item.authors || item.author) && (item.institution || item.journal)) { %> · <% } %><% if (item.institution || item.journal) { %><i><%- item.institution || item.journal %></i><% } %>
+      </div>
+    </div>
+    <div class="links">
+      <% if (item.doi) { %><a class="tagpill" href="<%- item.doi %>">DOI</a><% } %>
+      <% if (item.url) { %><a class="tagpill" href="<%- item.url %>">Link</a><% } %>
+      <% if (item.pdf) { %><a class="tagpill" href="<%- item.pdf %>">PDF</a><% } %>
+    </div>
+  </article>
+<% } %>
+</div>
 ```
