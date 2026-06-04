@@ -1,15 +1,21 @@
 
 - title: NASCENT-Peru Project Website
-  href: https://nascent-peru.github.io/
-  thumbnail: assets/nascent_website.png
+  path: https://nascent-peru.github.io/
+  image: assets/nascent_website.png
+  description: "Project website for NASCENT-Peru, sharing data, tools, and results from our research on nature's contributions to people in the Peruvian Andes."
+  categories: [Website]
 - title: ValPar.CH Synthesis Report
-  href: https://www.bafu.admin.ch/bafu/de/home/themen/landschaft/publikationen-studien/publikationen/vielfaeltige-werte-der-natur.html
-  thumbnail: assets/valparch_report.png
+  path: https://www.bafu.admin.ch/bafu/de/home/themen/landschaft/publikationen-studien/publikationen/vielfaeltige-werte-der-natur.html
+  image: assets/valparch_report.png
+  description: "Synthesis report from the ValPar.CH project summarising evidence on the diverse values of nature across Swiss landscapes."
+  categories: [Report]
 - title: Op-Ed for World Economic Forum
-  href: https://www.weforum.org/stories/2024/12/biodiversity-ecosystem-services-scenarios-climate-change/
-  thumbnail: assets/wef_blog.png
+  path: https://www.weforum.org/stories/2024/12/biodiversity-ecosystem-services-scenarios-climate-change/
+  image: assets/wef_blog.png
+  description: "Op-ed arguing that biodiversity and ecosystem service scenarios are essential tools for navigating climate-driven land use decisions."
+  categories: [Op-Ed]
 - title: ValPar.CH Land Use Scenario Explorer
-  href: https://valpar.ch/land-use-change-scenarios/index-en.html
-  thumbnail: assets/scenario_explorer.png
-
-
+  path: https://valpar.ch/land-use-change-scenarios/index-en.html
+  image: assets/scenario_explorer.png
+  description: "Interactive tool for exploring spatially explicit land use change scenarios and their consequences for biodiversity and ecosystem services in Switzerland."
+  categories: [Interactive tool]

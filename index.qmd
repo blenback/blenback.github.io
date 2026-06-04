@@ -17,23 +17,23 @@ listing:
     contents:
       - publications/other_outputs.yaml
     type: grid
-    grid-columns: 3
-    fields: [image, title, categories]
+    grid-columns: 4
+    fields: [image, title, description, categories]
   - id: Presentations
     contents:
       - presentations/*.qmd
     sort: "date desc"
     type: grid
-    grid-columns: 3
-    max-items: 3
+    grid-columns: 4
+    max-items: 4
     date-format: "MMM YYYY"
     fields: [image, date, title, event, location]
   - id: Posts
     contents: posts/*.qmd
     sort: "date desc"
     type: grid
-    grid-columns: 3
-    max-items: 3
+    grid-columns: 4
+    max-items: 4
     date-format: "MMM YYYY"
     fields: [image, title, description, categories, date]
 ---

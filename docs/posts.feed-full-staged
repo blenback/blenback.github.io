@@ -12,6 +12,17 @@
 <generator>quarto-1.9.38</generator>
 <lastBuildDate>Wed, 03 Jun 2026 22:00:00 GMT</lastBuildDate>
 <item>
+  <title>{B4F502887207:/posts/2026-06-04-babelquarto-revealjs.html}</title>
+  <link>https://blenback.github.io/posts/2026-06-04-babelquarto-revealjs.html</link>
+  <description>{B4F502887207:/posts/2026-06-04-babelquarto-revealjs.html}</description>
+  <category>R</category>
+  <category>Quarto</category>
+  <category>Open science</category>
+  <category>Reproducible research</category>
+  <guid>https://blenback.github.io/posts/2026-06-04-babelquarto-revealjs.html</guid>
+  <pubDate>Wed, 03 Jun 2026 22:00:00 GMT</pubDate>
+</item>
+<item>
   <title>{B4F502887207:/posts/2026-06-04-quarto-presentation-templates.html}</title>
   <link>https://blenback.github.io/posts/2026-06-04-quarto-presentation-templates.html</link>
   <description>{B4F502887207:/posts/2026-06-04-quarto-presentation-templates.html}</description>
@@ -22,6 +33,7 @@
   <category>Open science</category>
   <guid>https://blenback.github.io/posts/2026-06-04-quarto-presentation-templates.html</guid>
   <pubDate>Wed, 03 Jun 2026 22:00:00 GMT</pubDate>
+  <media:content url="https://blenback.github.io/assets/dml-presentation-template.png" medium="image" type="image/png" height="80" width="144"/>
 </item>
 <item>
   <title>{B4F502887207:/posts/valparCH-praxis-navigator.html}</title>
