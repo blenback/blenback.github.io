@@ -1,0 +1,31 @@
+---
+title: "Diving into presentation templates with Quarto: RevealJS and PowerPoint"
+date: "2026-06-04"
+categories: [R, Quarto, Reproducible research, Automation, Open science]
+draft: false
+---
+
+If you give presentations in research settings, at some point someone will ask for 'the slides as a PowerPoint'. This still happens more often than I expected — usually at conferences where organisers consolidate files onto a central laptop, or where participants want to annotate a local copy. The alternative, a self-hosted HTML deck, is much better for online talks, sharing a live URL, and embedding interactive content. So the format question ends up depending on the audience, and the obvious solution — maintaining two separate files for the same content — is exactly the kind of friction that quietly eats time.
+
+Quarto handles this by letting you declare multiple output formats in the same document. A single `quarto render` produces all of them:
+
+```yaml
+format:
+  dml-revealjs-revealjs: default
+  pptx:
+    reference-doc: dml-template-powerpoint.potx
+```
+
+The RevealJS output gets the full HTML treatment — browser navigation, interactive components, speaker notes in a separate view. The PPTX output picks up branding from a `.potx` PowerPoint template file pointed to by `reference-doc`. Both outputs render from the same markdown source, sharing all the slide content. This is the setup I now use for DML group presentations.
+
+The RevealJS side is a Quarto extension — a format called `dml-revealjs`, installed with `quarto use template`. Extensions bundle things that would otherwise need repeating in every project's YAML. The `_extension.yml` sets sensible defaults (1280×720, slide numbers, no transition animations, no navigation menu), registers a brand file, and attaches two hooks: a custom title slide partial and a script injected after the body.
+
+The title slide is a Pandoc template partial (`title-slide.html`) that replaces Quarto's default. It uses Pandoc's own template syntax — `$title$`, `$for(by-author)$` — to build a layout with a working group eyebrow line, a hero panel for the title and author block, a logo mark, and a full-width footer image at the bottom. The result is a distinct opening slide without any per-presentation configuration.
+
+Colours and fonts are declared in a `_brand.yml` file using Quarto's brand system, introduced in version 1.6. Defining them there means the same tokens cascade through callout blocks, code backgrounds, link colours, and table borders automatically. The custom SCSS then maps those brand tokens to RevealJS's own theme variables, so updating a colour in `_brand.yml` updates the whole theme.
+
+The interactive diagrams are the part I find most useful in talks. Two JavaScript components — a clickable ring diagram for the three service pillars and a tiered service overview — are bundled as a script injected via `include-after-body`. They mount on any slide that has the relevant `data-` attribute, so you drop a single attribute onto a `<div>` in the markdown and the full interactive component appears. Both hook into Reveal's `slidechanged` event to reset their state when you navigate away, which keeps them behaving cleanly if you move back through the deck.
+
+The PPTX side is simpler: a `.potx` file referenced with `reference-doc`. Quarto uses it to carry over master slide styles, fonts, and colour themes. The mapping from Quarto's slide elements to PowerPoint slide layouts is imperfect — complex RevealJS column layouts don't translate directly — but for the typical mix of title slides, bullet points, two-column content, and code blocks it produces something consistent and on-brand rather than the Quarto default.
+
+Both templates are in the [DML templates repository](https://github.com/iat-dml/templates), with installation instructions in the README.
