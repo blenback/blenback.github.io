@@ -1,0 +1,16 @@
+---
+title: "Multilingual RevealJS presentations with babelquarto"
+date: "2026-06-04"
+categories: [R, Quarto, Open science, Reproducible research]
+draft: false
+---
+
+If you create Quarto presentations in more than one language, you know the problem: two `.qmd` files, two rendering passes, and a growing risk of the versions drifting apart as you iterate. The [babelquarto](https://docs.ropensci.org/babelquarto/) package from rOpenSci already solves this for books and websites — it handles per-language rendering, a file-suffix convention (e.g. `index.qmd` and `index.de.qmd`), and cross-language navigation links from a single project. RevealJS presentations, however, were not supported.
+
+I use babelquarto on the [DML group site](https://damifll.github.io/) to maintain parallel English and German content, and the same need came up for slide decks. Rather than maintain separate files or patch around the gap, I decided to extend the package.
+
+The contribution, submitted as [PR #128](https://github.com/ropensci-review-tools/babelquarto/pull/128), adds two new functions. `quarto_multilingual_presentation()` scaffolds a new multilingual presentation project using the same file-suffix convention the package already uses for websites. `render_presentation()` then renders the project and injects a language-switch pill into every slide.
+
+Under the hood, the implementation delegates to the existing `render(type = "website")` pipeline rather than duplicating rendering logic — presentations are treated as website-format projects rendered with RevealJS. The main new work is in HTML post-processing: a dispatcher identifies RevealJS pages via `is_revealjs()` and injects the language pill directly into the `<body>` element, outside the `.reveal` container. Placing it there is necessary because the `.reveal` div applies CSS transforms that break fixed positioning, which would cause the pill to disappear or shift unpredictably. Non-RevealJS pages continue through the existing `add_links()` path unchanged. The pill label is drawn from `babelquarto.languagecodes.text` in `_quarto.yml`, falling back to the uppercase language code — consistent with how babelquarto already handles language naming across the rest of the package.
+
+The PR is open for review. If you work with multilingual Quarto presentations and want to test it or leave feedback, it is at [github.com/ropensci-review-tools/babelquarto/pull/128](https://github.com/ropensci-review-tools/babelquarto/pull/128).
