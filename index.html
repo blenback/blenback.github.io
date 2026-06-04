@@ -115,9 +115,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-image','listing-title','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-image','listing-title','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-title","listing-href","listing-thumbnail"],
+      searchColumns: ["listing-title","listing-image","listing-description","listing-categories"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -507,8 +507,8 @@ landscape planning.&lt;/p&gt;
   <a class="section-more" href="presentations.html">All presentations</a>
 </div>
 <div id="listing-Presentations" class="quarto-listing quarto-listing-container-grid">
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="Q2xpbWF0ZSUyMENoYW5nZSUyQ01vZGVsJTIwaW50ZWdyYXRpb24lMkNMYW5kJTIwdXNlJTIwY2hhbmdlJTIwbW9kZWxsaW5n" data-listing-date-sort="1757980800000" data-listing-file-modified-sort="1780592254200" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="39">
+<div class="list grid quarto-listing-cols-4">
+<div class="g-col-1" data-index="0" data-categories="Q2xpbWF0ZSUyMENoYW5nZSUyQ01vZGVsJTIwaW50ZWdyYXRpb24lMkNMYW5kJTIwdXNlJTIwY2hhbmdlJTIwbW9kZWxsaW5n" data-listing-date-sort="1757980800000" data-listing-file-modified-sort="1780602756213" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="39">
 <a href="./presentations/IMC-2025-JH.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -547,7 +547,7 @@ Innsbruck, Austria
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="Q29uc2VydmF0aW9uJTJDRWNvc3lzdGVtJTIwU2VydmljZXMlMkNSb2J1c3RuZXNzJTJDUHJvdGVjdGVkJTIwQXJlYXMlMkNOb3JtYXRpdmUlMjBTY2VuYXJpb3M=" data-listing-date-sort="1757894400000" data-listing-file-modified-sort="1780592254200" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="34">
+<div class="g-col-1" data-index="1" data-categories="Q29uc2VydmF0aW9uJTJDRWNvc3lzdGVtJTIwU2VydmljZXMlMkNSb2J1c3RuZXNzJTJDUHJvdGVjdGVkJTIwQXJlYXMlMkNOb3JtYXRpdmUlMjBTY2VuYXJpb3M=" data-listing-date-sort="1757894400000" data-listing-file-modified-sort="1780602756213" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="34">
 <a href="./presentations/IMC-2025-AGR.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -586,7 +586,7 @@ Innsbruck, Austria
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="2" data-categories="U2NlbmFyaW8lMjBwbGFubmluZyUyQ1NwYXRpYWwlMjBwbGFubmluZyUyQ0xhbmQlMjB1c2UlMjBjaGFuZ2UlMkNTaW11bGF0aW9uJTIwbW9kZWxsaW5nJTJDQ2VsbHVsYXIlMjBhdXRvbWF0YQ==" data-listing-date-sort="1750809600000" data-listing-file-modified-sort="1780592254200" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="156">
+<div class="g-col-1" data-index="2" data-categories="U2NlbmFyaW8lMjBwbGFubmluZyUyQ1NwYXRpYWwlMjBwbGFubmluZyUyQ0xhbmQlMjB1c2UlMjBjaGFuZ2UlMkNTaW11bGF0aW9uJTIwbW9kZWxsaW5nJTJDQ2VsbHVsYXIlMjBhdXRvbWF0YQ==" data-listing-date-sort="1750809600000" data-listing-file-modified-sort="1780602756213" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="156">
 <a href="./presentations/2025_25_6_CUPUM.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -625,6 +625,45 @@ London, United Kingdom
 </div>
 </div></a>
 </div>
+<div class="g-col-1" data-index="3" data-categories="Q29uc2VydmF0aW9uJTIwcGxhbm5pbmclMkNBcmVhLWJhc2VkJTIwY29uc2VydmF0aW9uJTJDU3BhdGlhbCUyMHBsYW5uaW5nJTJDTGFuZCUyMHVzZSUyMGNoYW5nZSUyQ1NpbXVsYXRpb24lMjBtb2RlbGxpbmclMkNQaEQ=" data-listing-date-sort="1749081600000" data-listing-file-modified-sort="1780602756213" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="84">
+<a href="./presentations/2025_05_6_PhD_defence.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="./assets/2025_05_6_PhD_defence_overview.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Identifying effective area-based conservation strategies under uncertainty
+</h5>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+Jun 2025
+</div>
+</div>
+<table class="card-other-values">
+
+<tbody><tr>
+<td>
+event
+</td>
+<td class="event">
+Doctoral Examination presentation
+</td>
+</tr>
+
+<tr>
+<td>
+location
+</td>
+<td class="location">
+Zurich, Switzerland
+</td>
+</tr>
+
+</tbody></table>
+</div>
+</div></a>
+</div>
 </div>
 <div class="listing-no-matching d-none">No matching items</div>
 </div>
@@ -635,11 +674,13 @@ London, United Kingdom
   <a class="section-more" href="posts.html">All posts</a>
 </div>
 <div id="listing-Posts" class="quarto-listing quarto-listing-container-grid">
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="UiUyQ1F1YXJ0byUyQ09wZW4lMjBzY2llbmNlJTJDUmVwcm9kdWNpYmxlJTIwcmVzZWFyY2g=" data-listing-date-sort="1780531200000" data-listing-file-modified-sort="1780592254198" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="295">
+<div class="list grid quarto-listing-cols-4">
+<div class="g-col-1" data-index="0" data-categories="UiUyQ1F1YXJ0byUyQ09wZW4lMjBzY2llbmNlJTJDUmVwcm9kdWNpYmxlJTIwcmVzZWFyY2g=" data-listing-date-sort="1780531200000" data-listing-file-modified-sort="1780602756211" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="295">
 <a href="./posts/2026-06-04-babelquarto-revealjs.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
-<div class="listing-item-img-placeholder card-img-top" style="height: 150px;">&nbsp;</div>
+<p class="card-img-top">
+<img loading="lazy" src="./assets/babelquarto.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
 Multilingual RevealJS presentations with babelquarto
@@ -666,7 +707,7 @@ Jun 2026
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="UiUyQ1F1YXJ0byUyQ1JlcHJvZHVjaWJsZSUyMHJlc2VhcmNoJTJDQXV0b21hdGlvbiUyQ09wZW4lMjBzY2llbmNl" data-listing-date-sort="1780531200000" data-listing-file-modified-sort="1780592254199" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="550">
+<div class="g-col-1" data-index="1" data-categories="UiUyQ1F1YXJ0byUyQ1JlcHJvZHVjaWJsZSUyMHJlc2VhcmNoJTJDQXV0b21hdGlvbiUyQ09wZW4lMjBzY2llbmNl" data-listing-date-sort="1780531200000" data-listing-file-modified-sort="1780602756213" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="550">
 <a href="./posts/2026-06-04-quarto-presentation-templates.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -700,7 +741,7 @@ Jun 2026
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="2" data-categories="YmlvZGl2ZXJzaXR5JTJDc3BhdGlhbCUyMHBsYW5uaW5nJTJDZGVjaXNpb24lMjBzdXBwb3J0" data-listing-date-sort="1777507200000" data-listing-file-modified-sort="1780592254200" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="195">
+<div class="g-col-1" data-index="2" data-categories="YmlvZGl2ZXJzaXR5JTJDc3BhdGlhbCUyMHBsYW5uaW5nJTJDZGVjaXNpb24lMjBzdXBwb3J0" data-listing-date-sort="1777507200000" data-listing-file-modified-sort="1780602756213" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="195">
 <a href="./posts/valparCH-praxis-navigator.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -730,6 +771,40 @@ Apr 2026
 </div>
 </div></a>
 </div>
+<div class="g-col-1" data-index="3" data-categories="amF2YXNjcmlwdCUyQ2QzJTJDZ2VvdGlmZiUyQ2RhdGEtdmlzdWFsaXphdGlvbiUyQ2NvbnNlcnZhdGlvbi1wbGFubmluZw==" data-listing-date-sort="1775433600000" data-listing-file-modified-sort="1780602756213" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="969">
+<a href="./posts/interactive-bivariate-map-post.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="./assets/interative-bivar-map.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Building an interactive bi-variate map for exploring robustness of ecosystems services and biodiversity under future uncertainty
+</h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('amF2YXNjcmlwdA=='); return false;">javascript</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZDM='); return false;">d3</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('Z2VvdGlmZg=='); return false;">geotiff</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZGF0YS12aXN1YWxpemF0aW9u'); return false;">data-visualization</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('Y29uc2VydmF0aW9uLXBsYW5uaW5n'); return false;">conservation-planning</div>
+
+</div>
+<div class="card-text listing-description delink">
+<p>A short write-up on developing a browser-based map for exploring the robustness of ecosystem services and biodiversity under uncertain futures.</p>
+</div>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+Apr 2026
+</div>
+</div>
+</div>
+</div></a>
+</div>
 </div>
 <div class="listing-no-matching d-none">No matching items</div>
 </div>
@@ -740,48 +815,109 @@ Apr 2026
   <a class="section-more" href="publications.html#beyond-the-papers">All outputs</a>
 </div>
 <div id="listing-Beyond-papers" class="quarto-listing quarto-listing-container-grid">
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0">
-<a href="" class="quarto-grid-link">
+<div class="list grid quarto-listing-cols-4">
+<div class="g-col-1" data-index="0" data-categories="SW50ZXJhY3RpdmUlMjB0b29s">
+<a href="https://bern-landscape-change-explorer.ethz.ch/" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="assets/bern-explorer.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Bern Landscape Change Explorer
+</h5>
+<div class="listing-categories">
 
+<div class="listing-category" onclick="window.quartoListingCategory('SW50ZXJhY3RpdmUlMjB0b29s'); return false;">Interactive tool</div>
+
+</div>
+<div class="card-text listing-description delink">
+<p>Platform for exploring spatially explicit scenarios of land use change, biodiversity and ecosystem services to support conservation planning in the Canton of Bern.</p>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="1" data-categories="V2Vic2l0ZQ==">
+<a href="https://nascent-peru.github.io/" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="assets/nascent_website.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
 NASCENT-Peru Project Website
 </h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('V2Vic2l0ZQ=='); return false;">Website</div>
+
+</div>
+<div class="card-text listing-description delink">
+<p>Project website for NASCENT-Peru, sharing data, tools, and results from our research on nature’s contributions to people in the Peruvian Andes.</p>
+</div>
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="1">
-<a href="" class="quarto-grid-link">
+<div class="g-col-1" data-index="2" data-categories="UmVwb3J0">
+<a href="https://www.bafu.admin.ch/bafu/de/home/themen/landschaft/publikationen-studien/publikationen/vielfaeltige-werte-der-natur.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
-
+<p class="card-img-top">
+<img loading="lazy" src="assets/valparch_report.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
 ValPar.CH Synthesis Report
 </h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('UmVwb3J0'); return false;">Report</div>
+
+</div>
+<div class="card-text listing-description delink">
+<p>Synthesis report from the ValPar.CH project summarising evidence on the diverse values of nature across Swiss landscapes.</p>
+</div>
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="2">
-<a href="" class="quarto-grid-link">
+<div class="g-col-1" data-index="3" data-categories="T3AtRWQ=">
+<a href="https://www.weforum.org/stories/2024/12/biodiversity-ecosystem-services-scenarios-climate-change/" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
-
+<p class="card-img-top">
+<img loading="lazy" src="assets/wef_blog.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
 Op-Ed for World Economic Forum
 </h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('T3AtRWQ='); return false;">Op-Ed</div>
+
+</div>
+<div class="card-text listing-description delink">
+<p>Op-ed arguing that biodiversity and ecosystem service scenarios are essential tools for navigating climate-driven land use decisions.</p>
+</div>
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="3">
-<a href="" class="quarto-grid-link">
+<div class="g-col-1" data-index="4" data-categories="SW50ZXJhY3RpdmUlMjB0b29s">
+<a href="https://valpar.ch/land-use-change-scenarios/index-en.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
-
+<p class="card-img-top">
+<img loading="lazy" src="assets/scenario_explorer.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
 ValPar.CH Land Use Scenario Explorer
 </h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('SW50ZXJhY3RpdmUlMjB0b29s'); return false;">Interactive tool</div>
+
+</div>
+<div class="card-text listing-description delink">
+<p>Interactive tool for exploring spatially explicit land use change scenarios and their consequences for biodiversity and ecosystem services in Switzerland.</p>
+</div>
 </div>
 </div></a>
 </div>

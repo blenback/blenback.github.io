@@ -10,7 +10,7 @@
 <atom:link href="https://blenback.github.io/posts.xml" rel="self" type="application/rss+xml"/>
 <description>Personal website for Ben Black</description>
 <generator>quarto-1.9.38</generator>
-<lastBuildDate>Thu, 04 Jun 2026 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Wed, 03 Jun 2026 22:00:00 GMT</lastBuildDate>
 <item>
   <title>Multilingual RevealJS presentations with babelquarto</title>
   <link>https://blenback.github.io/posts/2026-06-04-babelquarto-revealjs.html</link>
@@ -33,7 +33,7 @@
   <category>Open science</category>
   <category>Reproducible research</category>
   <guid>https://blenback.github.io/posts/2026-06-04-babelquarto-revealjs.html</guid>
-  <pubDate>Thu, 04 Jun 2026 00:00:00 GMT</pubDate>
+  <pubDate>Wed, 03 Jun 2026 22:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Diving into presentation templates with Quarto: RevealJS and PowerPoint</title>
@@ -96,7 +96,7 @@ font-style: inherit;"> dml-template-powerpoint.potx</span></span></code></pre></
   <category>Automation</category>
   <category>Open science</category>
   <guid>https://blenback.github.io/posts/2026-06-04-quarto-presentation-templates.html</guid>
-  <pubDate>Thu, 04 Jun 2026 00:00:00 GMT</pubDate>
+  <pubDate>Wed, 03 Jun 2026 22:00:00 GMT</pubDate>
   <media:content url="https://blenback.github.io/assets/dml-presentation-template.png" medium="image" type="image/png" height="80" width="144"/>
 </item>
 <item>
@@ -129,7 +129,7 @@ font-style: inherit;"> dml-template-powerpoint.potx</span></span></code></pre></
   <category>spatial planning</category>
   <category>decision support</category>
   <guid>https://blenback.github.io/posts/valparCH-praxis-navigator.html</guid>
-  <pubDate>Thu, 30 Apr 2026 00:00:00 GMT</pubDate>
+  <pubDate>Wed, 29 Apr 2026 22:00:00 GMT</pubDate>
   <media:content url="https://blenback.github.io/assets/praxisnavigator-en.gif" medium="image" type="image/gif"/>
 </item>
 <item>
@@ -199,7 +199,7 @@ Note
   <category>data-visualization</category>
   <category>conservation-planning</category>
   <guid>https://blenback.github.io/posts/interactive-bivariate-map-post.html</guid>
-  <pubDate>Mon, 06 Apr 2026 00:00:00 GMT</pubDate>
+  <pubDate>Sun, 05 Apr 2026 22:00:00 GMT</pubDate>
   <media:content url="https://blenback.github.io/assets/interative-bivar-map.png" medium="image" type="image/png" height="106" width="144"/>
 </item>
 <item>
@@ -238,7 +238,7 @@ Note
   <category>PhD</category>
   <category>research</category>
   <guid>https://blenback.github.io/posts/thesis_defence.html</guid>
-  <pubDate>Fri, 06 Jun 2025 00:00:00 GMT</pubDate>
+  <pubDate>Thu, 05 Jun 2025 22:00:00 GMT</pubDate>
   <media:content url="https://blenback.github.io/assets/defence1.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
@@ -284,7 +284,7 @@ Note
   <category>template</category>
   <category>LaTeX</category>
   <guid>https://blenback.github.io/posts/PhD_template.html</guid>
-  <pubDate>Wed, 23 Apr 2025 00:00:00 GMT</pubDate>
+  <pubDate>Tue, 22 Apr 2025 22:00:00 GMT</pubDate>
   <media:content url="https://blenback.github.io/assets/titlepage.png" medium="image" type="image/png" height="204" width="144"/>
 </item>
 <item>
@@ -315,7 +315,7 @@ Note
   <category>Resources</category>
   <category>Continuous Integration</category>
   <guid>https://blenback.github.io/posts/awesome-list.html</guid>
-  <pubDate>Thu, 14 Nov 2024 00:00:00 GMT</pubDate>
+  <pubDate>Wed, 13 Nov 2024 23:00:00 GMT</pubDate>
   <media:content url="https://blenback.github.io/assets/abm-workshop.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
@@ -345,7 +345,7 @@ Note
   <category>Landscape conference</category>
   <category>workshop</category>
   <guid>https://blenback.github.io/posts/R_workshop.html</guid>
-  <pubDate>Wed, 01 May 2024 00:00:00 GMT</pubDate>
+  <pubDate>Tue, 30 Apr 2024 22:00:00 GMT</pubDate>
   <media:content url="https://blenback.github.io/assets/workshop_abstract.png" medium="image" type="image/png" height="104" width="144"/>
 </item>
 <item>
@@ -382,7 +382,7 @@ Note
   <category>CV</category>
   <category>Resume</category>
   <guid>https://blenback.github.io/posts/CV_update.html</guid>
-  <pubDate>Thu, 01 Feb 2024 00:00:00 GMT</pubDate>
+  <pubDate>Wed, 31 Jan 2024 23:00:00 GMT</pubDate>
   <media:content url="https://blenback.github.io/assets/cv_update.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
@@ -409,7 +409,7 @@ Note
   <category>Project</category>
   <category>NASCENT-Peru</category>
   <guid>https://blenback.github.io/posts/nascent_announcement.html</guid>
-  <pubDate>Thu, 30 Nov 2023 00:00:00 GMT</pubDate>
+  <pubDate>Wed, 29 Nov 2023 23:00:00 GMT</pubDate>
   <media:content url="https://blenback.github.io/assets/nascent_website.png" medium="image" type="image/png" height="125" width="144"/>
 </item>
 </channel>
