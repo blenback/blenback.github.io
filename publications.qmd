@@ -22,9 +22,11 @@ listing:
     contents:
     - publications/student_theses.yaml
   - id: Other-content
-    template: ejs/gallery.ejs
-    contents: 
+    contents:
     - publications/other_outputs.yaml
+    type: grid
+    grid-columns: 3
+    fields: [image, title, categories]
 ---
 
 ### Journal Articles 
@@ -39,7 +41,7 @@ listing:
 ::: {#Student-theses}
 :::
 
-### Other content
+### Beyond the papers
 ::: {#Other-content}
 :::
 

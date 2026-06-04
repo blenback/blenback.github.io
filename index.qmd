@@ -4,22 +4,21 @@ page-layout: full
 toc: false
 listing:
   - id: Journal-articles
-  # TODO: Seperate this EJS template into a new one for this listing that doesn't include the authoers. 
-    template: ejs/publication_yearly.ejs
+    template: ejs/publication_yearly_home.ejs
     contents:
     - publications/publications.yaml
     max-items: 3
-    # TODO: Bug not showing most recent papers
-    sort: "date desc"
+    sort: "year desc"
     field-display-names:
       summary: "Summary"
     field-types:
       summary: raw
-    # TODO: stylise this section into something else, Projects?
-  # - id: Other-content
-  #   template: ejs/gallery.ejs
-  #   contents:
-  #   - publications/other_outputs.yaml
+  - id: Beyond-papers
+    contents:
+      - publications/other_outputs.yaml
+    type: grid
+    grid-columns: 3
+    fields: [image, title, categories]
   - id: Presentations
     contents:
       - presentations/*.qmd
@@ -29,7 +28,6 @@ listing:
     max-items: 3
     date-format: "MMM YYYY"
     fields: [image, date, title, event, location]
-    # TODO: Change all posts to use the same image as used in Preview.html
   - id: Posts
     contents: posts/*.qmd
     sort: "date desc"
@@ -40,7 +38,6 @@ listing:
     fields: [image, title, description, categories, date]
 ---
 
-<!-- TODO reduce spacing between Hero and Navbar -->
 ```{=html}
 <link href="css/academicons.css" rel="stylesheet">
 <section class="bb-hero">
@@ -65,7 +62,7 @@ listing:
       <div class="bb-portrait-ring"></div>
       <div class="bb-portrait"><img src="assets/landing_portrait_cropped.jpg" alt="Ben Black"/></div>
     </div>
-    <svg class="bb-squiggle" viewBox="0 0 240 130" fill="none" aria-hidden="true">
+    <svg class="bb-squiggle" viewBox="0 0 240 130" width="240" height="130" fill="none" aria-hidden="true">
       <path d="M6 96 C 40 120, 70 60, 110 70 S 180 110, 224 40" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-dasharray="2 11"/>
       <path d="M224 40 l -14 2 m 14 -2 l -4 -13" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>
     </svg>
@@ -75,7 +72,6 @@ listing:
 
 :::: {.page-section .publications-section}
 
-<!-- TODO increase spacing between section-head and content and listing  -->
 ```{=html}
 <div class="section-head">
   <h2 id="publications">Selected Publications</h2>
@@ -112,6 +108,20 @@ listing:
 ```
 
 ::: {#Posts}
+:::
+
+::::
+
+:::: {.page-section .section-tint}
+
+```{=html}
+<div class="section-head">
+  <h2 id="beyond-papers">Beyond the papers</h2>
+  <a class="section-more" href="publications.html#beyond-the-papers">All outputs</a>
+</div>
+```
+
+::: {#Beyond-papers}
 :::
 
 ::::

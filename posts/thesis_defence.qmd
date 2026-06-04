@@ -1,8 +1,8 @@
 ---
 title: I successfully defended my PhD thesis!
 date: "2025-6-06"
-image: ../assets/celebration.svg
-image-alt: Graphical abstract for reproducible research workshop
+image: ../assets/defence1.jpg
+image-alt: Photo from my PhD thesis defence
 categories: [thesis, PhD, research]
 ---
 

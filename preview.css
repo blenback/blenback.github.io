@@ -192,6 +192,7 @@ body.quarto-light .page-columns { padding-top: 0; }
 .bb-squiggle {
   position: absolute; left: 22%; bottom: 12%; width: 200px; height: auto;
   color: var(--bb-accent); opacity: .85; pointer-events: none; z-index: 1;
+  overflow: visible;
 }
 
 @media (max-width: 1080px) {

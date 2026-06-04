@@ -17,8 +17,7 @@
     <div class="meta">
       <div class="pt"><%- item.title %></div>
       <div class="pj">
-        <i><%- item.journal %></i><% if (item.volume) { %>, <%= item.volume %><% } %>
-        <% if (item.authors) { let parts = String(item.authors).split('Black, B.'); for (let j = 0; j < parts.length; j++) { %><% if (j === 0) { %> · <% } %><%= parts[j] %><% if (j < parts.length - 1) { %><span class="author-name">Black, B.</span><% } } } %>
+        <i><%- item.journal %></i>
       </div>
       <div class="links">
         <% if (item.doi) { %><a class="tagpill" href="<%- item.doi %>">DOI</a><% } %>

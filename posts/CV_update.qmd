@@ -1,8 +1,8 @@
 ---
 title: "Automating boring tasks pt. 1: Updating my CV"
 date: "2024-2-1"
-image: ../assets/cv.svg
-image-alt: Graphical abstract for reproducible research workshop
+image: ../assets/cv_update.jpg
+image-alt: Screenshot of my automatically generated CV
 categories: [R, Markdown, Automation, CV, Resume]
 ---
 

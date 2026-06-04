@@ -1,15 +1,16 @@
-
 - title: NASCENT-Peru Project Website
-  href: https://nascent-peru.github.io/
-  thumbnail: assets/nascent_website.png
+  path: https://nascent-peru.github.io/
+  image: assets/nascent_website.png
+  categories: [Website]
 - title: ValPar.CH Synthesis Report
-  href: https://www.bafu.admin.ch/bafu/de/home/themen/landschaft/publikationen-studien/publikationen/vielfaeltige-werte-der-natur.html
-  thumbnail: assets/valparch_report.png
+  path: https://www.bafu.admin.ch/bafu/de/home/themen/landschaft/publikationen-studien/publikationen/vielfaeltige-werte-der-natur.html
+  image: assets/valparch_report.png
+  categories: [Report]
 - title: Op-Ed for World Economic Forum
-  href: https://www.weforum.org/stories/2024/12/biodiversity-ecosystem-services-scenarios-climate-change/
-  thumbnail: assets/wef_blog.png
+  path: https://www.weforum.org/stories/2024/12/biodiversity-ecosystem-services-scenarios-climate-change/
+  image: assets/wef_blog.png
+  categories: [Op-Ed]
 - title: ValPar.CH Land Use Scenario Explorer
-  href: https://valpar.ch/land-use-change-scenarios/index-en.html
-  thumbnail: assets/scenario_explorer.png
-
-
+  path: https://valpar.ch/land-use-change-scenarios/index-en.html
+  image: assets/scenario_explorer.png
+  categories: [Interactive tool]
