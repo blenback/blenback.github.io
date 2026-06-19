@@ -6,7 +6,7 @@ This directory uses a YAML-based system to manage presentation content and autom
 
 1. **presentations.yaml**: Fetched from the [profi repository](https://github.com/blenback/profi) via `fetch-assets.R` during the pre-render step
 2. **create_presentation_qmds.R**: R script that reads the YAML and generates `.qmd` files directly in the `presentations/` directory
-3. Individual presentation QMD files: Named using the `folder` field value (e.g., `2024_20_6_WBF.qmd`) or custom `filename` if specified
+3. Individual presentation QMD files: Named using the `id` field value (e.g., id `2024_20_6_WBF` → `2024_20_6_WBF.qmd`)
 
 ## File structure
 
@@ -19,7 +19,7 @@ This directory uses a YAML-based system to manage presentation content and autom
 Edit `presentations.yaml` in the [profi repository](https://github.com/blenback/profi) and add a new entry:
 
 ```yaml
-- id: unique-identifier-2025
+- id: 2024_20_6_WBF          # Required: unique; also used as the QMD filename (<id>.qmd)
   title: "Presentation Title"
   description: "Brief description of the presentation"
   author: "Author Name(s) as string"
@@ -40,12 +40,9 @@ Edit `presentations.yaml` in the [profi repository](https://github.com/blenback/
     url: "https://doi.org/..."
   draft: true               # Optional, to mark as draft
   
-  # CV fields (for curriculum vitae integration)
-  cv_date: "Mon. YYYY"      # Abbreviated date format for CV
-  cv_event: "Event Name"    # Event name for CV
-  cv_location: "Location"   # Location for CV
-  cv_type: ""               # Type field for CV (usually empty)
-  cv_url: "https://..."     # URL for CV entry
+  # Shared with the CV: its presentations section (presentations_section.R)
+  # reads title, event, location, date and url from this same entry.
+  url: "https://..."        # Optional: link shown for this entry on the CV
   
   content: |
     Your presentation description and any additional content here.
@@ -70,11 +67,10 @@ Edit `presentations.yaml` in the [profi repository](https://github.com/blenback/
       alt: "Photo description"
       align: "center"
   
-  folder: "YYYY_DD_MM_EventName"  # Required: used as the QMD filename
-  filename: "custom-name.qmd"      # Optional: override the auto-generated filename
+  # No `folder`/`filename` field — the `id` above is the filename base.
 ```
 
-**Note:** The `folder` field is required and determines the QMD filename (e.g., `2024_20_6_WBF.qmd`). Use the optional `filename` field only when you need multiple presentations with different names (e.g., multiple presentations at the same conference).
+**Note:** The `id` field is required, must be unique, and determines the QMD filename (e.g., id `2024_20_6_WBF` → `2024_20_6_WBF.qmd`). For multiple presentations at the same event, give each a distinct `id` (e.g., `IMC-2025-AGR`, `IMC-2025-FW`, `IMC-2025-JH`).
 
 ## Regenerating QMD files
 
@@ -86,8 +82,8 @@ source("create_presentation_qmds.R")
 
 ## Notes
 
-- The `folder` field is required and used as the base filename for the QMD
-- The `filename` field is optional - only use it when you need custom naming (e.g., multiple presentations from the same event)
+- The `id` field is required, must be unique, and is used as the base filename for the QMD (`<id>.qmd`)
+- For multiple presentations from the same event, give each a distinct `id`
 - QMD files are generated directly in the `presentations/` directory
 - The script will overwrite existing QMD files when regenerated
 - Keep PDF files and images in the `/assets/` directory with descriptive names

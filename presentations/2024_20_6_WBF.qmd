@@ -18,7 +18,7 @@ preload-iframes: true
 
 ---
 
-At the [World Biodiversity Forum](https://www.worldbiodiversityforum.org/en/wbf-2024) in Davos, Switzerland, I had the pleasure of presenting early results of the [NASCENT-Peru](https://nascent-peru.github.io/) scenario creation workshops that took place in May and June 2024. 
+At the [World Biodiversity Forum](https://www.worldbiodiversityforum.org/en/wbf-2024) in Davos, Switzerland, I had the pleasure of presenting early results of the [NASCENT-Peru](https://nascent-peru.github.io/) scenario creation workshops that took place in May and June 2024.
 
 This was a great opportunity to showcase the project to researchers from around the world and highlight the importance of scenarios depicting positive futures for landscape development from the perspective of local stakeholders.
 

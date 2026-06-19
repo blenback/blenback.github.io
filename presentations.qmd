@@ -4,5 +4,10 @@ pagetitle: "Presentations - Ben Black"
 listing:
   - id: Presentations
     contents:
-      - presentations
+      - presentations/*.qmd
+    sort: "date desc"
+    type: grid
+    grid-columns: 4
+    date-format: "MMM YYYY"
+    fields: [image, date, title, event, location]
 ---

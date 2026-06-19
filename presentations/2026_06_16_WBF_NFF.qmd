@@ -1,0 +1,32 @@
+---
+title: Insights from the development of national scale Nature Futures Framework scenarios
+  in both Switzerland and Peru
+author:
+  - Ben Black
+  - Adrienne Grêt-Regamey
+  - Paula Mayer
+  - Manuel Kurmann
+event: World Biodiversity Forum 2026
+location: Davos, Switzerland
+date: '2026-06-16'
+image: /assets/2026_06_16_WBF_NFF.png
+image-height: 12000px
+image-alt: Nature Futures Framework scenarios for Switzerland and Peru
+citation: false
+categories:
+  - Nature Futures Framework
+  - Scenarios
+  - Switzerland
+  - Peru
+
+---
+
+These are the slides I presented at the World Biodiversity Forum 2026 in Davos as part of the session: Shaping Biodiverse Futures: Applying the Nature Futures Framework for Scenario Development from Local to National Levels. This was a great opportunity to candidly share some of our experiences of successes and challenges in developing national scale Nature Futures Framework (NFF) scenarios a spart of large scale projects in both Switzerland and Peru with some of the researchers responsible for developing the NFF as well as other practictioners. 
+
+
+```{=html}
+<div class="embed-container">
+  <p align="center"><iframe src="/assets/2026_06_16_WBF_NFF.pdf" style="border: 0.5px" ></iframe
+  /p>
+</div>
+```
