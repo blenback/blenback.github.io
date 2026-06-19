@@ -20,15 +20,14 @@ cat("Found", length(presentations), "presentations\n")
 
 # Function to create QMD file from presentation data
 create_qmd_file <- function(pres) {
-  # Use filename if provided, otherwise use folder name as filename
-  filename <- if (!is.null(pres$filename)) {
-    pres$filename
-  } else {
-    paste0(pres$folder, ".qmd")
+  # Output filename is derived from the entry's id
+  # (e.g. id "2024_20_6_WBF" -> presentations/2024_20_6_WBF.qmd)
+  if (is.null(pres$id)) {
+    stop("Presentation entry is missing required 'id' field")
   }
 
   # Create the full path - directly in presentations directory
-  output_file <- file.path("presentations", filename)
+  output_file <- file.path("presentations", paste0(pres$id, ".qmd"))
 
   # Start building the YAML frontmatter
   yaml_parts <- list()

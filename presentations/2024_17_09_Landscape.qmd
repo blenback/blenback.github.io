@@ -24,7 +24,7 @@ preload-iframes: true
 
 At the [Landscape 2024 conference](https://landscape2024.org/frontend/index.php?folder_id=7393&page_id=) organised by the [Leibniz-Centre for Agricultural Landscape Research (ZALF)](https://www.zalf.de/en/Pages/ZALF.aspx) in Berlin, Germany, I gave a masterclass on Reproducible Research with R and Quarto.
 
-This is a topic I am very passionate about and was a great opportunity to bring together a lot of  practical knowledge that I have developed over the last few years. 
+This is a topic I am very passionate about and was a great opportunity to bring together a lot of  practical knowledge that I have developed over the last few years.
 
 In line with it's theme, I wanted to make the content of the masterclass as open and accessible as possible, so I created a dedicated website for it using Quarto: [https://blenback.github.io/R-for-Reproducible-Research](https://blenback.github.io/R-for-Reproducible-Research)
 

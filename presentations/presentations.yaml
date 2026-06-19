@@ -1,60 +1,465 @@
-- title: 'Ex-ante identification of policy interventions to secure a functioning ecological
-    infrastructure: A participatory Bayesian Network approach in Switzerland'
-  event: 3rd Ecosystem Services Partnership Europe Regional conference
-  location: Tartu, Estonia
-  date: Jun. 2019
-  type: ''
+- id: 2021_06_09_ESP
+  title: 'Ex-ante identification of policy interventions to secure a functioning ecological infrastructure: A participatory Bayesian Network approach in Switzerland'
+  description: '3rd Ecosystem Services Partnership Europe Regional conference in Tartu, Estonia'
+  authors:
+    - Ben Black
+    - Adrienne Grêt-Regamey
+  event: Presentation
+  location: 'Tartu, Estonia'
+  date: '2021-06-09'
+  image: /assets/2021_06_09_ESP_EI_pathways.png
+  image-height: 12000px
+  image-alt: Pathways for Ecological Infrastructure development
+  citation:
+    author: 'Ben Black, Adrienne Grêt-Regamey'
+    url: http://dx.doi.org/10.13140/RG.2.2.30177.99686
+  categories:
+    - ValPar.CH
+    - Bayesian Networks
+    - Ecological Infrastructure
+  content: |
+    These are the slides for a presentation I gave on the integration of different modelling approaches within the [ValPar.CH](https://valpar.ch/index_en.php?page=home_en) project at the 3rd Ecosystem Services Partnership (ESP) Europe Regional conference in Tartu, Estonia 2021. The abstract is available [here.](http://dx.doi.org/10.13140/RG.2.2.30177.99686)
+  embed_type: pdf
+  embed_path: /assets/2021_06_09_ESP_ESP_EU_2021_T5_BBlack.pdf
   url: https://blenback.github.io/presentations/2021_06_09_ESP/
-- title: Combining filter and embedded approaches to improve variable selection in
-    land use change Cellular Automata models
-  event: 11th International Environmental Modelling and Software Society conference
-  location: "Brussels, Belgium"
-  date: Jul. 2022
-  type: ''
+
+- id: 2022_07_01_IEMSs_model_pres
+  title: Combining filter and embedded approaches to improve variable selection in land use change Cellular Automata models
+  description: 11th International Environmental Modelling and Software Society conference.
+  author: Ben Black
+  event: Presentation
+  location: 'Brussels, Belgium'
+  date: '2022-07-01'
+  image: /assets/2022_07_01_IEMSs_model_pres_workflow.png
+  image-height: 12000px
+  image-alt: Feature selection workflow
+  citation:
+    url: https://blenback.github.io/presentations/2022_07_01_IEMSs_model_pres
+  categories:
+    - Feature selection
+    - Random Forests
+    - Land use change modelling
+  content: |
+    These are the slides for a presentation I gave on the application of feature selection as part of calibration of land use change cellular automata at the11th International Environmental Modelling and Software Society (IEMSs) 2022 conference. The presentation abstract is available on [here.](https://www.researchgate.net/publication/361951375_Combining_filter_and_embedded_approaches_to_improve_variable_selection_in_land_use_change_Cellular_Automata_models_using_Random_Forests)
+  embed_type: pdf
+  embed_path: /assets/2022_07_01_IEMSs_model_pres_modelling_pres.pdf
   url: https://blenback.github.io/presentations/2022_07_01_IEMSs_model_pres/
-- title: 'ValPar.CH: Integrating land use change, Ecosystem Service and Biodiversity
-    modelling to simulate pathways for a functioning Ecological Infrastructure for
-    Switzerland'
-  event: 11th International Environmental Modelling and Software Society conference
-  location: "Brussels, Belgium"
-  date: Jul. 2022
-  type: ''
+
+- id: 2022_07_01_IEMSs_ValParCH_pres
+  title: 'ValPar.CH: Integrating land use change, Ecosystem Service and Biodiversity modelling to simulate pathways for a functioning Ecological Infrastructure for Switzerland.'
+  description: 11th International Environmental Modelling and Software Society conference.
+  authors:
+    - Ben Black
+    - Antoine Adde
+    - Nathan Külling
+    - Adrienne Grêt-Regamey
+    - Antoine Guisan
+    - Anthony Lehmann
+  event: Presentation
+  location: 'Brussels, Belgium'
+  date: '2022-07-02'
+  image: /assets/2022_07_01_IEMSs_ValParCH_pres_modelling.png
+  image-alt: Model integration workflow
+  citation:
+    url: http://dx.doi.org/10.13140/RG.2.2.20111.66720
+  categories:
+    - ValPar.CH
+    - Ecosystem service modelling
+    - Land use change modelling
+    - Species distribution modelling
+  content: |
+    These are the slides iEMSs_ValPar_pres.pdf for a presentation I gave on the integration of different modelling approaches within the [ValPar.CH](https://valpar.ch/index_en.php?page=home_en) project at the 11th International Environmental Modelling and Software Society (IEMSs) 2022 conference. The abstract is available [here.](http://dx.doi.org/10.13140/RG.2.2.20111.66720)
+  embed_type: pdf
+  embed_path: /assets/2022_07_01_IEMSs_ValParCH_pres_iEMSs_ValPar_pres.pdf
   url: https://blenback.github.io/presentations/2022_07_01_IEMSs_ValParCH_pres/
-- title: Characterising non-stationarity in predictive models of land use in Swiss
-    mountain parks to inform scenarios for deliberative transformation
-  event: International Mountain conference 2022
-  location: Innsbruck, Austria
-  date: Sep. 2022
-  type: ''
+
+- id: 2022_09_13_IMC
+  title: Characterising non-stationarity in predictive models of land use in Swiss mountain parks to inform scenarios for deliberative transformation.
+  description: 'International Mountain conference 2022, Innsbruck Austria.'
+  authors:
+    - Ben Black
+    - Sergio Wicki
+    - Adrienne Grêt-Regamey
+  event: Conference presentation
+  location: 'Innsbruck, Austria'
+  date: '2022-09-13'
+  image: /assets/2022_09_13_IMC_concept_drift.png
+  image-height: 12000px
+  image-alt: Types of non-stationarity (adapted from Hodler 2022)
+  citation:
+    url: http://dx.doi.org/10.13140/RG.2.2.26822.55367
+  categories:
+    - Non-stationarity
+    - Concept drift
+    - Random Forests
+    - Land use change modelling
+  content: |
+    These are the slides for a presentation I gave on quantifying non-stationarity in predictive models of land use change at the International Mountain Conference in Innsbruck 2022. The abstract is available [here.](http://dx.doi.org/10.13140/RG.2.2.26822.55367)
+  extra_images:
+    - path: /assets/2022_09_13_IMC_presenting.jpg
+      alt: Presentation
+      align: center
+  embed_type: pdf
+  embed_path: /assets/2022_09_13_IMC_IMC_pres.pdf
   url: https://blenback.github.io/presentations/2022_09_13_IMC/
-- title: Broadening the scope of future visions for nature positive futures in Peru
-  event: Swiss Re Institute Resilience Summit 2023
-  location: Zürich, Switzerland
-  date: Nov. 2023
-  type: ''
-  url: https://blenback.github.io/presentations/2023_11_30_SwissRE/
-- title: Exploratory modelling of stochastic land use cover change (LUCC) future scenarios for spatial planning
+
+- id: 2023_11_15_DMDU
+  title: Exploratory modelling of stochastic land use cover change (LUCC) future scenarios for spatial planning
+  description: 10th Annual Conference of the Society for Decision Making Under Deep Uncertainty
+  author: Benjamin Black
   event: 10th Annual Conference of the Society for Decision Making Under Deep Uncertainty (DMDU 2023)
-  location: Delft, Netherlands
-  type: ''
-  url: ''
-  date: Nov. 2023
-- title: Normative scenarios of landscape change for Nature-Positive futures in Peru
-  event: World Biodiversity Forum
-  location: Davos, Switzerland
-  date: Jun. 2024
-  type: ''
+  location: 'Delft, Netherlands'
+  date: '2023-11-15'
+  categories:
+    - DMDU
+    - Land use change
+    - Exploratory modelling
+    - Uncertainty
+
+- id: 2023_11_30_SwissRE
+  title: Broadening the scope of future visions for nature positive futures in Peru
+  description: 'Swiss Re Institute Resilience Summit 2023, Zürich, Switzerland.'
+  author: Benjamin Black
+  event: BES Scenarios kick-off meeting
+  location: 'Zürich, Switzerland'
+  date: '2023-11-30'
+  image: /assets/2023_11_30_SwissRE_workflow.png
+  image-height: 12000px
+  image-alt: Workflow for Peru project
+  citation:
+    url: http://dx.doi.org/10.13140/RG.2.2.34351.10405
+  categories:
+    - Future landscape scenarios
+    - Ecosystem Services
+    - Biodiversity
+    - Peru
+    - SwissRE
+  content: |
+    These are the slides for the presentation I gave at the Biodiversity and Ecosystem Services Scenario Modelling challenge kick-off event at the Swiss Re Institute Resilience Summit in Zürich, Switzerland. More details are available [here](http://dx.doi.org/10.13140/RG.2.2.34351.10405)
+  embed_type: pdf
+  embed_path: /assets/2023_11_30_SwissRE_SwissRE_pres.pdf
+  url: https://blenback.github.io/presentations/2023_11_30_SwissRE/
+
+- id: 2023_16_12_ValPar.CH_closing
+  title: Experiences of a ValPar.CH PhD
+  description: 'ValPar.CH closing event, Bern, Switzerland.'
+  author: Benjamin Black
+  event: ValPar.CH closing event
+  location: 'Bern, Switzerland'
+  date: '2024-01-16'
+  image: /assets/2023_16_12_ValPar.CH_closing_Pres_image.png
+  image-height: 12000px
+  categories:
+    - ValPar.CH
+    - PhD
+  preload-iframes: true
+  content: |
+    These are the slides for the presentation I gave at the ValPar.CH project closing event in Bern, Switzerland.
+  embed_type: pdf
+  embed_path: /assets/2023_16_12_ValPar.CH_closing_ValParCH_closing_pres_BB.pdf
+
+- id: 2024_20_6_WBF
+  title: Normative scenarios of landscape change for Nature-Positive futures in Peru
+  description: 'World Biodiversity Forum, Davos, Switzerland.'
+  authors:
+    - Benjamin Black
+    - Adrienne Grêt-Regamey
+  event: 3rd World Biodiversity Forum
+  location: 'Davos, Switzerland'
+  date: '2024-06-20'
+  image: /assets/2024_20_6_WBF_Pres_image.png
+  image-height: 12000px
+  categories:
+    - NASCENT-Peru
+    - Biodiversity
+    - Normative scenarios
+    - Participatory
+  preload-iframes: true
+  content: |
+    At the [World Biodiversity Forum](https://www.worldbiodiversityforum.org/en/wbf-2024) in Davos, Switzerland, I had the pleasure of presenting early results of the [NASCENT-Peru](https://nascent-peru.github.io/) scenario creation workshops that took place in May and June 2024.
+
+    This was a great opportunity to showcase the project to researchers from around the world and highlight the importance of scenarios depicting positive futures for landscape development from the perspective of local stakeholders.
+
+    We also had the opportunity to meet with the teams of the other projects funded by SwissRE who are doing similar work in different regions of the world. It was inspiring to see the diversity of approaches and goals that each project hopes to achieve.
+
+    Here are some photos from the event and below you can access the presentation.
+
+    ::: {layout-nrow=2}
+    ![]( /assets/2024_20_6_WBF_WBF_present.jpg){group="my-gallery"}
+
+    ![]( /assets/2024_20_6_WBF_WBF_group.jpg){group="my-gallery"}
+
+    ![]( /assets/2024_20_6_WBF_WBF_meeting.jpg){group="my-gallery"}
+    :::
+  embed_type: pdf
+  embed_path: /assets/2024_20_6_WBF_WBF_pres_1962024.pdf
   url: https://blenback.github.io/presentations/2024_20_6_WBF/
-- title: Negotiating scenarios of a desirable ecological infrastructure for Switzerland
+
+- id: 2024_14_08_ICIMOD
+  title: Normative scenarios for effectively mitigating biodiversity loss
+  description: 'Foresight Training for Anticipatory Adaptation in the Hindu Kush Himalaya, Dhulikhel, Nepal.'
+  authors:
+    - Benjamin Black
+    - Adrienne Grêt-Regamey
+    - Paula Mayer
+  event: Foresight Training for Anticipatory Adaptation in the Hindu Kush Himalaya
+  location: 'Dhulikhel, Nepal'
+  date: '2024-08-14'
+  image: /assets/2024_14_08_ICIMOD_Pres_image.png
+  image-height: 12000px
+  categories:
+    - Biodiversity
+    - Normative scenarios
+    - Visions
+    - Simulation modelling
+  preload-iframes: true
+  content: |
+    In August, I was invited to contribute a virtual presentation to the [Foresight Training for Anticipatory Adaptation in the Hindu Kush Himalaya](https://www.icimod.org/event/livelihoods-economies/foresight-training-for-anticipatory-adaptation-in-the-hindu-kush-himalaya/) event, organised by the
+    [International Centre for Integrated Mountain Development (ICIMOD)](https://www.icimod.org/) in Dhulikhel, Nepal.
+
+    In my presentation I shared some of our practical experiences from developing normative scenarios for landscape change in Switzerland and Peru and how such scenarios can be operationalized in simulation models to identify locations for conservation areas to effectively mitigate biodiversity loss but also the trade-offs that certain strategies may incur.
+  embed_type: pdf
+  embed_path: /assets/2024_14_08_ICIMOD_ICIMOD_Foresight_traing_14082024.pdf
+
+- id: 2024_5_9_Landschaft
+  title: Negotiating scenarios of a desirable ecological infrastructure for Switzerland
+  description: '4th Swiss Landscape Congress, Tramelan, Switzerland.'
+  authors:
+    - Sergio Wicki
+    - Benjamin Black
+    - Nathan Külling
   event: 4th Swiss Landscape Congress
-  location: Tramelan, Switzerland
-  date: Sep. 2024
-  type: ''
+  location: 'Tramelan, Switzerland'
+  date: '2024-09-05'
+  image: /assets/2024_5_9_Landschaft_Pres_image.png
+  image-height: 12000px
+  citation: false
+  categories:
+    - Switzerland
+    - Ecological Infrastructure
+    - Normative scenarios
+    - Archetypes
+    - Prioritization
+  preload-iframes: true
+  content: |
+    In September, I had the pleasure of contributing a joint presentation, with colleagues from the [ValPar.CH](https://valpar.ch/index_en.php?page=home_en) project, for the [4th Swiss Landscape Congress](https://landschaftskongress.ch/) in Tramelan, Switzerland. This conference was fairly unique as it strived to bring together not just academics but also practice-oriented professionals and stakeholders from various fields related to the landscape in Switzerland. Our contribution,demonstrated how the different methods that we have employed in our research can offer insights into decision-making regarding the implementation of an ecological infrastructure in Switzerland that achieves it's intended purpose of safeguarding biodiversity and ecosystem services whilst also being socially acceptable.
+
+    Below you can view the English version of our presentation:
+  embed_type: pdf
+  embed_path: /assets/2024_5_9_Landschaft_Landschaft_Kongress_ENG.pdf
   url: https://blenback.github.io/presentations/2024_5_9_Landschaft/
-- title: A “Scope, Simulation and Story” approach to identify future spatial development
-    scenarios
-  event: Computational Urban Planning and Urban Management Conference 2025
-  location: University College London
-  date: Jun. 2025
-  type: ''
+
+- id: 2024_17_09_Landscape
+  title: 'Reproducible Research with R and Quarto: Workflows for data, projects and publications'
+  description: 'Masterclass given at the Landscape 2024 conference, Berlin, Germany.'
+  authors:
+    - Benjamin Black
+    - Manuel Kurmann
+    - Nivedita Harisena
+    - Maarten Van Strien
+  event: Landscape 2024 conference, Berlin, Germany.
+  location: 'Berlin, Germany'
+  date: '2024-09-16'
+  image: /assets/2024_17_09_Landscape_Pres_image.png
+  image-height: 12000px
+  categories:
+    - R
+    - Quarto
+    - Workshop
+    - Reproducible research
+    - FAIR
+  preload-iframes: true
+  content: |
+    At the [Landscape 2024 conference](https://landscape2024.org/frontend/index.php?folder_id=7393&page_id=) organised by the [Leibniz-Centre for Agricultural Landscape Research (ZALF)](https://www.zalf.de/en/Pages/ZALF.aspx) in Berlin, Germany, I gave a masterclass on Reproducible Research with R and Quarto.
+
+    This is a topic I am very passionate about and was a great opportunity to bring together a lot of  practical knowledge that I have developed over the last few years.
+
+    In line with it's theme, I wanted to make the content of the masterclass as open and accessible as possible, so I created a dedicated website for it using Quarto: [https://blenback.github.io/R-for-Reproducible-Research](https://blenback.github.io/R-for-Reproducible-Research)
+
+    The website contains all the materials for the masterclass, including the slides and practical exercises. Also because the Github repository for it is public you can also see the source code that underlies it. It was a lot of work but I learned a lot along the way and overall I am really happy with the result.
+  embed_type: iframe
+  embed_url: https://blenback.github.io/R-for-Reproducible-Research/presentation.html
+
+- id: 2025_05_6_PhD_defence
+  title: Identifying effective area-based conservation strategies under uncertainty
+  description: Doctoral Examination presentation
+  author: Ben Black
+  event: Doctoral Examination presentation
+  location: 'Zurich, Switzerland'
+  date: '2025-06-05'
+  image: /assets/2025_05_6_PhD_defence_overview.png
+  image-height: 12000px
+  categories:
+    - Conservation planning
+    - Area-based conservation
+    - Spatial planning
+    - Land use change
+    - Simulation modelling
+    - PhD
+  preload-iframes: true
+  content: |
+    In June 2025, I defended my PhD thesis, titled identifying effective area-based conservation strategies under uncertainty, which represents the culmination of my last five years of research. Once the thesis is approved by the department committee and the final copy submitted I look forward to sharing the full document but for now here are the slides I presented on the day.
+  embed_type: iframe
+  embed_url: 'https://1drv.ms/p/s!Au5Pw8FMUKhdhb1nAHUvqmWUfTMZuA?embed=1&amp;em=2&amp;wdAr=1.7777777777777777'
+  embed_width: 476px
+  embed_height: 288px
+  frameborder: '0'
+
+- id: 2025_25_6_CUPUM
+  title: 'A "Scope, Simulation and Story" approach to identify future spatial development scenarios'
+  description: 'Computational Urban Planning and Urban Management, London, United Kingdom.'
+  authors:
+    - Orlando Roman
+    - Jan Kwakkel
+    - Bryan Adey
+    - Ben Black
+  event: Computational Urban Planning and Urban Management Conference
+  location: 'London, United Kingdom'
+  date: '2025-06-25'
+  image: /assets/2025_25_6_CUPUM_fig1.png
+  image-height: 12000px
+  citation: false
+  categories:
+    - Scenario planning
+    - Spatial planning
+    - Land use change
+    - Simulation modelling
+    - Cellular automata
+  preload-iframes: true
+  content: |
+    Scenario planning often qualitatively develops storylines. These scenarios are usually depicted in a 2 × 2 scenario matrix, where it is challenging to define, for example, the drivers of change to consider in the axes and the boundaries between scenarios. In this qualitative approach, simulation models are typically used as evaluation tools only after the scenarios are generated. This approach is commonly known in the literature as "Story and Simulation".
+
+     This study introduces a "Scope, Simulation, and Story" approach, which has the potential to enhance scenario planning by informing the development of scenarios through computational modelling. Thus, we can integrate participatory processes, spatial development simulation models, and spatial analysis to define scenario boundaries that reflect spatial patterns. We applied this method to simulate spatial development in the Canton of Zurich for 2050 using a cellular automata Land Use Cover Change (LUCC) model.
+
+    ::: {layout-nrow=1}
+    ![]( /assets/2025_25_6_CUPUM_fig1.png){group="my-gallery"}
+
+    ![]( /assets/2025_25_6_CUPUM_fig2.png){group="my-gallery"}
+    :::
+  embed_type: pdf
+  embed_path: /assets/2025_25_6_CUPUM_CUPUM_2025_ORG.pdf
   url: https://virtual.oxfordabstracts.com/event/73503/submission/383
+
+- id: IMC-2025-AGR
+  title: Combining normative scenarios and exploratory conservation policies for delineating robust Alpine protected areas
+  description: 'International Mountain conference 2025, Innsbruck Austria.'
+  authors:
+    - Adrienne Grêt-Regamey
+    - Ben Black
+  event: Conference presentation
+  location: 'Innsbruck, Austria'
+  date: '2025-09-15'
+  image: /assets/2025_14_9_IMC_AGR-cover.svg
+  image-height: 12000px
+  citation: false
+  categories:
+    - Conservation
+    - Ecosystem Services
+    - Robustness
+    - Protected Areas
+    - Normative Scenarios
+  content: |
+    These are the slides presenting the research of my lastest [paper](https://dx.doi.org/10.2139/ssrn.5447007) from the International Mountain Conference in Innsbruck 2025. The abstract is available [here](https://imc2025.info/imc25/abstract/combing-normative-scenarios-and-exploratory-conservation-policies-for-delineating-robust-alpine-protected-areas/).
+  embed_type: pdf
+  embed_path: IMC_pres.pdf
+
+- id: IMC-2025-FW
+  title: Addressing uncertainties in ecosystem services impacts of solar energy systems under future changes.
+  description: 'International Mountain conference 2025, Innsbruck Austria.'
+  authors:
+    - Franziska Walther
+    - Jonas Schwaab
+    - Ben Black
+    - Adrienne Grêt-Regamey
+  event: Conference presentation
+  location: 'Innsbruck, Austria'
+  date: '2025-09-16'
+  image: /assets/2025_14_9_IMC_FW-cover.svg
+  image-height: 12000px
+  citation: false
+  categories:
+    - Ecosystem Services
+    - Solar Energy
+    - Bayesian networks
+    - Uncertainty
+  draft: true
+  content: |
+    These are the slides presenting research that I am collaborating in on the topic of assessing uncertainties in ecosystem service impacts of solar energy systems in Switzerland, presented by my colleague Fransizka Walther, at the International Mountain Conference in Innsbruck 2025. The abstract is available [here](https://imc2025.info/imc25/abstract/addressing-uncertainties-in-ecosystem-services-impacts-of-solar-energy-systems-under-future-changes/).
+  embed_type: pdf
+  embed_path: /assets/2025_14_9_IMC_IMC-2025-FW.pdf
+
+- id: IMC-2025-JH
+  title: 'Climate Change Impacts On Swiss Mountain Ecosystem Services: A Land Use Change Perspective.'
+  description: 'International Mountain conference 2025, Innsbruck Austria.'
+  authors:
+    - Jan Hartman
+    - Ben Black
+    - Adrienne Grêt-Regamey
+  event: Conference presentation
+  location: 'Innsbruck, Austria'
+  date: '2025-09-16'
+  image: /assets/2025_14_9_IMC_JH-cover.svg
+  image-height: 12000px
+  citation: false
+  categories:
+    - Climate Change
+    - Model integration
+    - Land use change modelling
+  content: |
+    These are the slides presenting research I am collaborating in, presented by my colleague, Jan Hartman at the International Mountain Conference in Innsbruck 2025. The abstract is available [here](https://imc2025.info/imc25/abstract/climate-change-impacts-on-swiss-mountain-ecosystem-services-a-land-use-change-perspective/).
+  embed_type: pdf
+  embed_path: /assets/2025_14_9_IMC_IMC-2025-JH.pdf
+
+- id: 2026_06_16_WBF_NFF
+  title: Insights from the development of national scale Nature Futures Framework scenarios in both Switzerland and Peru
+  event: World Biodiversity Forum 2026
+  location: Davos, Switzerland
+  date: '2026-06-16'
+  citation: false
+  image: /assets/2026_06_16_WBF_NFF.png
+  image-height: 12000px
+  image-alt: Nature Futures Framework scenarios for Switzerland and Peru
+  categories:
+    - Nature Futures Framework
+    - Scenarios
+    - Switzerland
+    - Peru
+  authors:
+    - Ben Black
+    - Adrienne Grêt-Regamey
+    - Paula Mayer
+    - Manuel Kurmann
+  content: |
+    These are the slides I presented at the World Biodiversity Forum 2026 in Davos as part of the session: Shaping Biodiverse Futures: Applying the Nature Futures Framework for Scenario Development from Local to National Levels. This was a great opportunity to candidly share some of our experiences of successes and challenges in developing national scale Nature Futures Framework (NFF) scenarios a spart of large scale projects in both Switzerland and Peru with some of the researchers responsible for developing the NFF as well as other practictioners. 
+  type: ''
+  url: https://blenback.github.io/presentations/2026_06_16_WBF_NFF/
+  embed_type: pdf
+  embed_path: /assets/2026_06_16_WBF_NFF.pdf
+
+- id: 2026_06_16_WBF_panel
+  title: 'Scenario-modelling to secure biodiversity and ecosystem services under uncertainty: Insights from Peru and Switzerland'
+  event: World Biodiversity Forum 2026
+  location: Davos, Switzerland
+  date: '2026-06-16'
+  citation: false
+  image: /assets/2026_06_16_WBF_panel.png
+  image-height: 12000px
+  image-alt: Slide showing a map of the overlap between protected areas and locations of future importance for Biodiversity in Peru.
+  categories:
+    - Conservation planning
+    - Ecosystem Services
+    - Uncertainty
+    - Biodiversity
+    - Scenarios
+    - Switzerland
+    - Peru
+  authors:
+    - Ben Black
+    - Adrienne Grêt-Regamey
+    - Manuel Kurmann
+  content: |
+    These are the slides, I gave at the World Biodiversity Forum in Davos, for the workshop: From risk to resilience: How micro- & macro nature-related scenarios support safeguarding financial stability. This workshop was convened by representatives from the funders of our research project [NASCENT-Peru](https://nascent-peru.github.io/): Maud Abdelli (WWF International), Eloi Astier (Axa research), Christos Karydas (EY), and Oliver Schelske (SwissRE). It was great to also see the research done by other projects that were funded in the initiative  to develop scenarios in different regions of the world. After the presentations we were part of a panel discussion where we had the opportunity to discuss the challenges and opportunities of ensuring uptake of BES scenarios within the financial sector. We were fortunate enough to get some very insightful questions from the audience so much so that we even ran out of time to answer them all.
+  type: ''
+  url: https://blenback.github.io/presentations/2026_06_16_WBF_panel/
+  embed_type: pdf
+  embed_path: /assets/2026_06_16_WBF_panel.pdf
