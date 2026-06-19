@@ -1,0 +1,28 @@
+---
+title: "World Biodiversity Forum 2026: a wrap-up"
+date: "2026-06-19"
+image: ../assets/2026_WBF_6.jpg
+image-alt: "Panel discussion at the World Biodiversity Forum 2026 in Davos, with five seated speakers in front of a projected slide."
+categories: [Conference, Biodiversity, Ecosystem Services, Scenarios, Conservation planning, NASCENT-Peru]
+draft: false
+---
+
+Last week I was back in Davos for the World Biodiversity Forum, having first attended in 2024. It remains one of the most stimulating meetings in my calendar, bringing together researchers and practitioners working on biodiversity from a huge range of angles.
+
+This time I had a fuller programme. I gave two presentations: [Insights from the development of national scale Nature Futures Framework scenarios in both Switzerland and Peru](../presentations/2026_06_16_WBF_NFF.qmd), as part of a session on applying the Nature Futures Framework from local to national scales, and [Scenario-modelling to secure biodiversity and ecosystem services under uncertainty](../presentations/2026_06_16_WBF_panel.qmd), given in a workshop and panel discussion on how nature-related scenarios can support financial stability.
+
+I also had the pleasure of chairing a session I co-convened with Adrienne Grêt-Regamey and Peter Verburg: *Rethinking static spatial planning for biodiversity conservation in a rapidly changing world*. As climate change and socio-economic transformations shift the global distribution of biodiversity, conventional approaches to planning protected areas and spatial zoning remain tied to relatively static snapshots of environmental conditions, and often overlook diverse social perspectives on what conservation is for. Our session looked at the models, methods and governance frameworks that could make area-based conservation more responsive, flexible and forward-looking, and more equitable and robust under uncertainty. We plan to synthesise the contributions into a set of actionable recommendations for planners and decision-makers, with a view to informing processes such as the Kunming-Montreal Global Biodiversity Framework.
+
+We had three excellent talks in the session alongside several poster submissions, and the discussion gave me plenty to think about as we begin working those contributions into the recommendations over the coming months.
+
+Here are a few photos from the week.
+
+::: {layout-nrow=2}
+![](../assets/2026_WBF_3.jpg){group="my-gallery"}
+
+![](../assets/2026_WBF_4.jpg){group="my-gallery"}
+
+![](../assets/2026_WBF_6.jpg){group="my-gallery"}
+
+![](../assets/2026_WBF_7.jpg){group="my-gallery"}
+:::
