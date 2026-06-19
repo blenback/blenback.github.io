@@ -6,9 +6,12 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2025-04-23">
+<meta name="author" content="Ben Black">
+<meta name="author" content="Adrienne Grêt-Regamey">
+<meta name="author" content="Manuel Kurmann">
+<meta name="dcterms.date" content="2026-06-16">
 
-<title>Creating my own PhD thesis template with Quarto – Ben Black.</title>
+<title>Scenario-modelling to secure biodiversity and ecosystem services under uncertainty: Insights from Peru and Switzerland – Ben Black.</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -154,14 +157,15 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Creating my own PhD thesis template with Quarto</h1>
+<h1 class="title">Scenario-modelling to secure biodiversity and ecosystem services under uncertainty: Insights from Peru and Switzerland</h1>
   <div class="quarto-categories">
-    <div class="quarto-category">R</div>
-    <div class="quarto-category">Quarto</div>
-    <div class="quarto-category">Reproducible research</div>
-    <div class="quarto-category">thesis</div>
-    <div class="quarto-category">template</div>
-    <div class="quarto-category">LaTeX</div>
+    <div class="quarto-category">Conservation planning</div>
+    <div class="quarto-category">Ecosystem Services</div>
+    <div class="quarto-category">Uncertainty</div>
+    <div class="quarto-category">Biodiversity</div>
+    <div class="quarto-category">Scenarios</div>
+    <div class="quarto-category">Switzerland</div>
+    <div class="quarto-category">Peru</div>
   </div>
   </div>
 
@@ -169,11 +173,19 @@ ul.task-list li input[type="checkbox"] {
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Authors</div>
+    <div class="quarto-title-meta-contents">
+             <p>Ben Black </p>
+             <p>Adrienne Grêt-Regamey </p>
+             <p>Manuel Kurmann </p>
+          </div>
+  </div>
     
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">April 23, 2025</p>
+      <p class="date">June 16, 2026</p>
     </div>
   </div>
   
@@ -185,29 +197,9 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Over the last two years I have really started to use Quarto for everything in my academic work from writing manuscripts, websites for research projects, data dashboards for workshops, chain letter writing, and presentations. So when it came to writing my PhD thesis I already knew I wanted to use Quarto.</p>
-<p>For those not familiar with Quarto, some of the big advantages it offers for a project like this is the ability to include Python and R code chunks that are computed when the document is rendered. It also connects directly with my scientific literature tool of choice, Zotero, for easy compilation of the bibliography. Finally in terms of formatting it allows you to mix in Markdown, LaTeX and HTML.</p>
-<p>My thesis is a cumulative paper thesis and I had already written two of my academic papers using Quarto so integrating these was as simple as copying over the relevant files. As for the other papers that had been written in Word these were very simple to convert to Markdown format, especially with the help of ChatGPT which I find to be very accurate for tasks.</p>
-<p>In terms of an appropriate Quarto template, I found several existing examples:</p>
-<ul>
-<li><p><a href="https://github.com/james-d-h/quarto-phd-thesis" class="uri">https://github.com/james-d-h/quarto-phd-thesis</a></p></li>
-<li><p><a href="https://github.com/quarto-monash/thesis" class="uri">https://github.com/quarto-monash/thesis</a></p></li>
-<li><p><a href="https://gongcastro.github.io/blog/upfthesis/upfthesis.html" class="uri">https://gongcastro.github.io/blog/upfthesis/upfthesis.html</a></p></li>
-<li><p><a href="https://cameronpatrick.com/post/2023/07/quarto-thesis-formatting/#html-output" class="uri">https://cameronpatrick.com/post/2023/07/quarto-thesis-formatting/#html-output</a></p></li>
-</ul>
-<p>However, none quite fit the specifications of my university (ETH Zurich) and my personal formatting preferences. So I decided to take the <a href="https://github.com/james-d-h/quarto-phd-thesis"><code>quarto-phd-thesis</code></a> template from <code>james-d-h</code> and build upon it to make it my own. The main features I added were:</p>
-<ul>
-<li><p>The ability to add a cover page using the <a href="https://nmfs-opensci.github.io/quarto_titlepages/"><code>quarto_titlepages</code></a> extension</p></li>
-<li><p>Custom R functions to ensure consistent formatting of all figures and tables according to user specified color palettes.</p></li>
-<li><p>Use of <code>.Rprofile</code> to manage package loading across chapters</p></li>
-<li><p>The ETH Zurich title page and a translated version of the summary into one of the Swiss national languages.</p></li>
-<li><p>Custom Quarto call-out boxes to display the details of published articles at the start of chapters including a visualization of author <a href="https://www.elsevier.com/researcher/author/policies-and-guidelines/credit-author-statement">CRediT</a> contributions.</p></li>
-<li><p>Additional LaTeX formatting</p></li>
-</ul>
-<p>I have called the resulting template <code>quarto-eth-phd-thesis</code> and it is available via Github here: <a href="https://github.com/blenback/quarto-eth-phd-thesis" class="uri">https://github.com/blenback/quarto-eth-phd-thesis</a>. There is a detailed README in the repo but I have also written the instructions in page on my website: <a href="https://blenback.github.io/quarto-eth-phd-thesis.html" class="uri">https://blenback.github.io/quarto-eth-phd-thesis.html</a></p>
-<p>Here is an example PDF showing some of the features:</p>
+<p>These are the slides, I gave at the World Biodiversity Forum in Davos, for the workshop: From risk to resilience: How micro- &amp; macro nature-related scenarios support safeguarding financial stability. This workshop was convened by representatives from the funders of our research project <a href="https://nascent-peru.github.io/">NASCENT-Peru</a>: Maud Abdelli (WWF International), Eloi Astier (Axa research), Christos Karydas (EY), and Oliver Schelske (SwissRE). It was great to also see the research done by other projects that were funded in the initiative to develop scenarios in different regions of the world. After the presentations we were part of a panel discussion where we had the opportunity to discuss the challenges and opportunities of ensuring uptake of BES scenarios within the financial sector. We were fortunate enough to get some very insightful questions from the audience so much so that we even ran out of time to answer them all.</p>
 <div class="embed-container">
-  <p align="center"><iframe src="../assets/quarto-eth-phd-thesis.pdf" style="border: 0.5px"></iframe>
+  <p align="center"><iframe src="../assets/2026_06_16_WBF_panel.pdf" style="border: 0.5px"></iframe>
 </p></div>
 
 
