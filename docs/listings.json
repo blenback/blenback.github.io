@@ -41,6 +41,7 @@
       "/presentations/2022_07_01_IEMSs_ValParCH_pres.html",
       "/presentations/2022_07_01_IEMSs_model_pres.html",
       "/presentations/2021_06_09_ESP.html",
+      "/posts/2026-06-19-world-biodiversity-forum-wrap-up.html",
       "/posts/2026-06-04-babelquarto-revealjs.html",
       "/posts/2026-06-04-quarto-presentation-templates.html",
       "/posts/valparCH-praxis-navigator.html",
@@ -56,6 +57,7 @@
   {
     "listing": "/posts.html",
     "items": [
+      "/posts/2026-06-19-world-biodiversity-forum-wrap-up.html",
       "/posts/2026-06-04-babelquarto-revealjs.html",
       "/posts/2026-06-04-quarto-presentation-templates.html",
       "/posts/valparCH-praxis-navigator.html",
