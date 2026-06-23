@@ -26,6 +26,7 @@ I came with a few ideas for sessions in my head but the one that I proposed, and
 
 ![](../assets/barcamp-gallery-5.jpg){group="my-gallery"}
 :::
+* All photos from Barcamp Open Science 2026, attribution: Ralf Rebmann 2026.
 
 <!-- Session blog post:
 ​​​​​​​Participants reflected on how institutions, funders, and journals are trying to encourage Open Science, and why these efforts still often fail to change everyday practice.
