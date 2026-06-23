@@ -6,9 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2026-06-04">
+<meta name="dcterms.date" content="2026-06-10">
+<meta name="description" content="My reflections on moderating a session about effective incentives for Open Science.">
 
-<title>Diving into presentation templates with Quarto: RevealJS and PowerPoint – Ben Black.</title>
+<title>A fresh take on conferences: Attending the Barcamp Open Science 2026 in Berlin – Ben Black.</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -23,41 +24,6 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
-}
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -125,6 +91,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;0,600;1,400;1,500&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
 
+<meta name="quarto:status" content="draft">
 
 
 </head>
@@ -132,7 +99,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <body class="nav-fixed fullcontent quarto-light">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
+  <header id="quarto-header" class="headroom fixed-top"><div id="quarto-draft-alert" class="alert alert-warning"><i class="bi bi-pencil-square"></i>Draft</div>
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
@@ -196,16 +163,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Diving into presentation templates with Quarto: RevealJS and PowerPoint</h1>
+<h1 class="title">A fresh take on conferences: Attending the Barcamp Open Science 2026 in Berlin</h1>
   <div class="quarto-categories">
-    <div class="quarto-category">R</div>
-    <div class="quarto-category">Quarto</div>
-    <div class="quarto-category">Reproducible research</div>
-    <div class="quarto-category">Automation</div>
-    <div class="quarto-category">Open science</div>
+    <div class="quarto-category">Open Science</div>
+    <div class="quarto-category">Community</div>
+    <div class="quarto-category">Conference</div>
   </div>
   </div>
 
+<div>
+  <div class="description">
+    My reflections on moderating a session about effective incentives for Open Science.
+  </div>
+</div>
 
 
 <div class="quarto-title-meta">
@@ -214,7 +184,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">June 4, 2026</p>
+      <p class="date">June 10, 2026</p>
     </div>
   </div>
   
@@ -226,19 +196,38 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>If you give presentations in research settings, at some point someone will ask for ‘the slides as a PowerPoint’. This still happens more often than I expected — usually at conferences where organisers consolidate files onto a central laptop, or where participants want to annotate a local copy. The alternative, a self-hosted HTML deck, is much better for online talks, sharing a live URL, and embedding interactive content. So the format question ends up depending on the audience, and the obvious solution — maintaining two separate files for the same content — is exactly the kind of friction that quietly eats time.</p>
-<p>Quarto handles this by letting you declare multiple output formats in the same document. A single <code>quarto render</code> produces all of them:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">format</span><span class="kw">:</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">dml-revealjs-revealjs</span><span class="kw">:</span><span class="at"> default</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">pptx</span><span class="kw">:</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">reference-doc</span><span class="kw">:</span><span class="at"> dml-template-powerpoint.potx</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>The RevealJS output gets the full HTML treatment — browser navigation, interactive components, speaker notes in a separate view. The PPTX output picks up branding from a <code>.potx</code> PowerPoint template file pointed to by <code>reference-doc</code>. Both outputs render from the same markdown source, sharing all the slide content. This is the setup I now use for DML group presentations.</p>
-<p>The RevealJS side is a Quarto extension — a format called <code>dml-revealjs</code>, installed with <code>quarto use template</code>. Extensions bundle things that would otherwise need repeating in every project’s YAML. The <code>_extension.yml</code> sets sensible defaults (1280×720, slide numbers, no transition animations, no navigation menu), registers a brand file, and attaches two hooks: a custom title slide partial and a script injected after the body.</p>
-<p>The title slide is a Pandoc template partial (<code>title-slide.html</code>) that replaces Quarto’s default. It uses Pandoc’s own template syntax — <code>$title$</code>, <code>$for(by-author)$</code> — to build a layout with a working group eyebrow line, a hero panel for the title and author block, a logo mark, and a full-width footer image at the bottom. The result is a distinct opening slide without any per-presentation configuration.</p>
-<p>Colours and fonts are declared in a <code>_brand.yml</code> file using Quarto’s brand system, introduced in version 1.6. Defining them there means the same tokens cascade through callout blocks, code backgrounds, link colours, and table borders automatically. The custom SCSS then maps those brand tokens to RevealJS’s own theme variables, so updating a colour in <code>_brand.yml</code> updates the whole theme.</p>
-<p>The interactive diagrams are the part I find most useful in talks. Two JavaScript components — a clickable ring diagram for the three service pillars and a tiered service overview — are bundled as a script injected via <code>include-after-body</code>. They mount on any slide that has the relevant <code>data-</code> attribute, so you drop a single attribute onto a <code>&lt;div&gt;</code> in the markdown and the full interactive component appears. Both hook into Reveal’s <code>slidechanged</code> event to reset their state when you navigate away, which keeps them behaving cleanly if you move back through the deck.</p>
-<p>The PPTX side is simpler: a <code>.potx</code> file referenced with <code>reference-doc</code>. Quarto uses it to carry over master slide styles, fonts, and colour themes. The mapping from Quarto’s slide elements to PowerPoint slide layouts is imperfect — complex RevealJS column layouts don’t translate directly — but for the typical mix of title slides, bullet points, two-column content, and code blocks it produces something consistent and on-brand rather than the Quarto default.</p>
-<p>Both templates are in the <a href="https://github.com/iat-dml/templates">DML templates repository</a>, with installation instructions in the README.</p>
+<p>June was a busy month because in addition to the <a href="https://blenback.github.io/posts/2026-06-19-world-biodiversity-forum-wrap-up.html">World Biodiversity Forum in Davos</a>, I also attended the Barcamp Open Science in Berlin and the two events could not have been more different in terms of their format. Barcamps are a type of ‘un-conference’, which means that the agenda is not set in advance and participants are encouraged to propose and lead sessions on topics they are interested in. This creates a more participatory and collaborative environment, where attendees can really engage in discussions that are most relevant to them.</p>
+<p>I came with a few ideas for sessions in my head but the one that I proposed, and ended up moderating (thankfully others thought it was interesting enough to vote for), was about effective carrot and stick approaches to incentivising Open Science within different institutional contexts. This is something that I have been interested in since my time as a PhD student where attending conferences and being part of committees was recognised (through ECTS credits) towards your degree but OPen Science activities such as publishing your data and research software were not.</p>
+<p>The session was well attended, with participants from a range of disciplines and career stages, and we had a lively discussion about the challenges and opportunities for promoting Open Science in different contexts. A summary of the discussion will be provided as part of an overall wrap-up blog post from the organisers and I will link to that here once it is available.</p>
+<p>The event itself was fantastic and I found the barcamp format to be a breath of fresh air compared to the traditional academic conference format (Mediocre plenary talks, I’m thinking of you!). If your work is in anyway related to Open Scienc eor if you are just interested in learning more, I would highly recommend attending the next barcamp if you have the opportunity.</p>
+<div class="quarto-layout-panel" data-layout-nrow="2">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: center;">
+<p><img src="../assets/barcamp-gallery-1.jpg" class="img-fluid" data-group="my-gallery"></p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: center;">
+<p><img src="../assets/barcamp-gallery-2.jpg" class="img-fluid" data-group="my-gallery"></p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: center;">
+<p><img src="../assets/barcamp-gallery-3.jpg" class="img-fluid" data-group="my-gallery"></p>
+</div>
+</div>
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: center;">
+<p><img src="../assets/barcamp-gallery-4.jpg" class="img-fluid" data-group="my-gallery"></p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: center;">
+<p><img src="../assets/barcamp-gallery-5.jpg" class="img-fluid" data-group="my-gallery"></p>
+</div>
+</div>
+</div>
+<!-- Session blog post:
+​​​​​​​Participants reflected on how institutions, funders, and journals are trying to encourage Open Science, and why these efforts still often fail to change everyday practice.
+Many "carrots", such as recognition and career credit, were still seen as largely hypothetical because their promised benefits rarely materialise. For example, Open Science may be discussed during tenure-track hiring, but carries little weight in final decisions. Participants also noted that disciplines and institutions are at very different stages of Open Science adoption, meaning that no single incentive model will work everywhere.
+At the same time, "sticks" such as funder mandates, legal obligations, and institutional expectations are often weakly enforced. Participants pointed to funder requirements for data management plans, which are rarely followed up or checked for compliance. Participants from ‘sticky’ institutions with top-down legal obligations also observed that staff still look for ways to avoid publishing data because they fear that imperfections will become visible.
+The discussion concluded that both carrots and sticks remain necessary, but neither will be sufficient without broader cultural change. Participants highlighted that the pace of science may need to slow down rather than continually adding new expectations. To address ‘error culture’, they suggested promoting the idea, in the spirit of George Box, that "all data are imperfect, but some data are useful". Finally, participants argued that researchers should be more confident in badging their work as Open Science and framing it as a fundamental component of good science.
+
+ -->
 
 
 

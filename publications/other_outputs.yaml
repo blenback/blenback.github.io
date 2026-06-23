@@ -25,3 +25,8 @@
   image: assets/scenario_explorer.png
   description: "Interactive tool for exploring spatially explicit land use change scenarios and their consequences for biodiversity and ecosystem services in Switzerland."
   categories: [Interactive tool]
+- title: Modelling biodiversity and ecosystem services loss scenarios
+  path: https://www.swissrefoundation.org/what-we-do/projects/Climate-solutions/Modelling-biodiversity-loss-to-boost-resilience.html
+  description: Final report from the SwissRE Foundation's Biodiversity and Ecosystem Services Scenario Modelling challenge project summarising our project NASCENT-Peru along with the other funded projects.
+  image: assets/swissre_report_cover.png 
+  categories: [Report]
