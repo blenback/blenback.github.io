@@ -30,3 +30,17 @@
   description: Final report from the SwissRE Foundation's Biodiversity and Ecosystem Services Scenario Modelling challenge project summarising our project NASCENT-Peru along with the other funded projects.
   image: assets/swissre_report_cover.png 
   categories: [Report]
+- title: Reproducible research with R and Quarto
+  path: https://blenback.github.io/R-for-Reproducible-Research/
+  description: Workshop and guided excercises with accompanying website, delivered at the [Landscape conference 2024](https://www.zalf.de/en/aktuelles/landscape-conference/Pages/landscape-2024-konferenz.aspx) in Berlin.
+  image: assets/workshop_abstract.png
+  categories: 
+    - Workshop
+    - Training
+- title: 'One Tool to Rule Them All: Quarto for Documentation, Presentations, Manuscripts and Outreach'
+  path: https://iat-dml.github.io/quarto-workshop/
+  description: A guided workshop website on the open-source scientific and technical publishing system [Quarto](https://quarto.org/) and it's application to typical scientific publishing applications. First given at the [13th International Congress on Environmental Modelling and Software (2026)](https://conference.iemss.org/timetable/event/wsc1/).
+  image: assets/quarto-workshop.png
+  categories: 
+    - Workshop
+    - Training

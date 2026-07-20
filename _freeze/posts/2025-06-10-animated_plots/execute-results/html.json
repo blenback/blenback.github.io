@@ -1,0 +1,15 @@
+{
+  "hash": "7f702398b183903ea40d9a5db5294a52",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Animated plots and maps in R\"\ndate: \"2025-06-10\"\nimage: ../assets/animation.svg\nimage-alt: Vector of someone creating an animation\ncategories: [R, Animation, Cartography, Maps, Data Visualization]\ndraft: true\n---\n\n\n::: {.cell}\n\n:::\n\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

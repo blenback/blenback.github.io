@@ -18,6 +18,7 @@ listing:
       - publications/other_outputs.yaml
     type: grid
     grid-columns: 4
+    max-items: 4
     fields: [image, title, description, categories]
   - id: Presentations
     contents:

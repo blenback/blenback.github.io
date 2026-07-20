@@ -1,7 +1,7 @@
 ---
-title: "A fresh take on conferences: Attending the Barcamp Open Science 2026 in Berlin"
+title: "A fresh take on conferences: Attending Barcamp Open Science 2026 in Berlin"
 date: "2026-06-10"
-draft: true
+draft: false
 image: ../assets/barcamp-post.jpg
 categories: [Open Science, Community, Conference]
 description: "My reflections on moderating a session about effective incentives for Open Science."
@@ -13,7 +13,7 @@ I came with a few ideas for sessions in my head but the one that I proposed, and
 
  The session was well attended, with participants from a range of disciplines and career stages, and we had a lively discussion about the challenges and opportunities for promoting Open Science in different contexts. A summary of the discussion will be provided as part of an overall wrap-up blog post from the organisers and I will link to that here once it is available. 
 
- The event itself was fantastic and I found the barcamp format to be a breath of fresh air compared to the traditional academic conference format (Mediocre plenary talks, I'm thinking of you!). If your work is in anyway related to Open Scienc eor if you are just interested in learning more, I would highly recommend attending the next barcamp if you have the opportunity.
+ The event itself was fantastic and I found the barcamp format to be a breath of fresh air compared to the traditional academic conference format (Mediocre plenary talks, I'm thinking of you!). If your work is in anyway related to Open Science or if you are just interested in learning more, I would highly recommend attending the next barcamp if you have the opportunity.
 
 ::: {layout-nrow="2"}
 ![](../assets/barcamp-gallery-1.jpg){group="my-gallery"}

@@ -1,0 +1,36 @@
+---
+title: Discovering decision-relevant scenarios in large ensembles of  Land Use and
+  Cover Change projections
+author:
+  - Orlando Roman
+  - Ben Black
+  - Bryan Adey
+  - Jan Kwakkel
+event: International Environmental Modelling and Software Society (iEMSs) conference
+  2026
+location: Dublin, Ireland
+date: '2026-07-15'
+image: /assets/2026_07_15_iems_pres.png
+image-height: 12000px
+image-alt: Slide showing maps of the Cantonal development plan for Zurich and scenario
+  based alternatives.
+citation: false
+categories:
+  - Land Use Change
+  - Urban Planning
+  - Exploratory Modelling
+  - Uncertainty
+  - Scenarios
+  - Ensembles
+
+---
+
+These are the slides, I gave at the International Environmental Modelling and Software Society (iEMSs) conference 2026 in Dublin, on behalf of my research collaborator [Orlando Roman](https://im.ibi.ethz.ch/en/people/scientific-assistants/orlando-roman-garcia.html). This presentation was part of the session I convened alongside Orlando and [Richard Hewitt](https://www.linkedin.com/in/richard-hewitt-09408937/): 'Synthesising advances in uncertainty exploration in land change modelling to inform planning and policy'.
+
+
+```{=html}
+<div class="embed-container">
+  <p align="center"><iframe src="/assets/2026_07_15_iemss.pdf" style="border: 0.5px" ></iframe
+  /p>
+</div>
+```
