@@ -1,27 +1,8 @@
 [
   {
-    "listing": "/publications.html",
-    "items": []
-  },
-  {
-    "listing": "/posts.html",
-    "items": [
-      "/posts/2026-06-19-world-biodiversity-forum-wrap-up.html",
-      "/posts/2026-06-04-babelquarto-revealjs.html",
-      "/posts/2026-06-04-quarto-presentation-templates.html",
-      "/posts/2026-04-30-valparCH-praxis-navigator.html",
-      "/posts/2026-04-06-interactive-bivariate-map-post.html",
-      "/posts/2025-06-06-thesis_defence.html",
-      "/posts/2025-04-23-PhD_template.html",
-      "/posts/2024-11-14-awesome-list.html",
-      "/posts/2024-05-01-R_workshop.html",
-      "/posts/2024-02-01-CV_update.html",
-      "/posts/2023-11-30-nascent_announcement.html"
-    ]
-  },
-  {
     "listing": "/presentations.html",
     "items": [
+      "/presentations/2026_07_15_iemss.html",
       "/presentations/2026_06_16_WBF_NFF.html",
       "/presentations/2026_06_16_WBF_panel.html",
       "/presentations/IMC-2025-JH.html",
@@ -42,8 +23,13 @@
     ]
   },
   {
+    "listing": "/publications.html",
+    "items": []
+  },
+  {
     "listing": "/index.html",
     "items": [
+      "/presentations/2026_07_15_iemss.html",
       "/presentations/2026_06_16_WBF_NFF.html",
       "/presentations/2026_06_16_WBF_panel.html",
       "/presentations/IMC-2025-JH.html",
@@ -62,6 +48,24 @@
       "/presentations/2022_07_01_IEMSs_model_pres.html",
       "/presentations/2021_06_09_ESP.html",
       "/posts/2026-06-19-world-biodiversity-forum-wrap-up.html",
+      "/posts/2026-06-10-barcamp-openscience.html",
+      "/posts/2026-06-04-babelquarto-revealjs.html",
+      "/posts/2026-06-04-quarto-presentation-templates.html",
+      "/posts/2026-04-30-valparCH-praxis-navigator.html",
+      "/posts/2026-04-06-interactive-bivariate-map-post.html",
+      "/posts/2025-06-06-thesis_defence.html",
+      "/posts/2025-04-23-PhD_template.html",
+      "/posts/2024-11-14-awesome-list.html",
+      "/posts/2024-05-01-R_workshop.html",
+      "/posts/2024-02-01-CV_update.html",
+      "/posts/2023-11-30-nascent_announcement.html"
+    ]
+  },
+  {
+    "listing": "/posts.html",
+    "items": [
+      "/posts/2026-06-19-world-biodiversity-forum-wrap-up.html",
+      "/posts/2026-06-10-barcamp-openscience.html",
       "/posts/2026-06-04-babelquarto-revealjs.html",
       "/posts/2026-06-04-quarto-presentation-templates.html",
       "/posts/2026-04-30-valparCH-praxis-navigator.html",
