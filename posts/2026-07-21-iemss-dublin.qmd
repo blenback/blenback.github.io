@@ -1,7 +1,7 @@
 ---
 title: "iEMSs 2026 in Dublin: Uncertainty in land change models, and a workshop on Quarto"
 date: "2026-07-21"
-image: ../assets/2026_07_15_iemss_group.jpg
+image: ../assets/2026_07_15_iemss_group.png
 image-alt: "Group photo of myself and colleagues at the 13th International Congress on Environmental Modelling and Software in Dublin."
 categories: [Conference, Land Use Change, Uncertainty, Quarto, Workshop]
 draft: false
