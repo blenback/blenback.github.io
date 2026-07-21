@@ -1,7 +1,7 @@
 ---
 title: "iEMSs 2026 in Dublin: Uncertainty in land change models, and a workshop on Quarto"
 date: "2026-07-21"
-image: ../assets/2026_07_15_iemss_group.png
+image: ../assets/2026_07_15_iemss_group.jpeg
 image-alt: "Group photo of myself and colleagues at the 13th International Congress on Environmental Modelling and Software in Dublin."
 categories: [Conference, Land Use Change, Uncertainty, Quarto, Workshop]
 draft: false
@@ -17,4 +17,4 @@ Within the session I gave a presentation on behalf of Orlando who unfortunately 
 
 Outside of our session, I also gave a workshop with former ETH colleagues, Isabel Nicholson Thomas and Manuel Kurmann, on using Quarto across the whole research workflow: [One Tool to Rule Them All: Quarto for Documentation, Presentations, Manuscripts and Outreach](https://iat-dml.github.io/quarto-workshop/). We prepared the workshop as a website including guided exercises for five different academic uses-cases: research diaries, manuscripts, slides, websites and dashboards. The site is built to be followed on your own afterwards, so it works as a reference as much as a live session.
 
-![](../assets/2026_07_15_iemss_group.jpg){fig-alt="Group photo of participants at the 13th International Congress on Environmental Modelling and Software in Dublin." fig-align="center"}
+![](../assets/2026_07_15_iemss_group.jpeg){fig-alt="Group photo of participants at the 13th International Congress on Environmental Modelling and Software in Dublin." fig-align="center"}
