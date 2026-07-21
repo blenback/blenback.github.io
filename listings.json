@@ -47,6 +47,7 @@
       "/presentations/2022_07_01_IEMSs_ValParCH_pres.html",
       "/presentations/2022_07_01_IEMSs_model_pres.html",
       "/presentations/2021_06_09_ESP.html",
+      "/posts/2026-07-21-iemss-dublin.html",
       "/posts/2026-06-19-world-biodiversity-forum-wrap-up.html",
       "/posts/2026-06-10-barcamp-openscience.html",
       "/posts/2026-06-04-babelquarto-revealjs.html",
@@ -64,6 +65,7 @@
   {
     "listing": "/posts.html",
     "items": [
+      "/posts/2026-07-21-iemss-dublin.html",
       "/posts/2026-06-19-world-biodiversity-forum-wrap-up.html",
       "/posts/2026-06-10-barcamp-openscience.html",
       "/posts/2026-06-04-babelquarto-revealjs.html",
