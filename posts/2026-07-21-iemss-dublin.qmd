@@ -1,0 +1,20 @@
+---
+title: "iEMSs 2026 in Dublin: Uncertainty in land change models, and a workshop on Quarto"
+date: "2026-07-21"
+image: ../assets/2026_07_15_iemss_group.jpg
+image-alt: "Group photo of myself and colleagues at the 13th International Congress on Environmental Modelling and Software in Dublin."
+categories: [Conference, Land Use Change, Uncertainty, Quarto, Workshop]
+draft: false
+---
+
+Last week I was in Dublin for the 13th International Congress on Environmental Modelling and Software (iEMSs). This was my second time at this conference, having first attended in 2022, and it has stayed one of my favourite communities: people who build models to support environmental decisions and who are just as happy to talk about the software underneath them as about the results.
+
+This time I convened a session together with [Orlando Roman](https://im.ibi.ethz.ch/en/people/scientific-assistants/orlando-roman-garcia.html) and [Richard Hewitt](https://www.linkedin.com/in/richard-hewitt-09408937/): *Synthesising advances in uncertainty exploration in land change modelling to inform planning and policy*. Our rationale was that for years reviews of land use and land cover change (LULCC) modelling have called for more attention to the various sources of uncertainty in the modelling process. However, much of the work that followed has been consolidative in nature, aimed at reducing uncertainty to improve model performance. Of course, this is important, but ultimately it is ignoring the fact that some factors, such as future trends in drivers of system change, represent 'deep uncertainty' that cannot necessarily be minimized in our models and is very relevant for decision making.
+
+Our aim with the session was to widen the frame and treat uncertainty as an opportunity rather than a limitation: something to explore in support of more robust and adaptive decisions. We invited contributions from across the spectrum of modelling approaches, whether process-based, pattern-based or agent-based, and across different forms of uncertainty, from parameters and model structure through to input data and future scenarios. The common thread we were looking for was how the effects of uncertainty on model outputs can be communicated as something planners and policymakers can actually act on.
+
+Within the session I gave a presentation on behalf of Orlando who unfortunately couldn't make it to the conference: [Discovering decision-relevant scenarios in large ensembles of Land Use and Cover Change projections](../presentations/2026_07_15_iemss.qmd). It covers our work using large ensembles to explore uncertainty in LULCC scenarios and to find the boundaries at which scenarios start to differ in ways that matter for planning.
+
+Outside of our session, I also gave a workshop with former ETH colleagues, Isabel Nicholson Thomas and Manuel Kurmann, on using Quarto across the whole research workflow: [One Tool to Rule Them All: Quarto for Documentation, Presentations, Manuscripts and Outreach](https://iat-dml.github.io/quarto-workshop/). We prepared the workshop as a website including guided exercises for five different academic uses-cases: research diaries, manuscripts, slides, websites and dashboards. The site is built to be followed on your own afterwards, so it works as a reference as much as a live session.
+
+![](../assets/2026_07_15_iemss_group.jpg){fig-alt="Group photo of participants at the 13th International Congress on Environmental Modelling and Software in Dublin." fig-align="center"}
